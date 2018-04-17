@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="1572" y="-199.25037481259372"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="JQY-Y7-yyb">
             <objects>
-                <viewController id="EjD-qJ-10W" sceneMemberID="viewController">
+                <viewController id="EjD-qJ-10W" customClass="LoginViewController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJA-Lb-xgI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +103,9 @@
                                                             <constraint firstAttribute="height" constant="83" id="wtH-aX-oEL"/>
                                                         </constraints>
                                                         <state key="normal" title="Gender"/>
+                                                        <connections>
+                                                            <action selector="genderButton:" destination="EjD-qJ-10W" eventType="touchUpInside" id="ZFs-eK-CdC"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uFT-4m-q1z" userLabel="Gender Choice ">
                                                         <rect key="frame" x="0.0" y="83" width="104.5" height="61.5"/>
@@ -178,6 +181,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ple-nt-yPp"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="na8-2n-F92" id="kOl-i4-7LG"/>
+                        <outlet property="femailSwitch" destination="g40-hV-P9w" id="WOj-Uo-4f5"/>
+                        <outlet property="firstNameTextField" destination="5JG-Vl-Iyo" id="9Mm-1J-kL8"/>
+                        <outlet property="gendChoiceStackView" destination="uFT-4m-q1z" id="sPD-16-rsY"/>
+                        <outlet property="lastNameTextField" destination="Hoq-vB-Ndu" id="dWb-tM-mla"/>
+                        <outlet property="maleSwitch" destination="gG3-ig-CbI" id="zT4-RK-745"/>
+                        <outlet property="passworTextField" destination="pqv-MH-EqB" id="3eH-ux-wx5"/>
+                        <outlet property="verifyPasswordTextField" destination="SxH-bV-UhP" id="a87-dk-5fm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aK1-hA-tL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

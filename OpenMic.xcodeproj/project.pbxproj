@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
+		2734C9212085988600123924 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* LoginViewController.swift */; };
+		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
 		27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1520810A3C000D7C8B /* AppDelegate.swift */; };
 		27692F1820810A3C000D7C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1720810A3C000D7C8B /* ViewController.swift */; };
 		27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1920810A3C000D7C8B /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
+		2734C9202085988600123924 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
 		27692F1220810A3C000D7C8B /* OpenMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27692F1520810A3C000D7C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27692F1720810A3C000D7C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		27692F2820810A67000D7C8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2734C92220859D1300123924 /* FieldCheckProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 		27692F2A20810A78000D7C8B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2734C9202085988600123924 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2734C9212085988600123924 /* LoginViewController.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
+				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +413,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -421,7 +432,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
