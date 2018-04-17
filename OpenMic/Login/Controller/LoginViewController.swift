@@ -35,17 +35,28 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var verifyPasswordTextField: UITextField!
     
+    
+    @IBAction func registerAction(_ sender: Any) {
+        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
+            if (allfieldsFilled) {
+                print("create user")
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkFieldsDelegate = self
 
-        // Do any additional setup after loading the view.
     }
 
     
 }
 
-extension LoginViewController: CheckSignUpFieldsDelegate {
+
+//MARK: Check fields delegate method
+extension LoginViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
     var firstName: String {
         return firstNameTextField.text!
     }

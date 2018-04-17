@@ -168,6 +168,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsO-RH-LdI">
                                         <rect key="frame" x="0.0" y="275.5" width="375" height="264.5"/>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerAction:" destination="EjD-qJ-10W" eventType="touchUpInside" id="IHU-kg-fgc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

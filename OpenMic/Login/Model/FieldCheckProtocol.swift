@@ -22,23 +22,29 @@ protocol CheckSignUpFieldsDelegate {
 
 extension CheckSignUpFieldsDelegate {
     
-    func checkforBlankFields() {
+    func checkforBlankFields() -> Bool {
         switch (firstName.isEmpty, LastName.isEmpty, Gender.isEmpty) {
         case (false, false, false):
             //check for blank passwords
-            self.checkMatchingPasswords()
+            if (self.checkMatchingPasswords()) {
+                return true
+            } else {
+                return false
+            }
         default:
             viewController.standardAlertView(title: "Fill in Fields", message: "Please fill in all fields")
+            return false
         }
         
     }
     
-    private func checkMatchingPasswords() {
-        switch (passwordOne == passwordTwo) {
-        case true:
-            print("create user ")
-        case false:
+    private func checkMatchingPasswords() -> Bool {
+        switch (passwordOne == passwordTwo, passwordTwo.count > 0, passwordOne.count > 0) {
+        case (true, true, true):
+            return true
+        default:
             viewController.standardAlertView(title: "Passwords mismatch", message: "Make sure your passwords match")
+            return false
         }
     }
     
