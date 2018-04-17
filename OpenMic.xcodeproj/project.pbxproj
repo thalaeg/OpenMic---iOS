@@ -84,6 +84,7 @@
 		27692F1420810A3C000D7C8B /* OpenMic */ = {
 			isa = PBXGroup;
 			children = (
+				27B2C5BB2086C06D0063AB75 /* API Read Write  */,
 				27B2C5B4208697E40063AB75 /* AlertViews */,
 				2734C91D2085948600123924 /* Firebase Read Write  */,
 				27692F2720810A5F000D7C8B /* Login */,
@@ -138,6 +139,13 @@
 				27B2C5B5208697F90063AB75 /* AlertViews .swift */,
 			);
 			path = AlertViews;
+			sourceTree = "<group>";
+		};
+		27B2C5BB2086C06D0063AB75 /* API Read Write  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Read Write ";
 			sourceTree = "<group>";
 		};
 		36C4D7CBCEFFE21E54923AD7 /* Pods */ = {
@@ -431,7 +439,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -447,7 +458,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

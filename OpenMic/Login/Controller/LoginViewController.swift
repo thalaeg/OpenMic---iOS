@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
+    private var createNewUserDelegate: CreateUserDelegate?
     
     @IBOutlet var firstNameTextField: UITextField!
     
@@ -39,6 +40,7 @@ class LoginViewController: UIViewController {
     @IBAction func registerAction(_ sender: Any) {
         if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
             if (allfieldsFilled) {
+                createNewUserDelegate?.createNewuser(email: email, password: passwordOne)
                 print("create user")
             }
         }
@@ -48,6 +50,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkFieldsDelegate = self
+        createNewUserDelegate = self
 
     }
 
@@ -57,6 +60,11 @@ class LoginViewController: UIViewController {
 
 //MARK: Check fields delegate method
 extension LoginViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
+    
+    var email: String {
+        return emailTextField.text!
+    }
+    
     var firstName: String {
         return firstNameTextField.text!
     }

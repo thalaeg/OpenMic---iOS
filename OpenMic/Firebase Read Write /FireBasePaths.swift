@@ -15,6 +15,7 @@ var baseURL: DatabaseReference {
 
 enum BasePaths: String {
     case users
+    case uid
     
     func getNonUIDBase() -> DatabaseReference {
        return baseURL.child(self.rawValue)

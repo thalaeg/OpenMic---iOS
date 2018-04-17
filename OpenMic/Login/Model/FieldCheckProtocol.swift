@@ -13,9 +13,9 @@ protocol CheckSignUpFieldsDelegate {
     var firstName: String {get}
     var LastName: String{get}
     var Gender: String {get}
+    var email: String {get}
     var passwordOne: String {get}
     var passwordTwo: String {get}
-    
     var viewController: UIViewController {get}
   
 }
@@ -23,8 +23,8 @@ protocol CheckSignUpFieldsDelegate {
 extension CheckSignUpFieldsDelegate {
     
     func checkforBlankFields() -> Bool {
-        switch (firstName.isEmpty, LastName.isEmpty, Gender.isEmpty) {
-        case (false, false, false):
+        switch (firstName.isEmpty, LastName.isEmpty, Gender.isEmpty, email.isEmpty) {
+        case (false, false, false, false):
             //check for blank passwords
             if (self.checkMatchingPasswords()) {
                 return true

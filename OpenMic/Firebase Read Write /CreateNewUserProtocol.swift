@@ -18,7 +18,10 @@ extension CreateUserDelegate {
     func createNewuser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error {
-                self.viewController.standardAlertView(title: "erro", message: error.localizedDescription)
+                self.viewController.standardAlertView(title: "error", message: error.localizedDescription)
+            } else {
+                guard let newUser = user else {return}
+                BasePaths.users.getNonUIDBase().childByAutoId().setValue([BasePaths.uid.rawValue : newUser.uid])
             }
         }
         
