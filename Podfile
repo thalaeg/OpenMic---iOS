@@ -7,5 +7,6 @@ target 'OpenMic' do
 
   # Pods for OpenMic
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end

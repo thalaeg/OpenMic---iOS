@@ -28,8 +28,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXp-Aj-eJP">
-                                        <rect key="frame" x="82" y="20.5" width="32" height="30"/>
+                                        <rect key="frame" x="82.5" y="20.5" width="32" height="30"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="Ay7-qC-zHE" kind="presentation" id="nQX-wr-oop"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -44,6 +47,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--login-->
+        <scene sceneID="v1w-9r-aIz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="login" id="Ay7-qC-zHE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xy-R8-GQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="357"/>
         </scene>
     </scenes>
 </document>
