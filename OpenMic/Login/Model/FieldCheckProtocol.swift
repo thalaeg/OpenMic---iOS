@@ -25,10 +25,10 @@ extension CheckSignUpFieldsDelegate {
     func checkforBlankFields() {
         switch (firstName.isEmpty, LastName.isEmpty, Gender.isEmpty) {
         case (false, false, false):
-            print("check passwords")
-            // check passwords
+            //check for blank passwords
+            self.checkMatchingPasswords()
         default:
-            print("fill in all fields")
+            viewController.standardAlertView(title: "Fill in Fields", message: "Please fill in all fields")
         }
         
     }
@@ -38,9 +38,11 @@ extension CheckSignUpFieldsDelegate {
         case true:
             print("create user ")
         case false:
-            print("let them know passwords don't match")
+            viewController.standardAlertView(title: "Passwords mismatch", message: "Make sure your passwords match")
         }
     }
     
 }
+
+
 
