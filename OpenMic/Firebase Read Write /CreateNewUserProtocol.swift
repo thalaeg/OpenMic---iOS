@@ -15,15 +15,16 @@ protocol CreateUserDelegate {
     var viewController: UIViewController {get}
 }
 extension CreateUserDelegate {
-    func createNewuser(email: String, password: String, completion: @escaping (_ error: Bool) -> Void) {
+    func createNewuser(email: String, password: String, completion: @escaping (_ error: Bool, _ user: User?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error {
-                completion(true)
+                completion(true, nil)
                 self.viewController.standardAlertView(title: "error", message: error.localizedDescription)
             } else {
                 guard let newUser = user else {return}
-                BasePaths.users.getNonUIDBase().childByAutoId().setValue([BasePaths.uid.rawValue : newUser.uid])
-                 completion(false)
+                BasePaths.users.getNonUIDBase().child(BasePaths.uid.rawValue).setValue(true)
+                //setValue([BasePaths.uid.rawValue : newUser.uid])
+                completion(false, newUser)
             }
         }
         

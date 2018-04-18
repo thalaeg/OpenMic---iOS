@@ -40,11 +40,17 @@ class SignupViewController: UIViewController {
     @IBAction func registerAction(_ sender: Any) {
         if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
             if (allfieldsFilled) {
-                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, completion: { (error) in
+                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, completion: { (error, user) in
                     if (!error) {
                         //add new user to api
-                        guard let checkFieldDelegate = self.checkFieldsDelegate else {return}
-                        Endpoints.profiles.postCall(with: checkFieldDelegate.newUserFieldsDictionary())
+                        guard let checkFieldDelegate = self.checkFieldsDelegate, let uid = user?.uid else {return}
+                        //pass fields to next view
+                        var dicWithFakeUserName = checkFieldDelegate.newUserFieldsDictionary()
+                        //MikeTest
+                        dicWithFakeUserName.updateValue("MikeTest2", forKey: ProfileKeys.username.rawValue)
+                        dicWithFakeUserName.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
+                        
+                        Endpoints.profiles.postCall(with: dicWithFakeUserName)
                     }
                 })
             }
