@@ -78,16 +78,46 @@
                                     <constraint firstAttribute="height" constant="167" id="otY-Rv-ezf"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n43-JY-IaX" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                <rect key="frame" x="57" y="352" width="280" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n43-JY-IaX" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                <rect key="frame" x="10" y="357" width="355" height="56"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-tv-wDO">
+                                        <rect key="frame" x="8" y="8" width="26" height="29.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="389-ie-mLJ"/>
+                                            <constraint firstAttribute="height" constant="29.5" id="Ibb-z6-9Fa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-MV-7ZR">
+                                        <rect key="frame" x="42" y="12" width="295" height="29.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29.5" id="aEf-yp-Bx2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vwW-MV-7ZR" secondAttribute="trailing" constant="18" id="0kA-Lr-Lpn"/>
+                                    <constraint firstAttribute="height" constant="56" id="1OY-Xi-JZO"/>
+                                    <constraint firstItem="5k7-tv-wDO" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="8" id="4QY-ZV-TmR"/>
+                                    <constraint firstItem="vwW-MV-7ZR" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="12" id="JAB-bG-sd5"/>
+                                    <constraint firstItem="vwW-MV-7ZR" firstAttribute="leading" secondItem="5k7-tv-wDO" secondAttribute="trailing" constant="8" id="Rrx-ip-x71"/>
+                                    <constraint firstItem="5k7-tv-wDO" firstAttribute="leading" secondItem="n43-JY-IaX" secondAttribute="leading" constant="8" id="ziA-FL-ZKR"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Zwc-wk-7j7" firstAttribute="centerX" secondItem="IFF-dG-DN9" secondAttribute="centerX" id="Fx6-Uj-cLv"/>
                             <constraint firstItem="Zwc-wk-7j7" firstAttribute="top" secondItem="PPy-40-Bj5" secondAttribute="top" constant="46" id="Rq9-eA-jSr"/>
+                            <constraint firstItem="n43-JY-IaX" firstAttribute="leading" secondItem="PPy-40-Bj5" secondAttribute="leading" constant="10" id="ZSP-SY-4oM"/>
+                            <constraint firstItem="PPy-40-Bj5" firstAttribute="bottom" secondItem="n43-JY-IaX" secondAttribute="bottom" constant="254" id="bdZ-kC-g4h"/>
+                            <constraint firstItem="PPy-40-Bj5" firstAttribute="trailing" secondItem="n43-JY-IaX" secondAttribute="trailing" constant="10" id="gLW-S5-7Hr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PPy-40-Bj5"/>
                     </view>
@@ -249,5 +279,6 @@
     </scenes>
     <resources>
         <image name="mainlogo" width="169" height="169"/>
+        <image name="username" width="29" height="32"/>
     </resources>
 </document>
