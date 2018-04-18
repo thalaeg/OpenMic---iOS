@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignupViewController: UIViewController {
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
     
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
 
 
 //MARK: Check fields delegate method
-extension LoginViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
+extension SignupViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
     
     var email: String {
         return emailTextField.text!

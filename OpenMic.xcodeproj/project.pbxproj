@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
-		2734C9212085988600123924 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* LoginViewController.swift */; };
+		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
 		27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1520810A3C000D7C8B /* AppDelegate.swift */; };
 		27692F1820810A3C000D7C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1720810A3C000D7C8B /* ViewController.swift */; };
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
-		2734C9202085988600123924 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
 		27692F1220810A3C000D7C8B /* OpenMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27692F1520810A3C000D7C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		27692F2A20810A78000D7C8B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2734C9202085988600123924 /* LoginViewController.swift */,
+				2734C9202085988600123924 /* SignupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
-				2734C9212085988600123924 /* LoginViewController.swift in Sources */,
+				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
