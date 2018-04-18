@@ -7,15 +7,40 @@
 //
 
 import Foundation
+import Alamofire
+
+
+enum ProfileKeys: String {
+    case username
+    case firbaseUid = "firebase_uid"
+    case firstName = "first_name"
+    case lastName = "last_name"
+    case email
+    case genre
+    case searchRadius = "search_radius"
+    case isPrivate
+    case profilePic = "Profile_pic"
+    case biography
+}
 
 enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
+    case profiles = "profiles/"
+    
+    func postCall(with params: [String : Any]) {
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get, parameters: params).responseJSON { (response) in
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+        }
+        
+    }
     
 }
 
 
-struct ApiReadWrite {
-    
-   
-    
-}
+
