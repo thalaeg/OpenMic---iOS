@@ -70,7 +70,25 @@
                     <view key="view" contentMode="scaleToFill" id="IFF-dG-DN9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Zwc-wk-7j7">
+                                <rect key="frame" x="67" y="66" width="240" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1ui-ST-im1"/>
+                                    <constraint firstAttribute="height" constant="167" id="otY-Rv-ezf"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n43-JY-IaX" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                <rect key="frame" x="57" y="352" width="280" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zwc-wk-7j7" firstAttribute="centerX" secondItem="IFF-dG-DN9" secondAttribute="centerX" id="Fx6-Uj-cLv"/>
+                            <constraint firstItem="Zwc-wk-7j7" firstAttribute="top" secondItem="PPy-40-Bj5" secondAttribute="top" constant="46" id="Rq9-eA-jSr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PPy-40-Bj5"/>
                     </view>
                     <navigationItem key="navigationItem" id="g5N-jU-MQ9"/>
@@ -78,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-SM-jiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-199"/>
+            <point key="canvasLocation" x="1412" y="-199.25037481259372"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="JQY-Y7-yyb">
@@ -229,4 +247,7 @@
             <point key="canvasLocation" x="632.79999999999995" y="-199.25037481259372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mainlogo" width="169" height="169"/>
+    </resources>
 </document>

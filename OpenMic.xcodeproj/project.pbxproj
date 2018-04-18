@@ -21,6 +21,8 @@
 		2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781107C2087D5EE0071A3E5 /* LoginViewController.swift */; };
 		2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2781107E2087D75D0071A3E5 /* loginassets.xcassets */; };
 		278110822087D9140071A3E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110812087D9140071A3E5 /* BaseViewController.swift */; };
+		278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110832087DD240071A3E5 /* UIViewExtensions.swift */; };
+		278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
@@ -44,6 +46,8 @@
 		2781107C2087D5EE0071A3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2781107E2087D75D0071A3E5 /* loginassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loginassets.xcassets; sourceTree = "<group>"; };
 		278110812087D9140071A3E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		278110832087DD240071A3E5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomLayer.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				278110812087D9140071A3E5 /* BaseViewController.swift */,
+				278110832087DD240071A3E5 /* UIViewExtensions.swift */,
+				278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -313,11 +319,13 @@
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
+				278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */,
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
+				278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
