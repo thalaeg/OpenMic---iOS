@@ -78,46 +78,84 @@
                                     <constraint firstAttribute="height" constant="167" id="otY-Rv-ezf"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n43-JY-IaX" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                <rect key="frame" x="10" y="357" width="355" height="56"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-CW-enp">
+                                <rect key="frame" x="10" y="274" width="355" height="118"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-tv-wDO">
-                                        <rect key="frame" x="8" y="8" width="26" height="29.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n43-JY-IaX" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-tv-wDO">
+                                                <rect key="frame" x="8" y="8" width="26" height="29.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26" id="389-ie-mLJ"/>
+                                                    <constraint firstAttribute="height" constant="29.5" id="Ibb-z6-9Fa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-MV-7ZR" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="42" y="12" width="295" height="29.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29.5" id="aEf-yp-Bx2"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="26" id="389-ie-mLJ"/>
-                                            <constraint firstAttribute="height" constant="29.5" id="Ibb-z6-9Fa"/>
+                                            <constraint firstAttribute="trailing" secondItem="vwW-MV-7ZR" secondAttribute="trailing" constant="18" id="0kA-Lr-Lpn"/>
+                                            <constraint firstAttribute="height" constant="56" id="1OY-Xi-JZO"/>
+                                            <constraint firstItem="5k7-tv-wDO" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="8" id="4QY-ZV-TmR"/>
+                                            <constraint firstItem="vwW-MV-7ZR" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="12" id="JAB-bG-sd5"/>
+                                            <constraint firstItem="vwW-MV-7ZR" firstAttribute="leading" secondItem="5k7-tv-wDO" secondAttribute="trailing" constant="8" id="Rrx-ip-x71"/>
+                                            <constraint firstItem="5k7-tv-wDO" firstAttribute="leading" secondItem="n43-JY-IaX" secondAttribute="leading" constant="8" id="ziA-FL-ZKR"/>
                                         </constraints>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-MV-7ZR" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="12" width="295" height="29.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIB-Xo-brw" userLabel="Password" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="355" height="56"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-jb-rsB">
+                                                <rect key="frame" x="8" y="8" width="26" height="29.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29.5" id="vnO-8w-vc1"/>
+                                                    <constraint firstAttribute="width" constant="26" id="yR8-n4-EV3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opi-Np-ht9" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="42" y="12" width="295" height="29.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29.5" id="6ma-7w-HOF"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="29.5" id="aEf-yp-Bx2"/>
+                                            <constraint firstItem="HHW-jb-rsB" firstAttribute="leading" secondItem="KIB-Xo-brw" secondAttribute="leading" constant="8" id="1zx-E0-gLt"/>
+                                            <constraint firstAttribute="trailing" secondItem="Opi-Np-ht9" secondAttribute="trailing" constant="18" id="2QL-IL-En5"/>
+                                            <constraint firstItem="Opi-Np-ht9" firstAttribute="leading" secondItem="HHW-jb-rsB" secondAttribute="trailing" constant="8" id="EFM-Z3-0LD"/>
+                                            <constraint firstItem="HHW-jb-rsB" firstAttribute="top" secondItem="KIB-Xo-brw" secondAttribute="top" constant="8" id="Z4j-Vr-hIK"/>
+                                            <constraint firstAttribute="height" constant="56" id="dN0-9n-NDX"/>
+                                            <constraint firstItem="Opi-Np-ht9" firstAttribute="top" secondItem="KIB-Xo-brw" secondAttribute="top" constant="12" id="mJk-8S-CmI"/>
                                         </constraints>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vwW-MV-7ZR" secondAttribute="trailing" constant="18" id="0kA-Lr-Lpn"/>
-                                    <constraint firstAttribute="height" constant="56" id="1OY-Xi-JZO"/>
-                                    <constraint firstItem="5k7-tv-wDO" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="8" id="4QY-ZV-TmR"/>
-                                    <constraint firstItem="vwW-MV-7ZR" firstAttribute="top" secondItem="n43-JY-IaX" secondAttribute="top" constant="12" id="JAB-bG-sd5"/>
-                                    <constraint firstItem="vwW-MV-7ZR" firstAttribute="leading" secondItem="5k7-tv-wDO" secondAttribute="trailing" constant="8" id="Rrx-ip-x71"/>
-                                    <constraint firstItem="5k7-tv-wDO" firstAttribute="leading" secondItem="n43-JY-IaX" secondAttribute="leading" constant="8" id="ziA-FL-ZKR"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PPy-40-Bj5" firstAttribute="trailing" secondItem="Nlz-CW-enp" secondAttribute="trailing" constant="10" id="4ue-mS-ysM"/>
                             <constraint firstItem="Zwc-wk-7j7" firstAttribute="centerX" secondItem="IFF-dG-DN9" secondAttribute="centerX" id="Fx6-Uj-cLv"/>
+                            <constraint firstItem="Nlz-CW-enp" firstAttribute="leading" secondItem="PPy-40-Bj5" secondAttribute="leading" constant="10" id="K5k-WW-6fu"/>
                             <constraint firstItem="Zwc-wk-7j7" firstAttribute="top" secondItem="PPy-40-Bj5" secondAttribute="top" constant="46" id="Rq9-eA-jSr"/>
-                            <constraint firstItem="n43-JY-IaX" firstAttribute="leading" secondItem="PPy-40-Bj5" secondAttribute="leading" constant="10" id="ZSP-SY-4oM"/>
-                            <constraint firstItem="PPy-40-Bj5" firstAttribute="bottom" secondItem="n43-JY-IaX" secondAttribute="bottom" constant="254" id="bdZ-kC-g4h"/>
-                            <constraint firstItem="PPy-40-Bj5" firstAttribute="trailing" secondItem="n43-JY-IaX" secondAttribute="trailing" constant="10" id="gLW-S5-7Hr"/>
+                            <constraint firstItem="Nlz-CW-enp" firstAttribute="top" secondItem="Zwc-wk-7j7" secondAttribute="bottom" constant="41" id="bBA-hj-fUh"/>
+                            <constraint firstItem="PPy-40-Bj5" firstAttribute="bottom" secondItem="Nlz-CW-enp" secondAttribute="bottom" constant="275" id="j1o-th-2ed"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PPy-40-Bj5"/>
                     </view>
@@ -279,6 +317,7 @@
     </scenes>
     <resources>
         <image name="mainlogo" width="169" height="169"/>
+        <image name="password" width="29" height="29"/>
         <image name="username" width="29" height="32"/>
     </resources>
 </document>
