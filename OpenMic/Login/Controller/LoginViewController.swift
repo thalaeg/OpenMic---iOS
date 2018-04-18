@@ -40,8 +40,13 @@ class LoginViewController: UIViewController {
     @IBAction func registerAction(_ sender: Any) {
         if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
             if (allfieldsFilled) {
-                createNewUserDelegate?.createNewuser(email: email, password: passwordOne)
-                print("create user")
+                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, completion: { (error) in
+                    if (!error) {
+                        //add new user to api
+                        guard let checkFieldDelegate = self.checkFieldsDelegate else {return}
+                        Endpoints.profiles.postCall(with: checkFieldDelegate.newUserFieldsDictionary())
+                    }
+                })
             }
         }
         

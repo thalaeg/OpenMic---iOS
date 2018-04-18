@@ -32,15 +32,21 @@ enum Endpoints: String {
             if let json = response.result.value {
                 print("JSON: \(json)") // serialized json response
             }
-            
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
+            if let error = response.error {
+                print("error: \(error.localizedDescription)")
             }
+            
+//            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+//                print("Data: \(utf8Text)") // original server data as UTF8 string
+//            }
         }
         
     }
     
 }
+
+
+
 
 
 

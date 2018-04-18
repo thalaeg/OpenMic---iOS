@@ -48,6 +48,14 @@ extension CheckSignUpFieldsDelegate {
         }
     }
     
+    func newUserFieldsDictionary() -> [String : String] {
+        let newUserDic = [ProfileKeys.firstName.rawValue : firstName,
+                          ProfileKeys.lastName.rawValue : LastName,
+                          ProfileKeys.email.rawValue : email]
+        return newUserDic
+    }
+    
+    
 }
 
 
