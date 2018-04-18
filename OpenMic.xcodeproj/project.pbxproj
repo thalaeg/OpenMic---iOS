@@ -17,6 +17,7 @@
 		27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */; };
 		27692F2E20810E95000D7C8B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F2D20810E95000D7C8B /* Login.storyboard */; };
 		27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27692F2F208110B3000D7C8B /* GoogleService-Info.plist */; };
+		277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277318CD2087A0C200C30C05 /* ApiReadWrite.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
@@ -36,6 +37,7 @@
 		27692F2120810A3F000D7C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27692F2D20810E95000D7C8B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		27692F2F208110B3000D7C8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		277318CD2087A0C200C30C05 /* ApiReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReadWrite.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 		27B2C5BB2086C06D0063AB75 /* API Read Write  */ = {
 			isa = PBXGroup;
 			children = (
+				277318CD2087A0C200C30C05 /* ApiReadWrite.swift */,
 			);
 			path = "API Read Write ";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -250,6 +254,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -291,6 +296,7 @@
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
+				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
