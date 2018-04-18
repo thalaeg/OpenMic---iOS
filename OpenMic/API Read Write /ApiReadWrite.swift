@@ -28,7 +28,7 @@ enum Endpoints: String {
     case profiles = "profiles/"
     
     func postCall(with params: [String : Any]) {
-        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get, parameters: params).responseJSON { (response) in
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: params).responseJSON { (response) in
             if let json = response.result.value {
                 print("JSON: \(json)") // serialized json response
             }
