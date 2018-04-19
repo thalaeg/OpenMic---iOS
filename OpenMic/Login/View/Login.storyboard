@@ -73,7 +73,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="XET-KB-3Wb" userLabel="email">
                                                         <rect key="frame" x="8" y="16" width="339" height="29.5"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-vd-Wu7">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-vd-Wu7">
                                                                 <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -81,7 +81,7 @@
                                                                     <constraint firstAttribute="width" constant="26" id="jxm-aW-yQv"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ln-zW-8mU" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ln-zW-8mU" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
                                                                 <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,6 +338,7 @@
     </scenes>
     <resources>
         <image name="mainlogo" width="169" height="169"/>
+        <image name="password" width="29" height="29"/>
         <image name="username" width="29" height="32"/>
     </resources>
 </document>
