@@ -160,7 +160,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="EjD-qJ-10W" kind="show" id="yXY-pO-kAy"/>
+                                            <segue destination="zxY-iv-DaR" kind="show" id="V85-xT-Py5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -184,7 +184,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-SM-jiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-199.25037481259372"/>
+            <point key="canvasLocation" x="1351" y="-199"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="uiG-MA-FwF">
+            <objects>
+                <viewController id="zxY-iv-DaR" customClass="SignupViewController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ulW-Sk-dbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OfK-pp-4Co"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRW-3u-r6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="-194"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="JQY-Y7-yyb">
@@ -315,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aK1-hA-tL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="-192"/>
+            <point key="canvasLocation" x="3321" y="-195"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hh7-AQ-qYD">

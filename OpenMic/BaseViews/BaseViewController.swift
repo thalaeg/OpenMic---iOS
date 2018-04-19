@@ -9,6 +9,14 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.backgroundColor = .clear
+        self.navigationController?.navigationBar.isTranslucent = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,7 +15,6 @@ class ViewWithBottomLayer: UIView {
         super.init(coder: aDecoder)
         self.addBottomBorder()
         self.backgroundColor = UIColor.clear
-        //fatalError("init(coder:) has not been implemented")
     }
 
 

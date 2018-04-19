@@ -16,13 +16,11 @@ class LoginViewController: BaseViewController {
         
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
     }
-
-   
-
-   
+    
+ 
 
 }

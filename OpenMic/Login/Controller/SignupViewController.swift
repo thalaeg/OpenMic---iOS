@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+class SignupViewController: BaseViewController {
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
     
