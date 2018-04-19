@@ -26,6 +26,7 @@
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
+		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
+		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E902C8AF13CB2D12DDA393 /* Pods-OpenMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +155,7 @@
 		278110802087D8590071A3E5 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
-				278110812087D9140071A3E5 /* BaseViewController.swift */,
+				27FA33B72088F95D008CC7D3 /* BaseViewController  */,
 				278110832087DD240071A3E5 /* UIViewExtensions.swift */,
 				278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */,
 				278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */,
@@ -175,6 +177,15 @@
 				277318CD2087A0C200C30C05 /* ApiReadWrite.swift */,
 			);
 			path = "API Read Write ";
+			sourceTree = "<group>";
+		};
+		27FA33B72088F95D008CC7D3 /* BaseViewController  */ = {
+			isa = PBXGroup;
+			children = (
+				278110812087D9140071A3E5 /* BaseViewController.swift */,
+				27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */,
+			);
+			path = "BaseViewController ";
 			sourceTree = "<group>";
 		};
 		36C4D7CBCEFFE21E54923AD7 /* Pods */ = {
@@ -254,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */,
@@ -479,7 +491,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -495,7 +510,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
