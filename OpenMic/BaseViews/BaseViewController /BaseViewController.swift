@@ -40,7 +40,6 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "backArrow")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = .white
-        
         self.navigationController?.navigationBar.isTranslucent = true
         
     }

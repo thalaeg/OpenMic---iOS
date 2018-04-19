@@ -193,7 +193,242 @@
                     <view key="view" contentMode="scaleToFill" id="ulW-Sk-dbc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZnF-e5-dc5">
+                                <rect key="frame" x="10" y="84" width="355" height="563"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-kh-g2q" userLabel="usercredentials">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="304"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnY-xY-zF9" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="xYh-Ps-F8H" userLabel="First and last ">
+                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="B26-y4-eBw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="26" id="QPW-FK-liD"/>
+                                                                    <constraint firstAttribute="height" constant="29.5" id="Xvv-4V-Uai"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-ed-K6k">
+                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyA-6r-KRr" userLabel="first name " customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="29.5"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-hO-OgD" userLabel="Last name " customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                        <rect key="frame" x="151" y="0.0" width="151" height="29.5"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="4S6-Vu-nYc"/>
+                                                    <constraint firstItem="xYh-Ps-F8H" firstAttribute="leading" secondItem="EnY-xY-zF9" secondAttribute="leadingMargin" id="I93-xQ-pxq"/>
+                                                    <constraint firstItem="xYh-Ps-F8H" firstAttribute="top" secondItem="EnY-xY-zF9" secondAttribute="topMargin" constant="8" id="JQo-nU-f1B"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="xYh-Ps-F8H" secondAttribute="trailing" id="ZtH-zB-u1e"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-S3-vAC" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="62" width="355" height="56"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-T1-PSx" userLabel="email">
+                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-hV-4bZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="29.5" id="Rqt-hC-Cmv"/>
+                                                                    <constraint firstAttribute="width" constant="26" id="gOR-M6-Phi"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25l-ae-Ybd" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="eyI-1f-kQD"/>
+                                                    <constraint firstItem="6Vf-T1-PSx" firstAttribute="leading" secondItem="GZC-S3-vAC" secondAttribute="leadingMargin" id="t3n-qz-8jS"/>
+                                                    <constraint firstItem="6Vf-T1-PSx" firstAttribute="top" secondItem="GZC-S3-vAC" secondAttribute="topMargin" constant="8" id="tvX-55-Sf3"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="6Vf-T1-PSx" secondAttribute="trailing" id="xwu-OB-cBZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-h7-GT4" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="124" width="355" height="56"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="0qU-LH-OLs" userLabel="email">
+                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="Ln4-rZ-S34">
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="29.5" id="aaU-0v-Fwd"/>
+                                                                    <constraint firstAttribute="width" constant="26" id="s8Y-q6-E4d"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8O-JK-m0z" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0qU-LH-OLs" firstAttribute="leading" secondItem="CaW-h7-GT4" secondAttribute="leadingMargin" id="Qnl-TQ-UJQ"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="0qU-LH-OLs" secondAttribute="trailing" id="qKf-Ga-Dk7"/>
+                                                    <constraint firstItem="0qU-LH-OLs" firstAttribute="top" secondItem="CaW-h7-GT4" secondAttribute="topMargin" constant="8" id="t9V-fV-a9l"/>
+                                                    <constraint firstAttribute="height" constant="56" id="ths-Yy-ZBw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLM-zx-JOW" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="186" width="355" height="56"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-s9-OCe" userLabel="email">
+                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="buS-cj-7Nr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="26" id="1eZ-7g-VAM"/>
+                                                                    <constraint firstAttribute="height" constant="29.5" id="BDa-hj-sgv"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-BY-MCg" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="b0t-s9-OCe" firstAttribute="top" secondItem="YLM-zx-JOW" secondAttribute="topMargin" constant="8" id="7Vn-z3-9Y6"/>
+                                                    <constraint firstAttribute="height" constant="56" id="A2d-be-KSi"/>
+                                                    <constraint firstItem="b0t-s9-OCe" firstAttribute="leading" secondItem="YLM-zx-JOW" secondAttribute="leadingMargin" id="Lum-nN-Cdk"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="b0t-s9-OCe" secondAttribute="trailing" id="QNQ-SZ-wvp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-aN-3ZE" userLabel="password" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="248" width="355" height="56"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-0S-wSr" userLabel="email">
+                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-hH-JQl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="29.5" id="3Fb-di-vea"/>
+                                                                    <constraint firstAttribute="width" constant="26" id="5b8-HG-K9x"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-Yw-9ji" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="052-t4-SvZ"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="rjv-0S-wSr" secondAttribute="trailing" id="4F0-ns-Hyf"/>
+                                                    <constraint firstItem="rjv-0S-wSr" firstAttribute="top" secondItem="MZP-aN-3ZE" secondAttribute="topMargin" constant="8" id="Pp3-Fy-ERR"/>
+                                                    <constraint firstItem="rjv-0S-wSr" firstAttribute="leading" secondItem="MZP-aN-3ZE" secondAttribute="leadingMargin" id="yxX-9Y-HrQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YLM-zx-JOW" secondAttribute="trailing" id="6Gd-Ol-zyQ"/>
+                                            <constraint firstItem="YLM-zx-JOW" firstAttribute="leading" secondItem="d9N-kh-g2q" secondAttribute="leading" id="9hM-0v-Vr3"/>
+                                            <constraint firstAttribute="trailing" secondItem="CaW-h7-GT4" secondAttribute="trailing" id="A3f-BP-zgY"/>
+                                            <constraint firstItem="MZP-aN-3ZE" firstAttribute="leading" secondItem="d9N-kh-g2q" secondAttribute="leading" id="CmT-hg-bfz"/>
+                                            <constraint firstItem="CaW-h7-GT4" firstAttribute="leading" secondItem="d9N-kh-g2q" secondAttribute="leading" id="G94-0V-NEw"/>
+                                            <constraint firstItem="GZC-S3-vAC" firstAttribute="leading" secondItem="d9N-kh-g2q" secondAttribute="leading" id="W7b-Ov-bLd"/>
+                                            <constraint firstAttribute="trailing" secondItem="MZP-aN-3ZE" secondAttribute="trailing" id="Yz0-Tc-gGx"/>
+                                            <constraint firstAttribute="trailing" secondItem="EnY-xY-zF9" secondAttribute="trailing" id="bNZ-tZ-3qd"/>
+                                            <constraint firstAttribute="trailing" secondItem="GZC-S3-vAC" secondAttribute="trailing" id="f81-Tx-6gf"/>
+                                            <constraint firstItem="EnY-xY-zF9" firstAttribute="leading" secondItem="d9N-kh-g2q" secondAttribute="leading" id="k3s-eS-5mt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="xub-Ip-ocJ" userLabel="sign in and continue with facebook">
+                                        <rect key="frame" x="0.0" y="334" width="355" height="229"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCp-JP-vnW">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                                <color key="backgroundColor" red="0.69411764710000001" green="0.19215686269999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="mCq-XR-DFA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="SIGN IN">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-2O-XZy">
+                                                <rect key="frame" x="0.0" y="57" width="355" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T0-m9-81R">
+                                                <rect key="frame" x="0.0" y="181" width="355" height="48"/>
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="RFd-ZM-bxS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="CONTINUE WITH FACEBOOK">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZnF-e5-dc5" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="10" id="4az-OW-GdR"/>
+                            <constraint firstItem="ZnF-e5-dc5" firstAttribute="top" secondItem="OfK-pp-4Co" secondAttribute="top" constant="20" id="8tI-ZY-Zc7"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="ZnF-e5-dc5" secondAttribute="bottom" constant="20" id="H67-Zf-7t4"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="ZnF-e5-dc5" secondAttribute="trailing" constant="10" id="pSI-cY-Ajb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OfK-pp-4Co"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
