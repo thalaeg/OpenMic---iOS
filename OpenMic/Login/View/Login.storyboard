@@ -144,7 +144,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Cq-V5-rWd" userLabel="sign up stack ">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Cq-V5-rWd" userLabel="sign up stack">
                                 <rect key="frame" x="62.5" y="629" width="250.5" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pn-YW-I3S">
@@ -194,8 +194,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZnF-e5-dc5">
-                                <rect key="frame" x="10" y="84" width="355" height="563"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZnF-e5-dc5" userLabel="All register fields ">
+                                <rect key="frame" x="10" y="84" width="355" height="533"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-kh-g2q" userLabel="usercredentials">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="304"/>
@@ -244,10 +244,10 @@
                                                     <constraint firstAttribute="trailingMargin" secondItem="xYh-Ps-F8H" secondAttribute="trailing" id="ZtH-zB-u1e"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-S3-vAC" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-S3-vAC" userLabel="Gender" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="62" width="355" height="56"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-T1-PSx" userLabel="email">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-T1-PSx" userLabel="gender">
                                                         <rect key="frame" x="8" y="16" width="339" height="25"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-hV-4bZ">
@@ -276,7 +276,7 @@
                                                     <constraint firstAttribute="trailingMargin" secondItem="6Vf-T1-PSx" secondAttribute="trailing" id="xwu-OB-cBZ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-h7-GT4" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-h7-GT4" userLabel="Email" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="124" width="355" height="56"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="0qU-LH-OLs" userLabel="email">
@@ -308,10 +308,10 @@
                                                     <constraint firstAttribute="height" constant="56" id="ths-Yy-ZBw"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLM-zx-JOW" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLM-zx-JOW" userLabel="passwordOne" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="186" width="355" height="56"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-s9-OCe" userLabel="email">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-s9-OCe" userLabel="PasswordOne">
                                                         <rect key="frame" x="8" y="16" width="339" height="29.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="buS-cj-7Nr">
@@ -340,10 +340,10 @@
                                                     <constraint firstAttribute="trailingMargin" secondItem="b0t-s9-OCe" secondAttribute="trailing" id="QNQ-SZ-wvp"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-aN-3ZE" userLabel="password" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-aN-3ZE" userLabel="passwordTwo" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="248" width="355" height="56"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-0S-wSr" userLabel="email">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-0S-wSr" userLabel="passwordTwo">
                                                         <rect key="frame" x="8" y="16" width="339" height="29.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-hH-JQl">
@@ -387,7 +387,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="xub-Ip-ocJ" userLabel="sign in and continue with facebook">
-                                        <rect key="frame" x="0.0" y="334" width="355" height="229"/>
+                                        <rect key="frame" x="0.0" y="334" width="355" height="199"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCp-JP-vnW">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
@@ -396,24 +396,24 @@
                                                     <constraint firstAttribute="height" constant="48" id="mCq-XR-DFA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="SIGN IN">
+                                                <state key="normal" title="REGISTER">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-2O-XZy">
-                                                <rect key="frame" x="0.0" y="57" width="355" height="115"/>
+                                                <rect key="frame" x="0.0" y="57" width="355" height="85"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T0-m9-81R">
-                                                <rect key="frame" x="0.0" y="181" width="355" height="48"/>
+                                                <rect key="frame" x="0.0" y="151" width="355" height="48"/>
                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="RFd-ZM-bxS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="CONTINUE WITH FACEBOOK">
+                                                <state key="normal" title="REGISTER WITH FACEBOOK">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -421,13 +421,47 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-tp-4nJ">
+                                <rect key="frame" x="19" y="625" width="337" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signup up, you agree to our" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79M-oF-Jzt">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-EL-gmF" customClass="ButtonWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                        <rect key="frame" x="188" y="0.0" width="42.5" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="Terms">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3q-hM-tre">
+                                        <rect key="frame" x="233.5" y="0.0" width="9.5" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-72-PmS" customClass="ButtonWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                        <rect key="frame" x="246" y="0.0" width="91" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="Privacy Policy">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZnF-e5-dc5" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="10" id="4az-OW-GdR"/>
                             <constraint firstItem="ZnF-e5-dc5" firstAttribute="top" secondItem="OfK-pp-4Co" secondAttribute="top" constant="20" id="8tI-ZY-Zc7"/>
-                            <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="ZnF-e5-dc5" secondAttribute="bottom" constant="20" id="H67-Zf-7t4"/>
+                            <constraint firstItem="gHK-tp-4nJ" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="19" id="Fd3-YE-yW8"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="ZnF-e5-dc5" secondAttribute="bottom" constant="50" id="H67-Zf-7t4"/>
                             <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="ZnF-e5-dc5" secondAttribute="trailing" constant="10" id="pSI-cY-Ajb"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="gHK-tp-4nJ" secondAttribute="trailing" constant="19" id="pwt-Dk-wFf"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="gHK-tp-4nJ" secondAttribute="bottom" constant="14" id="r2w-H8-9Kr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OfK-pp-4Co"/>
                     </view>
