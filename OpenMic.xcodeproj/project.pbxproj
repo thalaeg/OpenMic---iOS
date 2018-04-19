@@ -24,6 +24,7 @@
 		278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110832087DD240071A3E5 /* UIViewExtensions.swift */; };
 		278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */; };
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
+		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
@@ -51,6 +52,7 @@
 		278110832087DD240071A3E5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomLayer.swift; sourceTree = "<group>"; };
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
+		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				27692F2D20810E95000D7C8B /* Login.storyboard */,
 				2781107E2087D75D0071A3E5 /* loginassets.xcassets */,
+				27A713AC208909150095E044 /* RegisterAssets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
+				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,

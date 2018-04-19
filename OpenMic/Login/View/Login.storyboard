@@ -248,18 +248,18 @@
                                                 <rect key="frame" x="0.0" y="62" width="355" height="56"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-T1-PSx" userLabel="email">
-                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <rect key="frame" x="8" y="16" width="339" height="25"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-hV-4bZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-hV-4bZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="25"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="29.5" id="Rqt-hC-Cmv"/>
-                                                                    <constraint firstAttribute="width" constant="26" id="gOR-M6-Phi"/>
+                                                                    <constraint firstAttribute="height" constant="25" id="Rqt-hC-Cmv"/>
+                                                                    <constraint firstAttribute="width" constant="32" id="gOR-M6-Phi"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25l-ae-Ybd" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
-                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25l-ae-Ybd" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                                <rect key="frame" x="43" y="0.0" width="296" height="25"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -280,18 +280,18 @@
                                                 <rect key="frame" x="0.0" y="124" width="355" height="56"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="0qU-LH-OLs" userLabel="email">
-                                                        <rect key="frame" x="8" y="16" width="339" height="29.5"/>
+                                                        <rect key="frame" x="8" y="16" width="339" height="21.5"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="Ln4-rZ-S34">
-                                                                <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ln4-rZ-S34">
+                                                                <rect key="frame" x="0.0" y="0.0" width="28.5" height="21.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="29.5" id="aaU-0v-Fwd"/>
-                                                                    <constraint firstAttribute="width" constant="26" id="s8Y-q6-E4d"/>
+                                                                    <constraint firstAttribute="height" constant="21.5" id="aaU-0v-Fwd"/>
+                                                                    <constraint firstAttribute="width" constant="28.5" id="s8Y-q6-E4d"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8O-JK-m0z" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
-                                                                <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
+                                                                <rect key="frame" x="39.5" y="0.0" width="299.5" height="21.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -314,7 +314,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-s9-OCe" userLabel="email">
                                                         <rect key="frame" x="8" y="16" width="339" height="29.5"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="buS-cj-7Nr">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="buS-cj-7Nr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="26" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -322,7 +322,7 @@
                                                                     <constraint firstAttribute="height" constant="29.5" id="BDa-hj-sgv"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-BY-MCg" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-BY-MCg" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
                                                                 <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -354,7 +354,7 @@
                                                                     <constraint firstAttribute="width" constant="26" id="5b8-HG-K9x"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-Yw-9ji" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-Yw-9ji" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
                                                                 <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -588,6 +588,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="emailIcon" width="28" height="21"/>
+        <image name="genderIcon" width="32" height="25"/>
         <image name="mainlogo" width="169" height="169"/>
         <image name="password" width="29" height="29"/>
         <image name="username" width="29" height="32"/>
