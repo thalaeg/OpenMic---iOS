@@ -16,19 +16,8 @@ class SignupViewController: BaseViewController {
     
     @IBOutlet var lastNameTextField: UITextField!
     
-    @IBOutlet var gendChoiceStackView: UIStackView!
-    private var genderChoice: String = "Male"
     
-    @IBOutlet var maleSwitch: UISwitch!
-    @IBOutlet var femailSwitch: UISwitch!
-    @IBAction func genderButton(_ sender: Any) {
-        switch gendChoiceStackView.isHidden {
-        case true:
-            gendChoiceStackView.isHidden = false
-        case false:
-            gendChoiceStackView.isHidden = true
-        }
-    }
+    @IBOutlet var genderChoiceTextField: UitextFieldWithWhitePlaceHolder!
     
     @IBOutlet var emailTextField: UITextField!
     
@@ -47,6 +36,7 @@ class SignupViewController: BaseViewController {
                         //pass fields to next view
                         var dicWithFakeUserName = checkFieldDelegate.newUserFieldsDictionary()
                         //MikeTest
+                        //MARK: update fake placeholder name
                         dicWithFakeUserName.updateValue("MikeTest2", forKey: ProfileKeys.username.rawValue)
                         dicWithFakeUserName.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
                         
@@ -85,7 +75,7 @@ extension SignupViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
     }
     
     var Gender: String {
-        return genderChoice
+        return genderChoiceTextField.text!
     }
     
     var passwordOne: String {
