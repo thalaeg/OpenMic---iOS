@@ -38,20 +38,15 @@ class UserTypeSelectViewController: BaseViewwithChair {
         }
     }
     @IBAction func artistSelect(_ sender: Any) {
-        artistDot.isHidden = false
-        fanDot.isHidden = true
-        nextStack.isHidden = true
-        artistView.isHidden = false
+
+        hideUnhideViews(isArtist: true)
         userTypeSelect = "Artist"
     }
     
     @IBAction func fanSelect(_ sender: Any) {
+        hideUnhideViews(isArtist: false)
         userTypeSelect = "Fan"
-        artistDot.isHidden = true
-        artistView.isHidden = true
-        pickerViewOutlet.isHidden = true
-        fanDot.isHidden = false
-        nextStack.isHidden = false
+
 
     }
     override func viewDidLoad() {
@@ -70,6 +65,24 @@ class UserTypeSelectViewController: BaseViewwithChair {
 extension UserTypeSelectViewController: PickerSelectDelegate {
     func selectedGenre(genre: Genre) {
         nextStack.isHidden = false
+    }
+    
+    
+    private func hideUnhideViews(isArtist: Bool) {
+        switch isArtist {
+        case true:
+            artistDot.isHidden = false
+            fanDot.isHidden = true
+            nextStack.isHidden = true
+            artistView.isHidden = false
+        case false:
+            artistDot.isHidden = true
+            artistView.isHidden = true
+            pickerViewOutlet.isHidden = true
+            fanDot.isHidden = false
+            nextStack.isHidden = false
+        }
+        
     }
     
     
