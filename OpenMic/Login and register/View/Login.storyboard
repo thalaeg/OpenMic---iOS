@@ -476,11 +476,20 @@
                         <outlet property="lastNameTextField" destination="lVc-hO-OgD" id="9Xf-Jq-LqF"/>
                         <outlet property="passworTextField" destination="Y7I-BY-MCg" id="lZB-Cy-888"/>
                         <outlet property="verifyPasswordTextField" destination="Rq4-Yw-9ji" id="uHe-cg-bVL"/>
+                        <segue destination="iCh-sB-nad" kind="presentation" identifier="userType" id="e8i-2f-oR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRW-3u-r6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2106" y="-194"/>
+        </scene>
+        <!--Genre-->
+        <scene sceneID="qf1-mt-bWR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChooseUserType" referencedIdentifier="Genre" id="iCh-sB-nad" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yg-oU-GDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="-200"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hh7-AQ-qYD">

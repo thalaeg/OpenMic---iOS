@@ -26,6 +26,9 @@
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
+		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
+		27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B52089928B0095E044 /* BaseViewWithChair.swift */; };
+		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
@@ -55,6 +58,9 @@
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
+		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
+		27A713B52089928B0095E044 /* BaseViewWithChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewWithChair.swift; sourceTree = "<group>"; };
+		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				27A713AF208944F10095E044 /* ChooseUserType.storyboard */,
+				27A713B3208991130095E044 /* UserTypeAssets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 		27A713B2208990170095E044 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 			children = (
 				278110812087D9140071A3E5 /* BaseViewController.swift */,
 				27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */,
+				27A713B52089928B0095E044 /* BaseViewWithChair.swift */,
 			);
 			path = "BaseViewController ";
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
+				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
@@ -363,7 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
+				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
