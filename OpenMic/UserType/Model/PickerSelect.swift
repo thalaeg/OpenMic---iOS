@@ -12,6 +12,7 @@ class PickerSelect: NSObject {
     private var genres = [Genre]()
     
     private var picker: UIPickerView
+    var delegate: PickerSelectDelegate?
     
     init(picker: UIPickerView) {
         self.picker = picker
@@ -47,7 +48,12 @@ extension PickerSelect: UIPickerViewDelegate, UIPickerViewDataSource {
       return  NSAttributedString(string: genres[row].genre, attributes: [NSAttributedStringKey.foregroundColor : UIColor.white])
     }
     
-   
-    
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        delegate?.selectedGenre(genre: genres[row])
+    }
+
+}
+
+protocol PickerSelectDelegate {
+    func selectedGenre(genre: Genre)
 }
