@@ -10,11 +10,14 @@ import UIKit
 
 class UserTypeSelectViewController: BaseViewwithChair {
     
-    
+    private var userTypeSelect: String?
     
     @IBOutlet var userNameTextField: UitextFieldWithWhitePlaceHolder!
     
     
+    @IBOutlet var artistDot: UIImageView!
+    
+    @IBOutlet var fanDot: UIImageView!
     
     @IBAction func userNameNext(_ sender: Any) {
         userNameTextField.resignFirstResponder()
@@ -24,16 +27,20 @@ class UserTypeSelectViewController: BaseViewwithChair {
         
     }
     @IBAction func artistSelect(_ sender: Any) {
-        print("artist Select")
+        artistDot.isHidden = false
+        fanDot.isHidden = true
     }
     
     @IBAction func fanSelect(_ sender: Any) {
-        print("Fan Select")
+        artistDot.isHidden = true
+        fanDot.isHidden = false
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        artistDot.isHidden = true
+        fanDot.isHidden = true
 
-        // Do any additional setup after loading the view.
     }
 
    

@@ -96,7 +96,7 @@
                                                                                     <constraint firstAttribute="height" constant="26" id="vCM-tw-860"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-4Z-eFA">
+                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-4Z-eFA" userLabel="ArtistSelect">
                                                                                 <rect key="frame" x="6" y="4" width="17" height="17"/>
                                                                             </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-CG-5WW" userLabel="select Artist ">
@@ -239,6 +239,8 @@
                         <viewLayoutGuide key="safeArea" id="nsq-LU-A0j"/>
                     </view>
                     <connections>
+                        <outlet property="artistDot" destination="Zo4-4Z-eFA" id="bXK-Bv-85n"/>
+                        <outlet property="fanDot" destination="KqT-bH-2RU" id="OKf-Fl-Pik"/>
                         <outlet property="userNameTextField" destination="h4V-Da-4V2" id="DXd-77-wU0"/>
                     </connections>
                 </viewController>
