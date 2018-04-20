@@ -9,7 +9,27 @@
 import UIKit
 
 class UserTypeSelectViewController: BaseViewwithChair {
-
+    
+    
+    
+    @IBOutlet var userNameTextField: UitextFieldWithWhitePlaceHolder!
+    
+    
+    
+    @IBAction func userNameNext(_ sender: Any) {
+        userNameTextField.resignFirstResponder()
+    }
+    
+    @IBAction func ArtistGenre(_ sender: Any) {
+        
+    }
+    @IBAction func artistSelect(_ sender: Any) {
+        print("artist Select")
+    }
+    
+    @IBAction func fanSelect(_ sender: Any) {
+        print("Fan Select")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

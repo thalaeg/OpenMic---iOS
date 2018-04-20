@@ -56,12 +56,15 @@
                                                                     <constraint firstAttribute="width" constant="26" id="lWo-2m-lLj"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-Da-4V2" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-Da-4V2" customClass="UitextFieldWithWhitePlaceHolder" customModule="OpenMic" customModuleProvider="target">
                                                                 <rect key="frame" x="37" y="0.0" width="302" height="29.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                                <connections>
+                                                                    <action selector="userNameNext:" destination="C7k-2v-bya" eventType="primaryActionTriggered" id="49d-fm-Jql"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -96,13 +99,23 @@
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-4Z-eFA">
                                                                                 <rect key="frame" x="6" y="4" width="17" height="17"/>
                                                                             </imageView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-CG-5WW" userLabel="select Artist ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="29" height="25"/>
+                                                                                <connections>
+                                                                                    <action selector="artistSelect:" destination="C7k-2v-bya" eventType="touchUpInside" id="hwe-Ny-QYq"/>
+                                                                                </connections>
+                                                                            </button>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.19215686269999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="Zo4-4Z-eFA" firstAttribute="centerX" secondItem="c6V-2N-96z" secondAttribute="centerX" id="07Q-7w-ksg"/>
                                                                             <constraint firstItem="Zo4-4Z-eFA" firstAttribute="centerY" secondItem="c6V-2N-96z" secondAttribute="centerY" id="12T-hm-WEN"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="iYZ-CG-5WW" secondAttribute="trailing" id="9jP-QN-3vQ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="iYZ-CG-5WW" secondAttribute="bottom" id="MqQ-Fh-J60"/>
+                                                                            <constraint firstItem="iYZ-CG-5WW" firstAttribute="leading" secondItem="c6V-2N-96z" secondAttribute="leading" id="NGk-3F-b8Y"/>
                                                                             <constraint firstAttribute="width" constant="29" id="WUb-Yl-9LX"/>
                                                                             <constraint firstAttribute="height" constant="25" id="cGR-Kc-BMK"/>
+                                                                            <constraint firstItem="iYZ-CG-5WW" firstAttribute="top" secondItem="c6V-2N-96z" secondAttribute="top" id="gG8-0g-O1q"/>
                                                                             <constraint firstItem="gdS-Va-xHk" firstAttribute="centerY" secondItem="c6V-2N-96z" secondAttribute="centerY" id="hCY-Zc-wy0"/>
                                                                             <constraint firstItem="gdS-Va-xHk" firstAttribute="centerX" secondItem="c6V-2N-96z" secondAttribute="centerX" id="o4Z-Gy-Ey2"/>
                                                                         </constraints>
@@ -131,15 +144,25 @@
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-bH-2RU">
                                                                                 <rect key="frame" x="6" y="4" width="17" height="17"/>
                                                                             </imageView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-4d-PE5" userLabel="Select Fan">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="29" height="25"/>
+                                                                                <connections>
+                                                                                    <action selector="fanSelect:" destination="C7k-2v-bya" eventType="touchUpInside" id="zpm-YN-uKh"/>
+                                                                                </connections>
+                                                                            </button>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.19215686269999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="29" id="7D2-O1-pb9"/>
                                                                             <constraint firstItem="ICe-3Z-q6L" firstAttribute="centerY" secondItem="GBQ-uS-t0t" secondAttribute="centerY" id="A17-gc-rCU"/>
                                                                             <constraint firstAttribute="height" constant="25" id="EzR-sN-pJc"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="S3G-4d-PE5" secondAttribute="trailing" id="FYG-Og-XcD"/>
+                                                                            <constraint firstItem="S3G-4d-PE5" firstAttribute="leading" secondItem="GBQ-uS-t0t" secondAttribute="leading" id="Ph5-qU-3cJ"/>
                                                                             <constraint firstItem="KqT-bH-2RU" firstAttribute="centerX" secondItem="GBQ-uS-t0t" secondAttribute="centerX" id="Za2-Ll-ezI"/>
                                                                             <constraint firstItem="KqT-bH-2RU" firstAttribute="centerY" secondItem="GBQ-uS-t0t" secondAttribute="centerY" id="eRc-F9-RtN"/>
                                                                             <constraint firstItem="ICe-3Z-q6L" firstAttribute="centerX" secondItem="GBQ-uS-t0t" secondAttribute="centerX" id="nFb-2p-eTF"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="S3G-4d-PE5" secondAttribute="bottom" id="qG7-YQ-ILi"/>
+                                                                            <constraint firstItem="S3G-4d-PE5" firstAttribute="top" secondItem="GBQ-uS-t0t" secondAttribute="top" id="yXw-c2-VwJ"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-wn-bGN">
@@ -179,6 +202,9 @@
                                                                 <state key="normal" title="Artist Genre">
                                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="ArtistGenre:" destination="C7k-2v-bya" eventType="touchUpInside" id="npA-vs-hev"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -212,6 +238,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nsq-LU-A0j"/>
                     </view>
+                    <connections>
+                        <outlet property="userNameTextField" destination="h4V-Da-4V2" id="DXd-77-wU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlx-ci-DXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
