@@ -13,6 +13,12 @@ class PickerSelect: NSObject {
     init(picker: UIPickerView) {
         self.picker = picker
         super.init()
+        getGenres()
     }
+    
+    private func getGenres() {
+        Genre.readGenres()
+    }
+    
     
 }

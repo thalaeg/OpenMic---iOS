@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		271D3C57208A5E08008AA3E2 /* GenreSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* GenreSelect.swift */; };
+		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
+		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
@@ -38,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
-		271D3C56208A5E08008AA3E2 /* GenreSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelect.swift; sourceTree = "<group>"; };
+		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
+		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 		271D3C55208A5DEE008AA3E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				271D3C56208A5E08008AA3E2 /* GenreSelect.swift */,
+				271D3C56208A5E08008AA3E2 /* PickerSelect.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +97,7 @@
 			children = (
 				2734C91E208594A200123924 /* FireBasePaths.swift */,
 				27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */,
+				271D3C58208A679F008AA3E2 /* GenreRead.swift */,
 			);
 			path = "Firebase Read Write ";
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -351,6 +355,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -389,6 +394,7 @@
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
+				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
@@ -397,7 +403,7 @@
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
-				271D3C57208A5E08008AA3E2 /* GenreSelect.swift in Sources */,
+				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 				278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */,
 			);

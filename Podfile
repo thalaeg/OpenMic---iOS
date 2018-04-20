@@ -11,5 +11,6 @@ target 'OpenMic' do
   pod 'Firebase/Auth'
   pod 'Alamofire', '~> 4.7'
   pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end

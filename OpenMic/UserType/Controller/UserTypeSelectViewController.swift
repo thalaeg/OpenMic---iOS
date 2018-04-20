@@ -9,7 +9,7 @@
 import UIKit
 
 class UserTypeSelectViewController: BaseViewwithChair {
-    
+    private var pickerSelect: PickerSelect?
     private var userTypeSelect: String?
     
     @IBOutlet var userNameTextField: UitextFieldWithWhitePlaceHolder!
@@ -46,6 +46,8 @@ class UserTypeSelectViewController: BaseViewwithChair {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerSelect = PickerSelect(picker: pickerViewOutlet)
+        
         artistDot.isHidden = true
         fanDot.isHidden = true
 
