@@ -8,7 +8,10 @@
 
 import UIKit
 class PickerSelect: NSObject {
-    var picker: UIPickerView
+    
+    private var genres = [Genre]()
+    
+    private var picker: UIPickerView
     
     init(picker: UIPickerView) {
         self.picker = picker
@@ -18,8 +21,25 @@ class PickerSelect: NSObject {
     
     private func getGenres() {
         Genre.readGenres { (genres) in
-            print("geners \(genres)")
+            self.genres = genres
+            self.picker.reloadAllComponents()
         }
+    }
+    
+    
+}
+
+extension PickerSelect: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return genres.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return genres[row].genre
     }
     
     
