@@ -12,6 +12,8 @@
 		271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */; };
 		271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */; };
 		271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */; };
+		271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */; };
+		271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
@@ -47,6 +49,8 @@
 		271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavGenres.storyboard; sourceTree = "<group>"; };
 		271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreViewController.swift; sourceTree = "<group>"; };
 		271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FavGenreAssets.xcassets; sourceTree = "<group>"; };
+		271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveGenreModel.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		271D3C5A208AAAF3008AA3E2 /* PickGenres */ = {
 			isa = PBXGroup;
 			children = (
+				271D3C65208AB2AE008AA3E2 /* Model */,
 				271D3C5E208AACC3008AA3E2 /* View */,
 				271D3C5D208AACBD008AA3E2 /* Model */,
 			);
@@ -120,8 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */,
+				271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		271D3C65208AB2AE008AA3E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */,
+			);
+			name = Model;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		2734C91D2085948600123924 /* Firebase Read Write  */ = {
@@ -424,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */,
 				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
@@ -438,6 +454,7 @@
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
+				271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,

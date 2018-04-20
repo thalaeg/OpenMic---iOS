@@ -9,9 +9,13 @@
 import UIKit
 
 class FavGenreViewController: UIViewController {
-
+    @IBOutlet var collectionView: UICollectionView!
+    private var generModel: FaveGenreModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        generModel = FaveGenreModel(collectionView: collectionView)
+        
 
         // Do any additional setup after loading the view.
     }
