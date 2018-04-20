@@ -26,6 +26,35 @@ class SignupViewController: BaseViewController {
     @IBOutlet var verifyPasswordTextField: UITextField!
     
     
+    @IBAction func FirstNameResign(_ sender: Any) {
+        lastNameTextField.becomeFirstResponder()
+    }
+    
+    
+    @IBAction func lastnameResign(_ sender: Any) {
+        genderChoiceTextField.becomeFirstResponder()
+    }
+    
+    
+    @IBAction func generResign(_ sender: Any) {
+        emailTextField.becomeFirstResponder()
+    }
+    
+    
+    
+    @IBAction func emailResign(_ sender: Any) {
+        passworTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func passwordOneResign(_ sender: Any) {
+        verifyPasswordTextField.becomeFirstResponder()
+    }
+    
+    
+    @IBAction func passwordTwoRegister(_ sender: Any) {
+        self.performSegue(withIdentifier: "userType", sender: self)
+    }
+    
     @IBAction func registerAction(_ sender: Any) {
         if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
             if (allfieldsFilled) {
