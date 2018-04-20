@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271D3C57208A5E08008AA3E2 /* GenreSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* GenreSelect.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
+		271D3C56208A5E08008AA3E2 /* GenreSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelect.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271D3C55208A5DEE008AA3E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				271D3C56208A5E08008AA3E2 /* GenreSelect.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2734C91D2085948600123924 /* Firebase Read Write  */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +120,12 @@
 		27692F1420810A3C000D7C8B /* OpenMic */ = {
 			isa = PBXGroup;
 			children = (
-				27A713AE208937850095E044 /* UserType */,
 				278110802087D8590071A3E5 /* BaseViews */,
 				27B2C5BB2086C06D0063AB75 /* API Read Write  */,
 				27B2C5B4208697E40063AB75 /* AlertViews */,
 				2734C91D2085948600123924 /* Firebase Read Write  */,
 				27692F2720810A5F000D7C8B /* Login and register */,
+				27A713AE208937850095E044 /* UserType */,
 				27692F1520810A3C000D7C8B /* AppDelegate.swift */,
 				27692F1720810A3C000D7C8B /* ViewController.swift */,
 				27692F1920810A3C000D7C8B /* Main.storyboard */,
@@ -178,6 +188,7 @@
 		27A713AE208937850095E044 /* UserType */ = {
 			isa = PBXGroup;
 			children = (
+				271D3C55208A5DEE008AA3E2 /* Model */,
 				27A713B2208990170095E044 /* Controller */,
 				27A713B120898FFF0095E044 /* View */,
 			);
@@ -386,6 +397,7 @@
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
+				271D3C57208A5E08008AA3E2 /* GenreSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 				278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */,
 			);
