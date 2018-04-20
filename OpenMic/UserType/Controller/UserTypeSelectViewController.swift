@@ -14,6 +14,7 @@ class UserTypeSelectViewController: BaseViewwithChair {
     
     @IBOutlet var userNameTextField: UitextFieldWithWhitePlaceHolder!
     
+    @IBOutlet var pickerViewOutlet: UIPickerView!
     
     @IBOutlet var artistDot: UIImageView!
     
@@ -24,14 +25,21 @@ class UserTypeSelectViewController: BaseViewwithChair {
     }
     
     @IBAction func ArtistGenre(_ sender: Any) {
-        
+        switch pickerViewOutlet.isHidden {
+        case true:
+            pickerViewOutlet.isHidden = false
+        case false:
+            pickerViewOutlet.isHidden = true
+        }
     }
     @IBAction func artistSelect(_ sender: Any) {
         artistDot.isHidden = false
         fanDot.isHidden = true
+        userTypeSelect = "Artist"
     }
     
     @IBAction func fanSelect(_ sender: Any) {
+        userTypeSelect = "Fan"
         artistDot.isHidden = true
         fanDot.isHidden = false
 
