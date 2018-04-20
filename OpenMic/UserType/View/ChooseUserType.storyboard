@@ -253,6 +253,9 @@
                                             <constraint firstAttribute="width" constant="32" id="Z4G-YP-IIb"/>
                                         </constraints>
                                         <state key="normal" image="next_arrow"/>
+                                        <connections>
+                                            <segue destination="qze-8B-x0i" kind="presentation" id="qcP-nU-Bmh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -279,6 +282,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlx-ci-DXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="501.60000000000002" y="94.902548725637189"/>
+        </scene>
+        <!--Genre-->
+        <scene sceneID="MXv-lm-J7y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavGenres" referencedIdentifier="Genre" id="qze-8B-x0i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba8-G8-p7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="307"/>
         </scene>
     </scenes>
     <resources>
