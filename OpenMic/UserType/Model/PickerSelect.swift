@@ -17,7 +17,9 @@ class PickerSelect: NSObject {
     }
     
     private func getGenres() {
-        Genre.readGenres()
+        Genre.readGenres { (genres) in
+            print("geners \(genres)")
+        }
     }
     
     

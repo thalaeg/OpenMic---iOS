@@ -11,13 +11,17 @@ import SwiftyJSON
 
 
 struct Genre {
-    var Genre: String
-    var GenreCover: String
+    var genre: String
+    var genreCover: String
     
-    static func readGenres() {
+    static func readGenres(completion: @escaping (_ geners: [Genre]) -> Void) {
         
         BasePaths.Genre.getNonUIDBase().observeSingleEvent(of: .value) { (snapShot) in
             let snapDic = snapShot.value as? [String: Any] ?? [:]
+            let genreArray = snapDic.map{Genre(genre: $0.key, genreCover: $0.value as? String ?? "")}
+            
+            completion(genreArray)
+            
         }
         
     }
