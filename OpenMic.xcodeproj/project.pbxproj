@@ -32,6 +32,8 @@
 		278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */; };
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
 		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
+		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
+		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
@@ -72,6 +74,8 @@
 		278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomLayer.swift; sourceTree = "<group>"; };
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
 		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
+		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				27B2C5B4208697E40063AB75 /* AlertViews */,
 				2734C91D2085948600123924 /* Firebase Read Write  */,
 				27692F2720810A5F000D7C8B /* Login and register */,
+				2797C8C9208BE29D00AD93B4 /* ForgotPassword */,
 				27A713AE208937850095E044 /* UserType */,
 				271D3C5A208AAAF3008AA3E2 /* PickGenres */,
 				27692F1520810A3C000D7C8B /* AppDelegate.swift */,
@@ -237,6 +242,31 @@
 				278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */,
 			);
 			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		2797C8C9208BE29D00AD93B4 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2797C8CD208BE30800AD93B4 /* Controller */,
+				2797C8CA208BE2E400AD93B4 /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		2797C8CA208BE2E400AD93B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2797C8CD208BE30800AD93B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		27A713AE208937850095E044 /* UserType */ = {
@@ -381,6 +411,7 @@
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
 				27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */,
+				2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +477,7 @@
 			files = (
 				271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */,
 				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
+				2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */,
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
