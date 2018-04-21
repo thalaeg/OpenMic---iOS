@@ -19,12 +19,12 @@ class FaveGenreModel: NSObject {
     }
     
     private func getGeners() {
-        BasePaths.Genre.getNonUIDBase().observeSingleEvent(of: .value) { (snapShot) in
-            let genreDic = snapShot.value as? [String : Any] ?? [:]
-            print(genreDic)
+        
+        Genre.readGenres { (genres) in
+            
+            
         }
-    
-    
+   
     }
     
     

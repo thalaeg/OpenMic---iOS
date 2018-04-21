@@ -44,6 +44,9 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -52,6 +55,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - IQKeyboardManagerSwift
+  - SDWebImage (~> 4.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -68,6 +72,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - leveldb-library
     - nanopb
+    - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -83,8 +88,9 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 748d06e0f8134fc28934031e6377da3cf3d4f38c
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 7c9781519874e92090a3c4fde7b722dcc764302d
+PODFILE CHECKSUM: 68c96e00d3e5f40c243b7f32ad6e19e30f21a049
 
 COCOAPODS: 1.5.0

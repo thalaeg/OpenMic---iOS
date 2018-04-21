@@ -14,6 +14,8 @@ struct Genre {
     var genre: String
     var genreCover: String
     
+    
+    
     static func readGenres(completion: @escaping (_ geners: [Genre]) -> Void) {
         
         BasePaths.Genre.getNonUIDBase().observeSingleEvent(of: .value) { (snapShot) in
