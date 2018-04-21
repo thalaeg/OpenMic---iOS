@@ -34,6 +34,7 @@
 		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
 		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
 		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
+		2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
@@ -76,6 +77,7 @@
 		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
 		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetProtocol.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		2797C8C9208BE29D00AD93B4 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
+				2797C8D3208BE91000AD93B4 /* Model */,
 				2797C8CD208BE30800AD93B4 /* Controller */,
 				2797C8CA208BE2E400AD93B4 /* View */,
 			);
@@ -267,6 +270,14 @@
 				2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2797C8D3208BE91000AD93B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27A713AE208937850095E044 /* UserType */ = {
@@ -482,6 +493,7 @@
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
+				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,

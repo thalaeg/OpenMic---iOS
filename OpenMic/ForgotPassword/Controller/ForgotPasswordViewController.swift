@@ -9,9 +9,17 @@
 import UIKit
 
 class ForgotPasswordViewController: BaseViewController {
-
+    var passwordDelegate: PasswordResetDelegate?
+    
+    @IBOutlet var emailTestFieldOutlet: UitextFieldWithWhitePlaceHolder!
+    
+    @IBAction func getNewPassword(_ sender: Any) {
+        passwordDelegate?.sendResetPassword()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordDelegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -22,14 +30,17 @@ class ForgotPasswordViewController: BaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+extension ForgotPasswordViewController: PasswordResetDelegate {
+    var email: String {
+        return emailTestFieldOutlet.text!
     }
-    */
-
+    
+    var viewController: UIViewController {
+        return self
+    }
+    
+    
 }
