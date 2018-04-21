@@ -17,18 +17,23 @@ class ForgotPasswordViewController: BaseViewController {
         passwordDelegate?.sendResetPassword()
         
     }
+    
+    @IBAction func sendReset(_ sender: Any) {
+         passwordDelegate?.sendResetPassword()
+        emailTestFieldOutlet.resignFirstResponder()
+    }
+    
+   
+    @IBAction func needMoreHelp(_ sender: Any) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordDelegate = self
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }
 

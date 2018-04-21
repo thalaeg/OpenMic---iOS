@@ -13,7 +13,6 @@ extension UIViewController {
     func standardAlertView(title: String, message: String) {
         let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        alertView.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
         self.present(alertView, animated: true, completion: nil)
         
     }
