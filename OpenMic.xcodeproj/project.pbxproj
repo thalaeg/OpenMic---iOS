@@ -31,6 +31,7 @@
 		278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110832087DD240071A3E5 /* UIViewExtensions.swift */; };
 		278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */; };
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
+		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
@@ -70,6 +71,7 @@
 		278110832087DD240071A3E5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomLayer.swift; sourceTree = "<group>"; };
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
+		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */,
 				27692F2120810A3F000D7C8B /* Info.plist */,
 				27692F2F208110B3000D7C8B /* GoogleService-Info.plist */,
+				2797C8C7208B970800AD93B4 /* RedWriteRules.swift */,
 			);
 			path = OpenMic;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
+				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,
 				271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,

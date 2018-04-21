@@ -25,7 +25,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-T0-Oxu">
                                 <rect key="frame" x="0.0" y="164" width="375" height="503"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0ky-6a-Wsy">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0ky-6a-Wsy">
                                     <size key="itemSize" width="140" height="122"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -50,7 +50,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.61176470589999998" green="0.1176470588" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="M9k-u5-v6i" firstAttribute="top" secondItem="ATn-i4-oYw" secondAttribute="topMargin" constant="1" id="05j-9O-sqR"/>
                                             <constraint firstItem="km6-p3-9MX" firstAttribute="top" secondItem="M9k-u5-v6i" secondAttribute="bottom" constant="9" id="7hf-lK-wSL"/>
@@ -70,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xvb-T0-Oxu" firstAttribute="top" secondItem="R12-aO-hbq" secondAttribute="bottom" constant="-10" id="1Pz-iW-fYU"/>
+                            <constraint firstItem="xvb-T0-Oxu" firstAttribute="top" secondItem="V0R-e7-c0R" secondAttribute="top" constant="100" id="6VF-qy-fPz"/>
                             <constraint firstItem="V0R-e7-c0R" firstAttribute="bottom" secondItem="xvb-T0-Oxu" secondAttribute="bottom" id="HL5-Pw-0S9"/>
                             <constraint firstItem="R12-aO-hbq" firstAttribute="top" secondItem="d1P-vm-EeD" secondAttribute="top" constant="-78" id="JIt-1t-kkT"/>
                             <constraint firstItem="V0R-e7-c0R" firstAttribute="trailing" secondItem="R12-aO-hbq" secondAttribute="trailing" id="MFe-1j-wUv"/>

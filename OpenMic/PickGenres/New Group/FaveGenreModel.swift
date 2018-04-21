@@ -16,6 +16,7 @@ class FaveGenreModel: NSObject {
     init(collectionView: UICollectionView) {
         self.collectionView = collectionView
         super.init()
+        setFlowLayout()
         getGeners()
         
        
@@ -28,6 +29,20 @@ class FaveGenreModel: NSObject {
             self.collectionView.reloadData()
             
         }
+    }
+    
+    private func setFlowLayout() {
+        
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        //let screenHeight = screenSize.height
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: screenWidth/2, height: screenWidth/2)
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        collectionView.collectionViewLayout = layout
     }
 }
 
