@@ -23,8 +23,6 @@ class FavGenreCollectionViewCell: UICollectionViewCell {
         genreImage.sd_setImage(with: URL(string: genre.genreCover), placeholderImage: UIImage(named: "alternative_icon.png"))
 
     }
-    
-    
-    
+   
     
 }

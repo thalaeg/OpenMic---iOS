@@ -15,9 +15,9 @@ class FavGenreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         generModel = FaveGenreModel(collectionView: collectionView)
+        collectionView.dataSource = generModel
+        collectionView.delegate = generModel
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
