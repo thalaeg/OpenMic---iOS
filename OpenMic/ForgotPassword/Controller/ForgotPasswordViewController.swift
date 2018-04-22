@@ -10,6 +10,7 @@ import UIKit
 
 class ForgotPasswordViewController: BaseViewController {
     var passwordDelegate: PasswordResetDelegate?
+    var sendEmailDelegate: SendHelpEmail?
     
     @IBOutlet var emailTestFieldOutlet: UitextFieldWithWhitePlaceHolder!
     
@@ -26,6 +27,7 @@ class ForgotPasswordViewController: BaseViewController {
    
     @IBAction func needMoreHelp(_ sender: Any) {
         
+        sendEmailDelegate = SendHelpEmail(viewController: self)
     }
     
     
