@@ -10,6 +10,22 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet var emailTextField: UitextFieldWithWhitePlaceHolder!
+    
+    @IBOutlet var passwordOutlet: UitextFieldWithWhitePlaceHolder!
+    
+    @IBAction func emailAction(_ sender: Any) {
+        passwordOutlet.becomeFirstResponder()
+    }
+    
+    @IBAction func passwordAction(_ sender: Any) {
+        print("login")
+        
+    }
+    
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.isNavigationBarHidden = true

@@ -43,6 +43,7 @@
 		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
+		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
+		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E902C8AF13CB2D12DDA393 /* Pods-OpenMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				2734C91E208594A200123924 /* FireBasePaths.swift */,
 				27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */,
 				271D3C58208A679F008AA3E2 /* GenreRead.swift */,
+				27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */,
 			);
 			path = "Firebase Read Write ";
 			sourceTree = "<group>";
@@ -203,8 +206,8 @@
 		27692F2720810A5F000D7C8B /* Login and register */ = {
 			isa = PBXGroup;
 			children = (
-				27692F2920810A73000D7C8B /* View */,
 				27692F2820810A67000D7C8B /* Model */,
+				27692F2920810A73000D7C8B /* View */,
 				27692F2A20810A78000D7C8B /* Controller */,
 			);
 			path = "Login and register";
@@ -504,6 +507,7 @@
 				278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
 				278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */,
+				27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */,
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
