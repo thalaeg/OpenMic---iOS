@@ -131,6 +131,9 @@
                                                 <state key="normal" title="SIGN IN">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInAction:" destination="GPL-mS-6xW" eventType="touchUpInside" id="WYc-s2-Gd5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-nw-Rrd">
                                                 <rect key="frame" x="0.0" y="57" width="355" height="20.5"/>

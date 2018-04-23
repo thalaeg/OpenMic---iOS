@@ -23,7 +23,6 @@ extension CreateUserDelegate {
             } else {
                 guard let newUser = user else {return}
                 BasePaths.users.getNonUIDBase().child(BasePaths.uid.rawValue).setValue(true)
-                //setValue([BasePaths.uid.rawValue : newUser.uid])
                 completion(false, newUser)
             }
         }
