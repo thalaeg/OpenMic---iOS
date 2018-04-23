@@ -14,17 +14,26 @@ class LoginViewController: BaseViewController {
     
     @IBOutlet var passwordOutlet: UitextFieldWithWhitePlaceHolder!
     
+    private var authenticateDelegate: LogUserInDelegate?
+    
     @IBAction func emailAction(_ sender: Any) {
         passwordOutlet.becomeFirstResponder()
     }
     
     @IBAction func passwordAction(_ sender: Any) {
-        print("login")
+        authenticateDelegate?.checkFieldsAndAuthenticate()
         
     }
     
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //GenreSelect
+       
+        
+        authenticateDelegate = self
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -39,4 +48,21 @@ class LoginViewController: BaseViewController {
     
  
 
+}
+
+extension LoginViewController: LogUserInDelegate {
+    var email: String {
+        return emailTextField.text!
+    }
+    
+    var password: String {
+        return passwordOutlet.text!
+    }
+    
+    var viewController: UIViewController {
+        return self
+    }
+    
+    
+    
 }

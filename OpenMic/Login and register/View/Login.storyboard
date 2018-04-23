@@ -193,11 +193,20 @@
                     <connections>
                         <outlet property="emailTextField" destination="vwW-MV-7ZR" id="5el-Tj-NzQ"/>
                         <outlet property="passwordOutlet" destination="9ln-zW-8mU" id="JxE-fB-n9j"/>
+                        <segue destination="3cE-x1-dW4" kind="presentation" identifier="GenreSelect" id="Ed2-aZ-4F9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-SM-jiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1351" y="-199"/>
+        </scene>
+        <!--Genre-->
+        <scene sceneID="ul1-Cj-gPa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavGenres" referencedIdentifier="Genre" id="3cE-x1-dW4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hen-6c-2Hl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="-729"/>
         </scene>
         <!--forgotpassword-->
         <scene sceneID="PcW-Qh-nde">
