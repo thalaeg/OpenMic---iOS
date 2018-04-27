@@ -66,7 +66,7 @@ extension FaveGenreModel: UICollectionViewDataSource, UICollectionViewDelegate {
         let isPresent = selectedGenres.contains{$0.genre == genre.genre}
         switch isPresent {
         case true:
-            cell.showCellSelected(genre: genre, image: cell.genreImage.image!)
+            cell.showCellSelected(genre: genre)
         case false:
             cell.loadCell(genre: genre)
         }
@@ -80,6 +80,7 @@ extension FaveGenreModel: UICollectionViewDataSource, UICollectionViewDelegate {
         switch isPresent {
         case true:
            selectedGenres = selectedGenres.filter{$0.genre != selected.genre}
+            
         case false:
             selectedGenres.append(selected)
         }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+import Nuke
 
 class FavGenreCollectionViewCell: UICollectionViewCell {
     
@@ -19,33 +19,33 @@ class FavGenreCollectionViewCell: UICollectionViewCell {
     func loadCell(genre: Genre) {
         
         genreName.text = genre.genre
-        
-        genreImage.sd_setImage(with: URL(string: genre.genreCover), placeholderImage: UIImage(named: "alternative_icon.png"))
+        guard let url = URL(string: genre.genreCover) else {return}
+        Nuke.Manager.shared.loadImage(with: url, into: genreImage)
+        //genreImage.sd_setImage(with: URL(string: genre.genreCover), placeholderImage: UIImage(named: "alternative_icon.png"))
         
         
     }
     
    
-    func showCellSelected(genre: Genre, image: UIImage) {
+    func showCellSelected(genre: Genre) {
         
-         genreName.text = genre.genre
-        genreImage.image = image
-        genreImage.setImageColor(color: .gray)
+        guard let url = URL(string: genre.genreCover)  else {return}
+        let request = Request(url: url)
+        Nuke.Manager.shared.loadImage(with: request, token: nil) { (image) in
+            if let image = image.value {
+                self.genreName.text = genre.genre
+                self.genreImage.image = image
+                self.genreImage.setImageColor(color: .gray)
+                
+            }
+        }
+      
         
     }
 }
 
 
 
-
-//extension UIImage {
-//    func setImageColor() {
-//        self.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-//        self
-//        self.tintColor = UIColor.gray
-//
-//    }
-//}
 
 extension UIImageView {
     func setImageColor(color: UIColor) {

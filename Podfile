@@ -12,7 +12,8 @@ target 'OpenMic' do
   pod 'Alamofire', '~> 4.7'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'SDWebImage', '~> 4.0'
+  #pod 'SDWebImage', '~> 4.0'
+  pod 'Nuke', '~> 6.0'
 
 
 end
