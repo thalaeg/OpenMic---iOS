@@ -14,6 +14,7 @@ target 'OpenMic' do
   pod 'SwiftyJSON', '~> 4.0'
   #pod 'SDWebImage', '~> 4.0'
   pod 'Nuke', '~> 6.0'
+  pod 'FBSDKLoginKit'
 
 
 end

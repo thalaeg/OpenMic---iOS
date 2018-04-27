@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import IQKeyboardManagerSwift
+import FBSDKCoreKit
+
 
 
 @UIApplicationMain
@@ -28,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-        
-        
+        //setup facebook sdk
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
