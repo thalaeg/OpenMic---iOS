@@ -61,17 +61,8 @@ extension FaveGenreModel: UICollectionViewDataSource, UICollectionViewDelegate {
   
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! FavGenreCollectionViewCell
-        let genre = genres[indexPath.row]
-        let isPresent = selectedGenres.contains{$0.genre == genre.genre}
-        switch isPresent {
-        case true:
-            cell.showCellSelected(genre: genre)
-        case false:
-            cell.loadCell(genre: genre)
-        }
 
-        return cell
+        return prepareCell(indexPath: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -84,9 +75,29 @@ extension FaveGenreModel: UICollectionViewDataSource, UICollectionViewDelegate {
         case false:
             selectedGenres.append(selected)
         }
-        collectionView.reloadData()
+        
+        collectionView.reloadItems(at: [indexPath])
         
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            _ = prepareCell(indexPath: indexPath)
+    }
+    
+    
+    private func prepareCell(indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! FavGenreCollectionViewCell
+        let genre = genres[indexPath.row]
+        let isPresent = selectedGenres.contains{$0.genre == genre.genre}
+        switch isPresent {
+        case true:
+            cell.showCellSelected(genre: genre)
+        case false:
+            cell.loadCell(genre: genre)
+        }
+        
+        return cell
     }
     
     

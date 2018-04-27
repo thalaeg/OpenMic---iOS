@@ -21,7 +21,6 @@ class FavGenreCollectionViewCell: UICollectionViewCell {
         genreName.text = genre.genre
         guard let url = URL(string: genre.genreCover) else {return}
         Nuke.Manager.shared.loadImage(with: url, into: genreImage)
-        //genreImage.sd_setImage(with: URL(string: genre.genreCover), placeholderImage: UIImage(named: "alternative_icon.png"))
         
         
     }
