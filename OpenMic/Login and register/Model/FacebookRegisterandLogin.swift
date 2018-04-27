@@ -13,32 +13,37 @@ import Firebase
 class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
     
     
-    var loginButton: FBSDKLoginButton
     var managedVC: UIViewController
     
-    init(viewController: UIViewController, loginButton: FBSDKLoginButton) {
+    init(viewController: UIViewController) {
         self.managedVC = viewController
-        self.loginButton = loginButton
         super.init()
-        self.loginButton.delegate = self
     }
     
     
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-        Auth.auth().signIn(with: credential) { (user, error) in
-            if let errorCheck = error {
-         
-            print("localized description \(errorCheck.localizedDescription), non descrip \(errorCheck)")
+        print("result \(result)")
+        if let error = error {
+            print(error.localizedDescription)
+        } else if !result.isCancelled {
+            let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            Auth.auth().signIn(with: credential) { (user, error) in
+                if let errorCheck = error {
+                    
+                    print("localized description \(errorCheck.localizedDescription), non descrip \(errorCheck)")
+                    // ...
+                    return
+                }
+                // User is signed in
                 // ...
-                return
             }
-            // User is signed in
-            // ...
         }
-    
-
+        
+        
+        
+        
+        
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {

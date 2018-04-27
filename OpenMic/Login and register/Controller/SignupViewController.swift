@@ -13,6 +13,7 @@ import FBSDKLoginKit
 class SignupViewController: BaseViewController {
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
+    private var manageFaceBookAuth: ManageFacebook?
     
     @IBOutlet var facebookButton: FBSDKLoginButton!
     
@@ -84,6 +85,8 @@ class SignupViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        manageFaceBookAuth = ManageFacebook(viewController: self)
+        facebookButton.delegate = manageFaceBookAuth
         checkFieldsDelegate = self
         createNewUserDelegate = self
 
