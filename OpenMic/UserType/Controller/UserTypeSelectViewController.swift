@@ -49,16 +49,17 @@ class UserTypeSelectViewController: BaseViewwithChair {
 
 
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         pickerSelect = PickerSelect(picker: pickerViewOutlet)
         pickerViewOutlet.delegate = pickerSelect
         pickerViewOutlet.dataSource = pickerSelect
         pickerSelect.delegate = self
         artistDot.isHidden = true
         fanDot.isHidden = true
-
     }
+    
 
 }
 

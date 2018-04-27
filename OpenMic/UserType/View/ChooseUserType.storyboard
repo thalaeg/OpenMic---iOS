@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-e8-Nqe" userLabel="all views">
-                                <rect key="frame" x="10" y="180" width="394" height="200.33333333333337"/>
+                                <rect key="frame" x="10" y="70.000000000000014" width="394" height="200.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="psp-Ue-18u" userLabel="choose Label">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="61.333333333333336"/>
@@ -40,7 +40,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-qp-bc2" userLabel="usertype">
-                                        <rect key="frame" x="0.0" y="82.333333333333314" width="394" height="118"/>
+                                        <rect key="frame" x="0.0" y="82.333333333333343" width="394" height="118"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiI-b7-y0q" userLabel="UserName" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="56"/>
@@ -90,7 +90,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="29" height="25"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-Va-xHk">
-                                                                                <rect key="frame" x="1.6666666666666714" y="-0.33333333333331439" width="26" height="26"/>
+                                                                                <rect key="frame" x="1.6666666666666714" y="-0.33333333333334281" width="26" height="26"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="26" id="rPy-jh-WoG"/>
                                                                                     <constraint firstAttribute="height" constant="26" id="vCM-tw-860"/>
@@ -135,7 +135,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="29" height="25"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="ICe-3Z-q6L">
-                                                                                <rect key="frame" x="1.6666666666666856" y="-0.33333333333331439" width="26" height="26"/>
+                                                                                <rect key="frame" x="1.6666666666666856" y="-0.33333333333334281" width="26" height="26"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="26" id="Haz-gq-bdf"/>
                                                                                     <constraint firstAttribute="height" constant="26" id="uHA-Ni-Qeh"/>
@@ -184,7 +184,7 @@
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-p6-Cb2" userLabel="Artist Genre" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="118" width="394" height="56"/>
+                                                <rect key="frame" x="0.0" y="117.99999999999997" width="394" height="56"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="qwL-Vd-ikB" userLabel="Artist Genre">
                                                         <rect key="frame" x="8" y="16" width="378" height="26"/>
@@ -262,7 +262,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Lh-e8-Nqe" firstAttribute="top" secondItem="nsq-LU-A0j" secondAttribute="top" constant="160" id="O4W-ns-Kj7"/>
+                            <constraint firstItem="6Lh-e8-Nqe" firstAttribute="top" secondItem="nsq-LU-A0j" secondAttribute="top" constant="50" id="O4W-ns-Kj7"/>
                             <constraint firstItem="nsq-LU-A0j" firstAttribute="trailing" secondItem="JtA-3T-UGY" secondAttribute="trailing" constant="16.5" id="Uks-ln-ft4"/>
                             <constraint firstItem="6Lh-e8-Nqe" firstAttribute="leading" secondItem="nsq-LU-A0j" secondAttribute="leading" constant="10" id="p03-Zt-wJM"/>
                             <constraint firstItem="nsq-LU-A0j" firstAttribute="bottom" secondItem="JtA-3T-UGY" secondAttribute="bottom" constant="20" id="pR5-WY-N7k"/>
