@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+
 
 class SignupViewController: BaseViewController {
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
+    
+    @IBOutlet var facebookButton: FBSDKLoginButton!
     
     @IBOutlet var firstNameTextField: UITextField!
     
@@ -19,8 +23,8 @@ class SignupViewController: BaseViewController {
     
     @IBOutlet var genderChoiceTextField: UitextFieldWithWhitePlaceHolder!
     
-    @IBOutlet var emailTextField: UITextField!
     
+    @IBOutlet var emailTextField: UitextFieldWithWhitePlaceHolder!
     @IBOutlet var passworTextField: UITextField!
     
     @IBOutlet var verifyPasswordTextField: UITextField!
@@ -123,3 +127,10 @@ extension SignupViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
     
     
 }
+
+
+
+
+
+
+

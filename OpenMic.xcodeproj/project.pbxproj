@@ -36,6 +36,7 @@
 		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
 		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
 		2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */; };
+		279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
 		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
@@ -82,6 +83,7 @@
 		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetProtocol.swift; sourceTree = "<group>"; };
+		279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRegisterandLogin.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
 		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				2734C92220859D1300123924 /* FieldCheckProtocol.swift */,
+				279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
+				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
@@ -674,7 +678,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -690,7 +697,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP8BUJFQU2;
 				INFOPLIST_FILE = OpenMic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

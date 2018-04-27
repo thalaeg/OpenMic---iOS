@@ -460,7 +460,7 @@
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T0-m9-81R">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T0-m9-81R" customClass="FBSDKLoginButton">
                                                 <rect key="frame" x="0.0" y="151" width="355" height="48"/>
                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -521,7 +521,8 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
-                        <outlet property="emailTextField" destination="C8O-JK-m0z" id="C20-dl-brs"/>
+                        <outlet property="emailTextField" destination="C8O-JK-m0z" id="pBs-hr-duG"/>
+                        <outlet property="facebookButton" destination="2T0-m9-81R" id="maG-wZ-q6d"/>
                         <outlet property="firstNameTextField" destination="eyA-6r-KRr" id="maW-yO-zRk"/>
                         <outlet property="genderChoiceTextField" destination="25l-ae-Ybd" id="O29-ou-xPa"/>
                         <outlet property="lastNameTextField" destination="lVc-hO-OgD" id="9Xf-Jq-LqF"/>
