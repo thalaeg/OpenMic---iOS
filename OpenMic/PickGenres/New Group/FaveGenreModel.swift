@@ -12,6 +12,7 @@ class FaveGenreModel: NSObject {
     
     private var collectionView: UICollectionView
     private var genres = [Genre]()
+    private var selectedGenres = [Genre]()
     
     init(collectionView: UICollectionView) {
         self.collectionView = collectionView
@@ -61,8 +62,30 @@ extension FaveGenreModel: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! FavGenreCollectionViewCell
-        cell.loadCell(genre: genres[indexPath.row])
+        let genre = genres[indexPath.row]
+        let isPresent = selectedGenres.contains{$0.genre == genre.genre}
+        switch isPresent {
+        case true:
+            cell.showCellSelected(genre: genre, image: cell.genreImage.image!)
+        case false:
+            cell.loadCell(genre: genre)
+        }
+
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selected = genres[indexPath.row]
+        let isPresent = selectedGenres.contains{$0.genre == selected.genre}
+        switch isPresent {
+        case true:
+           selectedGenres = selectedGenres.filter{$0.genre != selected.genre}
+        case false:
+            selectedGenres.append(selected)
+        }
+        collectionView.reloadData()
+        
+        
     }
     
     

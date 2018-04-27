@@ -120,28 +120,28 @@
 			isa = PBXGroup;
 			children = (
 				271D3C65208AB2AE008AA3E2 /* Model */,
-				271D3C5E208AACC3008AA3E2 /* View */,
-				271D3C5D208AACBD008AA3E2 /* Model */,
+				271D3C5E208AACC3008AA3E2 /* Controller */,
+				271D3C5D208AACBD008AA3E2 /* View */,
 			);
 			path = PickGenres;
 			sourceTree = "<group>";
 		};
-		271D3C5D208AACBD008AA3E2 /* Model */ = {
+		271D3C5D208AACBD008AA3E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */,
 				271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */,
 			);
-			path = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
-		271D3C5E208AACC3008AA3E2 /* View */ = {
+		271D3C5E208AACC3008AA3E2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */,
 				271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		271D3C65208AB2AE008AA3E2 /* Model */ = {
