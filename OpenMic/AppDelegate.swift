@@ -24,12 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         //log user out
         
-//        let firebaseAuth = Auth.auth()
-//        do {
-//            try firebaseAuth.signOut()
-//        } catch let signOutError as NSError {
-//            print ("Error signing out: %@", signOutError)
-//        }
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
         //setup facebook sdk
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         

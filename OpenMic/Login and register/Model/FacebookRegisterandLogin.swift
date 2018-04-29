@@ -14,10 +14,15 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
     
     
     var managedVC: UIViewController
+    var faceBookButton: FBSDKLoginButton
     
-    init(viewController: UIViewController) {
+    init(viewController: UIViewController, facebookButton: FBSDKLoginButton ) {
         self.managedVC = viewController
+        self.faceBookButton = facebookButton
         super.init()
+        self.faceBookButton.delegate = self
+        self.faceBookButton.readPermissions = ["public_profile", "email"]
+        
     }
     
     
@@ -28,6 +33,11 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
             print(error.localizedDescription)
         } else if !result.isCancelled {
             let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            FBSDKGraphRequest(graphPath: "me", parameters:  ["fields": "id, name, first_name, last_name, email"]).start { (connection, result, error) in
+                if error == nil {
+                    print("graph result \(result)")
+                }
+            }
             Auth.auth().signIn(with: credential) { (user, error) in
                 if let errorCheck = error {
                     

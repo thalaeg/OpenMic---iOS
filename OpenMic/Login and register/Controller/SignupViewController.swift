@@ -85,8 +85,8 @@ class SignupViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manageFaceBookAuth = ManageFacebook(viewController: self)
-        facebookButton.delegate = manageFaceBookAuth
+        manageFaceBookAuth = ManageFacebook(viewController: self, facebookButton: facebookButton)
+        
         checkFieldsDelegate = self
         createNewUserDelegate = self
 
