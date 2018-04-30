@@ -66,7 +66,7 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
             if snapShot.hasChild(userID){
                 print("user already created")
             } else {
-                BasePaths.users.getNonUIDBase().child(userID).childByAutoId().setValue([BasePaths.uid.rawValue : userID])
+                BasePaths.users.getNonUIDBase().child(userID).setValue([BasePaths.uid.rawValue : userID])
                 self.appendGraphValues(withUid: userID)
             }
         })
