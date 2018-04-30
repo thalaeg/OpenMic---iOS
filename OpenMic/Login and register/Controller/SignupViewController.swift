@@ -57,31 +57,49 @@ class SignupViewController: BaseViewController {
     
     
     @IBAction func passwordTwoRegister(_ sender: Any) {
-        self.performSegue(withIdentifier: "userType", sender: self)
+       registerNewUser()
     }
     
     @IBAction func registerAction(_ sender: Any) {
-        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
-            if (allfieldsFilled) {
-                self.performSegue(withIdentifier: "userType", sender: self)
-//                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, completion: { (error, user) in
-//                    if (!error) {
-//                        //add new user to api
-//                        guard let checkFieldDelegate = self.checkFieldsDelegate, let uid = user?.uid else {return}
-//                        //pass fields to next view
-//                        var dicWithFakeUserName = checkFieldDelegate.newUserFieldsDictionary()
-//                        //MikeTest
-//                        //MARK: update fake placeholder name
-//                        dicWithFakeUserName.updateValue("MikeTest2", forKey: ProfileKeys.username.rawValue)
-//                        dicWithFakeUserName.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
-//
-//                        Endpoints.profiles.postCall(with: dicWithFakeUserName)
-//                    }
-//                })
+        registerNewUser()
+        
+//        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields() {
+//            if (allfieldsFilled) {
+//                self.performSegue(withIdentifier: "userType", sender: self)
+////                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, completion: { (error, user) in
+////                    if (!error) {
+////                        //add new user to api
+////                        guard let checkFieldDelegate = self.checkFieldsDelegate, let uid = user?.uid else {return}
+////                        //pass fields to next view
+////                        var dicWithFakeUserName = checkFieldDelegate.newUserFieldsDictionary()
+////                        //MikeTest
+////                        //MARK: update fake placeholder name
+////                        dicWithFakeUserName.updateValue("MikeTest2", forKey: ProfileKeys.username.rawValue)
+////                        dicWithFakeUserName.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
+////
+////                        Endpoints.profiles.postCall(with: dicWithFakeUserName)
+////                    }
+////                })
+//            }
+//        }
+        
+    }
+    
+    
+    private func registerNewUser() {
+        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields(), let newUserFieldsDic = checkFieldsDelegate?.newUserFieldsDictionary() {
+            if allfieldsFilled {
+                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: newUserFieldsDic, completion: { (error, newUser) in
+                    if !error {
+                        self.performSegue(withIdentifier: "userType", sender: self)
+                    }
+                })
             }
+    
         }
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -534,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRW-3u-r6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="-182"/>
+            <point key="canvasLocation" x="2198" y="-191"/>
         </scene>
         <!--Genre-->
         <scene sceneID="qf1-mt-bWR">
@@ -542,7 +542,7 @@
                 <viewControllerPlaceholder storyboardName="ChooseUserType" referencedIdentifier="Genre" id="iCh-sB-nad" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yg-oU-GDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="-200"/>
+            <point key="canvasLocation" x="2746" y="-200"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hh7-AQ-qYD">
