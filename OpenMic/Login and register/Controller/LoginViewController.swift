@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class LoginViewController: BaseViewController {
     
@@ -17,6 +18,7 @@ class LoginViewController: BaseViewController {
     
     private var authenticateDelegate: LogUserInDelegate?
     private var userStateDataSource: CheckUserStatusDataSource?
+    var facebookManager: ManageFacebook?
     
     @IBAction func emailAction(_ sender: Any) {
         passwordOutlet.becomeFirstResponder()
@@ -33,10 +35,13 @@ class LoginViewController: BaseViewController {
     }
     
     
+    @IBOutlet var loginWithFacebookButton: FBSDKLoginButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        facebookManager = ManageFacebook(viewController: self, facebookButton: loginWithFacebookButton)
         authenticateDelegate = self
         userStateDataSource = self
         userStateDataSource?.listenForUserStateChange()

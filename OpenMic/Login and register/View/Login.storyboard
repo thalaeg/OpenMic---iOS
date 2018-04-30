@@ -23,7 +23,7 @@
                                 <rect key="frame" x="68" y="40" width="239" height="169"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Qn-bZD">
-                                <rect key="frame" x="10" y="296.5" width="355" height="282.5"/>
+                                <rect key="frame" x="10" y="336.5" width="355" height="242.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-CW-enp" userLabel="usercredentials">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="118"/>
@@ -119,13 +119,13 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="jua-Aw-Ab4" userLabel="sign in and continue with facebook">
-                                        <rect key="frame" x="0.0" y="148" width="355" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="148" width="355" height="94.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0O-Am-Cbb">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="28"/>
                                                 <color key="backgroundColor" red="0.69411764705882351" green="0.19215686274509805" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="Rdm-8C-nbV"/>
+                                                    <constraint firstAttribute="height" constant="28" id="Rdm-8C-nbV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="SIGN IN">
@@ -136,16 +136,16 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-nw-Rrd">
-                                                <rect key="frame" x="0.0" y="57" width="355" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="37" width="355" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVQ-x2-qmo">
-                                                <rect key="frame" x="0.0" y="86.5" width="355" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVQ-x2-qmo" customClass="FBSDKLoginButton">
+                                                <rect key="frame" x="0.0" y="66.5" width="355" height="28"/>
                                                 <color key="backgroundColor" red="0.20392156862745098" green="0.30980392156862746" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="oUu-I3-cie"/>
+                                                    <constraint firstAttribute="height" constant="28" id="oUu-I3-cie"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="CONTINUE WITH FACEBOOK">
@@ -195,6 +195,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailTextField" destination="vwW-MV-7ZR" id="5el-Tj-NzQ"/>
+                        <outlet property="loginWithFacebookButton" destination="vVQ-x2-qmo" id="AZy-yi-h1Y"/>
                         <outlet property="passwordOutlet" destination="9ln-zW-8mU" id="JxE-fB-n9j"/>
                         <segue destination="3cE-x1-dW4" kind="presentation" identifier="GenreSelect" id="Ed2-aZ-4F9"/>
                     </connections>
@@ -441,10 +442,10 @@
                                         <rect key="frame" x="0.0" y="334" width="355" height="199"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCp-JP-vnW">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="28"/>
                                                 <color key="backgroundColor" red="0.69411764710000001" green="0.19215686269999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="mCq-XR-DFA"/>
+                                                    <constraint firstAttribute="height" constant="28" id="mCq-XR-DFA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="REGISTER">
@@ -455,18 +456,18 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-2O-XZy">
-                                                <rect key="frame" x="0.0" y="57" width="355" height="85"/>
+                                                <rect key="frame" x="0.0" y="37" width="355" height="125"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T0-m9-81R" customClass="FBSDKLoginButton">
-                                                <rect key="frame" x="0.0" y="151" width="355" height="48"/>
+                                                <rect key="frame" x="0.0" y="171" width="355" height="28"/>
                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="RFd-ZM-bxS"/>
+                                                    <constraint firstAttribute="height" constant="28" id="RFd-ZM-bxS"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                 <state key="normal" title="REGISTER WITH FACEBOOK">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
