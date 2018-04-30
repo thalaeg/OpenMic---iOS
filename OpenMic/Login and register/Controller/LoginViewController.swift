@@ -17,7 +17,6 @@ class LoginViewController: BaseViewController {
     @IBOutlet var passwordOutlet: UitextFieldWithWhitePlaceHolder!
     
     private var authenticateDelegate: LogUserInDelegate?
-    private var userStateDataSource: CheckUserStatusDataSource?
     var facebookManager: ManageFacebook?
     
     @IBAction func emailAction(_ sender: Any) {
@@ -43,8 +42,6 @@ class LoginViewController: BaseViewController {
         
         facebookManager = ManageFacebook(viewController: self, facebookButton: loginWithFacebookButton)
         authenticateDelegate = self
-        userStateDataSource = self
-        userStateDataSource?.listenForUserStateChange()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,16 +59,8 @@ class LoginViewController: BaseViewController {
 
 }
 
-extension LoginViewController: LogUserInDelegate, CheckUserStatusDataSource {
-    func userStateChange(loggedIn: Bool) {
-        switch loggedIn {
-        case true:
-            self.performSegue(withIdentifier: "GenreSelect", sender: self)
-        case false:
-            print("user logged out")
-        }
-    }
-    
+extension LoginViewController: LogUserInDelegate {
+  
     var email: String {
         return emailTextField.text!
     }
