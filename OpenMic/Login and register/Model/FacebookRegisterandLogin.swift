@@ -29,7 +29,6 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
     
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        print("result \(result)")
         if let error = error {
             print(error.localizedDescription)
         } else if !result.isCancelled {
@@ -37,9 +36,7 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
             
             Auth.auth().signIn(with: credential) { (user, error) in
                 if let errorCheck = error {
-                   
-                    print("localized description \(errorCheck.localizedDescription), non descrip \(errorCheck)")
-                    // ...
+                   self.managedVC.standardAlertView(title: "Error", message: errorCheck.localizedDescription)
                     return
                 } else {
                     if let userID = user?.uid {
@@ -63,9 +60,10 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
     
     
     private func checkToCreateUser(userID: String) {
-        BasePaths.users.getNonUIDBase().child(userID).observeSingleEvent(of: .value, with: { snapShot in
-            if snapShot.exists() {
-                //user created
+        
+        BasePaths.users.getNonUIDBase().observeSingleEvent(of: .value, with: { snapShot in
+           
+            if snapShot.hasChild(userID){
                 print("user already created")
             } else {
                 BasePaths.users.getNonUIDBase().child(userID).childByAutoId().setValue([BasePaths.uid.rawValue : userID])
@@ -78,7 +76,8 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
     private func appendGraphValues(withUid: String) {
         FBSDKGraphRequest(graphPath: "me", parameters:  ["fields": "id, name, first_name, last_name, email"]).start { (connection, result, error) in
             if error == nil {
-                let json = JSON(result)
+                guard let resultCheck = result else {return}
+                let json = JSON(resultCheck)
                 let email = json["email"].stringValue
                 let firstName = json["first_name"].stringValue
                 let lastName = json["last_name"].stringValue
@@ -86,8 +85,7 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
                                   ProfileKeys.lastName.rawValue : lastName,
                                   ProfileKeys.email.rawValue : email]
                 
-                
-                print("graph result \(result)")
+                BasePaths.users.getNonUIDBase().child(withUid).child(BasePaths.userDetails.rawValue).setValue(newUserDic)
             }
         }
     }
