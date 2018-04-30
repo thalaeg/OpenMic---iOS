@@ -22,6 +22,7 @@ class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
         self.faceBookButton = facebookButton
         super.init()
         self.faceBookButton.delegate = self
+        FBSDKLoginManager().logOut()
         self.faceBookButton.readPermissions = ["public_profile", "email"]
         
     }

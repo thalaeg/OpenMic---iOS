@@ -11,6 +11,9 @@ import Firebase
 import IQKeyboardManagerSwift
 import FBSDKCoreKit
 
+//for facebook logout
+import FBSDKLoginKit
+
 
 
 @UIApplicationMain
@@ -23,10 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
         //log user out
-        
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
+            FBSDKLoginManager().logOut()
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
