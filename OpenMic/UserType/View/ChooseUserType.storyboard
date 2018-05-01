@@ -254,7 +254,7 @@
                                         </constraints>
                                         <state key="normal" image="next_arrow"/>
                                         <connections>
-                                            <segue destination="qze-8B-x0i" kind="presentation" id="qcP-nU-Bmh"/>
+                                            <action selector="nextButton:" destination="C7k-2v-bya" eventType="touchUpInside" id="CjG-fQ-hry"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -277,6 +277,7 @@
                         <outlet property="nextStack" destination="JtA-3T-UGY" id="1ik-a9-lRK"/>
                         <outlet property="pickerViewOutlet" destination="yvQ-5A-Q9f" id="EOc-7X-emo"/>
                         <outlet property="userNameTextField" destination="h4V-Da-4V2" id="DXd-77-wU0"/>
+                        <segue destination="qze-8B-x0i" kind="presentation" identifier="genreSelect" id="pku-0V-TZM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlx-ci-DXK" userLabel="First Responder" sceneMemberID="firstResponder"/>

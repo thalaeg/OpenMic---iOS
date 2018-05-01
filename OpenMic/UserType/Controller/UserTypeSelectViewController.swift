@@ -27,6 +27,21 @@ class UserTypeSelectViewController: BaseViewwithChair {
     }
     
     
+    @IBAction func nextButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "genreSelect", sender: self)
+//        if (userNameTextField.text?.isEmpty)! {
+//            self.standardAlertView(title: "User Name", message: "Please choose a user name")
+////        } else {
+//            CurrentUser.getallUserValuesDictionar { (userDictionary) in
+//                var dictionaryInput = userDictionary
+//                print("dictionary \(dictionaryInput)")
+//                dictionaryInput.updateValue(self.userNameTextField.text!, forKey: ProfileKeys.username.rawValue)
+//                Endpoints.profiles.postCall(with: dictionaryInput)
+//
+//            }
+//        }
+        
+    }
     
     
     @IBAction func ArtistGenre(_ sender: Any) {

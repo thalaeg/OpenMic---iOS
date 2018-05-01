@@ -14,6 +14,7 @@
 		271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */; };
 		271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */; };
 		271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */; };
+		2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729C0B92097C059007F86C1 /* UserReadWrite.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
@@ -59,6 +60,7 @@
 		271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FavGenreAssets.xcassets; sourceTree = "<group>"; };
 		271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreCollectionViewCell.swift; sourceTree = "<group>"; };
 		271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveGenreModel.swift; sourceTree = "<group>"; };
+		2729C0B92097C059007F86C1 /* UserReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadWrite.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				271D3C58208A679F008AA3E2 /* GenreRead.swift */,
 				27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */,
 				27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */,
+				2729C0B92097C059007F86C1 /* UserReadWrite.swift */,
 			);
 			path = "Firebase Read Write ";
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,
 				271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
+				2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 				278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */,
