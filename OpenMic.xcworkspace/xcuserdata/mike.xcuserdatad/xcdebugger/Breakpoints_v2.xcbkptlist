@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OpenMic/Login and register/Controller/SignupViewController.swift"
-            timestampString = "546821556.492015"
+            timestampString = "546840540.5463589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "registerNewUser()"
-            landmarkType = "7">
+            landmarkName = "SignupViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -127,7 +127,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="Rdm-8C-nbV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                 <state key="normal" title="SIGN IN">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -447,7 +447,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="mCq-XR-DFA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                 <state key="normal" title="REGISTER">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -476,31 +476,31 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-tp-4nJ">
-                                <rect key="frame" x="19" y="625" width="337" height="28"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-tp-4nJ">
+                                <rect key="frame" x="10" y="627" width="355" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signup up, you agree to our" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79M-oF-Jzt">
-                                        <rect key="frame" x="0.0" y="0.0" width="185" height="28"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-EL-gmF" customClass="ButtonWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                        <rect key="frame" x="188" y="0.0" width="42.5" height="28"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <rect key="frame" x="186.5" y="0.0" width="35" height="26"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                         <state key="normal" title="Terms">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3q-hM-tre">
-                                        <rect key="frame" x="233.5" y="0.0" width="9.5" height="28"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="248" y="0.0" width="8" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-72-PmS" customClass="ButtonWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                        <rect key="frame" x="246" y="0.0" width="91" height="28"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <rect key="frame" x="282" y="0.0" width="73" height="26"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <state key="normal" title="Privacy Policy">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -512,10 +512,10 @@
                         <constraints>
                             <constraint firstItem="ZnF-e5-dc5" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="10" id="4az-OW-GdR"/>
                             <constraint firstItem="ZnF-e5-dc5" firstAttribute="top" secondItem="OfK-pp-4Co" secondAttribute="top" constant="20" id="8tI-ZY-Zc7"/>
-                            <constraint firstItem="gHK-tp-4nJ" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="19" id="Fd3-YE-yW8"/>
+                            <constraint firstItem="gHK-tp-4nJ" firstAttribute="leading" secondItem="OfK-pp-4Co" secondAttribute="leading" constant="10" id="Fd3-YE-yW8"/>
                             <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="ZnF-e5-dc5" secondAttribute="bottom" constant="50" id="H67-Zf-7t4"/>
                             <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="ZnF-e5-dc5" secondAttribute="trailing" constant="10" id="pSI-cY-Ajb"/>
-                            <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="gHK-tp-4nJ" secondAttribute="trailing" constant="19" id="pwt-Dk-wFf"/>
+                            <constraint firstItem="OfK-pp-4Co" firstAttribute="trailing" secondItem="gHK-tp-4nJ" secondAttribute="trailing" constant="10" id="pwt-Dk-wFf"/>
                             <constraint firstItem="OfK-pp-4Co" firstAttribute="bottom" secondItem="gHK-tp-4nJ" secondAttribute="bottom" constant="14" id="r2w-H8-9Kr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OfK-pp-4Co"/>
