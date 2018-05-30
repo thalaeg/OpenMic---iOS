@@ -33,6 +33,8 @@
 		278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110832087DD240071A3E5 /* UIViewExtensions.swift */; };
 		278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */; };
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
+		278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */; };
+		278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625E20BF474900823D9B /* UiviewControllerExtension.swift */; };
 		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
 		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
 		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
@@ -43,6 +45,7 @@
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
 		27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B52089928B0095E044 /* BaseViewWithChair.swift */; };
 		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
+		27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
@@ -81,6 +84,8 @@
 		278110832087DD240071A3E5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomLayer.swift; sourceTree = "<group>"; };
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
+		278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSelectViewController.swift; sourceTree = "<group>"; };
+		278C625E20BF474900823D9B /* UiviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiviewControllerExtension.swift; sourceTree = "<group>"; };
 		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
 		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
 		27A713B52089928B0095E044 /* BaseViewWithChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewWithChair.swift; sourceTree = "<group>"; };
 		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
+		27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHiddenNav.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 			children = (
 				2734C9202085988600123924 /* SignupViewController.swift */,
 				2781107C2087D5EE0071A3E5 /* LoginViewController.swift */,
+				278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 				278110832087DD240071A3E5 /* UIViewExtensions.swift */,
 				278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */,
 				278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */,
+				278C625E20BF474900823D9B /* UiviewControllerExtension.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -344,6 +352,7 @@
 				278110812087D9140071A3E5 /* BaseViewController.swift */,
 				27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */,
 				27A713B52089928B0095E044 /* BaseViewWithChair.swift */,
+				27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */,
 			);
 			path = "BaseViewController ";
 			sourceTree = "<group>";
@@ -513,11 +522,13 @@
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
+				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
 				2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */,
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
+				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
@@ -528,6 +539,7 @@
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
+				27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */,
 				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,
 				271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
