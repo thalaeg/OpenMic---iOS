@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import Firebase
 
 
 enum ProfileKeys: String {
@@ -29,8 +30,22 @@ enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
     case profiles = "profiles/"
     
+    
+    
+//    func getCall() {
+//        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + , method: .get, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
+//
+//    }
+    
+    
     func postCall(with params: [String : Any]) {
-        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: params).responseJSON { (response) in
+        
+        var paramInput = params
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        paramInput.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: paramInput).responseJSON { (response) in
+            
             if let json = response.result.value {
                 print("JSON: \(json)") // serialized json response
             }

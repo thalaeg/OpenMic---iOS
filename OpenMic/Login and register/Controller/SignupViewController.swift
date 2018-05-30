@@ -73,7 +73,9 @@ class SignupViewController: BaseViewController {
             if allfieldsFilled {
                 createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: newUserFieldsDic, completion: { (error, newUser) in
                     if !error {
-                        self.performSegue(withIdentifier: "userType", sender: self)
+                        Endpoints.profiles.postCall(with: newUserFieldsDic)
+                        
+                        //self.performSegue(withIdentifier: "userType", sender: self)
                     }
                 })
             }

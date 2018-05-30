@@ -48,10 +48,12 @@ extension CheckSignUpFieldsDelegate {
         }
     }
     //MARK: waiting for completion of gender field
+    //Temporary user name field 
     func newUserFieldsDictionary() -> [String : String] {
         let newUserDic = [ProfileKeys.firstName.rawValue : firstName,
                           ProfileKeys.lastName.rawValue : LastName,
-                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : Gender]
+                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : Gender,
+                          ProfileKeys.username.rawValue : "mikey"]
         return newUserDic
     }
     
