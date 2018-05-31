@@ -14,6 +14,8 @@
 		271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */; };
 		271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */; };
 		271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */; };
+		2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */; };
+		2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51D20C066EB00E90CB0 /* StaticFieldsAssets.xcassets */; };
 		2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729C0B92097C059007F86C1 /* UserReadWrite.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
@@ -63,6 +65,8 @@
 		271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FavGenreAssets.xcassets; sourceTree = "<group>"; };
 		271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreCollectionViewCell.swift; sourceTree = "<group>"; };
 		271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveGenreModel.swift; sourceTree = "<group>"; };
+		2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaticLoginFields.storyboard; sourceTree = "<group>"; };
+		2722B51D20C066EB00E90CB0 /* StaticFieldsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StaticFieldsAssets.xcassets; sourceTree = "<group>"; };
 		2729C0B92097C059007F86C1 /* UserReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadWrite.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,39 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		2722B51620C05B6700E90CB0 /* LoginRegisterStaticTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2722B51920C05BA900E90CB0 /* Controller */,
+				2722B51720C05B9D00E90CB0 /* Model */,
+				2722B51820C05BA400E90CB0 /* View */,
+			);
+			path = LoginRegisterStaticTableView;
+			sourceTree = "<group>";
+		};
+		2722B51720C05B9D00E90CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2722B51820C05BA400E90CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */,
+				2722B51D20C066EB00E90CB0 /* StaticFieldsAssets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2722B51920C05BA900E90CB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2734C91D2085948600123924 /* Firebase Read Write  */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +238,7 @@
 				27B2C5BB2086C06D0063AB75 /* API Read Write  */,
 				27B2C5B4208697E40063AB75 /* AlertViews */,
 				2734C91D2085948600123924 /* Firebase Read Write  */,
+				2722B51620C05B6700E90CB0 /* LoginRegisterStaticTableView */,
 				27692F2720810A5F000D7C8B /* Login and register */,
 				2797C8C9208BE29D00AD93B4 /* ForgotPassword */,
 				27A713AE208937850095E044 /* UserType */,
@@ -445,8 +483,10 @@
 				27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
+				2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */,
 				27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */,
 				2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */,
+				2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
