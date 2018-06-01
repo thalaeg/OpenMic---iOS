@@ -155,9 +155,6 @@
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJx-oI-Nj6">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="146" id="Fs8-Bd-sfC"/>
-                                                    </constraints>
                                                     <date key="date" timeIntervalSinceReferenceDate="549571948.45714903">
                                                         <!--2018-06-01 18:52:28 +0000-->
                                                     </date>

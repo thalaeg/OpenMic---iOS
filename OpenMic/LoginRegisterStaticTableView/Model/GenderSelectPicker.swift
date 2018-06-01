@@ -21,7 +21,6 @@ class GenderSelect: NSObject {
         self.picker = picker
         super.init()
 
-        
     }
     
     

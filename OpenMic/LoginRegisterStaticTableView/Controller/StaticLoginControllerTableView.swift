@@ -26,12 +26,24 @@ class StaticLoginControllerTableView: UITableViewController {
         genderPickerManager = GenderSelect(picker: genderPickerOutlet)
         genderPickerOutlet.dataSource = genderPickerManager
         genderPickerOutlet.delegate = genderPickerManager
-       
         dateOfBirthOutlet.isHidden = true
+        genderPickerOutlet.isHidden = true
 
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //5
+        
+        
+        if indexPath.row == 5 {
+            
+            genderPickerOutlet.isHidden = !genderPickerOutlet.isHidden
+            
+            self.tableView.reloadRows(at: [IndexPath(item: 6, section: 0)], with: .top)
+            
+        }
+        
         
         if indexPath.row == 3 {
             
@@ -40,9 +52,23 @@ class StaticLoginControllerTableView: UITableViewController {
            self.tableView.reloadRows(at: [IndexPath(item: 4, section: 0)], with: .top)
         
         }
+        
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        
+        if indexPath.row == 6 {
+            switch genderPickerOutlet.isHidden {
+            case true:
+                return 0
+            default:
+                return UITableViewAutomaticDimension
+            }
+        }
+        
         
         if indexPath.row == 4 {
             switch dateOfBirthOutlet.isHidden {
