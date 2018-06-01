@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Static Login Controller Table View-->
         <scene sceneID="83V-SE-wYv">
             <objects>
-                <tableViewController storyboardIdentifier="loginFields" id="u1t-eK-mgz" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="loginFields" id="u1t-eK-mgz" customClass="StaticLoginControllerTableView" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3nA-y7-hez">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,7 +146,7 @@
                                         <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="Rpb-uP-crb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="Rpb-uP-crb" userLabel="DatePickerCell">
                                         <rect key="frame" x="0.0" y="232" width="375" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rpb-uP-crb" id="XFe-tl-613">
@@ -154,7 +154,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJx-oI-Nj6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="549571948.45714903">
                                                         <!--2018-06-01 18:52:28 +0000-->
                                                     </date>
@@ -217,6 +217,9 @@
                             <outlet property="delegate" destination="u1t-eK-mgz" id="8wy-B5-lfn"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="datePickerCell" destination="Rpb-uP-crb" id="yjl-DY-PQg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edS-TP-zJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
