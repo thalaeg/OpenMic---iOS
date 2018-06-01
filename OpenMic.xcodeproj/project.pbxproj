@@ -51,6 +51,7 @@
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */; };
+		27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */; };
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
@@ -105,6 +106,7 @@
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticLoginControllerTableView.swift; sourceTree = "<group>"; };
+		27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPicker.swift; sourceTree = "<group>"; };
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		2722B51720C05B9D00E90CB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */,
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
+				27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
