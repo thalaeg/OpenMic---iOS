@@ -11,6 +11,7 @@ import UIKit
 class StaticLoginControllerTableView: UITableViewController {
 
     @IBOutlet var datePickerCell: UITableViewCell!
+    private var shouldBehidden = true
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -23,16 +24,17 @@ class StaticLoginControllerTableView: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == 3 {
-            datePickerCell.isHidden = !datePickerCell.isHidden
-            
-           self.tableView.reloadRows(at: [IndexPath(item: 4, section: 0)], with: .automatic)
+            shouldBehidden = !shouldBehidden
+    
+           self.tableView.reloadRows(at: [IndexPath(item: 4, section: 0)], with: .top)
+        
         }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if indexPath.row == 4 {
-            switch datePickerCell.isHidden {
+            switch shouldBehidden {
             case true:
                 return 0
             default:

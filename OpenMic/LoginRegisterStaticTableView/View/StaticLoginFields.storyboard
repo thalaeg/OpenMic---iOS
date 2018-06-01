@@ -160,6 +160,7 @@
                                                     </date>
                                                 </datePicker>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="TJx-oI-Nj6" firstAttribute="top" secondItem="XFe-tl-613" secondAttribute="top" id="EgD-9n-CL5"/>
                                                 <constraint firstAttribute="trailing" secondItem="TJx-oI-Nj6" secondAttribute="trailing" id="GrR-WN-gut"/>
