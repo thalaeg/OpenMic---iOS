@@ -33,33 +33,27 @@ class StaticLoginControllerTableView: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //5
         
-        
-        if indexPath.row == 5 {
-            
+        switch indexPath.row {
+        case 5:
             genderPickerOutlet.isHidden = !genderPickerOutlet.isHidden
-            
-            self.tableView.reloadRows(at: [IndexPath(item: 6, section: 0)], with: .top)
-            tableView.scrollToRow(at: IndexPath(item: 6, section: 0), at: .none, animated: true)
-
-            
-        }
-        
-        
-        if indexPath.row == 3 {
-        
+            loadPickerView(atPath: 6)
+        case 3:
             dateOfBirthOutlet.isHidden = !dateOfBirthOutlet.isHidden
-            
-            self.tableView.scrollToNearestSelectedRow(at: .bottom, animated: true)
-    
-           self.tableView.reloadRows(at: [IndexPath(item: 4, section: 0)], with: .top)
-            tableView.scrollToRow(at: IndexPath(item: 4, section: 0), at: .none, animated: true)
-        
+            loadPickerView(atPath: 4)
+        default:
+            return
         }
         
+
         
         
+    }
+    
+    
+    private func loadPickerView(atPath: Int) {
+        self.tableView.reloadRows(at: [IndexPath(item: atPath , section: 0)], with: .top)
+        tableView.scrollToRow(at: IndexPath(item: atPath, section: 0), at: .none, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
