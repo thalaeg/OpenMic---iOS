@@ -48,7 +48,7 @@ class StaticLoginControllerTableView: UITableViewController {
         
         
         if indexPath.row == 3 {
-            
+        
             dateOfBirthOutlet.isHidden = !dateOfBirthOutlet.isHidden
             
             self.tableView.scrollToNearestSelectedRow(at: .bottom, animated: true)
@@ -65,26 +65,17 @@ class StaticLoginControllerTableView: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         
-        if indexPath.row == 6 {
-            switch genderPickerOutlet.isHidden {
-            case true:
-                return 0
-            default:
-                return UITableViewAutomaticDimension
-            }
-        }
-        
-        
-        if indexPath.row == 4 {
-            switch dateOfBirthOutlet.isHidden {
-            case true:
-                return 0
-            default:
-                return UITableViewAutomaticDimension
-            }
-        } else {
+        switch indexPath.row {
+        case 6:
+            return genderPickerOutlet.isHidden ? 0 : UITableViewAutomaticDimension
+            
+        case 4:
+            return dateOfBirthOutlet.isHidden ? 0 : UITableViewAutomaticDimension
+        default:
             return UITableViewAutomaticDimension
         }
+        
+
         
     }
 
