@@ -37,18 +37,21 @@ class StaticLoginControllerTableView: UITableViewController {
         switch indexPath.row {
         case 5:
             genderPickerOutlet.isHidden = !genderPickerOutlet.isHidden
+            dateOfBirthOutlet.isHidden = true
+            self.tableView.reloadRows(at: [IndexPath(item: 4 , section: 0)], with: .top)
             loadPickerView(atPath: 6)
         case 3:
             dateOfBirthOutlet.isHidden = !dateOfBirthOutlet.isHidden
+            genderPickerOutlet.isHidden = true
+            self.tableView.reloadRows(at: [IndexPath(item: 6 , section: 0)], with: .top)
             loadPickerView(atPath: 4)
         default:
             return
         }
         
 
-        
-        
     }
+    
     
     
     private func loadPickerView(atPath: Int) {
