@@ -324,21 +324,11 @@
                                         <rect key="frame" x="0.0" y="80.5" width="375" height="468.5"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XK-5A-zqS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="419.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="468.5"/>
                                                 <connections>
                                                     <segue destination="Vhd-zp-4Kl" kind="embed" id="KRq-m5-RWP"/>
                                                 </connections>
                                             </containerView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh0-RL-dkV">
-                                                <rect key="frame" x="0.0" y="419.5" width="375" height="49"/>
-                                                <color key="backgroundColor" red="0.76470588240000004" green="0.0" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="49" id="dnF-y2-cxm"/>
-                                                </constraints>
-                                                <state key="normal" title="Sign Up">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>

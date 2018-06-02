@@ -19,18 +19,18 @@ class StaticLoginControllerTableView: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        self.tableView.tableFooterView = UIView()
+
         genderPickerManager = GenderSelect(picker: genderPickerOutlet)
         genderPickerOutlet.dataSource = genderPickerManager
         genderPickerOutlet.delegate = genderPickerManager
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
+        
 
     }
-
+    
+    
+  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         

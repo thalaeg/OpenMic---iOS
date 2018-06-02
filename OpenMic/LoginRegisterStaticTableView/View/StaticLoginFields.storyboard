@@ -18,6 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="IV3-7Y-a1D">
+                            <rect key="frame" x="0.0" y="581" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jp-BX-ryw">
+                                    <rect key="frame" x="0.0" y="-2.5" width="375" height="49"/>
+                                    <color key="backgroundColor" red="0.76470588240000004" green="0.0" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="49" id="VvX-k9-PaV"/>
+                                    </constraints>
+                                    <state key="normal" title="Sign Up">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="3Jp-BX-ryw" firstAttribute="leading" secondItem="IV3-7Y-a1D" secondAttribute="leading" id="3i6-Jd-eZn"/>
+                                <constraint firstAttribute="trailing" secondItem="3Jp-BX-ryw" secondAttribute="trailing" id="Bv6-te-fjH"/>
+                                <constraint firstItem="3Jp-BX-ryw" firstAttribute="centerY" secondItem="IV3-7Y-a1D" secondAttribute="centerY" id="CTn-oE-DlX"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection id="fNi-Tm-59G">
                                 <cells>
