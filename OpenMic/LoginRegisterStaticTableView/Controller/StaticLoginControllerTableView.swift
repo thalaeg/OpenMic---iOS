@@ -41,6 +41,8 @@ class StaticLoginControllerTableView: UITableViewController {
             genderPickerOutlet.isHidden = !genderPickerOutlet.isHidden
             
             self.tableView.reloadRows(at: [IndexPath(item: 6, section: 0)], with: .top)
+            tableView.scrollToRow(at: IndexPath(item: 6, section: 0), at: .none, animated: true)
+
             
         }
         
@@ -48,8 +50,11 @@ class StaticLoginControllerTableView: UITableViewController {
         if indexPath.row == 3 {
             
             dateOfBirthOutlet.isHidden = !dateOfBirthOutlet.isHidden
+            
+            self.tableView.scrollToNearestSelectedRow(at: .bottom, animated: true)
     
            self.tableView.reloadRows(at: [IndexPath(item: 4, section: 0)], with: .top)
+            tableView.scrollToRow(at: IndexPath(item: 4, section: 0), at: .none, animated: true)
         
         }
         
