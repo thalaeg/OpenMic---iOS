@@ -9,9 +9,18 @@
 import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
+   
     
     var isSignup = false
 
+    @IBOutlet var signupOrSignInbutton: UIButton!
+    
+    @IBAction func signupOrlSignInAction(_ sender: Any) {
+        
+        
+        
+    }
+    
     @IBOutlet var datePickerCell: UITableViewCell!
     
     @IBOutlet var dateOfBirthOutlet: UIDatePicker!
@@ -83,8 +92,10 @@ extension StaticLoginControllerTableView {
     private func setupLogingOrSignup() -> CGFloat {
         switch isSignup {
         case true:
+            signupOrSignInbutton.setTitle("Sign Up", for: .normal)
             return UITableViewAutomaticDimension
         case false:
+            signupOrSignInbutton.setTitle("Sign In", for: .normal)
             return 0
         }
  
