@@ -23,7 +23,6 @@ class LoginSelectViewController: BaseViewHiddenNav {
     
     
     @IBAction func loginAction(_ sender: Any) {
-        
         isSignUp = false
         self.performSegue(withIdentifier: loginSegue, sender: self)
         
@@ -45,11 +44,12 @@ class LoginSelectViewController: BaseViewHiddenNav {
 }
 
 
-//extension LoginSelectViewController {
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == loginSegue {
-//            let vc =
-//        }
-//    }
-//}
+extension LoginSelectViewController {
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == loginSegue {
+           guard let vc = segue.destination as? StaticLoginControllerTableView else {return}
+            vc.isSignup = isSignUp
+        }
+    }
+}

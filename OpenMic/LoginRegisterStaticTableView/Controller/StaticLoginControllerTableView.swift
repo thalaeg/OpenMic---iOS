@@ -57,9 +57,11 @@ class StaticLoginControllerTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
+      
         
         switch indexPath.row {
+        case 0,3,5:
+           return setupLogingOrSignup()
         case 6:
             return genderPickerOutlet.isHidden ? 0 : UITableViewAutomaticDimension
             
@@ -77,24 +79,15 @@ class StaticLoginControllerTableView: UITableViewController {
 }
 
 extension StaticLoginControllerTableView {
-    private func setupLogingOrSignup() {
-        
-        // name 0
-        //email 1
-       // password 2
-        //date of birth 3
-        //dob picker 4
-        //gender 5
-        //gender picker 6
-        
-//        switch isSignup {
-//        case true:
-//
-//        case false:
-//
-//        }
-        
-        
+ 
+    private func setupLogingOrSignup() -> CGFloat {
+        switch isSignup {
+        case true:
+            return UITableViewAutomaticDimension
+        case false:
+            return 0
+        }
+ 
     }
     
 }
