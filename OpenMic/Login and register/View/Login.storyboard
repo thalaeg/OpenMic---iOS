@@ -44,13 +44,16 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="9B3-SV-btl" kind="show" id="d4L-Wh-3K1"/>
+                                                    <action selector="signupAction:" destination="U7T-XG-zia" eventType="touchUpInside" id="PUI-J1-Grq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-cA-UFE">
                                                 <rect key="frame" x="0.0" y="67" width="257" height="49"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginAction:" destination="U7T-XG-zia" eventType="touchUpInside" id="Gjr-mY-PLJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -73,6 +76,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="rgA-CU-EeL"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="9B3-SV-btl" kind="show" identifier="login" id="Bq8-f0-8vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38n-cT-mY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,6 +12,22 @@ import UIKit
 class LoginSelectViewController: BaseViewHiddenNav {
 
     
+    private var isSignUp = false
+    private var loginSegue = "login"
+    
+    @IBAction func signupAction(_ sender: Any) {
+        isSignUp = true
+        self.performSegue(withIdentifier: loginSegue, sender: self)
+        
+    }
+    
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+        isSignUp = false
+        self.performSegue(withIdentifier: loginSegue, sender: self)
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,17 +40,16 @@ class LoginSelectViewController: BaseViewHiddenNav {
         addBackgroundImage(assetName: "backgroundLoginSelect.png")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 
 }
+
+
+//extension LoginSelectViewController {
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == loginSegue {
+//            let vc =
+//        }
+//    }
+//}

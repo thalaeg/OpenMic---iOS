@@ -9,6 +9,8 @@
 import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
+    
+    var isSignup = false
 
     @IBOutlet var datePickerCell: UITableViewCell!
     
@@ -25,12 +27,9 @@ class StaticLoginControllerTableView: UITableViewController {
         genderPickerOutlet.delegate = genderPickerManager
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
-        
 
     }
     
-    
-  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -51,8 +50,6 @@ class StaticLoginControllerTableView: UITableViewController {
         
 
     }
-    
-    
     
     private func loadPickerView(atPath: Int) {
         self.tableView.reloadRows(at: [IndexPath(item: atPath , section: 0)], with: .top)
@@ -78,3 +75,32 @@ class StaticLoginControllerTableView: UITableViewController {
 
    
 }
+
+extension StaticLoginControllerTableView {
+    private func setupLogingOrSignup() {
+        
+        // name 0
+        //email 1
+       // password 2
+        //date of birth 3
+        //dob picker 4
+        //gender 5
+        //gender picker 6
+        
+//        switch isSignup {
+//        case true:
+//
+//        case false:
+//
+//        }
+        
+        
+    }
+    
+}
+
+
+
+
+
+
