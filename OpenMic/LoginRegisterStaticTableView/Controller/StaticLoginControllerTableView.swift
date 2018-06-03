@@ -10,6 +10,8 @@ import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
    
+    //MARK: static cell outlets
+    
     
     var isSignup = false
 
@@ -21,7 +23,7 @@ class StaticLoginControllerTableView: UITableViewController {
         
     }
     
-    @IBOutlet var datePickerCell: UITableViewCell!
+   // @IBOutlet var datePickerCell: UITableViewCell!
     
     @IBOutlet var dateOfBirthOutlet: UIDatePicker!
     
