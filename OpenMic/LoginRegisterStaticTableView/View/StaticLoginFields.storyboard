@@ -258,16 +258,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJx-oI-Nj6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
-                                                    <date key="date" timeIntervalSinceReferenceDate="549571948.45714903">
-                                                        <!--2018-06-01 18:52:28 +0000-->
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJx-oI-Nj6">
+                                                    <rect key="frame" x="0.0" y="5" width="375" height="141"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="-1280725651.5428543">
+                                                        <!--1960-06-01 18:52:28 +0000-->
                                                     </date>
                                                 </datePicker>
                                             </subviews>
                                             <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="TJx-oI-Nj6" firstAttribute="top" secondItem="XFe-tl-613" secondAttribute="top" id="EgD-9n-CL5"/>
+                                                <constraint firstItem="TJx-oI-Nj6" firstAttribute="top" secondItem="XFe-tl-613" secondAttribute="top" constant="5" id="EgD-9n-CL5"/>
                                                 <constraint firstAttribute="trailing" secondItem="TJx-oI-Nj6" secondAttribute="trailing" id="GrR-WN-gut"/>
                                                 <constraint firstAttribute="bottom" secondItem="TJx-oI-Nj6" secondAttribute="bottom" id="cEY-K3-epE"/>
                                                 <constraint firstItem="TJx-oI-Nj6" firstAttribute="leading" secondItem="XFe-tl-613" secondAttribute="leading" id="kt3-WO-Mya"/>
@@ -337,7 +337,7 @@
                     </tableView>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <outlet property="dateOfBirthOutlet" destination="vEO-Ki-Kng" id="qAs-Mh-7DB"/>
+                        <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="3ZN-Gp-g5S"/>
                         <outlet property="emailCellOutlet" destination="bmz-4P-l9j" id="SEV-LE-KYy"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>

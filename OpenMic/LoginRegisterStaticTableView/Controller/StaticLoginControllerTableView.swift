@@ -105,7 +105,7 @@ class StaticLoginControllerTableView: UITableViewController {
 
 //MARK: funciton for hiding and showing fields depending on signup or login
 extension StaticLoginControllerTableView {
- 
+    
     private func setupLogingOrSignup() -> CGFloat {
         switch isSignup {
         case true:
