@@ -156,11 +156,14 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailBlack" translatesAutoresizingMaskIntoConstraints="NO" id="yNd-6L-NNX">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-7e-rwv">
+                                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-7e-rwv">
                                                     <rect key="frame" x="44" y="20.5" width="321" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="u1t-eK-mgz" id="4bs-qh-QVJ"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -186,11 +189,14 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordBlack" translatesAutoresizingMaskIntoConstraints="NO" id="gzG-G3-eSC">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-fY-21H">
+                                                <textField opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-fY-21H">
                                                     <rect key="frame" x="44" y="20.5" width="270" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="u1t-eK-mgz" id="Gn7-VE-XiZ"/>
+                                                    </connections>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j10-Zx-ePg">
                                                     <rect key="frame" x="316" y="16" width="31" height="26"/>
@@ -225,7 +231,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DOBBlack" translatesAutoresizingMaskIntoConstraints="NO" id="q55-op-RMf">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Date of birth " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-Ki-Kng">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" verticalHuggingPriority="251" text="Date of birth " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-Ki-Kng">
                                                     <rect key="frame" x="44" y="20.5" width="305" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -280,7 +286,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genderBlack" translatesAutoresizingMaskIntoConstraints="NO" id="QYo-ZW-1A4">
                                                     <rect key="frame" x="18" y="18" width="14" height="21.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-hL-FGP">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-hL-FGP">
                                                     <rect key="frame" x="42" y="20.5" width="307" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -331,9 +337,11 @@
                     </tableView>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="HwD-BQ-ZrS"/>
+                        <outlet property="dateOfBirthOutlet" destination="vEO-Ki-Kng" id="qAs-Mh-7DB"/>
+                        <outlet property="emailCellOutlet" destination="bmz-4P-l9j" id="SEV-LE-KYy"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
+                        <outlet property="passwordCellOutlet" destination="AEM-Dl-3oe" id="5hA-AM-1M5"/>
                         <outlet property="signupOrSignInbutton" destination="3Jp-BX-ryw" id="PSc-6C-BhP"/>
                         <outlet property="singupAndSignInWithFacebookOutlet" destination="5hJ-iX-uKH" id="jfH-IK-2a7"/>
                     </connections>

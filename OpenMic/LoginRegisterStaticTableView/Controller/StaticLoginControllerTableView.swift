@@ -14,6 +14,11 @@ class StaticLoginControllerTableView: UITableViewController {
     
     @IBOutlet var nameCellOutlet: UITableViewCell!
     
+    
+    @IBOutlet var emailCellOutlet: UITableViewCell!
+    
+    @IBOutlet var passwordCellOutlet: UITableViewCell!
+    
     var isSignup = false
     //MARK: signup and signin outlets and actions
 
@@ -31,7 +36,7 @@ class StaticLoginControllerTableView: UITableViewController {
         
     }
     
-   // @IBOutlet var datePickerCell: UITableViewCell!
+    //MARK: DOB and Gender actions
     
     @IBOutlet var dateOfBirthOutlet: UIDatePicker!
     
@@ -117,9 +122,7 @@ extension StaticLoginControllerTableView {
     
 }
 
-//1 = name
-//2 = email
-//3 = password
+
 
 //MARK: Delegate methods for determining which textfield to show checkMark
 extension StaticLoginControllerTableView: UITextFieldDelegate {
@@ -143,14 +146,17 @@ extension StaticLoginControllerTableView: UITextFieldDelegate {
         switch byTag {
         case 1:
             turnOffandOnCellAccesory(cell: nameCellOutlet, didFillField: didFillField)
-            
+        case 2:
+            turnOffandOnCellAccesory(cell: emailCellOutlet, didFillField: didFillField)
+        case 3:
+            turnOffandOnCellAccesory(cell: passwordCellOutlet, didFillField: didFillField)
         default:
             return
         }
         
         
     }
-    //turn of or on the cell depending on if they filled out the field 
+    //turn of or on the cell depending on if they filled out the field
     private func turnOffandOnCellAccesory(cell: UITableViewCell, didFillField: Bool ) {
         switch didFillField {
         case true:
