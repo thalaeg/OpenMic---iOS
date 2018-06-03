@@ -35,6 +35,9 @@
                                                     <state key="normal" title="SIGN UP WITH FACEBOOK">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="facebookAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="dxo-4j-DMD"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MmO-QZ-KJe">
                                                     <rect key="frame" x="8" y="7" width="18" height="34"/>
@@ -110,21 +113,24 @@
                         <sections>
                             <tableViewSection id="fNi-Tm-59G">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="58" id="39E-Ix-Xm0" userLabel="NameCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="39E-Ix-Xm0" userLabel="NameCell">
                                         <rect key="frame" x="0.0" y="116" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="39E-Ix-Xm0" id="W6E-PQ-Quq">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nameBlack" translatesAutoresizingMaskIntoConstraints="NO" id="ucW-f9-TPH">
                                                     <rect key="frame" x="18" y="18" width="14" height="21.5"/>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HV-hG-O1a">
-                                                    <rect key="frame" x="42" y="20.5" width="283" height="17"/>
+                                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HV-hG-O1a">
+                                                    <rect key="frame" x="42" y="20.5" width="323" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="u1t-eK-mgz" id="TRn-kb-QTe"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -140,18 +146,18 @@
                                         <color key="tintColor" red="0.29019607843137257" green="0.7803921568627451" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="58" id="bmz-4P-l9j" userLabel="EmailCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="bmz-4P-l9j" userLabel="EmailCell">
                                         <rect key="frame" x="0.0" y="174" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmz-4P-l9j" id="Cbt-2r-z62">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailBlack" translatesAutoresizingMaskIntoConstraints="NO" id="yNd-6L-NNX">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-7e-rwv">
-                                                    <rect key="frame" x="44" y="20.5" width="281" height="17"/>
+                                                    <rect key="frame" x="44" y="20.5" width="321" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
@@ -170,24 +176,24 @@
                                         <color key="tintColor" red="0.2901960784" green="0.78039215689999997" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="58" id="AEM-Dl-3oe" userLabel="PasswordCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="AEM-Dl-3oe" userLabel="PasswordCell">
                                         <rect key="frame" x="0.0" y="232" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AEM-Dl-3oe" id="dok-9a-rb1">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordBlack" translatesAutoresizingMaskIntoConstraints="NO" id="gzG-G3-eSC">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-fY-21H">
-                                                    <rect key="frame" x="44" y="20.5" width="238" height="17"/>
+                                                    <rect key="frame" x="44" y="20.5" width="270" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j10-Zx-ePg">
-                                                    <rect key="frame" x="284" y="16" width="31" height="26"/>
+                                                    <rect key="frame" x="316" y="16" width="31" height="26"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                     <state key="normal" title="Show">
                                                         <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -209,18 +215,18 @@
                                         <color key="tintColor" red="0.2901960784" green="0.78039215689999997" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="58" id="C0h-D2-yFk" userLabel="DobCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="C0h-D2-yFk" userLabel="DobCell">
                                         <rect key="frame" x="0.0" y="290" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0h-D2-yFk" id="RjB-66-1Z8">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DOBBlack" translatesAutoresizingMaskIntoConstraints="NO" id="q55-op-RMf">
                                                     <rect key="frame" x="18" y="18" width="16" height="21.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Date of birth " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-Ki-Kng">
-                                                    <rect key="frame" x="44" y="20.5" width="273" height="17"/>
+                                                    <rect key="frame" x="44" y="20.5" width="305" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -264,18 +270,18 @@
                                         <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="58" id="V2e-J8-vMG" userLabel="GenderCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="V2e-J8-vMG" userLabel="GenderCell">
                                         <rect key="frame" x="0.0" y="495" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V2e-J8-vMG" id="FNN-3u-iYo">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genderBlack" translatesAutoresizingMaskIntoConstraints="NO" id="QYo-ZW-1A4">
                                                     <rect key="frame" x="18" y="18" width="14" height="21.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-hL-FGP">
-                                                    <rect key="frame" x="42" y="20.5" width="275" height="17"/>
+                                                    <rect key="frame" x="42" y="20.5" width="307" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -327,7 +333,9 @@
                     <connections>
                         <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="HwD-BQ-ZrS"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
+                        <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
                         <outlet property="signupOrSignInbutton" destination="3Jp-BX-ryw" id="PSc-6C-BhP"/>
+                        <outlet property="singupAndSignInWithFacebookOutlet" destination="5hJ-iX-uKH" id="jfH-IK-2a7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edS-TP-zJp" userLabel="First Responder" sceneMemberID="firstResponder"/>

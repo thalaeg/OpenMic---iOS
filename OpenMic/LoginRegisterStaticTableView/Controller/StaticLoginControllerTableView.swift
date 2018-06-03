@@ -10,11 +10,19 @@ import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
    
-    //MARK: static cell outlets
+    //MARK: static cell outlets for checkboxes
     
+    @IBOutlet var nameCellOutlet: UITableViewCell!
     
     var isSignup = false
+    //MARK: signup and signin outlets and actions
 
+    @IBOutlet var singupAndSignInWithFacebookOutlet: UIButton!
+    
+    @IBAction func facebookAction(_ sender: Any) {
+        
+    }
+    
     @IBOutlet var signupOrSignInbutton: UIButton!
     
     @IBAction func signupOrlSignInAction(_ sender: Any) {
@@ -89,19 +97,73 @@ class StaticLoginControllerTableView: UITableViewController {
    
 }
 
+
+//MARK: funciton for hiding and showing fields depending on signup or login
 extension StaticLoginControllerTableView {
  
     private func setupLogingOrSignup() -> CGFloat {
         switch isSignup {
         case true:
+            singupAndSignInWithFacebookOutlet.setTitle("SIGN UP WITH FACEBOOK", for: .normal)
             signupOrSignInbutton.setTitle("Sign Up", for: .normal)
             return UITableViewAutomaticDimension
         case false:
+            singupAndSignInWithFacebookOutlet.setTitle("SIGN IN WITH FACEBOOK", for: .normal)
             signupOrSignInbutton.setTitle("Sign In", for: .normal)
             return 0
         }
  
     }
+    
+}
+
+//1 = name
+//2 = email
+//3 = password
+
+//MARK: Delegate methods for determining which textfield to show checkMark
+extension StaticLoginControllerTableView: UITextFieldDelegate {
+    
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        //switch on textfield for checkmark
+        var didFillField = false
+        if let isTextCheck = textField.text {
+            if isTextCheck.count > 1 {
+                didFillField = true
+            }
+        }
+
+        changeCellIndicator(byTag: textField.tag, didFillField: didFillField)
+        
+    }
+    
+    //find the correct cell belonging to the textfield
+    private func changeCellIndicator(byTag: Int, didFillField: Bool) {
+        switch byTag {
+        case 1:
+            turnOffandOnCellAccesory(cell: nameCellOutlet, didFillField: didFillField)
+            
+        default:
+            return
+        }
+        
+        
+    }
+    //turn of or on the cell depending on if they filled out the field 
+    private func turnOffandOnCellAccesory(cell: UITableViewCell, didFillField: Bool ) {
+        switch didFillField {
+        case true:
+            cell.accessoryType = .checkmark
+        case false:
+            cell.accessoryType = .none
+        }
+    }
+    
+    //for resigning first responder
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//
+//    }
     
 }
 
