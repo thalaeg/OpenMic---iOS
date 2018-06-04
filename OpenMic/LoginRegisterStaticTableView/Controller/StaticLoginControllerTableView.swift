@@ -37,20 +37,31 @@ class StaticLoginControllerTableView: UITableViewController {
     }
     
     //MARK: DOB and Gender actions
-    
+    @IBOutlet var dobCell: UITableViewCell!
+    @IBOutlet var selectedDobLabelOutlet: UILabel!
     @IBOutlet var dateOfBirthOutlet: UIDatePicker!
+    @IBAction func DobPickerAction(_ sender: UIDatePicker) {
+        turnOffandOnCellAccesory(cell: dobCell, didFillField: true)
+        selectedDobLabelOutlet.text = "\(sender.date)"
+    }
     
+    @IBOutlet var selectedGenderOutlet: UILabel!
+    @IBOutlet var genderPickerCellOutlet: UITableViewCell!
     @IBOutlet var genderPickerOutlet: UIPickerView!
+    //refer to datasource for genderSelection
     private var genderPickerManager: GenderSelect?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         genderPickerManager = GenderSelect(picker: genderPickerOutlet)
+        genderPickerManager?.delegate = self
         genderPickerOutlet.dataSource = genderPickerManager
         genderPickerOutlet.delegate = genderPickerManager
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
+        
 
     }
     
@@ -100,6 +111,17 @@ class StaticLoginControllerTableView: UITableViewController {
     }
 
    
+}
+
+
+//MARK: GenderpickerDataSource
+extension StaticLoginControllerTableView: GenderPickerDataSource {
+    func didPickGender(gender: String) {
+        turnOffandOnCellAccesory(cell: genderPickerCellOutlet, didFillField: true)
+        selectedGenderOutlet.text = gender
+    }
+    
+    
 }
 
 
@@ -166,10 +188,6 @@ extension StaticLoginControllerTableView: UITextFieldDelegate {
         }
     }
     
-    //for resigning first responder
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//
-//    }
     
 }
 

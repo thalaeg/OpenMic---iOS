@@ -263,6 +263,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="-1280725651.5428543">
                                                         <!--1960-06-01 18:52:28 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="DobPickerAction:" destination="u1t-eK-mgz" eventType="valueChanged" id="Uwo-7N-5xw"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,10 +341,14 @@
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
                         <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="3ZN-Gp-g5S"/>
+                        <outlet property="dobCell" destination="C0h-D2-yFk" id="esS-g5-b8V"/>
                         <outlet property="emailCellOutlet" destination="bmz-4P-l9j" id="SEV-LE-KYy"/>
+                        <outlet property="genderPickerCellOutlet" destination="V2e-J8-vMG" id="T0i-iF-NHM"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
                         <outlet property="passwordCellOutlet" destination="AEM-Dl-3oe" id="5hA-AM-1M5"/>
+                        <outlet property="selectedDobLabelOutlet" destination="vEO-Ki-Kng" id="qTS-mL-xzl"/>
+                        <outlet property="selectedGenderOutlet" destination="jTj-hL-FGP" id="gIR-Bd-zVH"/>
                         <outlet property="signupOrSignInbutton" destination="3Jp-BX-ryw" id="PSc-6C-BhP"/>
                         <outlet property="singupAndSignInWithFacebookOutlet" destination="5hJ-iX-uKH" id="jfH-IK-2a7"/>
                     </connections>

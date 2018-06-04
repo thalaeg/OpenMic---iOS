@@ -16,6 +16,7 @@ class GenderSelect: NSObject {
     private var genders = ["Male", "Female", "Other"]
     
     private var picker: UIPickerView
+    var delegate: GenderPickerDataSource?
     
     init(picker: UIPickerView) {
         self.picker = picker
@@ -45,7 +46,15 @@ extension GenderSelect: UIPickerViewDelegate, UIPickerViewDataSource {
 //    }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //delegate?.selectedGenre(genre: genres[row])
+        delegate?.didPickGender(gender: genders[row])
     }
     
 }
+
+protocol GenderPickerDataSource {
+    func didPickGender(gender: String)
+}
+
+
+
+
