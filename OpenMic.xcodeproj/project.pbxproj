@@ -27,7 +27,6 @@
 		27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1C20810A3F000D7C8B /* Assets.xcassets */; };
 		27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */; };
 		27692F2E20810E95000D7C8B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F2D20810E95000D7C8B /* Login.storyboard */; };
-		27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27692F2F208110B3000D7C8B /* GoogleService-Info.plist */; };
 		277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277318CD2087A0C200C30C05 /* ApiReadWrite.swift */; };
 		2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781107C2087D5EE0071A3E5 /* LoginViewController.swift */; };
 		2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2781107E2087D75D0071A3E5 /* loginassets.xcassets */; };
@@ -37,6 +36,7 @@
 		278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */; };
 		278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */; };
 		278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625E20BF474900823D9B /* UiviewControllerExtension.swift */; };
+		278E865320C878850018A945 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278E865220C878850018A945 /* GoogleService-Info.plist */; };
 		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
 		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
 		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
@@ -82,7 +82,6 @@
 		27692F1F20810A3F000D7C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27692F2120810A3F000D7C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27692F2D20810E95000D7C8B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		27692F2F208110B3000D7C8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		277318CD2087A0C200C30C05 /* ApiReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReadWrite.swift; sourceTree = "<group>"; };
 		2781107C2087D5EE0071A3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2781107E2087D75D0071A3E5 /* loginassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loginassets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitextFieldWithWhitePlaceHolder.swift; sourceTree = "<group>"; };
 		278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSelectViewController.swift; sourceTree = "<group>"; };
 		278C625E20BF474900823D9B /* UiviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiviewControllerExtension.swift; sourceTree = "<group>"; };
+		278E865220C878850018A945 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
 		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 				27692F1C20810A3F000D7C8B /* Assets.xcassets */,
 				27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */,
 				27692F2120810A3F000D7C8B /* Info.plist */,
-				27692F2F208110B3000D7C8B /* GoogleService-Info.plist */,
+				278E865220C878850018A945 /* GoogleService-Info.plist */,
 				2797C8C7208B970800AD93B4 /* RedWriteRules.swift */,
 			);
 			path = OpenMic;
@@ -480,13 +480,13 @@
 			files = (
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
+				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
 				27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
 				271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
-				27692F30208110B3000D7C8B /* GoogleService-Info.plist in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
 				2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */,
@@ -740,13 +740,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BP8BUJFQU2;
+				DEVELOPMENT_TEAM = VYY9QXTLKY;
 				INFOPLIST_FILE = OpenMic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theopenmicapp.openmic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -759,13 +759,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BP8BUJFQU2;
+				DEVELOPMENT_TEAM = VYY9QXTLKY;
 				INFOPLIST_FILE = OpenMic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.OpenMic.OpenMic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theopenmicapp.openmic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

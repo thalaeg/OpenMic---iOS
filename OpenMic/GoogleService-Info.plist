@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>219806915041-v09daooi3227o6ln52bpr621hq3qa2fa.apps.googleusercontent.com</string>
+	<string>219806915041-qultupjjerh5g4qmgmnlee6tmthmqi0c.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.219806915041-v09daooi3227o6ln52bpr621hq3qa2fa</string>
+	<string>com.googleusercontent.apps.219806915041-qultupjjerh5g4qmgmnlee6tmthmqi0c</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDGKJ6KVgBJRra_gSbi_wRjUGZjB83uVkE</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.OpenMic.OpenMic</string>
+	<string>com.theopenmicapp.openmic</string>
 	<key>PROJECT_ID</key>
 	<string>openmic-37c42</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:219806915041:ios:401f5485c0c6dc9a</string>
+	<string>1:219806915041:ios:331ad556600bb838</string>
 	<key>DATABASE_URL</key>
 	<string>https://openmic-37c42.firebaseio.com</string>
 </dict>
