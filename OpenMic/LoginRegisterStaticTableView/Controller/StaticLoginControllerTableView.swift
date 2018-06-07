@@ -90,7 +90,11 @@ class StaticLoginControllerTableView: UITableViewController {
     //refer to datasource for genderSelection
     private var genderPickerManager: GenderSelect?
 
-    
+    override func viewWillAppear(_ animated: Bool) {
+        //set up facebook button title as signup or sign in
+        isSignup ?
+            singupAndSignInWithFacebookOutlet.setTitle("CONTINUE WITH FACEBOOK", for: .normal) : singupAndSignInWithFacebookOutlet.setTitle("SIGN UP WITH FACEBOOK", for: .normal)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -101,6 +105,10 @@ class StaticLoginControllerTableView: UITableViewController {
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
         forgotPasswordOutlet.isHidden = isSignup
+        
+        
+        
+
         
 
     }
