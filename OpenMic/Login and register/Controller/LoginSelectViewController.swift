@@ -30,6 +30,7 @@ class LoginSelectViewController: BaseViewHiddenNav {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         addBackgroundImage(assetName: "backgroundLoginSelect.png")
         
     }
