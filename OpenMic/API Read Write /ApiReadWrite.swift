@@ -12,6 +12,7 @@ import Firebase
 
 
 enum ProfileKeys: String {
+    case name
     case username
     case firbaseUid = "firebase_uid"
     case firstName = "first_name"

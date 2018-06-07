@@ -57,40 +57,38 @@ class SignupViewController: BaseViewController {
     
     
     @IBAction func passwordTwoRegister(_ sender: Any) {
-       registerNewUser()
+       //registerNewUser()
     }
     
     @IBAction func registerAction(_ sender: Any) {
-        registerNewUser()
+        //registerNewUser()
         
 
         
     }
     
     
-    private func registerNewUser() {
-        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields(), let newUserFieldsDic = checkFieldsDelegate?.newUserFieldsDictionary() {
-            if allfieldsFilled {
-                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: newUserFieldsDic, completion: { (error, newUser) in
-                    if !error {
-                        Endpoints.profiles.postCall(with: newUserFieldsDic)
-                        
-                        //self.performSegue(withIdentifier: "userType", sender: self)
-                    }
-                })
-            }
-    
-        }
-        
-    }
+//    private func registerNewUser() {
+//        if let allfieldsFilled = checkFieldsDelegate?.checkforBlankFields(), let newUserFieldsDic = checkFieldsDelegate?.newUserFieldsDictionary() {
+//            if allfieldsFilled {
+//                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: newUserFieldsDic, completion: { (error, newUser) in
+//                    if !error {
+//                        Endpoints.profiles.postCall(with: newUserFieldsDic)
+//
+//                        //self.performSegue(withIdentifier: "userType", sender: self)
+//                    }
+//                })
+//            }
+//
+//        }
+//
+//    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manageFaceBookAuth = ManageFacebook(viewController: self, facebookButton: facebookButton)
         
-        checkFieldsDelegate = self
-        createNewUserDelegate = self
 
     }
 
@@ -99,39 +97,39 @@ class SignupViewController: BaseViewController {
 
 
 //MARK: Check fields delegate method
-extension SignupViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
-    
-    var email: String {
-        return emailTextField.text!
-    }
-    
-    var firstName: String {
-        return firstNameTextField.text!
-    }
-    
-    var LastName: String {
-        return lastNameTextField.text!
-    }
-    
-    var Gender: String {
-        return genderChoiceTextField.text!
-    }
-    
-    var passwordOne: String {
-        return passworTextField.text!
-    }
-    
-    var passwordTwo: String {
-        return verifyPasswordTextField.text!
-    }
-    
-    var viewController: UIViewController {
-        return self
-    }
-    
-    
-    
-}
+//extension SignupViewController: CheckSignUpFieldsDelegate, CreateUserDelegate {
+//
+//    var email: String {
+//        return emailTextField.text!
+//    }
+//
+//    var firstName: String {
+//        return firstNameTextField.text!
+//    }
+//
+//    var LastName: String {
+//        return lastNameTextField.text!
+//    }
+//
+//    var Gender: String {
+//        return genderChoiceTextField.text!
+//    }
+//
+//    var passwordOne: String {
+//        return passworTextField.text!
+//    }
+//
+//    var passwordTwo: String {
+//        return verifyPasswordTextField.text!
+//    }
+//
+//    var viewController: UIViewController {
+//        return self
+//    }
+//
+//
+//
+//}
 
 
 

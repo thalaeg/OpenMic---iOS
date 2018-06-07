@@ -37,6 +37,7 @@
 		278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */; };
 		278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C625E20BF474900823D9B /* UiviewControllerExtension.swift */; };
 		278E865320C878850018A945 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278E865220C878850018A945 /* GoogleService-Info.plist */; };
+		2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790D38120C9814A00665484 /* DateFormatExtensions.swift */; };
 		2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8C7208B970800AD93B4 /* RedWriteRules.swift */; };
 		2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */; };
 		2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */; };
@@ -92,6 +93,7 @@
 		278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSelectViewController.swift; sourceTree = "<group>"; };
 		278C625E20BF474900823D9B /* UiviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiviewControllerExtension.swift; sourceTree = "<group>"; };
 		278E865220C878850018A945 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2790D38120C9814A00665484 /* DateFormatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatExtensions.swift; sourceTree = "<group>"; };
 		2797C8C7208B970800AD93B4 /* RedWriteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWriteRules.swift; sourceTree = "<group>"; };
 		2797C8CB208BE30200AD93B4 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		2797C8CF208BE33200AD93B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		2722B51720C05B9D00E90CB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2734C92220859D1300123924 /* FieldCheckProtocol.swift */,
 				27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */,
 			);
 			path = Model;
@@ -274,7 +277,6 @@
 		27692F2820810A67000D7C8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2734C92220859D1300123924 /* FieldCheckProtocol.swift */,
 				279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */,
 			);
 			path = Model;
@@ -308,6 +310,7 @@
 				278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */,
 				278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */,
 				278C625E20BF474900823D9B /* UiviewControllerExtension.swift */,
+				2790D38120C9814A00665484 /* DateFormatExtensions.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
 				2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */,
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
+				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,

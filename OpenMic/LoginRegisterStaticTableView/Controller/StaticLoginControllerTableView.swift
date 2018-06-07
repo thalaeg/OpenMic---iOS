@@ -81,7 +81,7 @@ class StaticLoginControllerTableView: UITableViewController {
     @IBOutlet var dateOfBirthOutlet: UIDatePicker!
     @IBAction func DobPickerAction(_ sender: UIDatePicker) {
         turnOffandOnCellAccesory(cell: dobCell, didFillField: true)
-        selectedDobLabelOutlet.text = "\(sender.date)"
+        selectedDobLabelOutlet.text = sender.date.formatForUSer()
     }
     
     @IBOutlet var selectedGenderOutlet: UILabel!
