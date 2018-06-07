@@ -100,6 +100,7 @@
                                             </state>
                                             <connections>
                                                 <action selector="forgotPasswordAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="fE8-TI-qjj"/>
+                                                <segue destination="oia-Fn-7Hu" kind="show" id="IPK-D2-jxq"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -370,6 +371,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edS-TP-zJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="775" y="101"/>
+        </scene>
+        <!--forgotpassword-->
+        <scene sceneID="AK3-3O-JH5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForgotPassword" referencedIdentifier="forgotpassword" id="oia-Fn-7Hu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh2-dS-uZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="360"/>
         </scene>
     </scenes>
     <resources>
