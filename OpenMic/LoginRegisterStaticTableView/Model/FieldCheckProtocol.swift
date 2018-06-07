@@ -23,9 +23,8 @@ extension CheckSignUpFieldsDelegate {
     
     
     private func isNotToday() -> Bool {
-        
-        switch dOB {
-        case Date.init():
+        switch dOB.getCurrentYear() {
+        case Date.init().getCurrentYear():
             return true
         default:
             return false
