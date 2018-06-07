@@ -51,7 +51,7 @@ extension CheckSignUpFieldsDelegate {
         
         
         let newUserDic = [ProfileKeys.name.rawValue : name,
-                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender]
+                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.DOB.rawValue : dOB.formatForDataBase()]
         return newUserDic
     }
     

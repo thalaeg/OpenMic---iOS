@@ -20,6 +20,7 @@ enum ProfileKeys: String {
     case email
     case genre
     case gender
+    case DOB 
     //case gender
     case searchRadius = "search_radius"
     case isPrivate

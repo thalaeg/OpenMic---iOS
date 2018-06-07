@@ -9,7 +9,9 @@
 import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
-     var isSignup = false
+    var isSignup = false
+    private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
+    private var createNewUserDelegate: CreateUserDelegate?
     internal var currentGender: String = "Male"
    internal var dOB = Date.init()
  
@@ -43,7 +45,24 @@ class StaticLoginControllerTableView: UITableViewController {
     @IBOutlet var signupOrSignInbutton: UIButton!
     
     @IBAction func signupOrlSignInAction(_ sender: Any) {
+        switch isSignup {
+        case true:
+            checkFieldsDelegate = self
+            createNewUserDelegate = self
+            guard let noBlanks = checkFieldsDelegate?.checkforBlankFields(), let fieldCheck = checkFieldsDelegate else {return }
+            if noBlanks {
+                createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: fieldCheck.newUserFieldsDictionary(), completion: { (error, user) in
+                    if let userCheck = user {
+                        print("segue to next step ")
+                    }
+                    
+                })
+            }
+        case false:
+            print("log userin")
+        }
         
+       
         
         
     }

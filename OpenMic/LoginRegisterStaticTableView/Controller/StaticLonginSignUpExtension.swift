@@ -10,15 +10,9 @@ import UIKit
 
 
 //MARK: signup functions
+//CreateUserDelegate
+extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate, CreateUserDelegate {
 
-extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate {
-
-  
-
-
-
-    
-   
     
     var name: String {
         return nameTextFieldOutlet.text!
@@ -37,7 +31,7 @@ extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate {
     var viewController: UIViewController {
         return self
     }
-    
+  
     
     
     
