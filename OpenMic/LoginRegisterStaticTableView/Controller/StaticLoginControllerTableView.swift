@@ -12,7 +12,7 @@ class StaticLoginControllerTableView: UITableViewController {
     var isSignup = false
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
-    internal var currentGender: String = "Male"
+    internal var currentGender: String = ""
    internal var dOB = Date.init()
  
     //MARK: static cell outlets for checkboxes
