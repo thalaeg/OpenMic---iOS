@@ -14,7 +14,7 @@ protocol CheckSignUpFieldsDelegate {
     var gender: String {get}
     var email: String {get}
     var passwordOne: String {get}
-    var dOB: Date {get}
+    var dOB: String {get}
     var viewController: UIViewController {get}
   
 }
@@ -22,8 +22,8 @@ protocol CheckSignUpFieldsDelegate {
 extension CheckSignUpFieldsDelegate {
     
     func checkforBlankFields() -> Bool {
-        switch (name.isEmpty, gender.isEmpty, email.isEmpty) {
-        case (false, false, false):
+        switch (name.isEmpty, gender.isEmpty, email.isEmpty, dOB.isEmpty) {
+        case (false, false, false, false):
             return true
         default:
             viewController.standardAlertView(title: "Fill in Fields", message: "Please fill in all fields")
