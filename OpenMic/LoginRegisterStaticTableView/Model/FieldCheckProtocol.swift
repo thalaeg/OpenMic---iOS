@@ -11,18 +11,31 @@ import UIKit
 
 protocol CheckSignUpFieldsDelegate {
     var name: String {get}
-    var gender: String {get}
+    var currentGender: String {get}
     var email: String {get}
     var passwordOne: String {get}
-    var dOB: String {get}
+    var dOB: Date {get}
     var viewController: UIViewController {get}
   
 }
 
 extension CheckSignUpFieldsDelegate {
     
+    
+    private func isNotToday() -> Bool {
+        
+        switch dOB {
+        case Date.init():
+            return true
+        default:
+            return false
+        }
+        
+        
+    }
+    
     func checkforBlankFields() -> Bool {
-        switch (name.isEmpty, gender.isEmpty, email.isEmpty, dOB.isEmpty) {
+        switch (name.isEmpty, currentGender.isEmpty, email.isEmpty, isNotToday()) {
         case (false, false, false, false):
             return true
         default:
@@ -38,7 +51,7 @@ extension CheckSignUpFieldsDelegate {
         
         
         let newUserDic = [ProfileKeys.name.rawValue : name,
-                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : gender]
+                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender]
         return newUserDic
     }
     

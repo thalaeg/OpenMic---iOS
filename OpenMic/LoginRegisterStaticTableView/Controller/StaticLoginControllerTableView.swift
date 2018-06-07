@@ -10,7 +10,9 @@ import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
      var isSignup = false
-   
+    internal var currentGender: String = "Male"
+   internal var dOB = Date.init()
+ 
     //MARK: static cell outlets for checkboxes
     
     @IBOutlet var nameCellOutlet: UITableViewCell!
@@ -82,6 +84,7 @@ class StaticLoginControllerTableView: UITableViewController {
     @IBAction func DobPickerAction(_ sender: UIDatePicker) {
         turnOffandOnCellAccesory(cell: dobCell, didFillField: true)
         selectedDobLabelOutlet.text = sender.date.formatForUSer()
+        dOB = sender.date
     }
     
     @IBOutlet var selectedGenderOutlet: UILabel!
@@ -167,6 +170,8 @@ extension StaticLoginControllerTableView: GenderPickerDataSource {
     func didPickGender(gender: String) {
         turnOffandOnCellAccesory(cell: genderPickerCellOutlet, didFillField: true)
         selectedGenderOutlet.text = gender
+        currentGender = gender
+    
     }
     
     
