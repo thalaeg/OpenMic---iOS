@@ -15,15 +15,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="loginFields" id="u1t-eK-mgz" customClass="StaticLoginControllerTableView" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3nA-y7-hez">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="5w4-je-mxW">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wm6-8E-8Jd">
-                                    <rect key="frame" x="0.0" y="150.5" width="375" height="72.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-eY-R2P">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
@@ -66,23 +66,23 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="wm6-8E-8Jd" secondAttribute="bottom" constant="10" id="Uh9-Dy-HAR"/>
                                 <constraint firstAttribute="trailing" secondItem="wm6-8E-8Jd" secondAttribute="trailing" id="XIZ-RB-GOy"/>
+                                <constraint firstItem="wm6-8E-8Jd" firstAttribute="top" secondItem="5w4-je-mxW" secondAttribute="top" id="YSK-Zq-yXe"/>
                                 <constraint firstItem="wm6-8E-8Jd" firstAttribute="leading" secondItem="5w4-je-mxW" secondAttribute="leading" id="xKf-DW-n5O"/>
                             </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="IV3-7Y-a1D">
                             <rect key="frame" x="0.0" y="697" width="375" height="105"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-4Y-cvI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-4Y-cvI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jp-BX-ryw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                             <color key="backgroundColor" red="0.76470588240000004" green="0.0" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="48" id="QVl-qe-nDD"/>
+                                                <constraint firstAttribute="height" constant="48" id="3Ih-dL-SzE"/>
                                             </constraints>
                                             <state key="normal" title="Sign Up">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,22 +92,24 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1Y-Ul-98d">
-                                            <rect key="frame" x="0.0" y="52" width="375" height="286"/>
+                                            <rect key="frame" x="0.0" y="58" width="375" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <state key="normal" title="Forgot Password?">
                                                 <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="forgotPasswordAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="fE8-TI-qjj"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="Nqg-4Y-cvI" firstAttribute="top" secondItem="IV3-7Y-a1D" secondAttribute="top" id="52I-dU-QvF"/>
-                                <constraint firstAttribute="trailing" secondItem="Nqg-4Y-cvI" secondAttribute="trailing" id="NNt-S2-e32"/>
-                                <constraint firstItem="Nqg-4Y-cvI" firstAttribute="leading" secondItem="IV3-7Y-a1D" secondAttribute="leading" id="UB1-wS-fJf"/>
-                                <constraint firstAttribute="bottom" secondItem="Nqg-4Y-cvI" secondAttribute="bottom" id="gc4-bx-DlZ"/>
+                                <constraint firstItem="Nqg-4Y-cvI" firstAttribute="top" secondItem="IV3-7Y-a1D" secondAttribute="top" id="1MW-ZZ-EHX"/>
+                                <constraint firstAttribute="trailing" secondItem="Nqg-4Y-cvI" secondAttribute="trailing" id="UST-v3-Oou"/>
+                                <constraint firstItem="Nqg-4Y-cvI" firstAttribute="leading" secondItem="IV3-7Y-a1D" secondAttribute="leading" id="iTf-xK-Nvb"/>
                             </constraints>
                         </view>
                         <sections>
@@ -346,12 +348,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="SIGN UP" id="vrA-QW-snw"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <size key="freeformSize" width="375" height="900"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="3ZN-Gp-g5S"/>
                         <outlet property="dobCell" destination="C0h-D2-yFk" id="esS-g5-b8V"/>
                         <outlet property="emailCellOutlet" destination="bmz-4P-l9j" id="SEV-LE-KYy"/>
                         <outlet property="emailTexFieldOutlet" destination="6TM-7e-rwv" id="vaG-7r-pkm"/>
+                        <outlet property="forgotPasswordOutlet" destination="N1Y-Ul-98d" id="I6f-dd-3nX"/>
                         <outlet property="genderPickerCellOutlet" destination="V2e-J8-vMG" id="T0i-iF-NHM"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
@@ -366,7 +369,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edS-TP-zJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="133.13343328335833"/>
+            <point key="canvasLocation" x="246" y="134"/>
         </scene>
     </scenes>
     <resources>

@@ -20,6 +20,15 @@ class StaticLoginControllerTableView: UITableViewController {
     
     @IBOutlet var passwordCellOutlet: UITableViewCell!
     
+    //MARK: forgotPassword
+    
+    @IBOutlet var forgotPasswordOutlet: UIButton!
+    
+    @IBAction func forgotPasswordAction(_ sender: Any) {
+    }
+    
+    
+    
    
     //MARK: signup and signin outlets and actions
 
@@ -56,7 +65,6 @@ class StaticLoginControllerTableView: UITableViewController {
     
     @IBAction func passwordTextFieldNext(_ sender: Any) {
         self.view.endEditing(true)
-        let indexPath = IndexPath(row: 3, section: 0)
     
         
     }
@@ -92,6 +100,7 @@ class StaticLoginControllerTableView: UITableViewController {
         genderPickerOutlet.delegate = genderPickerManager
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
+        forgotPasswordOutlet.isHidden = isSignup
         
 
     }
