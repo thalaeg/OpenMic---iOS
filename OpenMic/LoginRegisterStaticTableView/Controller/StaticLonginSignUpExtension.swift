@@ -11,9 +11,11 @@ import UIKit
 
 //MARK: signup functions
 //CreateUserDelegate
-extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate, CreateUserDelegate {
+extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate, CreateUserDelegate, LogUserInDelegate {
+    var password: String {
+         return passwordTextFieldOutlet.text!
+    }
 
-    
     var name: String {
         return nameTextFieldOutlet.text!
     }
@@ -33,6 +35,18 @@ extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate, CreateUserD
     }
   
     
+}
+
+//MARK: Listen for change in authentication state
+
+extension StaticLoginControllerTableView: CheckUserStatusDataSource {
+    func userStateChange(loggedIn: Bool) {
+        print("user logged in = \(loggedIn)")
+    }
+    
+    
     
     
 }
+
+

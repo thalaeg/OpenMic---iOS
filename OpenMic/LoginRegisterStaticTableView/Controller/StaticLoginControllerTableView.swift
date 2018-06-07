@@ -12,6 +12,8 @@ class StaticLoginControllerTableView: UITableViewController {
     var isSignup = false
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
+    private var loginUserDelegate: LogUserInDelegate?
+    private var checkuserAuthStatusDatasource: CheckUserStatusDataSource?
     internal var currentGender: String = ""
    internal var dOB = Date.init()
  
@@ -59,7 +61,11 @@ class StaticLoginControllerTableView: UITableViewController {
                 })
             }
         case false:
-            print("log userin")
+            //implment login
+            
+            loginUserDelegate = self
+            loginUserDelegate?.checkFieldsAndAuthenticate()
+            
         }
         
        
@@ -115,7 +121,8 @@ class StaticLoginControllerTableView: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         //set up facebook button title as signup or sign in
         isSignup ?
-            singupAndSignInWithFacebookOutlet.setTitle("CONTINUE WITH FACEBOOK", for: .normal) : singupAndSignInWithFacebookOutlet.setTitle("SIGN UP WITH FACEBOOK", for: .normal)
+            singupAndSignInWithFacebookOutlet.setTitle("CONTINUE WITH FACEBOOK", for: .normal) :
+            singupAndSignInWithFacebookOutlet.setTitle("SIGN UP WITH FACEBOOK", for: .normal)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,6 +134,8 @@ class StaticLoginControllerTableView: UITableViewController {
         dateOfBirthOutlet.isHidden = true
         genderPickerOutlet.isHidden = true
         forgotPasswordOutlet.isHidden = isSignup
+        checkuserAuthStatusDatasource = self
+        checkuserAuthStatusDatasource?.listenForUserStateChange()
         
         
         
