@@ -9,6 +9,7 @@
 import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
+     var isSignup = false
    
     //MARK: static cell outlets for checkboxes
     
@@ -19,7 +20,7 @@ class StaticLoginControllerTableView: UITableViewController {
     
     @IBOutlet var passwordCellOutlet: UITableViewCell!
     
-    var isSignup = false
+   
     //MARK: signup and signin outlets and actions
 
     @IBOutlet var singupAndSignInWithFacebookOutlet: UIButton!
@@ -36,12 +37,34 @@ class StaticLoginControllerTableView: UITableViewController {
         
     }
     
+    //Mark: textFieldOutlets and actions
+    @IBOutlet var nameTextFieldOutlet: UITextField!
+    
+    @IBAction func nameTextFieldNext(_ sender: Any) {
+        emailTexFieldOutlet.becomeFirstResponder()
+    }
+    
+    
+    @IBOutlet var emailTexFieldOutlet: UITextField!
+    
+    @IBAction func emailTextFieldNext(_ sender: Any) {
+        passwordTextFieldOutlet.becomeFirstResponder()
+    }
+    
+    
     @IBOutlet var passwordTextFieldOutlet: UITextField!
+    
+    @IBAction func passwordTextFieldNext(_ sender: Any) {
+        self.view.endEditing(true)
+        let indexPath = IndexPath(row: 3, section: 0)
+    
+        
+    }
     
     @IBAction func showPasswordAction(_ sender: Any) {
         
         passwordTextFieldOutlet.isSecureTextEntry =  !passwordTextFieldOutlet.isSecureTextEntry
-                
+        
         
     }
     //MARK: DOB and Gender actions

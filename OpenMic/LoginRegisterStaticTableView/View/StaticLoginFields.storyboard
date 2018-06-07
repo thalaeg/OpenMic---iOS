@@ -129,6 +129,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                     <connections>
+                                                        <action selector="nameTextFieldNext:" destination="u1t-eK-mgz" eventType="primaryActionTriggered" id="NKY-Nw-COC"/>
                                                         <outlet property="delegate" destination="u1t-eK-mgz" id="TRn-kb-QTe"/>
                                                     </connections>
                                                 </textField>
@@ -162,6 +163,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                                     <connections>
+                                                        <action selector="emailTextFieldNext:" destination="u1t-eK-mgz" eventType="primaryActionTriggered" id="LWP-yW-DAC"/>
                                                         <outlet property="delegate" destination="u1t-eK-mgz" id="4bs-qh-QVJ"/>
                                                     </connections>
                                                 </textField>
@@ -195,6 +197,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                     <connections>
+                                                        <action selector="passwordTextFieldNext:" destination="u1t-eK-mgz" eventType="primaryActionTriggered" id="wV5-JR-cVz"/>
                                                         <outlet property="delegate" destination="u1t-eK-mgz" id="Gn7-VE-XiZ"/>
                                                     </connections>
                                                 </textField>
@@ -348,9 +351,11 @@
                         <outlet property="dateOfBirthOutlet" destination="TJx-oI-Nj6" id="3ZN-Gp-g5S"/>
                         <outlet property="dobCell" destination="C0h-D2-yFk" id="esS-g5-b8V"/>
                         <outlet property="emailCellOutlet" destination="bmz-4P-l9j" id="SEV-LE-KYy"/>
+                        <outlet property="emailTexFieldOutlet" destination="6TM-7e-rwv" id="vaG-7r-pkm"/>
                         <outlet property="genderPickerCellOutlet" destination="V2e-J8-vMG" id="T0i-iF-NHM"/>
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
+                        <outlet property="nameTextFieldOutlet" destination="2HV-hG-O1a" id="VVF-3L-OrM"/>
                         <outlet property="passwordCellOutlet" destination="AEM-Dl-3oe" id="5hA-AM-1M5"/>
                         <outlet property="passwordTextFieldOutlet" destination="K4W-fY-21H" id="m5s-jR-VLH"/>
                         <outlet property="selectedDobLabelOutlet" destination="vEO-Ki-Kng" id="qTS-mL-xzl"/>
