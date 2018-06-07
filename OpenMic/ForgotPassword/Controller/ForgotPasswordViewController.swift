@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ForgotPasswordViewController: BaseViewController {
+class ForgotPasswordViewController: UIViewController {
     var passwordDelegate: PasswordResetDelegate?
     var sendEmailDelegate: SendHelpEmail?
     

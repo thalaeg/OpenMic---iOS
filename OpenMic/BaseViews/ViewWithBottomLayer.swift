@@ -14,7 +14,7 @@ class ViewWithBottomLayer: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.addBottomBorder()
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
     }
 
 

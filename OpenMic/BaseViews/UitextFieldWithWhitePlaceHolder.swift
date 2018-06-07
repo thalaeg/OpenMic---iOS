@@ -13,7 +13,7 @@ class UitextFieldWithWhitePlaceHolder: UITextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        self.setValue(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), forKeyPath: "_placeholderLabel.textColor")
+        self.setValue(#colorLiteral(red: 0.4235294118, green: 0.4235294118, blue: 0.4235294118, alpha: 1), forKeyPath: "_placeholderLabel.textColor")
 
     }
 
