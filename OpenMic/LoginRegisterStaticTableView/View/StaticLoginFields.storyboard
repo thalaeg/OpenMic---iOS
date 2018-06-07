@@ -23,7 +23,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wm6-8E-8Jd">
-                                    <rect key="frame" x="0.0" y="266.5" width="375" height="72.5"/>
+                                    <rect key="frame" x="0.0" y="150.5" width="375" height="72.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-eY-R2P">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
@@ -193,7 +193,7 @@
                                                     <rect key="frame" x="44" y="20.5" width="270" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="u1t-eK-mgz" id="Gn7-VE-XiZ"/>
                                                     </connections>
@@ -204,6 +204,9 @@
                                                     <state key="normal" title="Show">
                                                         <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="showPasswordAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="i0N-Mv-dYX"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -349,6 +352,7 @@
                         <outlet property="genderPickerOutlet" destination="qsN-t7-fUj" id="Spb-lh-htm"/>
                         <outlet property="nameCellOutlet" destination="39E-Ix-Xm0" id="Hcn-zL-swS"/>
                         <outlet property="passwordCellOutlet" destination="AEM-Dl-3oe" id="5hA-AM-1M5"/>
+                        <outlet property="passwordTextFieldOutlet" destination="K4W-fY-21H" id="m5s-jR-VLH"/>
                         <outlet property="selectedDobLabelOutlet" destination="vEO-Ki-Kng" id="qTS-mL-xzl"/>
                         <outlet property="selectedGenderOutlet" destination="jTj-hL-FGP" id="gIR-Bd-zVH"/>
                         <outlet property="signupOrSignInbutton" destination="3Jp-BX-ryw" id="PSc-6C-BhP"/>

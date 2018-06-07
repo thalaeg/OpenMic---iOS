@@ -36,6 +36,14 @@ class StaticLoginControllerTableView: UITableViewController {
         
     }
     
+    @IBOutlet var passwordTextFieldOutlet: UITextField!
+    
+    @IBAction func showPasswordAction(_ sender: Any) {
+        
+        passwordTextFieldOutlet.isSecureTextEntry =  !passwordTextFieldOutlet.isSecureTextEntry
+                
+        
+    }
     //MARK: DOB and Gender actions
     @IBOutlet var dobCell: UITableViewCell!
     @IBOutlet var selectedDobLabelOutlet: UILabel!
