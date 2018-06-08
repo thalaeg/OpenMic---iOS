@@ -75,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CtC-hv-thw"/>
                     <connections>
+                        <outlet property="fieldContainerView" destination="LWa-C5-Pwl" id="TdO-QJ-zQJ"/>
                         <outlet property="usernameTextFieldOutlet" destination="RYs-Ez-wMH" id="3O5-ij-F7l"/>
                     </connections>
                 </viewController>

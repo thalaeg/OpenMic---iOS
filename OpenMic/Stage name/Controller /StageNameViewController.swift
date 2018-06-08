@@ -10,16 +10,13 @@ import UIKit
 class StageNameViewController: UIViewController {
     
     @IBOutlet var usernameTextFieldOutlet: UITextField!
+    @IBOutlet var fieldContainerView: UIView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //set textfield border
-    
-        usernameTextFieldOutlet.layer.borderColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
-        usernameTextFieldOutlet.layer.borderWidth = 1.0
-        usernameTextFieldOutlet.layer.cornerRadius = 5
+       
     }
     
     
@@ -57,6 +54,17 @@ class StageNameViewController: UIViewController {
         skipFornow.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         let leftbarButtonItem = UIBarButtonItem(customView: skipFornow)
         self.navigationItem.leftBarButtonItem = leftbarButtonItem
+        
+        //set textfield border
+        
+        usernameTextFieldOutlet.layer.borderColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
+        usernameTextFieldOutlet.layer.borderWidth = 1.0
+        usernameTextFieldOutlet.layer.cornerRadius = 5
+        
+        //container view border
+        
+        fieldContainerView.layer.borderWidth = 1.0
+        fieldContainerView.layer.borderColor = #colorLiteral(red: 0.8078431373, green: 0.8078431373, blue: 0.8078431373, alpha: 1)
         
        
         
