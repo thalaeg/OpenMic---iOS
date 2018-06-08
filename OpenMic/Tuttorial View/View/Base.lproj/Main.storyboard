@@ -33,15 +33,13 @@
                                     <outlet property="delegate" destination="3vQ-mN-Ogf" id="1sB-3V-mEY"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axu-fs-dzZ" customClass="BlueCrossFade" customModule="Dart" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axu-fs-dzZ">
                                 <rect key="frame" x="20" y="428" width="335" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dvJ-Ba-6iw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Get Started"/>
                                 <connections>
                                     <action selector="getStartedAction:" destination="3vQ-mN-Ogf" eventType="touchUpInside" id="C5w-4v-04B"/>
                                 </connections>
