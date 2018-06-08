@@ -10,6 +10,7 @@ import UIKit
 class TutorialViewController: UIViewController {
     private var tutorialStepModel: TutorialStepModel?
     private var scrollToNextPageDelegate: ScrollToNextPageDelegate?
+    private var closeTutorial = false
     
     @IBOutlet var scrollView: UIScrollView!
     
@@ -23,9 +24,15 @@ class TutorialViewController: UIViewController {
         
     }
     
+    @IBOutlet var nextButtonOutlet: UIButton!
     @IBAction func nextButtonAction(_ sender: Any) {
+        switch closeTutorial {
+        case true:
+            self.performSegue(withIdentifier: "login", sender: self)
+        default:
+            scrollToNextPageDelegate?.scrollToNextPage()
+        }
         
-        scrollToNextPageDelegate?.scrollToNextPage()
         
         
     }
@@ -34,6 +41,7 @@ class TutorialViewController: UIViewController {
         super.viewDidLoad()
         tutorialStepModel = TutorialStepModel(view: self, pageController: pageController, scrollView: scrollView)
         scrollToNextPageDelegate = tutorialStepModel
+        tutorialStepModel?.changeNextbuttonDataSource = self
 
     }
     
@@ -48,3 +56,27 @@ class TutorialViewController: UIViewController {
 
 }
 
+
+extension TutorialViewController: ChangetoDoneButtonDataSouce {
+    func changeNextToDone(isDone: Bool) {
+        closeTutorial = isDone
+        switch isDone {
+        case true:
+            nextButtonOutlet.setTitle("Done", for: .normal)
+            
+        case false:
+            nextButtonOutlet.setTitle("Next", for: .normal)
+            
+        }
+    }
+    
+    
+    
+}
+
+
+
+
+protocol ChangetoDoneButtonDataSouce {
+    func changeNextToDone(isDone: Bool)
+}

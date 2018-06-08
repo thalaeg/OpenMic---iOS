@@ -14,6 +14,7 @@ class TutorialStepModel: NSObject {
     var viewController: UIViewController
     var scrollView: UIScrollView
     var tuttorialStepDelegate: CreateTutorialStepDelegate?
+    var changeNextbuttonDataSource: ChangetoDoneButtonDataSouce?
     
     init(view: UIViewController, pageController: UIPageControl, scrollView: UIScrollView) {
         self.viewController = view
@@ -44,6 +45,14 @@ class TutorialStepModel: NSObject {
 extension TutorialStepModel: UIScrollViewDelegate, CreateTutorialStepDelegate, ScrollToNextPageDelegate {
   
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        switch pageController.currentPage {
+        case 3:
+            changeNextbuttonDataSource?.changeNextToDone(isDone: true)
+        default:
+            changeNextbuttonDataSource?.changeNextToDone(isDone: false)
+        }
+        
+        
         let pageWidth = scrollView.bounds.width
         let pageFraction = scrollView.contentOffset.x / pageWidth
         pageController.currentPage = Int(round(pageFraction))
@@ -65,4 +74,6 @@ extension TutorialStepModel: UIScrollViewDelegate, CreateTutorialStepDelegate, S
  protocol ScrollToNextPageDelegate {
     func scrollToNextPage()
  }
+ 
+
 

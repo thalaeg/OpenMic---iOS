@@ -88,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="getStartedButton" destination="axu-fs-dzZ" id="eZ6-1d-9iO"/>
+                        <outlet property="nextButtonOutlet" destination="NR0-7N-Xhx" id="lqa-R5-c9r"/>
                         <outlet property="pageController" destination="e8X-nm-9lN" id="bN4-GJ-otp"/>
                         <outlet property="scrollView" destination="XlU-2c-s21" id="deE-yg-uUm"/>
                         <segue destination="Ay7-qC-zHE" kind="presentation" identifier="login" id="wGC-bj-MlF"/>
