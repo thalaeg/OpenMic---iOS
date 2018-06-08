@@ -41,7 +41,9 @@ extension StaticLoginControllerTableView: CheckSignUpFieldsDelegate, CreateUserD
 
 extension StaticLoginControllerTableView: CheckUserStatusDataSource {
     func userStateChange(loggedIn: Bool) {
-        print("user logged in = \(loggedIn)")
+        if loggedIn {
+            self.performSegue(withIdentifier: "stageName", sender: self)
+        }
     }
     
     

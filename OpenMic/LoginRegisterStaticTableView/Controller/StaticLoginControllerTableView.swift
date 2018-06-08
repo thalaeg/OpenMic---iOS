@@ -55,7 +55,6 @@ class StaticLoginControllerTableView: UITableViewController {
             if noBlanks {
                 createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: fieldCheck.newUserFieldsDictionary(), completion: { (error, user) in
                     if let userCheck = user {
-                        print("segue to next step ")
                     }
                     
                 })
