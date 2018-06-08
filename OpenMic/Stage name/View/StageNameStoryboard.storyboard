@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stage Name View Controller-->
         <scene sceneID="iBz-Qd-zwf">
             <objects>
-                <viewController id="Og4-NM-Gai" sceneMemberID="viewController">
+                <viewController id="Og4-NM-Gai" customClass="StageNameViewController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkC-iR-wnw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,12 +75,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="CtC-hv-thw">
                         <barButtonItem key="leftBarButtonItem" title="Skip for now" id="ZT2-Ku-9DQ"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="JOu-Yz-qvd"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fv-CA-Xxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922.39999999999998" y="150.67466266866569"/>
+            <point key="canvasLocation" x="1063" y="152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Hb-vE-ucQ">
