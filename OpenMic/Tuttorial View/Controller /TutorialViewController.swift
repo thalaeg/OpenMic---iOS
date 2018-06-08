@@ -32,9 +32,10 @@ class TutorialViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         pageController.transform = CGAffineTransform(scaleX: 3, y: 3)
-//        pageController.subviews.forEach{
-//            $0.transform = CGAffineTransform(scaleX: 3, y: 3)
-//        }
+        pageController.subviews.forEach{
+            $0.layer.borderWidth  = 0.5
+            $0.layer.borderColor = #colorLiteral(red: 0.8196078431, green: 0.8196078431, blue: 0.8196078431, alpha: 1)
+        }
     }
 
 }
