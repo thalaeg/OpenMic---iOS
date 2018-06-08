@@ -35,9 +35,9 @@ extension CreateTutorialStepDelegate {
         
         let metrics = ["edgeMargin" : 0, "betweenMargin" : 0]
 
-        let views: [String : UIView] = ["view" : viewController.view, "page1" : tutorialStepControllers[0].view, "page2" : tutorialStepControllers[1].view, "page3" : tutorialStepControllers[2].view]
+        let views: [String : UIView] = ["view" : viewController.view, "page1" : tutorialStepControllers[0].view, "page2" : tutorialStepControllers[1].view, "page3" : tutorialStepControllers[2].view, "page4" : tutorialStepControllers[3].view]
         let verticalContraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[page1(==view)]|", options: [], metrics: nil, views: views)
-        let horizontalContrains = NSLayoutConstraint.constraints(withVisualFormat: "H:|-edgeMargin-[page1(==view)]-betweenMargin-[page2(==view)]-betweenMargin-[page3(==view)]-edgeMargin-|", options: [.alignAllTop, .alignAllBottom], metrics: metrics, views: views)
+        let horizontalContrains = NSLayoutConstraint.constraints(withVisualFormat: "H:|-edgeMargin-[page1(==view)]-betweenMargin-[page2(==view)]-betweenMargin-[page3(==view)]-betweenMargin-[page4(==view)]-edgeMargin-|", options: [.alignAllTop, .alignAllBottom], metrics: metrics, views: views)
         NSLayoutConstraint.activate(verticalContraints + horizontalContrains)
         
     }
