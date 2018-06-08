@@ -9,13 +9,17 @@
 import UIKit
 class StageNameViewController: UIViewController {
     
+    @IBOutlet var usernameTextFieldOutlet: UITextField!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Do any additional setup after loading the view.
+        //set textfield border
+    
+        usernameTextFieldOutlet.layer.borderColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
+        usernameTextFieldOutlet.layer.borderWidth = 1.0
+        usernameTextFieldOutlet.layer.cornerRadius = 5
     }
     
     
@@ -25,22 +29,6 @@ class StageNameViewController: UIViewController {
         customizeButtons()
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -55,7 +43,6 @@ class StageNameViewController: UIViewController {
 
         nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
         nextButton.layer.cornerRadius = 15
-            //nextButton.bounds.midY
         let rightbarbuttonItem = UIBarButtonItem(customView: nextButton)
         self.navigationItem.rightBarButtonItem = rightbarbuttonItem
         
@@ -63,7 +50,7 @@ class StageNameViewController: UIViewController {
         let skipFornow = UIButton()
         skipFornow.frame = CGRect(x: 0, y: 0, width: 100, height: 21)
         skipFornow.setTitle("Skip for now", for: .normal)
-        //skipFornow.titleLabel?.tintColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
+    
         skipFornow.setTitleColor(#colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1), for: .normal)
         skipFornow.tintColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
 
@@ -71,6 +58,9 @@ class StageNameViewController: UIViewController {
         let leftbarButtonItem = UIBarButtonItem(customView: skipFornow)
         self.navigationItem.leftBarButtonItem = leftbarButtonItem
         
+       
+        
+
     }
     
 }
