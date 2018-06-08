@@ -9,6 +9,7 @@
 import UIKit
 class TutorialViewController: UIViewController {
     private var tutorialStepModel: TutorialStepModel?
+    private var scrollToNextPageDelegate: ScrollToNextPageDelegate?
     
     @IBOutlet var scrollView: UIScrollView!
     
@@ -22,10 +23,17 @@ class TutorialViewController: UIViewController {
         
     }
     
+    @IBAction func nextButtonAction(_ sender: Any) {
+        
+        scrollToNextPageDelegate?.scrollToNextPage()
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tutorialStepModel = TutorialStepModel(view: self, pageController: pageController, scrollView: scrollView)
+        scrollToNextPageDelegate = tutorialStepModel
 
     }
     

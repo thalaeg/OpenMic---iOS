@@ -41,7 +41,7 @@ class TutorialStepModel: NSObject {
 }
 
 
-extension TutorialStepModel: UIScrollViewDelegate, CreateTutorialStepDelegate {
+extension TutorialStepModel: UIScrollViewDelegate, CreateTutorialStepDelegate, ScrollToNextPageDelegate {
   
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageWidth = scrollView.bounds.width
@@ -50,5 +50,19 @@ extension TutorialStepModel: UIScrollViewDelegate, CreateTutorialStepDelegate {
        
     }
     
+    
+    func scrollToNextPage(){
+        var frame = scrollView.frame
+        let nextPage = pageController.currentPage + 1
+        frame.origin.x = frame.size.width * CGFloat(nextPage)
+        scrollView.scrollRectToVisible(frame, animated: true)
+        
+    }
+    
 }
+ 
+ 
+ protocol ScrollToNextPageDelegate {
+    func scrollToNextPage()
+ }
 
