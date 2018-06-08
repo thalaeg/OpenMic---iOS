@@ -11,52 +11,59 @@ import FBSDKLoginKit
 import Firebase
 import SwiftyJSON
 
-class ManageFacebook: NSObject, FBSDKLoginButtonDelegate {
+class ManageFacebook: NSObject {
     
     
     var managedVC: UIViewController
-    var faceBookButton: FBSDKLoginButton
+
     
-    init(viewController: UIViewController, facebookButton: FBSDKLoginButton ) {
+    init(viewController: UIViewController) {
         self.managedVC = viewController
-        self.faceBookButton = facebookButton
         super.init()
-        self.faceBookButton.delegate = self
         FBSDKLoginManager().logOut()
-        self.faceBookButton.readPermissions = ["public_profile", "email"]
-        
     }
     
     
     
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        if let error = error {
-            print(error.localizedDescription)
-        } else if !result.isCancelled {
-            let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            
-            Auth.auth().signIn(with: credential) { (user, error) in
-                if let errorCheck = error {
-                   self.managedVC.standardAlertView(title: "Error", message: errorCheck.localizedDescription)
-                    return
+    func loginWithCustomButton() {
+        let fbLoginManager = FBSDKLoginManager()
+        //"id, name, first_name, last_name
+        
+        fbLoginManager.logIn(withReadPermissions: ["email"], from: managedVC) { (result, error) in
+            print("error \(error.debugDescription)")
+            guard let userCanceld = result?.isCancelled else {return}
+            if !userCanceld {
+                if error == nil {
+                    let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                    self.authThenticateWithFBToken(authCredential: credential)
                 } else {
-                    if let userID = user?.uid {
-                        self.checkToCreateUser(userID: userID)
-                    }
+                    self.managedVC.standardAlertView(title: "error", message: error!.localizedDescription)
                 }
-           
             }
         }
-        
-        
-        
-        
+    }
+    
+    
+    private func authThenticateWithFBToken(authCredential: AuthCredential) {
+        Auth.auth().signIn(with: authCredential) { (user, error) in
+            if let errorCheck = error {
+                self.managedVC.standardAlertView(title: "Error", message: errorCheck.localizedDescription)
+                return
+            } else {
+                if let userID = user?.uid {
+                    self.checkToCreateUser(userID: userID)
+                }
+            }
+            
+        }
         
     }
     
-    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        // handle logging out
-    }
+    
+    
+
+    
+    
     
     
     

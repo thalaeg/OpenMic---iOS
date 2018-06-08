@@ -10,12 +10,14 @@ import UIKit
 
 class StaticLoginControllerTableView: UITableViewController {
     var isSignup = false
+    private var manageFacebook: ManageFacebook?
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
     private var createNewUserDelegate: CreateUserDelegate?
     private var loginUserDelegate: LogUserInDelegate?
     private var checkuserAuthStatusDatasource: CheckUserStatusDataSource?
     internal var currentGender: String = ""
    internal var dOB = Date.init()
+    
  
     //MARK: static cell outlets for checkboxes
     
@@ -31,6 +33,8 @@ class StaticLoginControllerTableView: UITableViewController {
     @IBOutlet var forgotPasswordOutlet: UIButton!
     
     @IBAction func forgotPasswordAction(_ sender: Any) {
+        
+        
     }
     
     
@@ -41,7 +45,8 @@ class StaticLoginControllerTableView: UITableViewController {
     @IBOutlet var singupAndSignInWithFacebookOutlet: UIButton!
     
     @IBAction func facebookAction(_ sender: Any) {
-        
+        manageFacebook = ManageFacebook(viewController: self)
+        manageFacebook?.loginWithCustomButton()
     }
     
     @IBOutlet var signupOrSignInbutton: UIButton!

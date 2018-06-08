@@ -40,7 +40,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        facebookManager = ManageFacebook(viewController: self, facebookButton: loginWithFacebookButton)
+       // facebookManager = ManageFacebook(viewController: self, facebookButton: loginWithFacebookButton)
         authenticateDelegate = self
     }
     
