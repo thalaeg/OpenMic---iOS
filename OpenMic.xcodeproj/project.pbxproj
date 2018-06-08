@@ -30,6 +30,11 @@
 		27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */; };
 		27692F2E20810E95000D7C8B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F2D20810E95000D7C8B /* Login.storyboard */; };
 		277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277318CD2087A0C200C30C05 /* ApiReadWrite.swift */; };
+		2777B9E420CAF8B400C98BF4 /* TutorialStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E220CAF8B400C98BF4 /* TutorialStepViewController.swift */; };
+		2777B9E520CAF8B400C98BF4 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E320CAF8B400C98BF4 /* TutorialViewController.swift */; };
+		2777B9E820CAF8CC00C98BF4 /* TutorialStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E620CAF8CB00C98BF4 /* TutorialStepModel.swift */; };
+		2777B9E920CAF8CC00C98BF4 /* TutorialStepProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E720CAF8CB00C98BF4 /* TutorialStepProtocol.swift */; };
+		2777B9EC20CAF90000C98BF4 /* TutorialAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2777B9EB20CAF90000C98BF4 /* TutorialAssets.xcassets */; };
 		2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781107C2087D5EE0071A3E5 /* LoginViewController.swift */; };
 		2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2781107E2087D75D0071A3E5 /* loginassets.xcassets */; };
 		278110822087D9140071A3E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110812087D9140071A3E5 /* BaseViewController.swift */; };
@@ -89,6 +94,11 @@
 		27692F2120810A3F000D7C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27692F2D20810E95000D7C8B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		277318CD2087A0C200C30C05 /* ApiReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReadWrite.swift; sourceTree = "<group>"; };
+		2777B9E220CAF8B400C98BF4 /* TutorialStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialStepViewController.swift; sourceTree = "<group>"; };
+		2777B9E320CAF8B400C98BF4 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		2777B9E620CAF8CB00C98BF4 /* TutorialStepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialStepModel.swift; sourceTree = "<group>"; };
+		2777B9E720CAF8CB00C98BF4 /* TutorialStepProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialStepProtocol.swift; sourceTree = "<group>"; };
+		2777B9EB20CAF90000C98BF4 /* TutorialAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialAssets.xcassets; sourceTree = "<group>"; };
 		2781107C2087D5EE0071A3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2781107E2087D75D0071A3E5 /* loginassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loginassets.xcassets; sourceTree = "<group>"; };
 		278110812087D9140071A3E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 		27692F1420810A3C000D7C8B /* OpenMic */ = {
 			isa = PBXGroup;
 			children = (
+				2777B9DE20CAF85C00C98BF4 /* Tuttorial View */,
 				278110802087D8590071A3E5 /* BaseViews */,
 				27B2C5BB2086C06D0063AB75 /* API Read Write  */,
 				27B2C5B4208697E40063AB75 /* AlertViews */,
@@ -287,7 +298,6 @@
 				271D3C5A208AAAF3008AA3E2 /* PickGenres */,
 				27692F1520810A3C000D7C8B /* AppDelegate.swift */,
 				27692F1720810A3C000D7C8B /* ViewController.swift */,
-				27692F1920810A3C000D7C8B /* Main.storyboard */,
 				27692F1C20810A3F000D7C8B /* Assets.xcassets */,
 				27692F1E20810A3F000D7C8B /* LaunchScreen.storyboard */,
 				27692F2120810A3F000D7C8B /* Info.plist */,
@@ -333,6 +343,43 @@
 				278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2777B9DE20CAF85C00C98BF4 /* Tuttorial View */ = {
+			isa = PBXGroup;
+			children = (
+				2777B9E120CAF88200C98BF4 /* Controller  */,
+				2777B9E020CAF87E00C98BF4 /* View */,
+				2777B9DF20CAF86F00C98BF4 /* Model */,
+			);
+			path = "Tuttorial View";
+			sourceTree = "<group>";
+		};
+		2777B9DF20CAF86F00C98BF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2777B9E620CAF8CB00C98BF4 /* TutorialStepModel.swift */,
+				2777B9E720CAF8CB00C98BF4 /* TutorialStepProtocol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2777B9E020CAF87E00C98BF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27692F1920810A3C000D7C8B /* Main.storyboard */,
+				2777B9EB20CAF90000C98BF4 /* TutorialAssets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2777B9E120CAF88200C98BF4 /* Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				2777B9E220CAF8B400C98BF4 /* TutorialStepViewController.swift */,
+				2777B9E320CAF8B400C98BF4 /* TutorialViewController.swift */,
+			);
+			path = "Controller ";
 			sourceTree = "<group>";
 		};
 		278110802087D8590071A3E5 /* BaseViews */ = {
@@ -530,6 +577,7 @@
 				27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */,
 				2797C8CC208BE30200AD93B4 /* ForgotPassword.storyboard in Resources */,
 				2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */,
+				2777B9EC20CAF90000C98BF4 /* TutorialAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,13 +647,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2777B9E820CAF8CC00C98BF4 /* TutorialStepModel.swift in Sources */,
 				271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */,
 				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
 				2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */,
 				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */,
+				2777B9E420CAF8B400C98BF4 /* TutorialStepViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
 				27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */,
+				2777B9E520CAF8B400C98BF4 /* TutorialViewController.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
@@ -619,6 +670,7 @@
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
+				2777B9E920CAF8CC00C98BF4 /* TutorialStepProtocol.swift in Sources */,
 				278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
 				278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */,
