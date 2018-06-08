@@ -26,8 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-2c-s21">
-                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-2c-s21">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.030195312500000002" green="0.01140464794" blue="0.008287479738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="3vQ-mN-Ogf" id="1sB-3V-mEY"/>
@@ -62,7 +62,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-7N-Xhx">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="45"/>
                                                 <color key="backgroundColor" red="0.90980392156862744" green="0.1803921568627451" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -73,7 +73,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XlU-2c-s21" firstAttribute="top" secondItem="ejW-RX-DnT" secondAttribute="top" constant="10" id="073-D4-KOH"/>
+                            <constraint firstItem="XlU-2c-s21" firstAttribute="top" secondItem="ejW-RX-DnT" secondAttribute="top" id="073-D4-KOH"/>
                             <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="ggJ-5j-5zn" secondAttribute="trailing" id="19q-gx-8Vf"/>
                             <constraint firstItem="XlU-2c-s21" firstAttribute="leading" secondItem="ejW-RX-DnT" secondAttribute="leading" id="5pQ-Kv-cZy"/>
                             <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="XlU-2c-s21" secondAttribute="trailing" id="Syn-SJ-hbW"/>
@@ -102,35 +102,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lIQ-rs-AbQ" userLabel="image">
-                                <rect key="frame" x="69" y="120" width="237" height="80"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-SC-rzI">
-                                <rect key="frame" x="10" y="499.5" width="355" height="67.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-Ax-XHx" userLabel="image and messages">
+                                <rect key="frame" x="20" y="127" width="335" height="203.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-ag-4M9" userLabel="Title ">
-                                        <rect key="frame" x="77.5" y="0.0" width="200.5" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                        <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compile a fun and spontaneous itinerary, no matter if you're staying in or going out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehe-t5-AKV" userLabel="Message">
-                                        <rect key="frame" x="16.5" y="29" width="322.5" height="38.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="lIQ-rs-AbQ" userLabel="image">
+                                        <rect key="frame" x="127.5" y="0.0" width="80" height="80"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-SC-rzI" userLabel="message">
+                                        <rect key="frame" x="6.5" y="131" width="322.5" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-ag-4M9" userLabel="Title ">
+                                                <rect key="frame" x="61" y="0.0" width="200.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compile a fun and spontaneous itinerary, no matter if you're staying in or going out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehe-t5-AKV" userLabel="Message">
+                                                <rect key="frame" x="0.0" y="34" width="322.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="idp-gj-msJ" firstAttribute="trailing" secondItem="lIQ-rs-AbQ" secondAttribute="trailing" constant="69" id="OUA-xA-J1n"/>
-                            <constraint firstItem="kZn-SC-rzI" firstAttribute="leading" secondItem="Nvc-Z8-eQp" secondAttribute="leading" constant="10" id="Pa1-em-9FP"/>
-                            <constraint firstItem="lIQ-rs-AbQ" firstAttribute="top" secondItem="idp-gj-msJ" secondAttribute="top" constant="100" id="Vna-FJ-MHO"/>
-                            <constraint firstAttribute="trailing" secondItem="kZn-SC-rzI" secondAttribute="trailing" constant="10" id="Zpj-B2-yLg"/>
-                            <constraint firstItem="idp-gj-msJ" firstAttribute="bottom" secondItem="kZn-SC-rzI" secondAttribute="bottom" constant="100" id="fIZ-dL-3Gf"/>
-                            <constraint firstItem="lIQ-rs-AbQ" firstAttribute="leading" secondItem="idp-gj-msJ" secondAttribute="leading" constant="69" id="kbo-D2-vEF"/>
+                            <constraint firstItem="NqQ-Ax-XHx" firstAttribute="top" secondItem="idp-gj-msJ" secondAttribute="top" constant="107" id="Jg7-Bu-ZuK"/>
+                            <constraint firstAttribute="trailing" secondItem="NqQ-Ax-XHx" secondAttribute="trailing" constant="20" symbolic="YES" id="Xg9-7y-I2j"/>
+                            <constraint firstItem="NqQ-Ax-XHx" firstAttribute="leading" secondItem="Nvc-Z8-eQp" secondAttribute="leading" constant="20" symbolic="YES" id="ya8-Xc-fMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="idp-gj-msJ"/>
                     </view>
@@ -146,6 +148,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="partyIcon" width="80" height="80"/>
+        <image name="page1" width="80" height="80"/>
     </resources>
 </document>
