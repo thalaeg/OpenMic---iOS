@@ -27,42 +27,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-2c-s21">
-                                <rect key="frame" x="0.0" y="30" width="375" height="627"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <color key="backgroundColor" red="0.030195312500000002" green="0.01140464794" blue="0.008287479738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="3vQ-mN-Ogf" id="1sB-3V-mEY"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axu-fs-dzZ">
-                                <rect key="frame" x="20" y="428" width="335" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="dvJ-Ba-6iw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Get Started"/>
-                                <connections>
-                                    <action selector="getStartedAction:" destination="3vQ-mN-Ogf" eventType="touchUpInside" id="C5w-4v-04B"/>
-                                </connections>
-                            </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="e8X-nm-9lN">
-                                <rect key="frame" x="0.0" y="625" width="375" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="pageIndicatorTintColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-5j-5zn" userLabel="scroll view and buttons">
+                                <rect key="frame" x="0.0" y="585" width="375" height="82"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="e8X-nm-9lN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="pageIndicatorTintColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BNI-Dk-2P3">
+                                        <rect key="frame" x="0.0" y="37" width="375" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axu-fs-dzZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
+                                                <color key="backgroundColor" red="0.76470588235294112" green="0.0" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="aRF-bv-ZqK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getStartedAction:" destination="3vQ-mN-Ogf" eventType="touchUpInside" id="C5w-4v-04B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-7N-Xhx">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="45"/>
+                                                <color key="backgroundColor" red="0.90980392156862744" green="0.1803921568627451" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XlU-2c-s21" firstAttribute="top" secondItem="ejW-RX-DnT" secondAttribute="top" constant="10" id="073-D4-KOH"/>
+                            <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="ggJ-5j-5zn" secondAttribute="trailing" id="19q-gx-8Vf"/>
                             <constraint firstItem="XlU-2c-s21" firstAttribute="leading" secondItem="ejW-RX-DnT" secondAttribute="leading" id="5pQ-Kv-cZy"/>
                             <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="XlU-2c-s21" secondAttribute="trailing" id="Syn-SJ-hbW"/>
-                            <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="axu-fs-dzZ" secondAttribute="trailing" constant="20" id="UK3-I2-nsq"/>
-                            <constraint firstItem="ejW-RX-DnT" firstAttribute="bottom" secondItem="e8X-nm-9lN" secondAttribute="bottom" constant="5" id="goH-Ho-h9I"/>
-                            <constraint firstItem="ejW-RX-DnT" firstAttribute="trailing" secondItem="e8X-nm-9lN" secondAttribute="trailing" id="msm-c9-Thc"/>
-                            <constraint firstItem="ejW-RX-DnT" firstAttribute="bottom" secondItem="XlU-2c-s21" secondAttribute="bottom" constant="10" id="nFE-s8-C3P"/>
-                            <constraint firstItem="e8X-nm-9lN" firstAttribute="top" secondItem="axu-fs-dzZ" secondAttribute="bottom" constant="137" id="sf8-Id-SDy"/>
-                            <constraint firstItem="axu-fs-dzZ" firstAttribute="leading" secondItem="ejW-RX-DnT" secondAttribute="leading" constant="20" id="uBN-BZ-Ud3"/>
-                            <constraint firstItem="e8X-nm-9lN" firstAttribute="leading" secondItem="ejW-RX-DnT" secondAttribute="leading" id="yje-EU-d5b"/>
+                            <constraint firstItem="ggJ-5j-5zn" firstAttribute="leading" secondItem="ejW-RX-DnT" secondAttribute="leading" id="VFt-c2-60a"/>
+                            <constraint firstItem="ejW-RX-DnT" firstAttribute="bottom" secondItem="ggJ-5j-5zn" secondAttribute="bottom" id="lQP-jF-fGK"/>
+                            <constraint firstItem="ejW-RX-DnT" firstAttribute="bottom" secondItem="XlU-2c-s21" secondAttribute="bottom" id="nFE-s8-C3P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ejW-RX-DnT"/>
                     </view>
@@ -75,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qan-GY-jO3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="182"/>
+            <point key="canvasLocation" x="136.80000000000001" y="181.25937031484258"/>
         </scene>
         <!--Tutorial Step View Controller-->
         <scene sceneID="G1P-sC-Ujp">

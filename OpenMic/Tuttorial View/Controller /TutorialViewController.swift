@@ -28,6 +28,14 @@ class TutorialViewController: UIViewController {
         tutorialStepModel = TutorialStepModel(view: self, pageController: pageController, scrollView: scrollView)
 
     }
+    
+    
+    override func viewDidLayoutSubviews() {
+        pageController.transform = CGAffineTransform(scaleX: 3, y: 3)
+//        pageController.subviews.forEach{
+//            $0.transform = CGAffineTransform(scaleX: 3, y: 3)
+//        }
+    }
 
 }
 
