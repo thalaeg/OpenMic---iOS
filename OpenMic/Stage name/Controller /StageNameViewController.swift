@@ -46,6 +46,8 @@ class StageNameViewController: UIViewController {
 
 @IBDesignable extension StageNameViewController {
     private func customizeButtons() {
+        
+        //right button
         let nextButton = UIButton()
         nextButton.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
         nextButton.setTitle("Next", for: .normal)
@@ -57,6 +59,17 @@ class StageNameViewController: UIViewController {
         let rightbarbuttonItem = UIBarButtonItem(customView: nextButton)
         self.navigationItem.rightBarButtonItem = rightbarbuttonItem
         
+        //left button
+        let skipFornow = UIButton()
+        skipFornow.frame = CGRect(x: 0, y: 0, width: 100, height: 21)
+        skipFornow.setTitle("Skip for now", for: .normal)
+        //skipFornow.titleLabel?.tintColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
+        skipFornow.setTitleColor(#colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1), for: .normal)
+        skipFornow.tintColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
+
+        skipFornow.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        let leftbarButtonItem = UIBarButtonItem(customView: skipFornow)
+        self.navigationItem.leftBarButtonItem = leftbarButtonItem
         
     }
     

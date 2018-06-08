@@ -73,9 +73,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LRy-nQ-9jd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CtC-hv-thw">
-                        <barButtonItem key="leftBarButtonItem" title="Skip for now" id="ZT2-Ku-9DQ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="CtC-hv-thw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fv-CA-Xxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
