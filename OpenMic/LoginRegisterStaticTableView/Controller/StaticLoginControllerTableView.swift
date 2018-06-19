@@ -123,6 +123,9 @@ class StaticLoginControllerTableView: UITableViewController {
     private var genderPickerManager: GenderSelect?
 
     override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
         //set up facebook button title as signup or sign in
         isSignup ?
             singupAndSignInWithFacebookOutlet.setTitle("CONTINUE WITH FACEBOOK", for: .normal) :
