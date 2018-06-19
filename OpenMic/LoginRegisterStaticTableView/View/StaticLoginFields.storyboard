@@ -366,6 +366,7 @@
                         <outlet property="passwordTextFieldOutlet" destination="K4W-fY-21H" id="m5s-jR-VLH"/>
                         <outlet property="selectedDobLabelOutlet" destination="vEO-Ki-Kng" id="qTS-mL-xzl"/>
                         <outlet property="selectedGenderOutlet" destination="jTj-hL-FGP" id="gIR-Bd-zVH"/>
+                        <outlet property="showPasswordOutlet" destination="j10-Zx-ePg" id="vXe-Mj-hN1"/>
                         <outlet property="signupOrSignInbutton" destination="3Jp-BX-ryw" id="PSc-6C-BhP"/>
                         <outlet property="singupAndSignInWithFacebookOutlet" destination="5hJ-iX-uKH" id="jfH-IK-2a7"/>
                         <segue destination="1Bs-Eh-Rdi" kind="presentation" identifier="stageName" id="E0D-GW-rjh"/>

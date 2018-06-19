@@ -19,18 +19,18 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBackgroundImage(assetName: "backgroundlogin.png")
+       // setupBackgroundImage(assetName: "backgroundlogin.png")
 
 
     }
     
     
-    internal func setupBackgroundImage(assetName: String) {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: assetName)
-        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
-    }
+//    internal func setupBackgroundImage(assetName: String) {
+//        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+//        backgroundImage.image = UIImage(named: assetName)
+//        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+//        self.view.insertSubview(backgroundImage, at: 0)
+//    }
 
     private func setupCustomBackbuttonAndTransNav() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

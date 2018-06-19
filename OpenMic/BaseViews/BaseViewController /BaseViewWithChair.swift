@@ -10,8 +10,8 @@ import Foundation
 
 class BaseViewwithChair: BaseViewController {
     
-    override func viewDidLoad() {
-        setupBackgroundImage(assetName: "onchairbackground")
-    }
+//    override func viewDidLoad() {
+//        setupBackgroundImage(assetName: "onchairbackground")
+//    }
     
 }

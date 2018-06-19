@@ -16,9 +16,8 @@ class StaticLoginControllerTableView: UITableViewController {
     private var loginUserDelegate: LogUserInDelegate?
     private var checkuserAuthStatusDatasource: CheckUserStatusDataSource?
     internal var currentGender: String = ""
-   internal var dOB = Date.init()
+    internal var dOB = Date.init()
     
- 
     //MARK: static cell outlets for checkboxes
     
     @IBOutlet var nameCellOutlet: UITableViewCell!
@@ -59,8 +58,6 @@ class StaticLoginControllerTableView: UITableViewController {
             guard let noBlanks = checkFieldsDelegate?.checkforBlankFields(), let fieldCheck = checkFieldsDelegate else {return }
             if noBlanks {
                 createNewUserDelegate?.createNewuser(email: email, password: passwordOne, additonalFields: fieldCheck.newUserFieldsDictionary(), completion: { (error, user) in
-                    if let userCheck = user {
-                    }
                     
                 })
             }
@@ -99,11 +96,17 @@ class StaticLoginControllerTableView: UITableViewController {
     
         
     }
+    @IBOutlet var showPasswordOutlet: UIButton!
     
     @IBAction func showPasswordAction(_ sender: Any) {
         
         passwordTextFieldOutlet.isSecureTextEntry =  !passwordTextFieldOutlet.isSecureTextEntry
-        
+        switch passwordTextFieldOutlet.isSecureTextEntry {
+        case true:
+            showPasswordOutlet.setTitle("Show", for: .normal)
+        case false:
+             showPasswordOutlet.setTitle("Hide", for: .normal)
+        }
         
     }
     //MARK: DOB and Gender actions
