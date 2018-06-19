@@ -28,9 +28,6 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-eY-R2P">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MmO-QZ-KJe">
-                                                    <rect key="frame" x="8" y="7" width="18" height="34"/>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-iX-uKH">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                                     <color key="backgroundColor" red="0.23921568627450981" green="0.35294117647058826" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,6 +39,9 @@
                                                         <action selector="facebookAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="dxo-4j-DMD"/>
                                                     </connections>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MmO-QZ-KJe">
+                                                    <rect key="frame" x="20" y="7" width="18" height="34"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -52,7 +52,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="5hJ-iX-uKH" secondAttribute="trailing" id="PoJ-OM-zDN"/>
                                                 <constraint firstItem="5hJ-iX-uKH" firstAttribute="top" secondItem="qRf-eY-R2P" secondAttribute="top" id="XbQ-7H-OyW"/>
                                                 <constraint firstItem="5hJ-iX-uKH" firstAttribute="leading" secondItem="qRf-eY-R2P" secondAttribute="leading" id="oWI-Jg-7lz"/>
-                                                <constraint firstItem="MmO-QZ-KJe" firstAttribute="leading" secondItem="qRf-eY-R2P" secondAttribute="leading" constant="8" id="xt0-Zc-2pK"/>
+                                                <constraint firstItem="MmO-QZ-KJe" firstAttribute="leading" secondItem="qRf-eY-R2P" secondAttribute="leading" constant="20" id="xt0-Zc-2pK"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- or with e-mail -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwI-DR-bx9">
@@ -72,7 +72,7 @@
                             </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="IV3-7Y-a1D">
-                            <rect key="frame" x="0.0" y="746" width="375" height="105"/>
+                            <rect key="frame" x="0.0" y="746" width="375" height="151"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-4Y-cvI">
@@ -130,7 +130,7 @@
                                                     <rect key="frame" x="42" y="20.5" width="323" height="17"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
                                                     <connections>
                                                         <action selector="nameTextFieldNext:" destination="u1t-eK-mgz" eventType="primaryActionTriggered" id="NKY-Nw-COC"/>
                                                         <outlet property="delegate" destination="u1t-eK-mgz" id="TRn-kb-QTe"/>
