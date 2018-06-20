@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
 		271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
+		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
 		271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavGenres.storyboard; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				278110872087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift */,
 				278C625E20BF474900823D9B /* UiviewControllerExtension.swift */,
 				2790D38120C9814A00665484 /* DateFormatExtensions.swift */,
+				2710074020DAD3CA0020E229 /* CustomNavigationController.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
+				2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */,
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
 				2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */,
 				2790D38420C9850B00665484 /* StaticLonginSignUpExtension.swift in Sources */,

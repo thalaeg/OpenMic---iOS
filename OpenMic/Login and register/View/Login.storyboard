@@ -614,10 +614,10 @@
             </objects>
             <point key="canvasLocation" x="1862" y="-200"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="hh7-AQ-qYD">
             <objects>
-                <navigationController storyboardIdentifier="login" automaticallyAdjustsScrollViewInsets="NO" id="47u-zg-dRQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="login" automaticallyAdjustsScrollViewInsets="NO" id="47u-zg-dRQ" customClass="CustomNavigationController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mVy-9t-JOA">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
