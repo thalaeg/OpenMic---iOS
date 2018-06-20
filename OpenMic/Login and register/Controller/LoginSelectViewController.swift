@@ -15,6 +15,8 @@ class LoginSelectViewController: BaseViewHiddenNav {
     private var isSignUp = false
     private var loginSegue = "login"
     
+    @IBOutlet var loginButtonOutlet: UIButton!
+    
     @IBAction func signupAction(_ sender: Any) {
         isSignUp = true
         self.performSegue(withIdentifier: loginSegue, sender: self)
@@ -33,6 +35,10 @@ class LoginSelectViewController: BaseViewHiddenNav {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        loginButtonOutlet.backgroundColor = .clear
+        loginButtonOutlet.layer.borderWidth = 0.5
+        loginButtonOutlet.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
 
         addBackgroundImage(assetName: "backgroundLoginSelect.png")
         

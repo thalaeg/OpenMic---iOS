@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StaticLoginControllerTableView: UITableViewController {
+class StaticLoginControllerTableView: BaseStaticTableView {
     var isSignup = false
     private var manageFacebook: ManageFacebook?
     private var checkFieldsDelegate: CheckSignUpFieldsDelegate?
