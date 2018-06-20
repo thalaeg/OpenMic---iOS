@@ -349,9 +349,7 @@
                             <outlet property="delegate" destination="u1t-eK-mgz" id="8wy-B5-lfn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SIGN UP" id="vrA-QW-snw">
-                        <barButtonItem key="backBarButtonItem" title="&quot;&quot; " id="WvU-Dd-ETC"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="SIGN UP" id="vrA-QW-snw"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
