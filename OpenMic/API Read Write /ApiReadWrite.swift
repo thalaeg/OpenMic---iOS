@@ -34,10 +34,23 @@ enum Endpoints: String {
     
     
     
-//    func getCall() {
-//        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + , method: .get, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
-//
-//    }
+    func getCall(completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completion(nil, json)
+    
+                print("JSON: \(json)") // serialized json response
+            }
+            if let error = response.error {
+                completion(error, nil)
+                print("error: \(error.localizedDescription)")
+            }
+            
+            
+        }
+
+    }
     
     
     func postCall(with params: [String : Any]) {
