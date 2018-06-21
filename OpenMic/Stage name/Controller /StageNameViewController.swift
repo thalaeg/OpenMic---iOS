@@ -37,6 +37,7 @@ class StageNameViewController: UIViewController {
         nextButton.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
         nextButton.setTitle("Next", for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        nextButton.addTarget(self, action: #selector(toTopForty), for: .touchUpInside)
 
         nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
         nextButton.layer.cornerRadius = 15
@@ -47,6 +48,7 @@ class StageNameViewController: UIViewController {
         let skipFornow = UIButton()
         skipFornow.frame = CGRect(x: 0, y: 0, width: 100, height: 21)
         skipFornow.setTitle("Skip for now", for: .normal)
+        
     
         skipFornow.setTitleColor(#colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1), for: .normal)
         skipFornow.tintColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
@@ -65,10 +67,12 @@ class StageNameViewController: UIViewController {
         
         fieldContainerView.layer.borderWidth = 1.0
         fieldContainerView.layer.borderColor = #colorLiteral(red: 0.8078431373, green: 0.8078431373, blue: 0.8078431373, alpha: 1)
-        
-       
-        
 
+    }
+    
+    @objc private func toTopForty() {
+        
+        self.performSegue(withIdentifier: "topForty", sender: self)
     }
     
 }
