@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
+		2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710074520DB0B310020E229 /* AddArtist.storyboard */; };
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
 		271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
 		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		2710074520DB0B310020E229 /* AddArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddArtist.storyboard; sourceTree = "<group>"; };
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
 		271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavGenres.storyboard; sourceTree = "<group>"; };
@@ -146,6 +148,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2710074220DB0A870020E229 /* add artist */ = {
+			isa = PBXGroup;
+			children = (
+				2710074420DB0AB30020E229 /* View */,
+				2710074320DB0AAE0020E229 /* Model  */,
+			);
+			path = "add artist";
+			sourceTree = "<group>";
+		};
+		2710074320DB0AAE0020E229 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		2710074420DB0AB30020E229 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2710074520DB0B310020E229 /* AddArtist.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		271D3C55208A5DEE008AA3E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +320,7 @@
 				2734C91D2085948600123924 /* Firebase Read Write  */,
 				2722B51620C05B6700E90CB0 /* LoginRegisterStaticTableView */,
 				27692F2720810A5F000D7C8B /* Login and register */,
+				2710074220DB0A870020E229 /* add artist */,
 				27203DD220CAB93B00A39D0A /* Stage name */,
 				2797C8C9208BE29D00AD93B4 /* ForgotPassword */,
 				27A713AE208937850095E044 /* UserType */,
@@ -564,6 +591,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */,
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
