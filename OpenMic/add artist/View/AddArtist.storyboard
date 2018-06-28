@@ -157,7 +157,11 @@ elit sed do eiusmod tempor incididunt.</string>
                         <viewLayoutGuide key="safeArea" id="p7B-Qy-b5f"/>
                     </view>
                     <navigationItem key="navigationItem" id="F1r-uq-gry">
-                        <barButtonItem key="leftBarButtonItem" title="Skip for now " id="GWd-l8-kUX"/>
+                        <barButtonItem key="leftBarButtonItem" title="Skip for now " id="GWd-l8-kUX">
+                            <connections>
+                                <segue destination="dVt-xP-bNp" kind="presentation" id="1bD-Nb-1Yp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -167,6 +171,14 @@ elit sed do eiusmod tempor incididunt.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSV-Yn-GQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="224.80000000000001" y="108.39580209895054"/>
+        </scene>
+        <!--tutorial-->
+        <scene sceneID="MmT-WX-3lf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="tutorial" id="dVt-xP-bNp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pF9-8I-7au" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="115"/>
         </scene>
     </scenes>
 </document>
