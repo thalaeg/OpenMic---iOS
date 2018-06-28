@@ -6,7 +6,8 @@
 //  Copyright © 2018 Mike. All rights reserved.
 //
 
-import UIKi
+import UIKit
+import SDWebImage
 
 class AddArtistTableViewCell: UITableViewCell {
 
@@ -25,6 +26,11 @@ class AddArtistTableViewCell: UITableViewCell {
         
         userName.text = user.userName
         userBio.text = user.userBio
+        if let photoCheck = user.profilePic {
+            userImage.sd_setImage(with: URL(string: photoCheck), placeholderImage: UIImage(named: "genreIcon.png"))
+            
+        }
+        
         
         
     }
