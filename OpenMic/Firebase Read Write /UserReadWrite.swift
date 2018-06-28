@@ -17,6 +17,8 @@ struct CurrentUser {
         case username
         case profile_pic
         case biography
+        case last_name
+        case first_name
         
     }
     
@@ -35,6 +37,7 @@ struct CurrentUser {
     }
     
     init(json: JSON) {
+        
         self.userName = json[userKeys.username.rawValue].stringValue
         self.userBio = json[userKeys.biography.rawValue].stringValue
         if let profilePic = json[userKeys.profile_pic.rawValue].string {
