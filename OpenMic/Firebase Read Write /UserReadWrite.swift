@@ -34,11 +34,10 @@ struct CurrentUser {
     
     }
     
-    init(json: Any) {
-        let jsonInput = JSON(json)
-        self.userName = jsonInput[userKeys.username.rawValue].stringValue
-        self.userBio = jsonInput[userKeys.biography.rawValue].stringValue
-        if let profilePic = jsonInput[userKeys.profile_pic.rawValue].string {
+    init(json: JSON) {
+        self.userName = json[userKeys.username.rawValue].stringValue
+        self.userBio = json[userKeys.biography.rawValue].stringValue
+        if let profilePic = json[userKeys.profile_pic.rawValue].string {
             self.profilePic = profilePic
         }
         

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 
 class AddArtistModel: NSObject {
@@ -19,7 +20,13 @@ class AddArtistModel: NSObject {
         super.init()
         
         Endpoints.topForty.getCall { (error, json) in
-            print("error \(error), json \(json)")
+            if let json = json {
+                let jsonArray = JSON(json)["results"].arrayValue
+                let arrayOfUsers = jsonArray.map{CurrentUser.init(json: $0)}
+                print("jsonArray \(arrayOfUsers)")
+            }
+            //handle error
+            print("error \(error)")
         }
 
     }
