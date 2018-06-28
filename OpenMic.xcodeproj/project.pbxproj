@@ -26,6 +26,7 @@
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
 		2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741B01A208C11240012B322 /* SendHelpEmail.swift */; };
+		2742AD8C20E566B400633CF1 /* AddArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742AD8B20E566B400633CF1 /* AddArtistTableViewCell.swift */; };
 		2754ED2F20E552A7006CD3F9 /* AddArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754ED2E20E552A7006CD3F9 /* AddArtistModel.swift */; };
 		27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1520810A3C000D7C8B /* AppDelegate.swift */; };
 		27692F1820810A3C000D7C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1720810A3C000D7C8B /* ViewController.swift */; };
@@ -92,6 +93,7 @@
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
 		2741B01A208C11240012B322 /* SendHelpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHelpEmail.swift; sourceTree = "<group>"; };
+		2742AD8B20E566B400633CF1 /* AddArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistTableViewCell.swift; sourceTree = "<group>"; };
 		2754ED2E20E552A7006CD3F9 /* AddArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistModel.swift; sourceTree = "<group>"; };
 		27692F1220810A3C000D7C8B /* OpenMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27692F1520810A3C000D7C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */,
+				2742AD8B20E566B400633CF1 /* AddArtistTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
 				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
+				2742AD8C20E566B400633CF1 /* AddArtistTableViewCell.swift in Sources */,
 				2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */,
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
 				2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */,
