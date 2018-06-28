@@ -31,7 +31,7 @@ enum ProfileKeys: String {
 enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
     case profiles = "profiles/"
-    case topForty = "profiles/top"
+    case topForty = "profile/top"
     
     
     
@@ -40,15 +40,11 @@ enum Endpoints: String {
             
             if let json = response.result.value {
                 completion(nil, json)
-    
-                print("JSON: \(json)") // serialized json response
             }
             if let error = response.error {
                 completion(error, nil)
-                print("error: \(error.localizedDescription)")
             }
-            
-            
+
         }
 
     }

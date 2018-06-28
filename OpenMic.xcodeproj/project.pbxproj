@@ -26,6 +26,7 @@
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
 		2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741B01A208C11240012B322 /* SendHelpEmail.swift */; };
+		2754ED2F20E552A7006CD3F9 /* AddArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754ED2E20E552A7006CD3F9 /* AddArtistModel.swift */; };
 		27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1520810A3C000D7C8B /* AppDelegate.swift */; };
 		27692F1820810A3C000D7C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27692F1720810A3C000D7C8B /* ViewController.swift */; };
 		27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27692F1920810A3C000D7C8B /* Main.storyboard */; };
@@ -91,6 +92,7 @@
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
 		2741B01A208C11240012B322 /* SendHelpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHelpEmail.swift; sourceTree = "<group>"; };
+		2754ED2E20E552A7006CD3F9 /* AddArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistModel.swift; sourceTree = "<group>"; };
 		27692F1220810A3C000D7C8B /* OpenMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27692F1520810A3C000D7C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27692F1720810A3C000D7C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		2710074320DB0AAE0020E229 /* Model  */ = {
 			isa = PBXGroup;
 			children = (
+				2754ED2E20E552A7006CD3F9 /* AddArtistModel.swift */,
 			);
 			path = "Model ";
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
 				2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */,
 				2790D38420C9850B00665484 /* StaticLonginSignUpExtension.swift in Sources */,
+				2754ED2F20E552A7006CD3F9 /* AddArtistModel.swift in Sources */,
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
 				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
