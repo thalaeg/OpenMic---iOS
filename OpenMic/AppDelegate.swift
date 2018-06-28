@@ -35,7 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         //setup facebook sdk
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-
+        
+        //MARK: Change initial storyboard
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
