@@ -73,10 +73,8 @@ class StageNameViewController: UIViewController {
     }
     
     @objc private func checkName() {
-        
         //check if user name taken
         checkUSerNameFreeDelegate?.checkUserNameAvailable()
-        
         //self.performSegue(withIdentifier: "topForty", sender: self)
     }
     
@@ -93,7 +91,7 @@ extension StageNameViewController: CheckUserNameAvailableDelegate {
     }
     
     func checkUserNameStatus(isAvailable: Bool) {
-        
+        //self.performSegue(withIdentifier: "topForty", sender: self)
         
     }
     

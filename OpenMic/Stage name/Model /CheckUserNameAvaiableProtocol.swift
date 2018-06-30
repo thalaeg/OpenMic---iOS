@@ -31,15 +31,9 @@ extension CheckUserNameAvailableDelegate {
                 } else {
                     self.checkUserNameStatus(isAvailable: isFreeCheck)
                 }
-                
-                
-                
             }
-            
         }
     }
-   
-    
 }
 
 
