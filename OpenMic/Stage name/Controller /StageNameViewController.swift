@@ -14,7 +14,15 @@ class StageNameViewController: UIViewController {
     
     private var checkUSerNameFreeDelegate: CheckUserNameAvailableDelegate?
     
+    @IBAction func userNameTextChanged(_ sender: UITextField) {
+       
+        if usernameTextFieldOutlet.text!.count > 2 {
+             print("sender \(sender.text)")
+        }
+        
+    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkUSerNameFreeDelegate = self

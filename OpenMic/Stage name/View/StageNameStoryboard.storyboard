@@ -46,6 +46,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="userNameTextChanged:" destination="Og4-NM-Gai" eventType="editingChanged" id="h48-00-lqK"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
