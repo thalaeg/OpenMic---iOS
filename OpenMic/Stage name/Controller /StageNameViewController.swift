@@ -37,7 +37,7 @@ class StageNameViewController: UIViewController {
         nextButton.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
         nextButton.setTitle("Next", for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        nextButton.addTarget(self, action: #selector(toTopForty), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(checkName), for: .touchUpInside)
 
         nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
         nextButton.layer.cornerRadius = 15
@@ -70,9 +70,16 @@ class StageNameViewController: UIViewController {
 
     }
     
-    @objc private func toTopForty() {
+    @objc private func checkName() {
         
-        self.performSegue(withIdentifier: "topForty", sender: self)
+        //check if user name taken
+        Endpoints.checkIfUserNameAvailable.getCallwithParameters(parameters: ["username" : usernameTextFieldOutlet.text!]) { (error, josn) in
+            
+            print("error \(error), json \(josn)")
+            
+        }
+        
+        //self.performSegue(withIdentifier: "topForty", sender: self)
     }
     
 }

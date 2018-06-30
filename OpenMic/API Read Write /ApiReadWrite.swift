@@ -32,7 +32,23 @@ enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
     case profiles = "profiles/"
     case topForty = "profile/top"
+    case checkIfUserNameAvailable = "profile/exists"
     
+    
+    func getCallwithParameters(parameters: [String : Any]?,  completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get, parameters: parameters ?? nil).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completion(nil, json)
+            }
+            if let error = response.error {
+                completion(error, nil)
+            }
+            
+        }
+        
+    }
     
     
     func getCall(completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
