@@ -61,6 +61,7 @@
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
 		27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B52089928B0095E044 /* BaseViewWithChair.swift */; };
 		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
+		27AB243420E834400080A2AC /* CheckUserNameAvaiableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB243320E834400080A2AC /* CheckUserNameAvaiableProtocol.swift */; };
 		27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
@@ -130,6 +131,7 @@
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
 		27A713B52089928B0095E044 /* BaseViewWithChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewWithChair.swift; sourceTree = "<group>"; };
 		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
+		27AB243320E834400080A2AC /* CheckUserNameAvaiableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserNameAvaiableProtocol.swift; sourceTree = "<group>"; };
 		27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHiddenNav.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		27203DD220CAB93B00A39D0A /* Stage name */ = {
 			isa = PBXGroup;
 			children = (
+				27AB243220E82D080080A2AC /* Model  */,
 				27203DD620CAB9D700A39D0A /* Controller  */,
 				27203DD520CAB9CB00A39D0A /* View */,
 			);
@@ -504,6 +507,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		27AB243220E82D080080A2AC /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				27AB243320E834400080A2AC /* CheckUserNameAvaiableProtocol.swift */,
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
 		27B2C5B4208697E40063AB75 /* AlertViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +729,7 @@
 				2790D38420C9850B00665484 /* StaticLonginSignUpExtension.swift in Sources */,
 				2754ED2F20E552A7006CD3F9 /* AddArtistModel.swift in Sources */,
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
+				27AB243420E834400080A2AC /* CheckUserNameAvaiableProtocol.swift in Sources */,
 				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,

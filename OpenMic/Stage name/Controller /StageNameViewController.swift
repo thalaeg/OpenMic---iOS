@@ -12,10 +12,12 @@ class StageNameViewController: UIViewController {
     @IBOutlet var usernameTextFieldOutlet: UITextField!
     @IBOutlet var fieldContainerView: UIView!
     
+    private var checkUSerNameFreeDelegate: CheckUserNameAvailableDelegate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        checkUSerNameFreeDelegate = self
        
     }
     
@@ -73,13 +75,31 @@ class StageNameViewController: UIViewController {
     @objc private func checkName() {
         
         //check if user name taken
-        Endpoints.checkIfUserNameAvailable.getCallwithParameters(parameters: ["username" : usernameTextFieldOutlet.text!]) { (error, josn) in
-            
-            print("error \(error), json \(josn)")
-            
-        }
+        checkUSerNameFreeDelegate?.checkUserNameAvailable()
         
         //self.performSegue(withIdentifier: "topForty", sender: self)
     }
     
 }
+
+
+extension StageNameViewController: CheckUserNameAvailableDelegate {
+    var viewController: UIViewController {
+        return self
+    }
+    
+    var userName: String {
+       return usernameTextFieldOutlet.text!
+    }
+    
+    func checkUserNameStatus(isAvailable: Bool) {
+        
+        
+    }
+    
+    
+}
+
+
+
+
