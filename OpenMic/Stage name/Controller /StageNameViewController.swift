@@ -9,6 +9,10 @@
 import UIKit
 class StageNameViewController: UIViewController {
     
+    private var barButtonItemOne: UIBarButtonItem?
+    private var barButtonItemTwo: UIBarButtonItem?
+    
+    
     @IBOutlet var usernameTextFieldOutlet: UITextField!
     @IBOutlet var fieldContainerView: UIView!
     
@@ -18,6 +22,7 @@ class StageNameViewController: UIViewController {
        
         if usernameTextFieldOutlet.text!.count > 2 {
              print("sender \(sender.text)")
+            addRightBarbuttonItem(fadded: false)
         }
         
     }
@@ -41,18 +46,9 @@ class StageNameViewController: UIViewController {
 
 @IBDesignable extension StageNameViewController {
     private func customizeButtons() {
-        
         //right button
-        let nextButton = UIButton()
-        nextButton.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        nextButton.addTarget(self, action: #selector(checkName), for: .touchUpInside)
-
-        nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
-        nextButton.layer.cornerRadius = 15
-        let rightbarbuttonItem = UIBarButtonItem(customView: nextButton)
-        self.navigationItem.rightBarButtonItem = rightbarbuttonItem
+        createTwoRightBarButtons()
+   
         
         //left button
         let skipFornow = UIButton()
@@ -106,6 +102,56 @@ extension StageNameViewController: CheckUserNameAvailableDelegate {
     
 }
 
+
+extension StageNameViewController {
+    
+    
+    private func createTwoRightBarButtons() {
+        let nextButton = UIButton()
+        nextButton.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
+        nextButton.setTitle("Next", for: .normal)
+        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        nextButton.addTarget(self, action: #selector(checkName), for: .touchUpInside)
+        nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1).withAlphaComponent(0.50)
+        
+        nextButton.layer.cornerRadius = 15
+        
+        barButtonItemOne = UIBarButtonItem(customView: nextButton)
+        
+        
+        
+        
+        let nextButtonTwo = UIButton()
+        nextButtonTwo.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
+        nextButtonTwo.setTitle("Neddddxt", for: .normal)
+        nextButtonTwo.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        //nextButtonTwo.addTarget(self, action: #selector(checkName), for: .touchUpInside)
+        nextButtonTwo.backgroundColor = UIColor.black
+        
+        nextButtonTwo.layer.cornerRadius = 15
+        
+        
+        barButtonItemTwo = UIBarButtonItem(customView: nextButtonTwo)
+        
+        self.navigationItem.rightBarButtonItems = [self.barButtonItemOne!]
+        
+        //let rightbarbuttonItem = UIBarButtonItem(customView: nextButton)
+    }
+    
+   private func addRightBarbuttonItem(fadded: Bool) {
+    
+    switch fadded {
+    case true:
+        self.navigationItem.setRightBarButtonItems([barButtonItemOne!], animated: false)
+    case false :
+        self.navigationItem.rightBarButtonItems = [self.barButtonItemTwo!]
+        self.navigationItem.setRightBarButtonItems([barButtonItemTwo!], animated: false)
+    }
+
+    
+    }
+    
+}
 
 
 
