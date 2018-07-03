@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Firebase
 import SwiftyJSON
+import Firebase
 
 
 protocol CreateNewUSerAPIDelegate {
@@ -26,12 +26,13 @@ extension CreateNewUSerAPIDelegate {
             let outputDictionary = snapShot.value as? [String : Any] ?? [:]
             let json = JSON(outputDictionary)
             guard let userDetails = json[BasePaths.userDetails.rawValue].dictionaryObject else {return}
-            let uid = json[BasePaths.uid.rawValue].stringValue
             
             var userDetailInput = userDetails
-            userDetailInput.updateValue(uid, forKey: BasePaths.uid.rawValue)
             userDetailInput.updateValue(self.userName, forKey: CurrentUser.userKeys.username.rawValue)
-            Endpoints.profiles.postCall(with: userDetails)
+            //MARK: add DOB back in when api is updated
+            userDetailInput.removeValue(forKey: "DOB")
+            
+            Endpoints.addProfile.postCall(with: userDetailInput)
             
             //dele
             

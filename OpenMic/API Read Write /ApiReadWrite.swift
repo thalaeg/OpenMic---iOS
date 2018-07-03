@@ -31,6 +31,7 @@ enum ProfileKeys: String {
 enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
     case profiles = "profiles/"
+    case addProfile = "profile/profiles"
     case topForty = "profile/top"
     case checkIfUserNameAvailable = "profile/exists"
     
