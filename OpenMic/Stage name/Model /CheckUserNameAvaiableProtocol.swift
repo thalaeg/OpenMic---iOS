@@ -22,16 +22,20 @@ extension CheckUserNameAvailableDelegate {
     
     func checkUserNameAvailable() {
         //check if user name taken
-        Endpoints.checkIfUserNameAvailable.getCallwithParameters(parameters: ["username" : userName]) { (error, json) in
-            if let jsonReturn = json {
-                let formattedJson = JSON(jsonReturn)
-                let isFreeCheck = formattedJson["detail"].boolValue
-                if !isFreeCheck {
-                    self.viewController.standardAlertView(title: "Not Available", message: "That username is already taken")
-                } else {
-                    self.checkUserNameStatus(isAvailable: isFreeCheck)
+        if userName.count > 2 {
+            Endpoints.checkIfUserNameAvailable.getCallwithParameters(parameters: ["username" : userName]) { (error, json) in
+                if let jsonReturn = json {
+                    let formattedJson = JSON(jsonReturn)
+                    let isFreeCheck = formattedJson["detail"].boolValue
+                    if !isFreeCheck {
+                        self.viewController.standardAlertView(title: "Not Available", message: "That username is already taken")
+                    } else {
+                        self.checkUserNameStatus(isAvailable: isFreeCheck)
+                    }
                 }
             }
+        } else {
+            viewController.standardAlertView(title: "Add a username", message: "Please add a username")
         }
     }
 }

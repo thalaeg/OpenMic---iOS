@@ -17,11 +17,11 @@ class StageNameViewController: UIViewController {
     @IBOutlet var fieldContainerView: UIView!
     
     private var checkUSerNameFreeDelegate: CheckUserNameAvailableDelegate?
+    private var createUserApiDelegate: CreateNewUSerAPIDelegate?
     
     @IBAction func userNameTextChanged(_ sender: UITextField) {
        
         if usernameTextFieldOutlet.text!.count > 2 {
-             print("sender \(sender.text)")
             addRightBarbuttonItem(fadded: false)
         }
         
@@ -31,6 +31,7 @@ class StageNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkUSerNameFreeDelegate = self
+        createUserApiDelegate = self
        
     }
     
@@ -85,7 +86,7 @@ class StageNameViewController: UIViewController {
 }
 
 
-extension StageNameViewController: CheckUserNameAvailableDelegate {
+extension StageNameViewController: CheckUserNameAvailableDelegate, CreateNewUSerAPIDelegate {
     var viewController: UIViewController {
         return self
     }
@@ -94,7 +95,12 @@ extension StageNameViewController: CheckUserNameAvailableDelegate {
        return usernameTextFieldOutlet.text!
     }
     
-    func checkUserNameStatus(isAvailable: Bool) {
+    func checkUserNameStatus(isAvailable: Bool){
+        
+        if isAvailable {
+            createUserApiDelegate?.createNewUserOnApi()
+        }
+        
         //self.performSegue(withIdentifier: "topForty", sender: self)
         
     }
