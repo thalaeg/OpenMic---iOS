@@ -26,11 +26,12 @@ extension CreateNewUSerAPIDelegate {
             let outputDictionary = snapShot.value as? [String : Any] ?? [:]
             let json = JSON(outputDictionary)
             guard let userDetails = json[BasePaths.userDetails.rawValue].dictionaryObject else {return}
+            let uid = json[BasePaths.uid.rawValue].stringValue
             
-            Endpoints.profiles.postCall(with: userDetails)
-            
-            
-            
+            var userDetailInput = userDetails
+            userDetailInput.updateValue(uid, forKey: BasePaths.uid.rawValue)
+            //Endpoints.profiles.postCall(with: userDetails)
+    
             
         })
         

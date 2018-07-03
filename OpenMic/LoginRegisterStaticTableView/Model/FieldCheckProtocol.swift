@@ -51,11 +51,10 @@ extension CheckSignUpFieldsDelegate {
         let nameSet = name.components(separatedBy: " ")
         let firstName = nameSet[0]
         let lastName = nameSet[1]
+    
         
-        
-        
-        
-        let newUserDic = [ProfileKeys.name.rawValue : name,
+        let newUserDic = [ProfileKeys.firstName.rawValue : firstName,
+                          ProfileKeys.lastName.rawValue : lastName,
                           ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.DOB.rawValue : dOB.formatForDataBase()]
         return newUserDic
     }
