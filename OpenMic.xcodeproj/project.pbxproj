@@ -69,6 +69,7 @@
 		27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */; };
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
+		27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,7 @@
 		27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPicker.swift; sourceTree = "<group>"; };
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
+		27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserApiProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E902C8AF13CB2D12DDA393 /* Pods-OpenMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				277318CD2087A0C200C30C05 /* ApiReadWrite.swift */,
+				27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */,
 			);
 			path = "API Read Write ";
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
+				27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */,
 				27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */,
 				27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */,
 				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,

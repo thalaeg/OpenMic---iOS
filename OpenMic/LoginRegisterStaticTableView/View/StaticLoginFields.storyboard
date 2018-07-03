@@ -100,7 +100,6 @@
                                                 <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="forgotPasswordAction:" destination="u1t-eK-mgz" eventType="touchUpInside" id="fE8-TI-qjj"/>
                                                 <segue destination="oia-Fn-7Hu" kind="show" id="IPK-D2-jxq"/>
                                             </connections>
                                         </button>

@@ -31,13 +31,6 @@ class StaticLoginControllerTableView: BaseStaticTableView {
     
     @IBOutlet var forgotPasswordOutlet: UIButton!
     
-    @IBAction func forgotPasswordAction(_ sender: Any) {
-        
-        
-    }
-    
-    
-    
    
     //MARK: signup and signin outlets and actions
 
