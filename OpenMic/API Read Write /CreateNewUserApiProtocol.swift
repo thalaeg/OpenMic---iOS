@@ -12,6 +12,7 @@ import SwiftyJSON
 
 
 protocol CreateNewUSerAPIDelegate {
+    var userName: String {get}
     
     
 }
@@ -24,7 +25,9 @@ extension CreateNewUSerAPIDelegate {
         path.observeSingleEvent(of: .value, with: { (snapShot) in
             let outputDictionary = snapShot.value as? [String : Any] ?? [:]
             let json = JSON(outputDictionary)
-            let userDetails = json[BasePaths.userDetails.rawValue].dictionaryObject
+            guard let userDetails = json[BasePaths.userDetails.rawValue].dictionaryObject else {return}
+            
+            Endpoints.profiles.postCall(with: userDetails)
             
             
             
