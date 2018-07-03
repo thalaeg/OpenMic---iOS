@@ -30,8 +30,10 @@ extension CreateNewUSerAPIDelegate {
             
             var userDetailInput = userDetails
             userDetailInput.updateValue(uid, forKey: BasePaths.uid.rawValue)
-            //Endpoints.profiles.postCall(with: userDetails)
-    
+            userDetailInput.updateValue(self.userName, forKey: CurrentUser.userKeys.username.rawValue)
+            Endpoints.profiles.postCall(with: userDetails)
+            
+            //dele
             
         })
         

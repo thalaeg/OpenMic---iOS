@@ -50,12 +50,14 @@ extension CheckSignUpFieldsDelegate {
         //get first and last name
         let nameSet = name.components(separatedBy: " ")
         let firstName = nameSet[0]
-        let lastName = nameSet[1]
-    
         
-        let newUserDic = [ProfileKeys.firstName.rawValue : firstName,
-                          ProfileKeys.lastName.rawValue : lastName,
+        var newUserDic = [ProfileKeys.firstName.rawValue : firstName,
                           ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.DOB.rawValue : dOB.formatForDataBase()]
+        if nameSet.count > 1 {
+            let lastName = nameSet[1]
+            newUserDic.updateValue(lastName, forKey: ProfileKeys.lastName.rawValue)
+        }
+        
         return newUserDic
     }
     
