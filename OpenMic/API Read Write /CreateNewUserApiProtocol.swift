@@ -19,7 +19,7 @@ protocol CreateNewUSerAPIDelegate {
 
 extension CreateNewUSerAPIDelegate {
     
-    func createNewUserOnApi() {
+    func createNewUserOnApi(completion: @escaping (_ success: Bool) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else {return}
        let path =  BasePaths.users.getNonUIDBase().child(uid)
         path.observeSingleEvent(of: .value, with: { (snapShot) in
@@ -34,15 +34,17 @@ extension CreateNewUSerAPIDelegate {
             Endpoints.addProfile.postCall(with: userDetailInput, completionHandler: { (json, error) in
                 
                 if let error = error {
-                    
+                    completion(false)
                 }
                 
                 if let json = json {
                     let jsonRead = JSON(json)
                     if let isSucess = jsonRead["success"].string {
                         if isSucess == "True" {
-                            
+                            completion(true)
                         }
+                    } else {
+                        completion(false)
                     }
                     
                 }

@@ -98,10 +98,19 @@ extension StageNameViewController: CheckUserNameAvailableDelegate, CreateNewUSer
     func checkUserNameStatus(isAvailable: Bool){
         
         if isAvailable {
-            createUserApiDelegate?.createNewUserOnApi()
+            createUserApiDelegate?.createNewUserOnApi(completion: { (success) in
+                switch success {
+                case true:
+                    self.performSegue(withIdentifier: "topForty", sender: self)
+                case false:
+                    //MARK: replace this alert when api calls are complete
+                    self.standardAlertView(title: "Error", message: "There was an api error")
+                }
+                
+            })
         }
         
-        //self.performSegue(withIdentifier: "topForty", sender: self)
+        
         
     }
     
