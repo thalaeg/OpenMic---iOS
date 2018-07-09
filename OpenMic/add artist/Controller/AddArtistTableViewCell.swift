@@ -17,6 +17,17 @@ class AddArtistTableViewCell: UITableViewCell {
     
     @IBOutlet var userBio: UILabel!
     
+    @IBAction func addArtistAction(_ sender: Any) {
+        let testParameters = ["artist" : "testuser", "user" : "mikey"]
+        
+        Endpoints.addArtist.postWithEncoding(with: testParameters) { (json, error) in
+            
+        }
+        
+        
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

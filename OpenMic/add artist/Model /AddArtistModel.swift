@@ -16,6 +16,7 @@ class AddArtistModel: NSObject {
     private var users = [CurrentUser]()
     
     
+    
     init(tableView: UITableView) {
         self.tableView = tableView
         super.init()
@@ -30,7 +31,6 @@ class AddArtistModel: NSObject {
                 self.tableView.reloadData()
             }
             //handle error
-            print("error \(error)")
         }
 
     }

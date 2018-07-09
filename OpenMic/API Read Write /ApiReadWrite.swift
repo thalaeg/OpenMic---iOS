@@ -34,6 +34,7 @@ enum Endpoints: String {
     case addProfile = "profile/profiles"
     case topForty = "profile/top"
     case checkIfUserNameAvailable = "profile/exists"
+    case addArtist = "profile/update-followers/"
     
     //MARK: remove redundent api call   
     func getCallwithParameters(parameters: [String : Any]?,  completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
@@ -41,9 +42,11 @@ enum Endpoints: String {
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get, parameters: parameters ?? nil).responseJSON { (response) in
             
             if let json = response.result.value {
+                print("json \(json)")
                 completion(nil, json)
             }
             if let error = response.error {
+                print("error \(error)")
                 completion(error, nil)
             }
             
@@ -67,6 +70,26 @@ enum Endpoints: String {
     }
     
     
+    
+    func postWithEncoding(with BodyEncoding: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: BodyEncoding, encoding: URLEncoding.httpBody).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completionHandler(json, nil)
+            }
+            if let error = response.error {
+                completionHandler(nil, error)
+            }
+            
+            
+        }
+        
+        
+    
+    }
+    
+    
     func postCall(with params: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
         var paramInput = params
@@ -84,6 +107,9 @@ enum Endpoints: String {
             
 
         }
+        
+        
+        
         
     }
     

@@ -122,6 +122,9 @@ elit sed do eiusmod tempor incididunt.</string>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-dm-b8l">
                                                     <rect key="frame" x="330" y="11" width="30" height="30"/>
                                                     <state key="normal" title="Add"/>
+                                                    <connections>
+                                                        <action selector="addArtistAction:" destination="fNe-9K-KOW" eventType="touchUpInside" id="6nq-5x-LsK"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
