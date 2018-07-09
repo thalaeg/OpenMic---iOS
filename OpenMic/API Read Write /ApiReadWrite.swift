@@ -67,20 +67,19 @@ enum Endpoints: String {
     }
     
     
-    func postCall(with params: [String : Any]) {
+    func postCall(with params: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
         var paramInput = params
         guard let uid = Auth.auth().currentUser?.uid else {return}
         paramInput.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
-        print("url \(Endpoints.baseURL.rawValue + self.rawValue), params \(params)")
         
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: paramInput).responseJSON { (response) in
             
             if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+                completionHandler(json, nil)
             }
             if let error = response.error {
-                print("error: \(error.localizedDescription)")
+                completionHandler(nil, error)
             }
             
 

@@ -31,9 +31,25 @@ extension CreateNewUSerAPIDelegate {
             userDetailInput.updateValue(self.userName, forKey: CurrentUser.userKeys.username.rawValue)
             //MARK: add DOB back in when api is updated
             userDetailInput.removeValue(forKey: "DOB")
-            Endpoints.addProfile.postCall(with: userDetailInput)
+            Endpoints.addProfile.postCall(with: userDetailInput, completionHandler: { (json, error) in
+                
+                if let error = error {
+                    
+                }
+                
+                if let json = json {
+                    let jsonRead = JSON(json)
+                    if let isSucess = jsonRead["success"].string {
+                        if isSucess == "True" {
+                            
+                        }
+                    }
+                    
+                }
+                
+            })
             
-            //dele
+            //MARK: remove user values
             
         })
         
