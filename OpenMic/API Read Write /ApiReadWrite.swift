@@ -72,6 +72,7 @@ enum Endpoints: String {
         var paramInput = params
         guard let uid = Auth.auth().currentUser?.uid else {return}
         paramInput.updateValue(uid, forKey: ProfileKeys.firbaseUid.rawValue)
+        print("url \(Endpoints.baseURL.rawValue + self.rawValue), params \(params)")
         
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: paramInput).responseJSON { (response) in
             

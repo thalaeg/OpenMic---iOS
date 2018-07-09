@@ -31,7 +31,6 @@ extension CreateNewUSerAPIDelegate {
             userDetailInput.updateValue(self.userName, forKey: CurrentUser.userKeys.username.rawValue)
             //MARK: add DOB back in when api is updated
             userDetailInput.removeValue(forKey: "DOB")
-            
             Endpoints.addProfile.postCall(with: userDetailInput)
             
             //dele
