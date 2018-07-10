@@ -23,6 +23,21 @@ enum BasePaths: String {
        return baseURL.child(self.rawValue)
     }
     
+    func getUIDBase() -> DatabaseReference? {
+        
+        guard let uid = Auth.auth().currentUser?.uid else {return nil}
+        
+        switch self {
+        case .users:
+            return baseURL.child(BasePaths.users.rawValue).child(uid)
+        default:
+            return baseURL.child(BasePaths.users.rawValue).child(uid).child(self.rawValue)
+        }
+        
+        
+        
+        
+    }
     
     
 }

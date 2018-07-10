@@ -10,6 +10,8 @@ import UIKit
 import SDWebImage
 
 class AddArtistTableViewCell: UITableViewCell {
+    
+    private var currentArtist: CurrentUser?
 
     @IBOutlet var userImage: UIImageView!
     
@@ -17,8 +19,10 @@ class AddArtistTableViewCell: UITableViewCell {
     
     @IBOutlet var userBio: UILabel!
     
+    
     @IBAction func addArtistAction(_ sender: Any) {
         let testParameters = ["artist" : "testuser", "user" : "mikey"]
+        
         
         Endpoints.addArtist.postWithEncoding(with: testParameters) { (json, error) in
             print(json)

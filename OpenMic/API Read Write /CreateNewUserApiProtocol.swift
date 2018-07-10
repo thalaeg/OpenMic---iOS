@@ -33,7 +33,7 @@ extension CreateNewUSerAPIDelegate {
             userDetailInput.removeValue(forKey: "DOB")
             Endpoints.addProfile.postCall(with: userDetailInput, completionHandler: { (json, error) in
                 
-                if let error = error {
+                if let _ = error {
                     completion(false)
                 }
                 
@@ -41,6 +41,8 @@ extension CreateNewUSerAPIDelegate {
                     let jsonRead = JSON(json)
                     if let isSucess = jsonRead["success"].string {
                         if isSucess == "True" {
+                            guard let userPath = BasePaths.users.getUIDBase() else { return }
+                            userPath.child(CurrentUser.userKeys.username.rawValue).setValue(self.userName)
                             completion(true)
                         }
                     } else {
