@@ -69,6 +69,7 @@
 		27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */; };
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
+		27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */; };
 		27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
@@ -140,6 +141,7 @@
 		27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPicker.swift; sourceTree = "<group>"; };
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
+		27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserProtocol.swift; sourceTree = "<group>"; };
 		27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserApiProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -530,6 +532,7 @@
 			children = (
 				277318CD2087A0C200C30C05 /* ApiReadWrite.swift */,
 				27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */,
+				27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */,
 			);
 			path = "API Read Write ";
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 				2754ED2F20E552A7006CD3F9 /* AddArtistModel.swift in Sources */,
 				2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */,
 				27AB243420E834400080A2AC /* CheckUserNameAvaiableProtocol.swift in Sources */,
+				27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */,
 				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,

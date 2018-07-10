@@ -8,9 +8,10 @@
 
 import UIKit
 import SDWebImage
-import SwiftyJSON
 
 class AddArtistTableViewCell: UITableViewCell {
+    
+    private var addArtistDelegate: AddArtistDelegate?
     
     private var currentArtist: CurrentUser?
 
@@ -20,26 +21,19 @@ class AddArtistTableViewCell: UITableViewCell {
     
     @IBOutlet var userBio: UILabel!
     
+    @IBOutlet var addArtistOutlet: UIButton!
     
     @IBAction func addArtistAction(_ sender: Any) {
         guard let selectedArtist = currentArtist else {return}
-        BasePaths.users.getUIDBase()?.observe(.value, with: { (snapShot) in
-            let inputDict = snapShot.value as? [String : Any] ?? [:]
-            let user = CurrentUser.init(json: JSON(inputDict))
-            let parameters = ["user" : user.userName, "artist" : selectedArtist.userName ]
-            Endpoints.addArtist.postWithEncoding(with: parameters) { (json, error) in
-                print(json)
-                
-            }
-            
-        })
-        
-        
-        
-        
+        addArtistDelegate?.addArtist(selectedArtist: selectedArtist)
+    
     }
     
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        addArtistOutlet.setTitle("Add", for: .normal)
+        addArtistDelegate = self
+    }
 
     func setupCell(user: CurrentUser) {
         currentArtist = user
@@ -55,3 +49,26 @@ class AddArtistTableViewCell: UITableViewCell {
     }
 
 }
+
+extension AddArtistTableViewCell: AddArtistDelegate {
+    
+    
+    func artistAdded(success: Bool, message: String) {
+        
+        if success {
+            addArtistOutlet.setTitle("Added", for: .normal)
+        } 
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+

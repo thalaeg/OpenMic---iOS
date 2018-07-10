@@ -139,6 +139,7 @@ elit sed do eiusmod tempor incididunt.</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="addArtistOutlet" destination="xkW-dm-b8l" id="7fK-Q6-ItK"/>
                                             <outlet property="userBio" destination="cBH-be-TVH" id="DaH-Bf-cxG"/>
                                             <outlet property="userImage" destination="Lhw-tT-sAW" id="sP5-1s-tp8"/>
                                             <outlet property="userName" destination="iES-dQ-QMV" id="tld-7e-tjV"/>
