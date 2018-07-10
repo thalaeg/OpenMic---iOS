@@ -21,6 +21,7 @@ class AddArtistTableViewCell: UITableViewCell {
         let testParameters = ["artist" : "testuser", "user" : "mikey"]
         
         Endpoints.addArtist.postWithEncoding(with: testParameters) { (json, error) in
+            print(json)
             
         }
         
