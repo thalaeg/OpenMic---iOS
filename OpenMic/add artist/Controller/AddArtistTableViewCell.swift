@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SwiftyJSON
 
 class AddArtistTableViewCell: UITableViewCell {
     
@@ -21,25 +22,27 @@ class AddArtistTableViewCell: UITableViewCell {
     
     
     @IBAction func addArtistAction(_ sender: Any) {
-        let testParameters = ["artist" : "testuser", "user" : "mikey"]
-        
-        
-        Endpoints.addArtist.postWithEncoding(with: testParameters) { (json, error) in
-            print(json)
+        guard let selectedArtist = currentArtist else {return}
+        BasePaths.users.getUIDBase()?.observe(.value, with: { (snapShot) in
+            let inputDict = snapShot.value as? [String : Any] ?? [:]
+            let user = CurrentUser.init(json: JSON(inputDict))
+            let parameters = ["user" : user.userName, "artist" : selectedArtist.userName ]
+            Endpoints.addArtist.postWithEncoding(with: parameters) { (json, error) in
+                print(json)
+                
+            }
             
-        }
+        })
+        
+        
         
         
     }
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+
 
     func setupCell(user: CurrentUser) {
-        
+        currentArtist = user
         userName.text = user.userName
         userBio.text = user.userBio
         if let photoCheck = user.profilePic {

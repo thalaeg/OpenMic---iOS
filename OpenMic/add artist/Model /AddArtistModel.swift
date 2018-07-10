@@ -14,6 +14,8 @@ class AddArtistModel: NSObject {
     
     private var tableView: UITableView
     private var users = [CurrentUser]()
+    private var currentUser: CurrentUser?
+    
     
     
     
