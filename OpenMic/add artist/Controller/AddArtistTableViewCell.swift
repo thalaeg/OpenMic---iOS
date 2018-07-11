@@ -51,6 +51,12 @@ class AddArtistTableViewCell: UITableViewCell {
 }
 
 extension AddArtistTableViewCell: AddArtistDelegate {
+    func removedArtist(success: Bool) {
+        if success {
+            addArtistOutlet.setTitle("Add", for: .normal)
+        }
+    }
+    
     
     
     func artistAdded(success: Bool, message: String) {
