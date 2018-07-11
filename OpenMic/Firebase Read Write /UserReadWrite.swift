@@ -19,6 +19,7 @@ struct CurrentUser {
         case biography
         case last_name
         case first_name
+        case followed_artists
         
     }
     
@@ -26,6 +27,7 @@ struct CurrentUser {
     var userName: String
     var userBio: String
     var profilePic: String?
+    var followers = [String]()
     
     init(userName: String, userBio: String, profilePic: String? ) {
         self.userName = userName
@@ -44,6 +46,10 @@ struct CurrentUser {
             self.profilePic = profilePic
         }
         
+        if let followers = json[userKeys.followed_artists.rawValue].arrayObject, let followersString = followers as? [String] {
+            self.followers = followersString
+        }
+        
         
         
     }
@@ -57,6 +63,31 @@ struct CurrentUser {
         }
        
     }
+    //MARK: Parse the current user from custom API
+    static func getSingleUserfromAPI(compleetion: @escaping (_ currentUSer: CurrentUser) -> Void) {
+        //get current user
+        guard let path =  BasePaths.users.getUIDBase() else {return}
+        path.observeSingleEvent(of: .value) { (snapShot) in
+            let inputDict = snapShot.value as? [String : Any] ?? [:]
+            let inputJSON = JSON(inputDict)
+            let user = CurrentUser.init(json: inputJSON)
+            
+            Endpoints.addProfile.getCallWithAppenedURL(stringToAppend: user.userName, completion: { (error, json) in
+                guard let inputDictionary = json else {return}
+                let userFromApi = CurrentUser.init(json: JSON(inputDictionary))
+                compleetion(userFromApi)
+                
+            })
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
     
 //    static func getallUserValuesDictionar(completion: @escaping (_ userFields: [String : String]) -> Void ) {
 //        if let userId = getUserID() {

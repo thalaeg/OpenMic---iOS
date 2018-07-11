@@ -36,7 +36,11 @@ enum Endpoints: String {
     case checkIfUserNameAvailable = "profile/exists"
     case addArtist = "profile/update-followers/"
     
-    //MARK: remove redundent api call   
+    //MARK: remove redundent api call
+    
+    
+    
+    
     func getCallwithParameters(parameters: [String : Any]?,  completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
         
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get, parameters: parameters ?? nil).responseJSON { (response) in
@@ -54,6 +58,18 @@ enum Endpoints: String {
         
     }
     
+    func getCallWithAppenedURL(stringToAppend: String, completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void ) {
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + "/\(stringToAppend)/", method: .get).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completion(nil, json)
+            }
+            if let error = response.error {
+                completion(error, nil)
+            }
+            
+        }
+    }
     
     func getCall(completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void) {
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .get).responseJSON { (response) in
@@ -70,6 +86,24 @@ enum Endpoints: String {
     }
     
     
+    
+    func deleteWithEncoding(with BodyEncoding: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .delete, parameters: BodyEncoding, encoding: URLEncoding.httpBody).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completionHandler(json, nil)
+            }
+            if let error = response.error {
+                completionHandler(nil, error)
+            }
+            
+            
+        }
+        
+        
+        
+    }
     
     func postWithEncoding(with BodyEncoding: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
