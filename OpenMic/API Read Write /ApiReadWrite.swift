@@ -60,14 +60,14 @@ enum Endpoints: String {
     
     func getCallWithAppenedURL(stringToAppend: String, completion: @escaping (_ error: Error?, _ responseJson: Any? ) -> Void ) {
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + "/\(stringToAppend)/", method: .get).responseJSON { (response) in
-            
+
             if let json = response.result.value {
                 completion(nil, json)
             }
             if let error = response.error {
                 completion(error, nil)
             }
-            
+
         }
     }
     
