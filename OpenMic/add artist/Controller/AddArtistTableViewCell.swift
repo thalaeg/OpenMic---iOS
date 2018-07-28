@@ -39,6 +39,8 @@ class AddArtistTableViewCell: UITableViewCell {
         currentArtist = user
         userName.text = user.userName
         userBio.text = user.userBio
+        print(user.followers)
+        
         if let photoCheck = user.profilePic {
             userImage.sd_setImage(with: URL(string: photoCheck), placeholderImage: UIImage(named: "genreIcon.png"))
             

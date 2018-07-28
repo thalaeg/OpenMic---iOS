@@ -25,16 +25,19 @@ class AddArtistModel: NSObject {
         tableView.delegate = self
         tableView.dataSource = self
         
-        Endpoints.topForty.getCall { (error, json) in
-            if let json = json {
-                let jsonArray = JSON(json)["results"].arrayValue
-                //reload
-                self.users = jsonArray.map{CurrentUser.init(json: $0)}
-                self.tableView.reloadData()
+        CurrentUser.getCurrentUserfromFirebase { (currentUser) in
+            self.currentUser = currentUser
+            Endpoints.topForty.getCall { (error, json) in
+                if let json = json {
+                    let jsonArray = JSON(json)["results"].arrayValue
+                    //reload
+                    self.users = jsonArray.map{CurrentUser.init(json: $0)}
+                    self.users = self.users.filter{$0.userName != currentUser.userName}
+                    self.tableView.reloadData()
+                }
             }
-            //handle error
         }
-
+        
     }
     
 }

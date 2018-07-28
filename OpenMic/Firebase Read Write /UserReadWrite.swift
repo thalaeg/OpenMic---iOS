@@ -63,46 +63,40 @@ struct CurrentUser {
         }
        
     }
-    //MARK: Parse the current user from custom API
-    static func getSingleUserfromAPI(compleetion: @escaping (_ currentUSer: CurrentUser) -> Void) {
-        //get current user
+    
+    
+    static func getCurrentUserfromFirebase(completion: @escaping (_ currentUSer: CurrentUser) -> Void) {
+        
         guard let path =  BasePaths.users.getUIDBase() else {return}
         path.observeSingleEvent(of: .value) { (snapShot) in
             let inputDict = snapShot.value as? [String : Any] ?? [:]
             let inputJSON = JSON(inputDict)
             let user = CurrentUser.init(json: inputJSON)
+            completion(user)
             
+        }
+        
+    }
+    
+    //MARK: Parse the current user from custom API
+    static func getSingleUserfromAPI(compleetion: @escaping (_ currentUSer: CurrentUser) -> Void) {
+        //get current user
+        
+        self.getCurrentUserfromFirebase { (user) in
             Endpoints.addProfile.getCallWithAppenedURL(stringToAppend: user.userName, completion: { (error, json) in
                 guard let inputDictionary = json else {return}
                 let userFromApi = CurrentUser.init(json: JSON(inputDictionary))
                 compleetion(userFromApi)
                 
             })
-            
-            
         }
-        
-        
+   
         
     }
     
     
     
-    
-//    static func getallUserValuesDictionar(completion: @escaping (_ userFields: [String : String]) -> Void ) {
-//        if let userId = getUserID() {
-//            BasePaths.users.getNonUIDBase().child(userId).observeSingleEvent(of: .value) { (snapShot) in
-//                let userFields = snapShot.value as? [String : Any] ?? [:]
-//                let json = JSON(userFields)
-//                if let userdetailsDic = json[BasePaths.userDetails.rawValue].dictionaryObject, let stringDic = userdetailsDic as? [String : String] {
-//                    completion(stringDic)
-//                }
-//
-//
-//            }
-//        }
-//
-//    }
+
     
     
 }

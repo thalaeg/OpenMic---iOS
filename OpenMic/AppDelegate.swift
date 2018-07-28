@@ -26,20 +26,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
         //log user out
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            FBSDKLoginManager().logOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
+//        let firebaseAuth = Auth.auth()
+//        do {
+//            try firebaseAuth.signOut()
+//            FBSDKLoginManager().logOut()
+//        } catch let signOutError as NSError {
+//            print ("Error signing out: %@", signOutError)
+//        }
         //setup facebook sdk
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //MARK: Change initial storyboard
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
+        let storyboard = UIStoryboard(name: "AddArtist", bundle: nil)
+               let initialViewController = storyboard.instantiateViewController(withIdentifier: "selectArtist")
+//        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
