@@ -30,7 +30,6 @@ extension CreateNewUSerAPIDelegate {
             var userDetailInput = userDetails
             userDetailInput.updateValue(self.userName, forKey: CurrentUser.userKeys.username.rawValue)
             //MARK: add DOB back in when api is updated
-            userDetailInput.removeValue(forKey: "DOB")
             Endpoints.addProfile.postCall(with: userDetailInput, completionHandler: { (json, error) in
                 
                 if let _ = error {
@@ -39,6 +38,8 @@ extension CreateNewUSerAPIDelegate {
                 
                 if let json = json {
                     let jsonRead = JSON(json)
+                    print("jsonRead \(jsonRead)")
+                
                     if let isSucess = jsonRead["success"].string {
                         if isSucess == "True" {
                             guard let userPath = BasePaths.users.getUIDBase() else { return }

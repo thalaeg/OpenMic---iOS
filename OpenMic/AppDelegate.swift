@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  OpenMic
 //
-//  Created by Michael Metzger  on 4/13/18.
+//  Created by Michael Metzger  on 4/13/18.bobbob
 //  Copyright © 2018 Mike. All rights reserved.
 //
 
@@ -26,13 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
         //log user out
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            FBSDKLoginManager().logOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
+//        let firebaseAuth = Auth.auth()
+//        do {
+//            try firebaseAuth.signOut()
+//            FBSDKLoginManager().logOut()
+//        } catch let signOutError as NSError {
+//            print ("Error signing out: %@", signOutError)
+//        }
         //setup facebook sdk
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         

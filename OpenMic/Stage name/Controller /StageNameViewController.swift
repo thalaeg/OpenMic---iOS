@@ -10,7 +10,7 @@ import UIKit
 class StageNameViewController: UIViewController {
     
     private var barButtonItemOne: UIBarButtonItem?
-    private var barButtonItemTwo: UIBarButtonItem?
+    //private var barButtonItemTwo: UIBarButtonItem?
     
     
     @IBOutlet var usernameTextFieldOutlet: UITextField!
@@ -20,7 +20,6 @@ class StageNameViewController: UIViewController {
     private var createUserApiDelegate: CreateNewUSerAPIDelegate?
     
     @IBAction func userNameTextChanged(_ sender: UITextField) {
-       
         if usernameTextFieldOutlet.text!.count > 2 {
             addRightBarbuttonItem(fadded: false)
         }
@@ -80,7 +79,7 @@ class StageNameViewController: UIViewController {
     @objc private func checkName() {
         //check if user name taken
         checkUSerNameFreeDelegate?.checkUserNameAvailable()
-        //self.performSegue(withIdentifier: "topForty", sender: self)
+       // self.performSegue(withIdentifier: "topForty", sender: self)
     }
     
 }
@@ -127,40 +126,29 @@ extension StageNameViewController {
         nextButton.setTitle("Next", for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         nextButton.addTarget(self, action: #selector(checkName), for: .touchUpInside)
-        nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1).withAlphaComponent(0.50)
+        nextButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0, blue: 0.003921568627, alpha: 1)
         
         nextButton.layer.cornerRadius = 15
         
         barButtonItemOne = UIBarButtonItem(customView: nextButton)
+        self.navigationItem.rightBarButtonItem = barButtonItemOne
+         self.navigationItem.rightBarButtonItem?.isEnabled = true
+        barButtonItemOne!.tintColor = UIColor.blue
         
-        
-        
-        
-        let nextButtonTwo = UIButton()
-        nextButtonTwo.frame = CGRect(x: 0, y: 0, width: 50, height: 21)
-        nextButtonTwo.setTitle("Neddddxt", for: .normal)
-        nextButtonTwo.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        //nextButtonTwo.addTarget(self, action: #selector(checkName), for: .touchUpInside)
-        nextButtonTwo.backgroundColor = UIColor.black
-        
-        nextButtonTwo.layer.cornerRadius = 15
-        
-        
-        barButtonItemTwo = UIBarButtonItem(customView: nextButtonTwo)
-        
-        self.navigationItem.rightBarButtonItems = [self.barButtonItemOne!]
-        
-        //let rightbarbuttonItem = UIBarButtonItem(customView: nextButton)
+      
     }
     
    private func addRightBarbuttonItem(fadded: Bool) {
     
     switch fadded {
     case true:
-        self.navigationItem.setRightBarButtonItems([barButtonItemOne!], animated: false)
+        barButtonItemOne!.tintColor = UIColor.blue
+       // self.navigationItem.rightBarButtonItem?.isEnabled = false
+       //self.navigationItem.setRightBarButtonItems([barButtonItemOne!], animated: false)
     case false :
-        self.navigationItem.rightBarButtonItems = [self.barButtonItemTwo!]
-        self.navigationItem.setRightBarButtonItems([barButtonItemTwo!], animated: false)
+        barButtonItemOne!.tintColor = UIColor.purple
+        //self.navigationItem.rightBarButtonItem?.isEnabled = true
+//        self.navigationItem.rightBarButtonItems = [self.barButtonItemTwo!]
     }
 
     
