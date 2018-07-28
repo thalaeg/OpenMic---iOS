@@ -21,7 +21,8 @@ extension Date {
     
     func formatForDataBase() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateStyle = .medium
+  
         return formatter.string(from: self)
     }
     

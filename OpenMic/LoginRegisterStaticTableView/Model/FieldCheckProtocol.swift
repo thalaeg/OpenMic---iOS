@@ -52,7 +52,7 @@ extension CheckSignUpFieldsDelegate {
         let firstName = nameSet[0]
         
         var newUserDic = [ProfileKeys.firstName.rawValue : firstName,
-                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.DOB.rawValue : dOB.formatForDataBase()]
+                          ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.dob.rawValue : dOB.formatForDataBase()]
         if nameSet.count > 1 {
             let lastName = nameSet[1]
             newUserDic.updateValue(lastName, forKey: ProfileKeys.lastName.rawValue)
