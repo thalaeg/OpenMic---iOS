@@ -18,6 +18,7 @@ class AddArtistTableViewCell: UITableViewCell {
 
     @IBOutlet var userImage: UIImageView!
     
+    @IBOutlet var userFirstAndLast: UILabel!
     @IBOutlet var userName: UILabel!
     
     @IBOutlet var userBio: UILabel!
@@ -51,7 +52,7 @@ class AddArtistTableViewCell: UITableViewCell {
         currentArtist = user
         userName.text = user.userName
         userBio.text = user.userBio
-        print(user.followers)
+        userFirstAndLast.text = user.firstName + user.lastName
         
         if let photoCheck = user.profilePic {
             userImage.sd_setImage(with: URL(string: photoCheck), placeholderImage: UIImage(named: "genreIcon.png"))
