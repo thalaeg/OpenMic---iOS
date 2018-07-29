@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 
+@IBDesignable
 class AddArtistTableViewCell: UITableViewCell {
     
     private var addArtistDelegate: AddArtistDelegate?
@@ -31,9 +32,20 @@ class AddArtistTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        addArtistOutlet.setTitle("Add", for: .normal)
+       
+        
         addArtistDelegate = self
     }
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupCellLayersAndImage()
+    }
+    
+ 
+    
+
 
     func setupCell(user: CurrentUser) {
         currentArtist = user
@@ -55,7 +67,8 @@ class AddArtistTableViewCell: UITableViewCell {
 extension AddArtistTableViewCell: AddArtistDelegate {
     func removedArtist(success: Bool) {
         if success {
-            addArtistOutlet.setTitle("Add", for: .normal)
+            addArtistOutlet.setTitle("ADD  ", for: .normal)
+            addArtistOutlet.setImage(#imageLiteral(resourceName: "plusIcon"), for: .normal)
         }
     }
     
@@ -64,12 +77,26 @@ extension AddArtistTableViewCell: AddArtistDelegate {
     func artistAdded(success: Bool, message: String) {
         
         if success {
-            addArtistOutlet.setTitle("Added", for: .normal)
+            addArtistOutlet.setTitle("ADDED  ", for: .normal)
+             addArtistOutlet.setImage(#imageLiteral(resourceName: "minusIcon"), for: .normal)
         } 
         
     }
     
     
+}
+
+
+extension AddArtistTableViewCell {
+    
+    private func setupCellLayersAndImage() {
+        addArtistOutlet.setTitle("ADD  ", for: .normal)
+        
+        addArtistOutlet.semanticContentAttribute =  .forceRightToLeft
+        addArtistOutlet.layer.borderColor = #colorLiteral(red: 0.9098039216, green: 0.1803921569, blue: 0.09803921569, alpha: 1)
+        addArtistOutlet.layer.borderWidth = 1.0
+        addArtistOutlet.layer.cornerRadius = addArtistOutlet.frame.midY / 2
+    }
     
     
 }

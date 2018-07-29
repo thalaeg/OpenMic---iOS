@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk9-x7-DBA">
+                    <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+                    <state key="normal" title="Button" image="plusIcon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mk9-x7-DBA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GaS-yJ-mJ1"/>
+                <constraint firstItem="Mk9-x7-DBA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sc0-BG-sAq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mk9-x7-DBA" secondAttribute="trailing" id="ka2-Ir-Riv"/>
+                <constraint firstAttribute="bottom" secondItem="Mk9-x7-DBA" secondAttribute="bottom" id="mEK-Pi-bE9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="22" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plusIcon" width="8" height="8"/>
+    </resources>
+</document>

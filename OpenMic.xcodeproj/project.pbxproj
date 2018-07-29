@@ -21,6 +21,9 @@
 		27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27203DD720CAB9F900A39D0A /* StageNameViewController.swift */; };
 		2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */; };
 		2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51D20C066EB00E90CB0 /* StaticFieldsAssets.xcassets */; };
+		27263961210E0AE0002F20F0 /* ArtistAdd.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27263960210E0AE0002F20F0 /* ArtistAdd.xcassets */; };
+		27263963210E0C8E002F20F0 /* CustomAddedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27263962210E0C8E002F20F0 /* CustomAddedButton.swift */; };
+		27263966210E0CB3002F20F0 /* CustomAddedButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27263965210E0CB3002F20F0 /* CustomAddedButton.xib */; };
 		2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729C0B92097C059007F86C1 /* UserReadWrite.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
 		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
@@ -91,6 +94,9 @@
 		27203DD720CAB9F900A39D0A /* StageNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNameViewController.swift; sourceTree = "<group>"; };
 		2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaticLoginFields.storyboard; sourceTree = "<group>"; };
 		2722B51D20C066EB00E90CB0 /* StaticFieldsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StaticFieldsAssets.xcassets; sourceTree = "<group>"; };
+		27263960210E0AE0002F20F0 /* ArtistAdd.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtistAdd.xcassets; sourceTree = "<group>"; };
+		27263962210E0C8E002F20F0 /* CustomAddedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddedButton.swift; sourceTree = "<group>"; };
+		27263965210E0CB3002F20F0 /* CustomAddedButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAddedButton.xib; sourceTree = "<group>"; };
 		2729C0B92097C059007F86C1 /* UserReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadWrite.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
 		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				2710074520DB0B310020E229 /* AddArtist.storyboard */,
+				27263960210E0AE0002F20F0 /* ArtistAdd.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +308,15 @@
 				2790D38320C9850B00665484 /* StaticLonginSignUpExtension.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		27263964210E0C95002F20F0 /* CustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				27263962210E0C8E002F20F0 /* CustomAddedButton.swift */,
+				27263965210E0CB3002F20F0 /* CustomAddedButton.xib */,
+			);
+			path = CustomButtons;
 			sourceTree = "<group>";
 		};
 		2734C91D2085948600123924 /* Firebase Read Write  */ = {
@@ -438,6 +454,7 @@
 		278110802087D8590071A3E5 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				27263964210E0C95002F20F0 /* CustomButtons */,
 				27FA33B72088F95D008CC7D3 /* BaseViewController  */,
 				278110832087DD240071A3E5 /* UIViewExtensions.swift */,
 				278110852087E0800071A3E5 /* ViewWithBottomLayer.swift */,
@@ -626,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */,
+				27263961210E0AE0002F20F0 /* ArtistAdd.xcassets in Resources */,
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
@@ -635,6 +653,7 @@
 				271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */,
+				27263966210E0CB3002F20F0 /* CustomAddedButton.xib in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
@@ -741,6 +760,7 @@
 				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
+				27263963210E0C8E002F20F0 /* CustomAddedButton.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				2777B9E920CAF8CC00C98BF4 /* TutorialStepProtocol.swift in Sources */,

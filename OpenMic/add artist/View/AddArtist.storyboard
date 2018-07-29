@@ -94,8 +94,8 @@
                                                         <constraint firstAttribute="height" constant="49" id="lfz-fg-w0W"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zh2-FN-k4y" userLabel="Name and tag">
-                                                    <rect key="frame" x="61" y="17" width="282" height="55.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zh2-FN-k4y" userLabel="Name and tag">
+                                                    <rect key="frame" x="61" y="15" width="282" height="55.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Guitar Girl " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iES-dQ-QMV">
                                                             <rect key="frame" x="0.0" y="0.0" width="282" height="13.5"/>
@@ -120,8 +120,11 @@ elit sed do eiusmod tempor incididunt.</string>
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-dm-b8l">
-                                                    <rect key="frame" x="330" y="11" width="30" height="30"/>
-                                                    <state key="normal" title="Add"/>
+                                                    <rect key="frame" x="309" y="11" width="51" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="tintColor" red="0.90980392160000001" green="0.18039215689999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="2" maxX="10" maxY="3"/>
+                                                    <state key="normal" title="added   " image="plusIcon"/>
                                                     <connections>
                                                         <action selector="addArtistAction:" destination="fNe-9K-KOW" eventType="touchUpInside" id="6nq-5x-LsK"/>
                                                     </connections>
@@ -185,4 +188,7 @@ elit sed do eiusmod tempor incididunt.</string>
             <point key="canvasLocation" x="814" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plusIcon" width="8" height="8"/>
+    </resources>
 </document>
