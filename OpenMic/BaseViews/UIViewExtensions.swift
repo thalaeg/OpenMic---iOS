@@ -13,9 +13,17 @@ extension UIView {
     func addBottomBorder() {
         let bottomLayter = CALayer()
         bottomLayter.frame = CGRect(x: 0, y: self.frame.height - 1, width: self.frame.width, height: 1)
-        bottomLayter.backgroundColor = UIColor(white: 1.0, alpha: 1.0).cgColor
+        bottomLayter.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
         self.layer.addSublayer(bottomLayter)
         
+    }
+    
+    
+    func addtopBorder() {
+        let topLayer = CALayer()
+        topLayer.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 1)
+        topLayer.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
+        self.layer.addSublayer(topLayer)
     }
     
  

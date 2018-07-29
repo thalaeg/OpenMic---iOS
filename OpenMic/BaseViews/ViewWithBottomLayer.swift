@@ -7,14 +7,18 @@
 //
 
 import UIKit
-
+@IBDesignable
 class ViewWithBottomLayer: UIView {
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+    }
 
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.addBottomBorder()
-        self.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        self.addtopBorder()
     }
 
 

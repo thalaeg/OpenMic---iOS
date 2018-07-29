@@ -43,7 +43,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="UQd-r4-0RM" secondAttribute="bottom" constant="5" id="HUE-Lu-bBe"/>
                                             <constraint firstItem="UQd-r4-0RM" firstAttribute="top" secondItem="ZT4-7b-b0O" secondAttribute="top" constant="32" id="Ild-ha-11u"/>
@@ -51,7 +50,7 @@
                                             <constraint firstAttribute="trailing" secondItem="UQd-r4-0RM" secondAttribute="trailing" constant="14" id="sO7-Bw-Fje"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyY-xj-ero" userLabel="You may be interested in view">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyY-xj-ero" userLabel="You may be interested in view" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="375" height="46"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may be interested in" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-Io-1Ec">
@@ -61,7 +60,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="8Ir-Io-1Ec" secondAttribute="trailing" constant="20" id="F3c-Pw-ahq"/>
                                             <constraint firstAttribute="height" constant="46" id="Moi-w4-7sT"/>
@@ -87,7 +85,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-tT-sAW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-tT-sAW">
                                                     <rect key="frame" x="5" y="17" width="48" height="49"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="48" id="dHV-Wr-JRd"/>
@@ -120,7 +118,7 @@ elit sed do eiusmod tempor incididunt.</string>
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-dm-b8l">
-                                                    <rect key="frame" x="309" y="11" width="51" height="14"/>
+                                                    <rect key="frame" x="289" y="11" width="71" height="19"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="tintColor" red="0.90980392160000001" green="0.18039215689999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <inset key="contentEdgeInsets" minX="10" minY="2" maxX="10" maxY="3"/>
@@ -133,6 +131,7 @@ elit sed do eiusmod tempor incididunt.</string>
                                             <constraints>
                                                 <constraint firstItem="xkW-dm-b8l" firstAttribute="trailing" secondItem="ldI-S1-Bat" secondAttribute="trailingMargin" id="Ape-Xk-ash"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zh2-FN-k4y" secondAttribute="trailing" constant="17" id="Id9-Kw-qsA"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lhw-tT-sAW" secondAttribute="bottom" constant="15.5" id="JcW-VM-peF"/>
                                                 <constraint firstItem="zh2-FN-k4y" firstAttribute="top" secondItem="ldI-S1-Bat" secondAttribute="topMargin" constant="6" id="VU3-FK-a0q"/>
                                                 <constraint firstItem="Lhw-tT-sAW" firstAttribute="top" secondItem="ldI-S1-Bat" secondAttribute="top" constant="17" id="X2D-cA-xi6"/>
                                                 <constraint firstItem="zh2-FN-k4y" firstAttribute="leading" secondItem="Lhw-tT-sAW" secondAttribute="trailing" constant="8" id="Y2e-e7-abF"/>
@@ -189,6 +188,7 @@ elit sed do eiusmod tempor incididunt.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="kanyeWest-profile" width="880" height="587"/>
         <image name="plusIcon" width="8" height="8"/>
     </resources>
 </document>

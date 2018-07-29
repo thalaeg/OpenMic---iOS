@@ -24,6 +24,7 @@ class AddArtistModel: NSObject {
         super.init()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
         
         CurrentUser.getCurrentUserfromFirebase { (currentUser) in
             self.currentUser = currentUser
