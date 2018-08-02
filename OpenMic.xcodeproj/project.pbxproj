@@ -12,11 +12,6 @@
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
-		271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */; };
-		271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */; };
-		271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */; };
-		271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */; };
-		271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */; };
 		27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */; };
 		27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27203DD720CAB9F900A39D0A /* StageNameViewController.swift */; };
 		2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */; };
@@ -24,7 +19,6 @@
 		27263961210E0AE0002F20F0 /* ArtistAdd.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27263960210E0AE0002F20F0 /* ArtistAdd.xcassets */; };
 		2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729C0B92097C059007F86C1 /* UserReadWrite.swift */; };
 		2734C91F208594A200123924 /* FireBasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C91E208594A200123924 /* FireBasePaths.swift */; };
-		2734C9212085988600123924 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C9202085988600123924 /* SignupViewController.swift */; };
 		2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734C92220859D1300123924 /* FieldCheckProtocol.swift */; };
 		2741B01B208C11250012B322 /* SendHelpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741B01A208C11240012B322 /* SendHelpEmail.swift */; };
 		2742AD8C20E566B400633CF1 /* AddArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742AD8B20E566B400633CF1 /* AddArtistTableViewCell.swift */; };
@@ -41,7 +35,6 @@
 		2777B9E820CAF8CC00C98BF4 /* TutorialStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E620CAF8CB00C98BF4 /* TutorialStepModel.swift */; };
 		2777B9E920CAF8CC00C98BF4 /* TutorialStepProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777B9E720CAF8CB00C98BF4 /* TutorialStepProtocol.swift */; };
 		2777B9EC20CAF90000C98BF4 /* TutorialAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2777B9EB20CAF90000C98BF4 /* TutorialAssets.xcassets */; };
-		2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781107C2087D5EE0071A3E5 /* LoginViewController.swift */; };
 		2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2781107E2087D75D0071A3E5 /* loginassets.xcassets */; };
 		278110822087D9140071A3E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110812087D9140071A3E5 /* BaseViewController.swift */; };
 		278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278110832087DD240071A3E5 /* UIViewExtensions.swift */; };
@@ -83,11 +76,6 @@
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
-		271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavGenres.storyboard; sourceTree = "<group>"; };
-		271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreViewController.swift; sourceTree = "<group>"; };
-		271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FavGenreAssets.xcassets; sourceTree = "<group>"; };
-		271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreCollectionViewCell.swift; sourceTree = "<group>"; };
-		271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveGenreModel.swift; sourceTree = "<group>"; };
 		27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageNameStoryboard.storyboard; sourceTree = "<group>"; };
 		27203DD720CAB9F900A39D0A /* StageNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNameViewController.swift; sourceTree = "<group>"; };
 		2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaticLoginFields.storyboard; sourceTree = "<group>"; };
@@ -95,7 +83,6 @@
 		27263960210E0AE0002F20F0 /* ArtistAdd.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtistAdd.xcassets; sourceTree = "<group>"; };
 		2729C0B92097C059007F86C1 /* UserReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadWrite.swift; sourceTree = "<group>"; };
 		2734C91E208594A200123924 /* FireBasePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePaths.swift; sourceTree = "<group>"; };
-		2734C9202085988600123924 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2734C92220859D1300123924 /* FieldCheckProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCheckProtocol.swift; sourceTree = "<group>"; };
 		2741B01A208C11240012B322 /* SendHelpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHelpEmail.swift; sourceTree = "<group>"; };
 		2742AD8B20E566B400633CF1 /* AddArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,7 +101,6 @@
 		2777B9E620CAF8CB00C98BF4 /* TutorialStepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialStepModel.swift; sourceTree = "<group>"; };
 		2777B9E720CAF8CB00C98BF4 /* TutorialStepProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialStepProtocol.swift; sourceTree = "<group>"; };
 		2777B9EB20CAF90000C98BF4 /* TutorialAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialAssets.xcassets; sourceTree = "<group>"; };
-		2781107C2087D5EE0071A3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2781107E2087D75D0071A3E5 /* loginassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loginassets.xcassets; sourceTree = "<group>"; };
 		278110812087D9140071A3E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		278110832087DD240071A3E5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -204,43 +190,6 @@
 				271D3C56208A5E08008AA3E2 /* PickerSelect.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		271D3C5A208AAAF3008AA3E2 /* PickGenres */ = {
-			isa = PBXGroup;
-			children = (
-				271D3C65208AB2AE008AA3E2 /* Model */,
-				271D3C5E208AACC3008AA3E2 /* Controller */,
-				271D3C5D208AACBD008AA3E2 /* View */,
-			);
-			path = PickGenres;
-			sourceTree = "<group>";
-		};
-		271D3C5D208AACBD008AA3E2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				271D3C5B208AAB25008AA3E2 /* FavGenres.storyboard */,
-				271D3C61208AAE03008AA3E2 /* FavGenreAssets.xcassets */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		271D3C5E208AACC3008AA3E2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				271D3C5F208AACDC008AA3E2 /* FavGenreViewController.swift */,
-				271D3C63208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		271D3C65208AB2AE008AA3E2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				271D3C66208AB2CB008AA3E2 /* FaveGenreModel.swift */,
-			);
-			name = Model;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		27203DD220CAB93B00A39D0A /* Stage name */ = {
@@ -351,7 +300,6 @@
 				27203DD220CAB93B00A39D0A /* Stage name */,
 				2797C8C9208BE29D00AD93B4 /* ForgotPassword */,
 				27A713AE208937850095E044 /* UserType */,
-				271D3C5A208AAAF3008AA3E2 /* PickGenres */,
 				27692F1520810A3C000D7C8B /* AppDelegate.swift */,
 				27692F1720810A3C000D7C8B /* ViewController.swift */,
 				27692F1C20810A3F000D7C8B /* Assets.xcassets */,
@@ -394,8 +342,6 @@
 		27692F2A20810A78000D7C8B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2734C9202085988600123924 /* SignupViewController.swift */,
-				2781107C2087D5EE0071A3E5 /* LoginViewController.swift */,
 				278C625C20BF46BF00823D9B /* LoginSelectViewController.swift */,
 			);
 			path = Controller;
@@ -636,9 +582,7 @@
 				27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */,
 				27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
-				271D3C62208AAE03008AA3E2 /* FavGenreAssets.xcassets in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
-				271D3C5C208AAB25008AA3E2 /* FavGenres.storyboard in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
@@ -720,10 +664,8 @@
 			files = (
 				2777B9E820CAF8CC00C98BF4 /* TutorialStepModel.swift in Sources */,
 				2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */,
-				271D3C64208AB1D5008AA3E2 /* FavGenreCollectionViewCell.swift in Sources */,
 				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
 				2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */,
-				2781107D2087D5EE0071A3E5 /* LoginViewController.swift in Sources */,
 				27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */,
 				2777B9E420CAF8B400C98BF4 /* TutorialStepViewController.swift in Sources */,
 				27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */,
@@ -731,7 +673,6 @@
 				2777B9E520CAF8B400C98BF4 /* TutorialViewController.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
-				271D3C60208AACDC008AA3E2 /* FavGenreViewController.swift in Sources */,
 				2742AD8C20E566B400633CF1 /* AddArtistTableViewCell.swift in Sources */,
 				2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */,
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
@@ -742,7 +683,6 @@
 				27AB243420E834400080A2AC /* CheckUserNameAvaiableProtocol.swift in Sources */,
 				27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */,
 				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
-				2734C9212085988600123924 /* SignupViewController.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
@@ -759,7 +699,6 @@
 				27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */,
 				27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */,
 				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,
-				271D3C67208AB2CB008AA3E2 /* FaveGenreModel.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
