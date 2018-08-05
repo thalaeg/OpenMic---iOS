@@ -96,12 +96,14 @@ extension AddArtistTableViewCell {
         addArtistOutlet.setTitle("ADD  ", for: .normal)
         
         addArtistOutlet.semanticContentAttribute =  .forceRightToLeft
-        addArtistOutlet.layer.borderColor = #colorLiteral(red: 0.9098039216, green: 0.1803921569, blue: 0.09803921569, alpha: 1)
-        addArtistOutlet.layer.borderWidth = 1.0
-        addArtistOutlet.layer.cornerRadius = addArtistOutlet.frame.midY / 2
+        addArtistOutlet.redThenRoundBorder()
+
+        userImage.roundBorderless()
+        //        addArtistOutlet.layer.borderColor = #colorLiteral(red: 0.9098039216, green: 0.1803921569, blue: 0.09803921569, alpha: 1)
+        //        addArtistOutlet.layer.borderWidth = 1.0
+        //        addArtistOutlet.layer.cornerRadius = addArtistOutlet.frame.midY / 2
         
-        userImage.layer.cornerRadius = userImage.frame.midY / 2
-     
+        //userImage.layer.cornerRadius = userImage.frame.midY / 2
         
         
     }
