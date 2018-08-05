@@ -118,7 +118,7 @@ elit sed do eiusmod tempor incididunt.</string>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-dm-b8l">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-dm-b8l" customClass="OvalRedBorderButton" customModule="OpenMic" customModuleProvider="target">
                                                     <rect key="frame" x="289" y="11" width="71" height="19"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="tintColor" red="0.90980392160000001" green="0.18039215689999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

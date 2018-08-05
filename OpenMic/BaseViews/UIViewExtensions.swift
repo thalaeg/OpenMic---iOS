@@ -29,7 +29,7 @@ extension UIView {
     
     
     func redThenRoundBorder() {
-        self.backgroundColor = .clear 
+        self.backgroundColor = UIColor.clear
         self.layer.borderColor = #colorLiteral(red: 0.9098039216, green: 0.1803921569, blue: 0.09803921569, alpha: 1)
         self.layer.borderWidth = 1.0
         self.layer.cornerRadius = self.frame.midY / 2

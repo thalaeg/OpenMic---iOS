@@ -13,12 +13,14 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     override func awakeFromNib() {
      //blurredBackGroundView.addBlueEffect()
         profilePhotoFront.roundBorderless2()
-        //editProfileButtonOutlet.redThenRoundBorder()
         
        
     }
     
     @IBOutlet var editProfileButtonOutlet: UIButton!
+    
+    @IBAction func editProfifileAction(_ sender: Any) {
+    }
     
     @IBOutlet var profileNameFull: UILabel!
     

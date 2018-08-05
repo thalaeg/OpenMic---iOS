@@ -61,6 +61,7 @@
 		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
 		27AB243420E834400080A2AC /* CheckUserNameAvaiableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB243320E834400080A2AC /* CheckUserNameAvaiableProtocol.swift */; };
 		27AD43A920BF445C00A2F11E /* BaseViewHiddenNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */; };
+		27AF83612117B34500FCC35C /* OvalRedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AF83602117B34500FCC35C /* OvalRedBorderButton.swift */; };
 		27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B5208697F90063AB75 /* AlertViews .swift */; };
 		27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */; };
 		27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */; };
@@ -132,6 +133,7 @@
 		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
 		27AB243320E834400080A2AC /* CheckUserNameAvaiableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserNameAvaiableProtocol.swift; sourceTree = "<group>"; };
 		27AD43A820BF445C00A2F11E /* BaseViewHiddenNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewHiddenNav.swift; sourceTree = "<group>"; };
+		27AF83602117B34500FCC35C /* OvalRedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalRedBorderButton.swift; sourceTree = "<group>"; };
 		27B2C5B5208697F90063AB75 /* AlertViews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViews .swift"; sourceTree = "<group>"; };
 		27B2C5B9208698B10063AB75 /* CreateNewUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserProtocol.swift; sourceTree = "<group>"; };
 		27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticLoginControllerTableView.swift; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 				278C625E20BF474900823D9B /* UiviewControllerExtension.swift */,
 				2790D38120C9814A00665484 /* DateFormatExtensions.swift */,
 				2710074020DAD3CA0020E229 /* CustomNavigationController.swift */,
+				27AF83602117B34500FCC35C /* OvalRedBorderButton.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				2777B9E820CAF8CC00C98BF4 /* TutorialStepModel.swift in Sources */,
 				2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */,
 				27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */,
+				27AF83612117B34500FCC35C /* OvalRedBorderButton.swift in Sources */,
 				2797C8D0208BE33200AD93B4 /* ForgotPasswordViewController.swift in Sources */,
 				27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */,
 				2777B9E420CAF8B400C98BF4 /* TutorialStepViewController.swift in Sources */,

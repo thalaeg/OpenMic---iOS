@@ -41,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
                let initialViewController = storyboard.instantiateViewController(withIdentifier: "editProfile")
         
+        //addartist
+//        let storyboard = UIStoryboard(name: "AddArtist", bundle: nil)
+//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "selectArtist")
+        
         //profileEdit
 //        let storyboard = UIStoryboard(name: "Login", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")

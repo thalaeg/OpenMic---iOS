@@ -75,7 +75,7 @@
                                             <rect key="frame" x="8" y="8" width="359" height="356"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-iT-DK5" userLabel="All profile Attributes">
-                                                    <rect key="frame" x="20" y="28" width="319" height="298"/>
+                                                    <rect key="frame" x="20" y="28" width="319" height="216"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-ue-1xe">
                                                             <rect key="frame" x="100.5" y="0.0" width="118" height="118"/>
@@ -84,34 +84,49 @@
                                                                 <constraint firstAttribute="height" constant="118" id="yke-VW-5eg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-4O-kN1" userLabel="UserNameFields">
-                                                            <rect key="frame" x="107" y="127" width="105" height="132"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-4O-kN1" userLabel="UserNameFields">
+                                                            <rect key="frame" x="107" y="127" width="105" height="89"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Chaz Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Yn-Z85">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="115"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="42"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Chazultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-QN-ygF">
-                                                                    <rect key="frame" x="15" y="115" width="75" height="17"/>
+                                                                    <rect key="frame" x="15" y="46" width="75" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-0m-3QP" customClass="OvalButtonFiveDegrees" customModule="OpenMic" customModuleProvider="target">
+                                                                    <rect key="frame" x="9" y="67" width="87" height="22"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22" id="97Z-VL-o6b"/>
+                                                                        <constraint firstAttribute="width" constant="87" id="hj6-le-zvN"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="tintColor" red="0.90980392160000001" green="0.18039215689999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="10" minY="7" maxX="10" maxY="7"/>
+                                                                    <state key="normal" title="editProfile"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="degrees">
+                                                                            <real key="value" value="11"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="editProfifileAction:" destination="g6P-2i-7Mm" eventType="touchUpInside" id="q0i-Cz-8Nz"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5G-B0-0CT">
-                                                            <rect key="frame" x="122" y="268" width="75" height="30"/>
-                                                            <state key="normal" title="Edit Profile"/>
-                                                        </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" constant="20" id="2HB-pt-Fqp"/>
-                                                <constraint firstAttribute="bottom" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="30" id="I7s-qz-gRk"/>
+                                                <constraint firstAttribute="bottom" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="112" id="I7s-qz-gRk"/>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="top" secondItem="ceQ-zs-bL9" secondAttribute="top" constant="28" id="V36-gY-NDp"/>
                                                 <constraint firstAttribute="trailing" secondItem="XcA-iT-DK5" secondAttribute="trailing" constant="20" id="gal-sO-d4F"/>
                                             </constraints>
@@ -132,7 +147,7 @@
                                     </constraints>
                                     <connections>
                                         <outlet property="blurredBackGroundView" destination="ceQ-zs-bL9" id="PK6-x4-Z75"/>
-                                        <outlet property="editProfileButtonOutlet" destination="B5G-B0-0CT" id="oi0-Vy-ksA"/>
+                                        <outlet property="editProfileButtonOutlet" destination="uA8-0m-3QP" id="hwf-rQ-KwD"/>
                                         <outlet property="profileNameFull" destination="y2i-Yn-Z85" id="IGf-hk-rrO"/>
                                         <outlet property="profilePhoto" destination="a6J-9X-XJh" id="T6L-HR-b5U"/>
                                         <outlet property="profilePhotoFront" destination="Cp6-ue-1xe" id="kmW-Ab-9WJ"/>
