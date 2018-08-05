@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,19 +30,53 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IXc-Rf-KGu">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IXc-Rf-KGu" customClass="ProfileEditCollectionViewCell" customModule="OpenMic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="400" width="155" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="155" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upcomingFlyer" translatesAutoresizingMaskIntoConstraints="NO" id="nIy-ef-8AB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="134"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="nIy-ef-8AB" firstAttribute="top" secondItem="IXc-Rf-KGu" secondAttribute="top" id="18K-zx-GaA"/>
+                                            <constraint firstItem="nIy-ef-8AB" firstAttribute="leading" secondItem="IXc-Rf-KGu" secondAttribute="leading" id="Axb-7i-6qC"/>
+                                            <constraint firstAttribute="bottom" secondItem="nIy-ef-8AB" secondAttribute="bottom" id="Mcp-UU-92W"/>
+                                            <constraint firstAttribute="trailing" secondItem="nIy-ef-8AB" secondAttribute="trailing" id="iUZ-bf-RPy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="flyerImage" destination="nIy-ef-8AB" id="pnM-cS-Cdj"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g6P-2i-7Mm">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="mainHeader" id="g6P-2i-7Mm" customClass="ProfileEditCollectionReusableView" customModule="OpenMic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.97352163617614251" green="1" blue="0.51287619066579704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nHs-Kw-B1p">
+                                            <rect key="frame" x="8" y="364" width="359" height="29"/>
+                                            <segments>
+                                                <segment title="Upcoming"/>
+                                                <segment title="Recent"/>
+                                                <segment title="Attended"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="upcomingRecentSequeAction:" destination="g6P-2i-7Mm" eventType="valueChanged" id="tzj-Tj-iNI"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nHs-Kw-B1p" secondAttribute="trailing" id="TDS-Ol-Oqd"/>
+                                        <constraint firstItem="nHs-Kw-B1p" firstAttribute="bottom" secondItem="g6P-2i-7Mm" secondAttribute="bottomMargin" id="e46-dK-ZOV"/>
+                                        <constraint firstItem="nHs-Kw-B1p" firstAttribute="leading" secondItem="g6P-2i-7Mm" secondAttribute="leadingMargin" id="wl8-iD-VtJ"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="upComingRecentSequeController" destination="nHs-Kw-B1p" id="grj-Rv-iLG"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>
@@ -53,7 +89,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ybr-Zv-Xx5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jtn-0m-HYY"/>
+                    <navigationItem key="navigationItem" id="Jtn-0m-HYY">
+                        <leftBarButtonItems>
+                            <barButtonItem image="tourIcon" id="o70-mL-xzr"/>
+                            <barButtonItem title="Start Touring " id="OcV-Op-Sbi"/>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="settingsIcon" id="Lqs-rF-83f"/>
+                            <barButtonItem title="Info" id="93V-zs-3mc"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="vCI-OO-DvW" id="sLM-Rj-61G"/>
                     </connections>
@@ -81,4 +126,9 @@
             <point key="canvasLocation" x="117.59999999999999" y="111.99400299850076"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settingsIcon" width="17" height="17"/>
+        <image name="tourIcon" width="17" height="17"/>
+        <image name="upcomingFlyer" width="500" height="700"/>
+    </resources>
 </document>

@@ -11,5 +11,9 @@ import UIKit
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
     
-        
+    @IBOutlet var upComingRecentSequeController: UISegmentedControl!
+    
+    @IBAction func upcomingRecentSequeAction(_ sender: UISegmentedControl) {
+    }
+    
 }

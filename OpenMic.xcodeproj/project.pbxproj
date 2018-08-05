@@ -10,6 +10,8 @@
 		270D874A2116948700C221C2 /* ProfileEditCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */; };
 		270D874D211694BF00C221C2 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D874C211694BF00C221C2 /* ProfileEditViewController.swift */; };
 		270D8751211695F000C221C2 /* ProfileEditCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */; };
+		270D87532116986800C221C2 /* ProfileEdit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270D87522116986800C221C2 /* ProfileEdit.xcassets */; };
+		270D875521171E9300C221C2 /* ProfileEditCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D875421171E9300C221C2 /* ProfileEditCollectionViewCell.swift */; };
 		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
 		2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710074520DB0B310020E229 /* AddArtist.storyboard */; };
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
@@ -77,6 +79,8 @@
 		270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionReusableView.swift; sourceTree = "<group>"; };
 		270D874C211694BF00C221C2 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionViewModel.swift; sourceTree = "<group>"; };
+		270D87522116986800C221C2 /* ProfileEdit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProfileEdit.xcassets; sourceTree = "<group>"; };
+		270D875421171E9300C221C2 /* ProfileEditCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionViewCell.swift; sourceTree = "<group>"; };
 		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		2710074520DB0B310020E229 /* AddArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddArtist.storyboard; sourceTree = "<group>"; };
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */,
 				270D874C211694BF00C221C2 /* ProfileEditViewController.swift */,
+				270D875421171E9300C221C2 /* ProfileEditCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				27DCE5C7211296790078971F /* ProfileEdit.storyboard */,
+				270D87522116986800C221C2 /* ProfileEdit.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
+				270D87532116986800C221C2 /* ProfileEdit.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
 				2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */,
 				27692F1B20810A3C000D7C8B /* Main.storyboard in Resources */,
@@ -747,6 +754,7 @@
 				2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
+				270D875521171E9300C221C2 /* ProfileEditCollectionViewCell.swift in Sources */,
 				278110842087DD240071A3E5 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
