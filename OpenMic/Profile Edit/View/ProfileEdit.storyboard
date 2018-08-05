@@ -68,13 +68,30 @@
                                                 <action selector="upcomingRecentSequeAction:" destination="g6P-2i-7Mm" eventType="valueChanged" id="tzj-Tj-iNI"/>
                                             </connections>
                                         </segmentedControl>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-9X-XJh">
+                                            <rect key="frame" x="8" y="8" width="359" height="356"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-zs-bL9">
+                                            <rect key="frame" x="8" y="8" width="359" height="356"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="ceQ-zs-bL9" firstAttribute="leading" secondItem="g6P-2i-7Mm" secondAttribute="leadingMargin" id="C1J-Oe-7Hc"/>
+                                        <constraint firstItem="nHs-Kw-B1p" firstAttribute="top" secondItem="a6J-9X-XJh" secondAttribute="bottom" id="ItO-o4-0Va"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="nHs-Kw-B1p" secondAttribute="trailing" id="TDS-Ol-Oqd"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="a6J-9X-XJh" secondAttribute="trailing" id="XfF-Bm-GbP"/>
+                                        <constraint firstItem="a6J-9X-XJh" firstAttribute="leading" secondItem="g6P-2i-7Mm" secondAttribute="leadingMargin" id="aZT-vI-ZbA"/>
                                         <constraint firstItem="nHs-Kw-B1p" firstAttribute="bottom" secondItem="g6P-2i-7Mm" secondAttribute="bottomMargin" id="e46-dK-ZOV"/>
+                                        <constraint firstItem="nHs-Kw-B1p" firstAttribute="top" secondItem="ceQ-zs-bL9" secondAttribute="bottom" id="ezU-r4-es0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ceQ-zs-bL9" secondAttribute="trailing" id="qxr-LQ-ohD"/>
                                         <constraint firstItem="nHs-Kw-B1p" firstAttribute="leading" secondItem="g6P-2i-7Mm" secondAttribute="leadingMargin" id="wl8-iD-VtJ"/>
+                                        <constraint firstItem="a6J-9X-XJh" firstAttribute="top" secondItem="g6P-2i-7Mm" secondAttribute="topMargin" id="ymm-MQ-5xA"/>
+                                        <constraint firstItem="ceQ-zs-bL9" firstAttribute="top" secondItem="g6P-2i-7Mm" secondAttribute="topMargin" id="zSC-0X-2Ys"/>
                                     </constraints>
                                     <connections>
+                                        <outlet property="blurredBackGroundView" destination="ceQ-zs-bL9" id="PK6-x4-Z75"/>
+                                        <outlet property="profilePhoto" destination="a6J-9X-XJh" id="T6L-HR-b5U"/>
                                         <outlet property="upComingRecentSequeController" destination="nHs-Kw-B1p" id="grj-Rv-iLG"/>
                                     </connections>
                                 </collectionReusableView>
@@ -127,6 +144,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="kanyeWest-profile" width="880" height="587"/>
         <image name="settingsIcon" width="17" height="17"/>
         <image name="tourIcon" width="17" height="17"/>
         <image name="upcomingFlyer" width="500" height="700"/>

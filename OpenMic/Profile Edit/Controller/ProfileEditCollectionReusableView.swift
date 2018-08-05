@@ -10,10 +10,24 @@ import UIKit
 
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
+    override func awakeFromNib() {
+        
+        blurredBackGroundView.addBlueEffect()
+    }
+    
+    @IBOutlet var blurredBackGroundView: UIView!
+    
+    @IBOutlet var profilePhoto: UIImageView!
     
     @IBOutlet var upComingRecentSequeController: UISegmentedControl!
     
     @IBAction func upcomingRecentSequeAction(_ sender: UISegmentedControl) {
     }
     
+    
+    
 }
+
+
+
+

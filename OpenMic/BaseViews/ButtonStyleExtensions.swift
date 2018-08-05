@@ -22,4 +22,22 @@ extension UIView {
         self.layer.cornerRadius = self.frame.midY / 2
         
     }
+    
+    func addBlueEffect() {
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            self.backgroundColor = .clear
+            
+            let blurEffect = UIBlurEffect(style: .dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            //always fill the view
+            blurEffectView.frame = self.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            
+            self.addSubview(blurEffectView)
+        } else {
+            self.backgroundColor = .black
+        }
+    }
+    
+    
 }
