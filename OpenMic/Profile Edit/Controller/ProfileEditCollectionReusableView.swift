@@ -11,13 +11,20 @@ import UIKit
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
     override func awakeFromNib() {
+     //blurredBackGroundView.addBlueEffect()
+        profilePhotoFront.roundBorderless2()
+        //editProfileButtonOutlet.redThenRoundBorder()
         
-     blurredBackGroundView.addBlueEffect()
+       
     }
     
-  
+    @IBOutlet var editProfileButtonOutlet: UIButton!
     
+    @IBOutlet var profileNameFull: UILabel!
     
+    @IBOutlet var profilePhotoFront: UIImageView!
+    
+    @IBOutlet var profileUserName: UILabel!
     @IBOutlet var blurredBackGroundView: UIView!
     
     @IBOutlet var profilePhoto: UIImageView!
@@ -29,9 +36,9 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     
     
     override func layoutSubviews() {
-        //blurredBackGroundView.addBlueEffect()
+  
     }
-    
+
     
 }
 

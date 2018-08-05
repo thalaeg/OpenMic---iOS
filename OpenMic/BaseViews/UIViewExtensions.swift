@@ -26,6 +26,43 @@ extension UIView {
         self.layer.addSublayer(topLayer)
     }
     
+    
+    
+    func redThenRoundBorder() {
+        self.backgroundColor = .clear 
+        self.layer.borderColor = #colorLiteral(red: 0.9098039216, green: 0.1803921569, blue: 0.09803921569, alpha: 1)
+        self.layer.borderWidth = 1.0
+        self.layer.cornerRadius = self.frame.midY / 2
+        
+    }
+    
+    func roundBorderless2(){
+        self.layer.masksToBounds = false
+        self.layer.cornerRadius = self.frame.height/2
+        self.clipsToBounds = true
+    }
+    
+    func roundBorderless() {
+        self.layer.cornerRadius = self.frame.midY / 2
+        
+    }
+    
+    func addBlueEffect() {
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            self.backgroundColor = .clear
+            
+            let blurEffect = UIBlurEffect(style: .dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            //always fill the view
+            blurEffectView.frame = self.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            
+            self.insertSubview(blurEffectView, at: 0)
+        } else {
+            self.backgroundColor = .black
+        }
+    }
+    
  
 
 }

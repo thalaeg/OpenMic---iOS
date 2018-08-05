@@ -12,7 +12,6 @@
 		270D8751211695F000C221C2 /* ProfileEditCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */; };
 		270D87532116986800C221C2 /* ProfileEdit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270D87522116986800C221C2 /* ProfileEdit.xcassets */; };
 		270D875521171E9300C221C2 /* ProfileEditCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D875421171E9300C221C2 /* ProfileEditCollectionViewCell.swift */; };
-		270D87582117967700C221C2 /* ButtonStyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D87572117967700C221C2 /* ButtonStyleExtensions.swift */; };
 		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
 		2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710074520DB0B310020E229 /* AddArtist.storyboard */; };
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
@@ -82,7 +81,6 @@
 		270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionViewModel.swift; sourceTree = "<group>"; };
 		270D87522116986800C221C2 /* ProfileEdit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProfileEdit.xcassets; sourceTree = "<group>"; };
 		270D875421171E9300C221C2 /* ProfileEditCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionViewCell.swift; sourceTree = "<group>"; };
-		270D87572117967700C221C2 /* ButtonStyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleExtensions.swift; sourceTree = "<group>"; };
 		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		2710074520DB0B310020E229 /* AddArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddArtist.storyboard; sourceTree = "<group>"; };
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
@@ -434,7 +432,6 @@
 				278C625E20BF474900823D9B /* UiviewControllerExtension.swift */,
 				2790D38120C9814A00665484 /* DateFormatExtensions.swift */,
 				2710074020DAD3CA0020E229 /* CustomNavigationController.swift */,
-				270D87572117967700C221C2 /* ButtonStyleExtensions.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -755,7 +752,6 @@
 				2797C8C8208B970800AD93B4 /* RedWriteRules.swift in Sources */,
 				277318CE2087A0C200C30C05 /* ApiReadWrite.swift in Sources */,
 				2729C0BA2097C059007F86C1 /* UserReadWrite.swift in Sources */,
-				270D87582117967700C221C2 /* ButtonStyleExtensions.swift in Sources */,
 				271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */,
 				27692F1620810A3C000D7C8B /* AppDelegate.swift in Sources */,
 				270D875521171E9300C221C2 /* ProfileEditCollectionViewCell.swift in Sources */,

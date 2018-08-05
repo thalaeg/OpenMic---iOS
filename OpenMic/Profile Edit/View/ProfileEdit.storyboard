@@ -77,7 +77,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-iT-DK5" userLabel="All profile Attributes">
                                                     <rect key="frame" x="20" y="28" width="319" height="298"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-ue-1xe">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-ue-1xe">
                                                             <rect key="frame" x="100.5" y="0.0" width="118" height="118"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="118" id="RgW-dV-e5h"/>
@@ -85,16 +85,16 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-4O-kN1" userLabel="UserNameFields">
-                                                            <rect key="frame" x="107" y="127" width="105" height="44.5"/>
+                                                            <rect key="frame" x="107" y="127" width="105" height="132"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chaz Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Yn-Z85">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="27.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Chaz Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Yn-Z85">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="115"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Chazultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-QN-ygF">
-                                                                    <rect key="frame" x="15" y="27.5" width="75" height="17"/>
+                                                                    <rect key="frame" x="15" y="115" width="75" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -102,7 +102,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5G-B0-0CT">
-                                                            <rect key="frame" x="122" y="180.5" width="75" height="117.5"/>
+                                                            <rect key="frame" x="122" y="268" width="75" height="30"/>
                                                             <state key="normal" title="Edit Profile"/>
                                                         </button>
                                                     </subviews>
@@ -132,7 +132,11 @@
                                     </constraints>
                                     <connections>
                                         <outlet property="blurredBackGroundView" destination="ceQ-zs-bL9" id="PK6-x4-Z75"/>
+                                        <outlet property="editProfileButtonOutlet" destination="B5G-B0-0CT" id="oi0-Vy-ksA"/>
+                                        <outlet property="profileNameFull" destination="y2i-Yn-Z85" id="IGf-hk-rrO"/>
                                         <outlet property="profilePhoto" destination="a6J-9X-XJh" id="T6L-HR-b5U"/>
+                                        <outlet property="profilePhotoFront" destination="Cp6-ue-1xe" id="kmW-Ab-9WJ"/>
+                                        <outlet property="profileUserName" destination="R0C-QN-ygF" id="xdW-k7-eql"/>
                                         <outlet property="upComingRecentSequeController" destination="nHs-Kw-B1p" id="grj-Rv-iLG"/>
                                     </connections>
                                 </collectionReusableView>
