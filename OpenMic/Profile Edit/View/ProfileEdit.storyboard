@@ -73,7 +73,48 @@
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-zs-bL9">
                                             <rect key="frame" x="8" y="8" width="359" height="356"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-iT-DK5" userLabel="All profile Attributes">
+                                                    <rect key="frame" x="20" y="28" width="319" height="298"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-ue-1xe">
+                                                            <rect key="frame" x="100.5" y="0.0" width="118" height="118"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="118" id="RgW-dV-e5h"/>
+                                                                <constraint firstAttribute="height" constant="118" id="yke-VW-5eg"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-4O-kN1" userLabel="UserNameFields">
+                                                            <rect key="frame" x="107" y="127" width="105" height="44.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chaz Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Yn-Z85">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Chazultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-QN-ygF">
+                                                                    <rect key="frame" x="15" y="27.5" width="75" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5G-B0-0CT">
+                                                            <rect key="frame" x="122" y="180.5" width="75" height="117.5"/>
+                                                            <state key="normal" title="Edit Profile"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="XcA-iT-DK5" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" constant="20" id="2HB-pt-Fqp"/>
+                                                <constraint firstAttribute="bottom" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="30" id="I7s-qz-gRk"/>
+                                                <constraint firstItem="XcA-iT-DK5" firstAttribute="top" secondItem="ceQ-zs-bL9" secondAttribute="top" constant="28" id="V36-gY-NDp"/>
+                                                <constraint firstAttribute="trailing" secondItem="XcA-iT-DK5" secondAttribute="trailing" constant="20" id="gal-sO-d4F"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>

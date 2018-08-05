@@ -33,7 +33,7 @@ extension UIView {
             blurEffectView.frame = self.bounds
             blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             
-            self.addSubview(blurEffectView)
+            self.insertSubview(blurEffectView, at: 0)
         } else {
             self.backgroundColor = .black
         }
