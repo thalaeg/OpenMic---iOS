@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270D874A2116948700C221C2 /* ProfileEditCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */; };
+		270D874D211694BF00C221C2 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D874C211694BF00C221C2 /* ProfileEditViewController.swift */; };
+		270D8751211695F000C221C2 /* ProfileEditCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */; };
 		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
 		2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710074520DB0B310020E229 /* AddArtist.storyboard */; };
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
@@ -51,7 +54,6 @@
 		2797C8D2208BE90B00AD93B4 /* PasswordResetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */; };
 		279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */; };
 		27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AC208909150095E044 /* RegisterAssets.xcassets */; };
-		27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A713AF208944F10095E044 /* ChooseUserType.storyboard */; };
 		27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A713B3208991130095E044 /* UserTypeAssets.xcassets */; };
 		27A713B62089928B0095E044 /* BaseViewWithChair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B52089928B0095E044 /* BaseViewWithChair.swift */; };
 		27A713B8208A27CE0095E044 /* UserTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */; };
@@ -64,6 +66,7 @@
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
 		27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */; };
+		27DCE5C8211296790078971F /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DCE5C7211296790078971F /* ProfileEdit.storyboard */; };
 		27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
 		E8E206C2CC07A458A1D0226D /* Pods_OpenMic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66F789B4826E502466151A /* Pods_OpenMic.framework */; };
@@ -71,6 +74,9 @@
 
 /* Begin PBXFileReference section */
 		167B2DC51F690E9D6A080700 /* Pods-OpenMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMic/Pods-OpenMic.release.xcconfig"; sourceTree = "<group>"; };
+		270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionReusableView.swift; sourceTree = "<group>"; };
+		270D874C211694BF00C221C2 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditCollectionViewModel.swift; sourceTree = "<group>"; };
 		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		2710074520DB0B310020E229 /* AddArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddArtist.storyboard; sourceTree = "<group>"; };
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +123,6 @@
 		2797C8D1208BE90B00AD93B4 /* PasswordResetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetProtocol.swift; sourceTree = "<group>"; };
 		279D7CB32093AFDF00208CE8 /* FacebookRegisterandLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRegisterandLogin.swift; sourceTree = "<group>"; };
 		27A713AC208909150095E044 /* RegisterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RegisterAssets.xcassets; sourceTree = "<group>"; };
-		27A713AF208944F10095E044 /* ChooseUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseUserType.storyboard; sourceTree = "<group>"; };
 		27A713B3208991130095E044 /* UserTypeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserTypeAssets.xcassets; sourceTree = "<group>"; };
 		27A713B52089928B0095E044 /* BaseViewWithChair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewWithChair.swift; sourceTree = "<group>"; };
 		27A713B7208A27CE0095E044 /* UserTypeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
 		27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserProtocol.swift; sourceTree = "<group>"; };
+		27DCE5C7211296790078971F /* ProfileEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
 		27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserApiProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
 		3E66F789B4826E502466151A /* Pods_OpenMic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +154,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270D874B211694A100C221C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				270D87492116948700C221C2 /* ProfileEditCollectionReusableView.swift */,
+				270D874C211694BF00C221C2 /* ProfileEditViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		270D874E211694C100C221C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				270D8750211695F000C221C2 /* ProfileEditCollectionViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		270D874F211694C700C221C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27DCE5C7211296790078971F /* ProfileEdit.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2710074220DB0A870020E229 /* add artist */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +320,7 @@
 		27692F1420810A3C000D7C8B /* OpenMic */ = {
 			isa = PBXGroup;
 			children = (
+				27DCE5C42112946B0078971F /* Profile Edit */,
 				2777B9DE20CAF85C00C98BF4 /* Tuttorial View */,
 				278110802087D8590071A3E5 /* BaseViews */,
 				27B2C5BB2086C06D0063AB75 /* API Read Write  */,
@@ -446,7 +478,6 @@
 		27A713B120898FFF0095E044 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				27A713AF208944F10095E044 /* ChooseUserType.storyboard */,
 				27A713B3208991130095E044 /* UserTypeAssets.xcassets */,
 			);
 			path = View;
@@ -484,6 +515,16 @@
 				27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */,
 			);
 			path = "API Read Write ";
+			sourceTree = "<group>";
+		};
+		27DCE5C42112946B0078971F /* Profile Edit */ = {
+			isa = PBXGroup;
+			children = (
+				270D874E211694C100C221C2 /* Model */,
+				270D874B211694A100C221C2 /* Controller */,
+				270D874F211694C700C221C2 /* View */,
+			);
+			path = "Profile Edit";
 			sourceTree = "<group>";
 		};
 		27FA33B72088F95D008CC7D3 /* BaseViewController  */ = {
@@ -580,8 +621,8 @@
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
 				27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */,
-				27A713B0208944F10095E044 /* ChooseUserType.storyboard in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
+				27DCE5C8211296790078971F /* ProfileEdit.storyboard in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
@@ -687,12 +728,15 @@
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
+				270D874A2116948700C221C2 /* ProfileEditCollectionReusableView.swift in Sources */,
 				2777B9E920CAF8CC00C98BF4 /* TutorialStepProtocol.swift in Sources */,
 				278110882087E7A60071A3E5 /* UitextFieldWithWhitePlaceHolder.swift in Sources */,
 				2734C91F208594A200123924 /* FireBasePaths.swift in Sources */,
 				278110862087E0800071A3E5 /* ViewWithBottomLayer.swift in Sources */,
+				270D8751211695F000C221C2 /* ProfileEditCollectionViewModel.swift in Sources */,
 				27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */,
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
+				270D874D211694BF00C221C2 /* ProfileEditViewController.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */,
