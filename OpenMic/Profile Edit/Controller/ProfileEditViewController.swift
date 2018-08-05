@@ -17,7 +17,7 @@ class ProfileEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionViewManager = ProfileEditModel(collectionView: collectionView)
+        collectionViewManager = ProfileEditModel(collectionView: collectionView, viewController: self)
 
     }
 
