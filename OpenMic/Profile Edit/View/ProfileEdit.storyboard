@@ -71,7 +71,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-9X-XJh">
                                             <rect key="frame" x="8" y="8" width="359" height="356"/>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-zs-bL9">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-zs-bL9" customClass="ProfileEditGradientView" customModule="OpenMic" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="359" height="356"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-iT-DK5" userLabel="All profile Attributes">
@@ -99,7 +99,7 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-0m-3QP" customClass="OvalButtonFiveDegrees" customModule="OpenMic" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-0m-3QP" customClass="RoundedButtonIbinspectableRedBorder" customModule="OpenMic" customModuleProvider="target">
                                                                     <rect key="frame" x="9" y="67" width="87" height="22"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="22" id="97Z-VL-o6b"/>

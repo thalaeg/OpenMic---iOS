@@ -10,8 +10,10 @@ import UIKit
 
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
+  
+    
     override func awakeFromNib() {
-     //blurredBackGroundView.addBlueEffect()
+       //blurredBackGroundView.addBlueEffect()
         profilePhotoFront.roundBorderless2()
         
        
@@ -36,10 +38,8 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     @IBAction func upcomingRecentSequeAction(_ sender: UISegmentedControl) {
     }
     
-    
-    override func layoutSubviews() {
-  
-    }
+ 
+
 
     
 }

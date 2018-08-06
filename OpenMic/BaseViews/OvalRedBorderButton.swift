@@ -27,8 +27,10 @@ class OvalRedBorderButton: UIButton {
 }
 
 
+
+
 @IBDesignable
-class OvalButtonFiveDegrees: UIButton {
+class RoundedButtonIbinspectableRedBorder: UIButton {
     
     @IBInspectable var degrees: CGFloat = 1.0
     
