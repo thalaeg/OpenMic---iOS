@@ -59,11 +59,15 @@
                                     <subviews>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nHs-Kw-B1p">
                                             <rect key="frame" x="8" y="364" width="359" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="h2G-5O-nvs"/>
+                                            </constraints>
                                             <segments>
                                                 <segment title="Upcoming"/>
                                                 <segment title="Recent"/>
                                                 <segment title="Attended"/>
                                             </segments>
+                                            <color key="tintColor" red="0.90980392160000001" green="0.18039215689999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="upcomingRecentSequeAction:" destination="g6P-2i-7Mm" eventType="valueChanged" id="tzj-Tj-iNI"/>
                                             </connections>

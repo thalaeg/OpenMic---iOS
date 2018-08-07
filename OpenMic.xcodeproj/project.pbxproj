@@ -17,6 +17,7 @@
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
+		271EEC4E2119326D003C4E6E /* SegmentControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */; };
 		27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */; };
 		27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27203DD720CAB9F900A39D0A /* StageNameViewController.swift */; };
 		2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */; };
@@ -88,6 +89,7 @@
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
+		271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllerExtension.swift; sourceTree = "<group>"; };
 		27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageNameStoryboard.storyboard; sourceTree = "<group>"; };
 		27203DD720CAB9F900A39D0A /* StageNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNameViewController.swift; sourceTree = "<group>"; };
 		2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaticLoginFields.storyboard; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 				2790D38120C9814A00665484 /* DateFormatExtensions.swift */,
 				2710074020DAD3CA0020E229 /* CustomNavigationController.swift */,
 				27AF83602117B34500FCC35C /* OvalRedBorderButton.swift */,
+				271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 				27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */,
 				278110822087D9140071A3E5 /* BaseViewController.swift in Sources */,
 				270D874D211694BF00C221C2 /* ProfileEditViewController.swift in Sources */,
+				271EEC4E2119326D003C4E6E /* SegmentControllerExtension.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */,

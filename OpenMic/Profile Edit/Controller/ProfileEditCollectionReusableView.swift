@@ -15,13 +15,15 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     override func awakeFromNib() {
        //blurredBackGroundView.addBlueEffect()
         profilePhotoFront.roundBorderless2()
-        
+        upComingRecentSequeController.addUnderlineForSelectedSegment()
        
     }
     
     @IBOutlet var editProfileButtonOutlet: UIButton!
     
     @IBAction func editProfifileAction(_ sender: Any) {
+     
+        
     }
     
     @IBOutlet var profileNameFull: UILabel!
@@ -36,6 +38,8 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     @IBOutlet var upComingRecentSequeController: UISegmentedControl!
     
     @IBAction func upcomingRecentSequeAction(_ sender: UISegmentedControl) {
+        upComingRecentSequeController.changeUnderlinePosition()
+      
     }
     
  
@@ -43,6 +47,8 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
 
     
 }
+
+
 
 
 
