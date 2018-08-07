@@ -18,6 +18,8 @@
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
 		271EEC4E2119326D003C4E6E /* SegmentControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */; };
+		271EEC5021193609003C4E6E /* ProfileMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271EEC4F21193609003C4E6E /* ProfileMain.storyboard */; };
+		271EEC53211936CE003C4E6E /* ProfileMain.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271EEC52211936CE003C4E6E /* ProfileMain.xcassets */; };
 		27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */; };
 		27203DD820CAB9F900A39D0A /* StageNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27203DD720CAB9F900A39D0A /* StageNameViewController.swift */; };
 		2722B51B20C05BCA00E90CB0 /* StaticLoginFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */; };
@@ -90,6 +92,8 @@
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
 		271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllerExtension.swift; sourceTree = "<group>"; };
+		271EEC4F21193609003C4E6E /* ProfileMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileMain.storyboard; sourceTree = "<group>"; };
+		271EEC52211936CE003C4E6E /* ProfileMain.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProfileMain.xcassets; sourceTree = "<group>"; };
 		27203DD320CAB9AC00A39D0A /* StageNameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageNameStoryboard.storyboard; sourceTree = "<group>"; };
 		27203DD720CAB9F900A39D0A /* StageNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNameViewController.swift; sourceTree = "<group>"; };
 		2722B51A20C05BCA00E90CB0 /* StaticLoginFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaticLoginFields.storyboard; sourceTree = "<group>"; };
@@ -236,6 +240,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		271EEC5121193611003C4E6E /* ProfileMain */ = {
+			isa = PBXGroup;
+			children = (
+				271EEC4F21193609003C4E6E /* ProfileMain.storyboard */,
+				271EEC52211936CE003C4E6E /* ProfileMain.xcassets */,
+			);
+			name = ProfileMain;
+			sourceTree = "<group>";
+		};
 		27203DD220CAB93B00A39D0A /* Stage name */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +346,7 @@
 		27692F1420810A3C000D7C8B /* OpenMic */ = {
 			isa = PBXGroup;
 			children = (
+				271EEC5121193611003C4E6E /* ProfileMain */,
 				27DCE5C42112946B0078971F /* Profile Edit */,
 				2777B9DE20CAF85C00C98BF4 /* Tuttorial View */,
 				278110802087D8590071A3E5 /* BaseViews */,
@@ -636,11 +650,13 @@
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
 				27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */,
+				271EEC53211936CE003C4E6E /* ProfileMain.xcassets in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,
 				27DCE5C8211296790078971F /* ProfileEdit.storyboard in Resources */,
 				27692F2020810A3F000D7C8B /* LaunchScreen.storyboard in Resources */,
 				27A713AD208909150095E044 /* RegisterAssets.xcassets in Resources */,
 				27692F1D20810A3F000D7C8B /* Assets.xcassets in Resources */,
+				271EEC5021193609003C4E6E /* ProfileMain.storyboard in Resources */,
 				270D87532116986800C221C2 /* ProfileEdit.xcassets in Resources */,
 				2781107F2087D75D0071A3E5 /* loginassets.xcassets in Resources */,
 				2722B51E20C066EB00E90CB0 /* StaticFieldsAssets.xcassets in Resources */,
