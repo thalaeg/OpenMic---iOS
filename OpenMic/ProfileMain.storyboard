@@ -97,22 +97,6 @@
             </objects>
             <point key="canvasLocation" x="177" y="-1549"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nej-xq-mbX">
-            <objects>
-                <viewController id="DvX-yl-NWx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wu3-4o-F5b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6U8-Wo-fMy"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="XnP-EQ-TkT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wQR-wc-IWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="980" y="-804"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ri-Qb-ezG">
             <objects>
@@ -151,11 +135,11 @@
             </objects>
             <point key="canvasLocation" x="118" y="663"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="LEd-li-KA8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MdC-tw-msI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="searchIcon" id="jyY-xM-M9p"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="searchIcon" id="jyY-xM-M9p"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tL0-N1-fmv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -163,12 +147,22 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="DvX-yl-NWx" kind="relationship" relationship="rootViewController" id="oCd-0i-kd3"/>
+                        <segue destination="6l5-Nj-v5Z" kind="relationship" relationship="rootViewController" id="eU7-bo-f26"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5S-Ik-ee1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="214" y="-803"/>
+        </scene>
+        <!--editProfile-->
+        <scene sceneID="8ME-tl-clj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileEdit" referencedIdentifier="editProfile" id="6l5-Nj-v5Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Xw-iN-aPf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kd-eI-5JU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-843"/>
         </scene>
     </scenes>
     <resources>
