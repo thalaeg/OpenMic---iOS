@@ -12,6 +12,10 @@ class AddArtistsViewController: UIViewController {
     
     private var addArtistModel: AddArtistModel?
     
+    @IBAction func skipForNow(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toProfile", sender: self)
+    }
     
     @IBOutlet private var tableView: UITableView!
     

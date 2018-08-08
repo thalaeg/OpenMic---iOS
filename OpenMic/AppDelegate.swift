@@ -38,14 +38,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //MARK: Change initial storyboard
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
-               let initialViewController = storyboard.instantiateViewController(withIdentifier: "editProfile")
         
+        //Profile edit
+//        let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
+//               let initialViewController = storyboard.instantiateViewController(withIdentifier: "editProfile")
+//
         //addartist
 //        let storyboard = UIStoryboard(name: "AddArtist", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "selectArtist")
         
-        //profileEdit
+        
+        //profileMain
+        
+                let storyboard = UIStoryboard(name: "ProfileMain", bundle: nil)
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "profileSelection")
+        
+        //regular login
 //        let storyboard = UIStoryboard(name: "Login", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
         self.window?.rootViewController = initialViewController
