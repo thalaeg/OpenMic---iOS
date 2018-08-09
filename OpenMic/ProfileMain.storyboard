@@ -58,10 +58,11 @@
             </objects>
             <point key="canvasLocation" x="919" y="-1549"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Profile Main Tab Bar-->
         <scene sceneID="a9k-hL-mzD">
             <objects>
-                <tabBarController storyboardIdentifier="profileSelection" id="A6u-gx-JtX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="profileSelection" id="A6u-gx-JtX" customClass="ProfileMainTabBar" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
+                    <size key="freeformSize" width="375" height="667"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rLL-t1-NQu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
