@@ -120,6 +120,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                     <connections>
                                                                         <action selector="editProfifileAction:" destination="g6P-2i-7Mm" eventType="touchUpInside" id="q0i-Cz-8Nz"/>
+                                                                        <segue destination="igc-rX-4kr" kind="show" id="sYy-Xz-Nhs"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -188,6 +189,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBx-NV-6rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="111.99400299850076"/>
+        </scene>
+        <!--AdjustProfile-->
+        <scene sceneID="x78-AJ-vtq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditProfile" referencedIdentifier="AdjustProfile" id="igc-rX-4kr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hz-nU-QMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="92"/>
         </scene>
     </scenes>
     <resources>

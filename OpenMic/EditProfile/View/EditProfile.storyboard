@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cmW-n1-k7x">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gyl-z2-2TN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AdjustProfile" automaticallyAdjustsScrollViewInsets="NO" id="Gyl-z2-2TN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zJj-mY-fJb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -186,7 +186,10 @@
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-J5-E5r">
                                                             <rect key="frame" x="91.5" y="0.0" width="247.5" height="72.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="72.5" id="1kO-wV-JOO"/>
+                                                            </constraints>
+                                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -226,20 +229,64 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="dSf-4z-Ls6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="dSf-4z-Ls6" userLabel="Youtube">
                                         <rect key="frame" x="0.0" y="476" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSf-4z-Ls6" id="87I-yI-Gym">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-o8-T7e">
+                                                    <rect key="frame" x="16" y="11" width="343" height="49"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jO-3d-zRT">
+                                                            <rect key="frame" x="0.0" y="14.5" width="294" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1U-Na-E4c">
+                                                            <rect key="frame" x="294" y="9" width="51" height="31"/>
+                                                        </switch>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e0R-o8-T7e" firstAttribute="leading" secondItem="87I-yI-Gym" secondAttribute="leadingMargin" id="2TO-9K-rvZ"/>
+                                                <constraint firstItem="e0R-o8-T7e" firstAttribute="top" secondItem="87I-yI-Gym" secondAttribute="topMargin" id="Uwn-5j-LpE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="e0R-o8-T7e" secondAttribute="trailing" id="s1c-Bi-Xzl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="e0R-o8-T7e" secondAttribute="bottom" id="xhE-9X-Mte"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="ytl-TU-rel">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="Hss-wO-YKG" userLabel="Spotify">
                                         <rect key="frame" x="0.0" y="547" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ytl-TU-rel" id="WAd-5m-J7Y">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hss-wO-YKG" id="Xiu-Gi-o6c">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evd-dT-PGE">
+                                                    <rect key="frame" x="16" y="11" width="343" height="49"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjm-tR-QOi">
+                                                            <rect key="frame" x="0.0" y="14.5" width="294" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afa-40-pGA">
+                                                            <rect key="frame" x="294" y="9" width="51" height="31"/>
+                                                        </switch>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="evd-dT-PGE" firstAttribute="leading" secondItem="Xiu-Gi-o6c" secondAttribute="leadingMargin" id="C1v-GA-stI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="evd-dT-PGE" secondAttribute="trailing" id="MRf-EP-fSq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="evd-dT-PGE" secondAttribute="bottom" id="a2N-u0-TKN"/>
+                                                <constraint firstItem="evd-dT-PGE" firstAttribute="top" secondItem="Xiu-Gi-o6c" secondAttribute="topMargin" id="zMu-jy-eyl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
