@@ -183,6 +183,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="vCI-OO-DvW" id="sLM-Rj-61G"/>
+                        <segue destination="igc-rX-4kr" kind="showDetail" identifier="adjustProfile" id="cXF-nW-0OB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBx-NV-6rj" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -27,7 +27,15 @@ class ProfileEditViewController: UIViewController {
 
 extension ProfileEditViewController: PerformSegueProfileDelegate {
     func performSegueWithUserInfo(curentUser: CurrentUser) {
-        print("currentuser \(curentUser)")
+        self.performSegue(withIdentifier: "adjustProfile", sender: curentUser)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "adjustProfile" {
+            guard let nav =  segue.destination as? UINavigationController, let vc = nav.viewControllers.first as? EditProfileTableViewController, let userTopass = sender as? CurrentUser else {return}
+            vc.currentUser = userTopass
+            
+        }
     }
     
     
