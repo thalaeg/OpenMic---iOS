@@ -42,7 +42,12 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
       
     }
     
- 
+    
+    
+    func setupProfileCell(currentUser: CurrentUser) {
+        profileNameFull.text = ("\(currentUser.firstName)  \(currentUser.lastName)")
+        profileUserName.text = currentUser.userName
+    }
 
 
     

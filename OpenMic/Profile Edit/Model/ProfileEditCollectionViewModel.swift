@@ -12,6 +12,7 @@ class ProfileEditModel: NSObject {
     
     private var collectionView: UICollectionView
     private var viewController: UIViewController
+    private var currentUSerInfo: CurrentUser?
     
     private var placeHolderImages = [#imageLiteral(resourceName: "upcomingFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer")]
     
@@ -26,11 +27,21 @@ class ProfileEditModel: NSObject {
         let width = (viewController.view.frame.size.width - 20) / 3
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: 150)
+        getProfileInformation()
     }
     
     
     
+    private func getProfileInformation() {
+        CurrentUser.getSingleUserfromAPI { (currentUser) in
+            self.currentUSerInfo = currentUser
+            self.collectionView.reloadData()
+        }
+        
+    }
+    
 }
+
 
 
 
@@ -58,6 +69,9 @@ extension ProfileEditModel: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "mainHeader", for: indexPath) as! ProfileEditCollectionReusableView
+        if let currentUserProfileInfo = currentUSerInfo {
+            header.setupProfileCell(currentUser: currentUserProfileInfo)
+        }
         return header
     }
     
