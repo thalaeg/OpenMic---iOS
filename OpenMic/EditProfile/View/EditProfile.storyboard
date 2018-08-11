@@ -298,11 +298,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Profile" id="qDn-gx-Fy9">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="fxf-O0-5ML"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="fxf-O0-5ML">
+                            <connections>
+                                <action selector="cancelAction:" destination="BkF-lP-e94" id="dYW-af-spX"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="sDe-Bn-x9Z"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="fullNameOutlet" destination="ZbT-vb-9cS" id="Glm-Od-cMv"/>
+                        <outlet property="usernameOutlet" destination="l9i-b7-5dq" id="wHn-VU-Hhn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxb-yF-N0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
