@@ -10,13 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--login-->
-        <scene sceneID="v1w-9r-aIz">
+        <!--profileSelection-->
+        <scene sceneID="4dm-h7-hOx">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="login" id="Ay7-qC-zHE" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xy-R8-GQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ProfileMain" referencedIdentifier="profileSelection" id="5wG-2x-jXC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFg-Tr-GH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733" y="215"/>
+            <point key="canvasLocation" x="806" y="126"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="Czm-ff-8sT">
@@ -91,7 +91,7 @@
                         <outlet property="nextButtonOutlet" destination="NR0-7N-Xhx" id="lqa-R5-c9r"/>
                         <outlet property="pageController" destination="e8X-nm-9lN" id="bN4-GJ-otp"/>
                         <outlet property="scrollView" destination="XlU-2c-s21" id="deE-yg-uUm"/>
-                        <segue destination="Ay7-qC-zHE" kind="presentation" identifier="login" id="wGC-bj-MlF"/>
+                        <segue destination="5wG-2x-jXC" kind="presentation" identifier="login" id="ufH-nQ-1mX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qan-GY-jO3" sceneMemberID="firstResponder"/>
