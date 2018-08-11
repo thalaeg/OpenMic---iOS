@@ -25,5 +25,13 @@ class ProfileEditViewController: UIViewController {
 
 }
 
+extension ProfileEditViewController: PerformSegueProfileDelegate {
+    func performSegueWithUserInfo(curentUser: CurrentUser) {
+        print("currentuser \(curentUser)")
+    }
+    
+    
+}
+
 
 

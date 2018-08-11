@@ -120,7 +120,6 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                     <connections>
                                                                         <action selector="editProfifileAction:" destination="g6P-2i-7Mm" eventType="touchUpInside" id="q0i-Cz-8Nz"/>
-                                                                        <segue destination="igc-rX-4kr" kind="show" id="sYy-Xz-Nhs"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>

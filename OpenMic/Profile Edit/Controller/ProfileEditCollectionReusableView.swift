@@ -10,7 +10,8 @@ import UIKit
 
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
-  
+    var performSegueDelegagte: PerformSegueProfileDelegate?
+    private var currentUSer: CurrentUser?
     
     override func awakeFromNib() {
        //blurredBackGroundView.addBlueEffect()
@@ -22,7 +23,8 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     @IBOutlet var editProfileButtonOutlet: UIButton!
     
     @IBAction func editProfifileAction(_ sender: Any) {
-     
+        guard let currentUserCheck = currentUSer else {return}
+        performSegueDelegagte?.performSegueWithUserInfo(curentUser: currentUserCheck)
         
     }
     
@@ -45,12 +47,18 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     
     
     func setupProfileCell(currentUser: CurrentUser) {
+        self.currentUSer = currentUser
         profileNameFull.text = ("\(currentUser.firstName)  \(currentUser.lastName)")
         profileUserName.text = currentUser.userName
     }
 
 
     
+}
+
+
+protocol PerformSegueProfileDelegate {
+    func performSegueWithUserInfo(curentUser: CurrentUser)
 }
 
 

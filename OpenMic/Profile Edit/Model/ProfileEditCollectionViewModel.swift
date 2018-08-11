@@ -16,7 +16,8 @@ class ProfileEditModel: NSObject {
     
     private var placeHolderImages = [#imageLiteral(resourceName: "upcomingFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer")]
     
-    init(collectionView: UICollectionView, viewController: UIViewController) {
+    
+    init<T: UIViewController>(collectionView: UICollectionView, viewController: T)where T:PerformSegueProfileDelegate {
         self.collectionView = collectionView
         self.viewController = viewController
         super.init()
@@ -69,8 +70,9 @@ extension ProfileEditModel: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "mainHeader", for: indexPath) as! ProfileEditCollectionReusableView
-        if let currentUserProfileInfo = currentUSerInfo {
+        if let currentUserProfileInfo = currentUSerInfo, let viewControllerConforming = viewController as? PerformSegueProfileDelegate  {
             header.setupProfileCell(currentUser: currentUserProfileInfo)
+            header.performSegueDelegagte = viewControllerConforming
         }
         return header
     }
