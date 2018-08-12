@@ -303,7 +303,11 @@
                                 <action selector="cancelAction:" destination="BkF-lP-e94" id="dYW-af-spX"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="sDe-Bn-x9Z"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="sDe-Bn-x9Z">
+                            <connections>
+                                <action selector="saveProfileAction:" destination="BkF-lP-e94" id="bmo-I9-2sj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>

@@ -25,7 +25,7 @@ enum ProfileKeys: String {
     case searchRadius = "search_radius"
     case isPrivate
     case profilePic = "Profile_pic"
-    case biography
+    case bio = "biography"
 }
 
 enum Endpoints: String {
@@ -35,6 +35,8 @@ enum Endpoints: String {
     case topForty = "profile/top"
     case checkIfUserNameAvailable = "profile/exists"
     case addArtist = "profile/update-followers/"
+    
+    
     
     //MARK: remove redundent api call
     
@@ -104,6 +106,22 @@ enum Endpoints: String {
         
         
     }
+    
+    func patchCurrentUser(with BodyEncoding: [String : Any], userName: String, completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + userName, method: .patch, parameters: BodyEncoding, encoding: URLEncoding.httpBody).responseJSON { (response) in
+            
+            if let json = response.result.value {
+                completionHandler(json, nil)
+            }
+            if let error = response.error {
+                completionHandler(nil, error)
+            }
+            
+            
+        }
+    }
+        
     
     func postWithEncoding(with BodyEncoding: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
