@@ -10,6 +10,14 @@ import UIKit
 
 class EditProfileTableViewController: UITableViewController, UITextViewDelegate {
     internal var currentUser: CurrentUser?
+    internal var userFullName: String?
+    internal var username: String?
+    internal var userBio: String?
+    internal var userLocation: String?
+    
+    
+    
+    
     
     @IBOutlet weak var fullNameOutlet: UITextField!
     
@@ -64,9 +72,20 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
         return 1
     }
 
-   
-
-   
 }
+
+
+
+extension EditProfileTableViewController: SaveProfileUpdatesDelegate {
+  
+    
+    
+    
+}
+
+
+
+
+
 
 

@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol SaveProfileUpdates {
+protocol SaveProfileUpdatesDelegate {
     var currentUser: CurrentUser? {get}
-    var userFullName: String? {get}
-    var username: String? {get}
-    var userBio: String? {get}
-    var userLocation: String? {get}
+    var userFullName: String? {get set}
+    var username: String? {get set}
+    var userBio: String? {get set}
+    var userLocation: String? {get set}
     
     //MARK: to add user photo
     
@@ -21,14 +21,8 @@ protocol SaveProfileUpdates {
 }
 
 
-extension SaveProfileUpdates {
-    
-//    private func createFieldsToUpdate() ->[String : String] {
-//        guard let currentUser = self.currentUser else {return [String : String]()}
-//
-//
-//
-//    }
+extension SaveProfileUpdatesDelegate {
+
     
     
 }
