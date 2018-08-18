@@ -20,6 +20,7 @@ struct CurrentUser {
         case last_name
         case first_name
         case followed_artists
+        case location
         
     }
     
@@ -30,9 +31,12 @@ struct CurrentUser {
     var followers = [String]()
     var firstName: String
     var lastName: String
+    var bio: String?
+    var location: String?
     
     
-    init(userName: String, userBio: String, profilePic: String?, firstName: String, lastName: String ) {
+    
+    init(userName: String, userBio: String, profilePic: String?, firstName: String, lastName: String, bio: String?, location: String?) {
         self.userName = userName
         self.userBio = userBio
         if let profilePic = profilePic {
@@ -40,6 +44,12 @@ struct CurrentUser {
         }
         self.firstName = firstName
         self.lastName = lastName
+        if let bio = bio {
+            self.bio = bio
+        }
+        if let location = location {
+            self.location = location
+        }
     
     }
     
@@ -57,6 +67,9 @@ struct CurrentUser {
         
         self.firstName = json[userKeys.first_name.rawValue].stringValue
         self.lastName = json[userKeys.last_name.rawValue].stringValue
+        self.bio = json[userKeys.biography.rawValue].stringValue
+        self.location = json[userKeys.location.rawValue].stringValue
+        
         
     }
     

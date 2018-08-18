@@ -48,10 +48,8 @@ extension CheckSignUpFieldsDelegate {
     //Temporary user name field 
     func newUserFieldsDictionary() -> [String : String] {
         //get first and last name
-        
         let firstLastName = name.getFIrstAndLast()
 
-        
         var newUserDic = [ProfileKeys.firstName.rawValue : firstLastName.first,
                           ProfileKeys.email.rawValue : email, ProfileKeys.gender.rawValue : currentGender, ProfileKeys.dob.rawValue : dOB.formatForDataBase()]
         
@@ -60,7 +58,6 @@ extension CheckSignUpFieldsDelegate {
         }
         
 
-        
         return newUserDic
     }
     
