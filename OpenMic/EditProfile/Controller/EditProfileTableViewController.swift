@@ -18,6 +18,10 @@ class EditProfileTableViewController: UITableViewController {
     @IBAction func cancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func saveProfileAcrtion(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let usercheck = currentUser {

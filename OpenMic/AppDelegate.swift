@@ -26,13 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
         //log user out
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            FBSDKLoginManager().logOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
+        //let firebaseAuth = Auth.auth()
+//        do {
+//            try firebaseAuth.signOut()
+//            FBSDKLoginManager().logOut()
+//        } catch let signOutError as NSError {
+//            print ("Error signing out: %@", signOutError)
+//        }
         //setup facebook sdk
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
@@ -49,13 +49,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //profileMain
-//
-//                let storyboard = UIStoryboard(name: "ProfileMain", bundle: nil)
-//                let initialViewController = storyboard.instantiateViewController(withIdentifier: "profileSelection")
+
+                let storyboard = UIStoryboard(name: "ProfileMain", bundle: nil)
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "profileSelection")
         
         //regular login
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
+//        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         

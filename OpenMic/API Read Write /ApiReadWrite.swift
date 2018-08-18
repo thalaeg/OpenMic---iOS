@@ -105,6 +105,9 @@ enum Endpoints: String {
         
     }
     
+    
+    
+    
     func postWithEncoding(with BodyEncoding: [String : Any], completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
         Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue, method: .post, parameters: BodyEncoding, encoding: URLEncoding.httpBody).responseJSON { (response) in
@@ -144,6 +147,21 @@ enum Endpoints: String {
         
         
         
+        
+    }
+    
+    
+    func patchUser(with params: [String : Any], currentUSer: CurrentUser, completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
+        
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + currentUSer.userName, method: .patch, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
+            if let json = response.result.value {
+                completionHandler(json, nil)
+            }
+            if let error = response.error {
+                completionHandler(nil, error)
+            }
+        }
+      
         
     }
     
