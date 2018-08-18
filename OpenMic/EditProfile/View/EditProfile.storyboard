@@ -312,7 +312,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="bioOutlet" destination="Byv-J5-E5r" id="Lrc-tM-Wh3"/>
                         <outlet property="fullNameOutlet" destination="ZbT-vb-9cS" id="Glm-Od-cMv"/>
+                        <outlet property="locationOutlet" destination="GAH-H3-BCn" id="XSC-us-5zh"/>
                         <outlet property="usernameOutlet" destination="l9i-b7-5dq" id="wHn-VU-Hhn"/>
                     </connections>
                 </tableViewController>

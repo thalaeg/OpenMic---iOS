@@ -72,6 +72,8 @@
 		27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */; };
 		27BA62DF20C1EC9F00A8C4DE /* GenderSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */; };
 		27BAD98A211F6761004F589F /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BAD989211F6761004F589F /* EditProfileTableViewController.swift */; };
+		27C556432128B4E000439535 /* SaveProfileEditsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C556422128B4E000439535 /* SaveProfileEditsDelegate.swift */; };
+		27C556452128B89A00439535 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C556442128B89A00439535 /* StringExtensions.swift */; };
 		27C6A6BC208E6D3400269280 /* LoginUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */; };
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
 		27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */; };
@@ -151,6 +153,8 @@
 		27BA62DC20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticLoginControllerTableView.swift; sourceTree = "<group>"; };
 		27BA62DE20C1EC9F00A8C4DE /* GenderSelectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPicker.swift; sourceTree = "<group>"; };
 		27BAD989211F6761004F589F /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		27C556422128B4E000439535 /* SaveProfileEditsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfileEditsDelegate.swift; sourceTree = "<group>"; };
+		27C556442128B89A00439535 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		27C6A6BB208E6D3400269280 /* LoginUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProtocol.swift; sourceTree = "<group>"; };
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
 		27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserProtocol.swift; sourceTree = "<group>"; };
@@ -335,18 +339,11 @@
 		274F71AB211BD126001839F3 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				27C556412128B4C800439535 /* Model */,
 				274F71AE211BD1C0001839F3 /* Controller */,
 				274F71AD211BD1BB001839F3 /* View */,
-				274F71AC211BD1B7001839F3 /* Model  */,
 			);
 			path = EditProfile;
-			sourceTree = "<group>";
-		};
-		274F71AC211BD1B7001839F3 /* Model  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model ";
 			sourceTree = "<group>";
 		};
 		274F71AD211BD1BB001839F3 /* View */ = {
@@ -496,6 +493,7 @@
 				2710074020DAD3CA0020E229 /* CustomNavigationController.swift */,
 				27AF83602117B34500FCC35C /* OvalRedBorderButton.swift */,
 				271EEC4D2119326D003C4E6E /* SegmentControllerExtension.swift */,
+				27C556442128B89A00439535 /* StringExtensions.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -585,6 +583,14 @@
 				27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */,
 			);
 			path = "API Read Write ";
+			sourceTree = "<group>";
+		};
+		27C556412128B4C800439535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27C556422128B4E000439535 /* SaveProfileEditsDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27DCE5C42112946B0078971F /* Profile Edit */ = {
@@ -802,6 +808,7 @@
 				2790D38220C9814A00665484 /* DateFormatExtensions.swift in Sources */,
 				278C625F20BF474900823D9B /* UiviewControllerExtension.swift in Sources */,
 				271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */,
+				27C556432128B4E000439535 /* SaveProfileEditsDelegate.swift in Sources */,
 				27635A3F2117CE0600EE5C64 /* ProfileEditGradientView.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
@@ -817,6 +824,7 @@
 				270D874D211694BF00C221C2 /* ProfileEditViewController.swift in Sources */,
 				271EEC4E2119326D003C4E6E /* SegmentControllerExtension.swift in Sources */,
 				27B2C5BA208698B10063AB75 /* CreateNewUserProtocol.swift in Sources */,
+				27C556452128B89A00439535 /* StringExtensions.swift in Sources */,
 				2734C92320859D1300123924 /* FieldCheckProtocol.swift in Sources */,
 				27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */,
 				27BA62DD20C1CE6B00A8C4DE /* StaticLoginControllerTableView.swift in Sources */,

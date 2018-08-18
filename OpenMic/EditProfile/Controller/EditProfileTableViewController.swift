@@ -14,6 +14,9 @@ class EditProfileTableViewController: UITableViewController {
     @IBOutlet weak var fullNameOutlet: UITextField!
     
     @IBOutlet weak var usernameOutlet: UITextField!
+    @IBOutlet weak var bioOutlet: UITextView!
+    @IBOutlet weak var locationOutlet: UITextField!
+    
     
     @IBAction func cancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
