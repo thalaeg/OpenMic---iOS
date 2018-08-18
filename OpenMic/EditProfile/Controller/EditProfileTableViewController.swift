@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditProfileTableViewController: UITableViewController {
+class EditProfileTableViewController: UITableViewController, UITextViewDelegate {
     internal var currentUser: CurrentUser?
     
     @IBOutlet weak var fullNameOutlet: UITextField!
@@ -24,6 +24,26 @@ class EditProfileTableViewController: UITableViewController {
     
     @IBAction func saveProfileAcrtion(_ sender: Any) {
     }
+    
+    
+    @IBAction func fullNameTextAction(_ sender: UITextField) {
+    }
+    
+    @IBAction func usernameChangedAction(_ sender: UITextField) {
+        
+    }
+    
+    
+    
+    @IBAction func locationChangedAction(_ sender: UITextField) {
+    }
+    
+  
+    
+    func textViewDidChange(_ textView: UITextView) {
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,3 +68,5 @@ class EditProfileTableViewController: UITableViewController {
 
    
 }
+
+
