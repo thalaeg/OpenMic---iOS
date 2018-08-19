@@ -14,6 +14,7 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     internal var username: String?
     internal var userBio: String?
     internal var userLocation: String?
+    private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
     
     
     
@@ -31,6 +32,7 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     }
     
     @IBAction func saveProfileAcrtion(_ sender: Any) {
+        saveProfileUpdatesDelegate?.updateUserParameters()
     }
     
     
@@ -61,7 +63,9 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
         if let usercheck = currentUser {
             fullNameOutlet.text = "\(usercheck.firstName) + \(usercheck.lastName)"
             usernameOutlet.text = usercheck.userName
+            self.saveProfileUpdatesDelegate = self
         }
+        
 
     }
 

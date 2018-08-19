@@ -22,7 +22,18 @@ protocol SaveProfileUpdatesDelegate {
 
 
 extension SaveProfileUpdatesDelegate {
-    
+    func updateUserParameters() {
+        guard let currentUSer = self.currentUser else {return}
+        let params = self.getupDateParams()
+        if params.count > 0 {
+            Endpoints.updateProfile.patchUser(with: params, currentUSer: currentUSer) { (response, error) in
+                print("response \(response), error \(error)")
+            }
+        }
+        
+        
+        
+    }
     
     
     

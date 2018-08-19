@@ -32,6 +32,7 @@ enum Endpoints: String {
     case baseURL =  "http://theopenmicapp.pythonanywhere.com/"
     case profiles = "profiles/"
     case addProfile = "profile/profiles"
+    case updateProfile = "profile/profiles/"
     case topForty = "profile/top"
     case checkIfUserNameAvailable = "profile/exists"
     case addArtist = "profile/update-followers/"
@@ -153,7 +154,7 @@ enum Endpoints: String {
     
     func patchUser(with params: [String : Any], currentUSer: CurrentUser, completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
-        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + currentUSer.userName, method: .patch, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + "\(currentUSer.userName)/", method: .post, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
             if let json = response.result.value {
                 completionHandler(json, nil)
             }
