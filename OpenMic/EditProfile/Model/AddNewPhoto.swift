@@ -6,45 +6,49 @@
 //  Copyright © 2018 Mike. All rights reserved.
 //
 
+import Foundation
 import UIKit
-import AVFoundation
 
-class AddNewUserPhotoDelegate: NSObject {
+//Image Picker class
+class ChooseImage: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    private var viewController: UIViewController
-    private var controller = UIImagePickerController()
     
-    init(viewController: UIViewController, sourceType: UIImagePickerControllerSourceType) {
-        self.viewController = viewController
+    let picker = UIImagePickerController()
+    var managedView: UIViewController
+    
+    var updatePhotoDelegate: UpDatePhotoDelegate?
+    
+    init(vc: UIViewController, source: UIImagePickerControllerSourceType) {
+        self.managedView = vc
         super.init()
-        controller.delegate = self
-        controller.sourceType = sourceType
+        picker.delegate = self
+        picker.sourceType = source
+        picker.allowsEditing = false
+        
     }
     
-}
-
-extension AddNewUserPhotoDelegate: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    private func requestAuthorization() {
-        if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == AVAuthorizationStatus.authorized {
-            //launch camera
+    func presentView() {
+        self.managedView.present(picker, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let imageTosend = info[UIImagePickerControllerOriginalImage] as? UIImage
+        if let imagecheck = imageTosend {
+            updatePhotoDelegate?.upDatePhoto(image: imagecheck)
         }
         
-         AVCaptureDevice.requestAccess(for: AVMediaType.video, completionHandler: { (response) in
-            if response {
-                //access granted
-            } else {
-                //no access
-            }
-        })
+        picker.dismiss(animated: true, completion: nil)
+        
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-    }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        
+        picker.dismiss(animated: true, completion: nil)
     }
+    
+    
     
 }
 
+protocol UpDatePhotoDelegate {
+    func upDatePhoto(image: UIImage)
+}

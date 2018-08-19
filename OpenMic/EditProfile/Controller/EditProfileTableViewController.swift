@@ -15,9 +15,11 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     internal var userBio: String?
     internal var userLocation: String?
     private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
+    private var imagePickerDelegate: ChooseImage?
     
     
     
+    @IBOutlet weak var userImage: UIImageView!
     
     
     @IBOutlet weak var fullNameOutlet: UITextField!
@@ -26,6 +28,20 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     @IBOutlet weak var bioOutlet: UITextView!
     @IBOutlet weak var locationOutlet: UITextField!
     
+    @IBAction func changeUserImage(_ sender: Any) {
+        self.pickCameraTypeAlert(title: "", message: "") { (cameraType) in
+            switch cameraType {
+            case .camera:
+                self.imagePickerDelegate = ChooseImage(vc: self, source: .camera)
+            case .library:
+                self.imagePickerDelegate = ChooseImage(vc: self, source: .photoLibrary)
+            }
+            self.imagePickerDelegate?.updatePhotoDelegate = self
+            self.imagePickerDelegate?.presentView()
+        }
+        
+        
+    }
     
     @IBAction func cancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -83,7 +99,11 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 
 
 
-extension EditProfileTableViewController: SaveProfileUpdatesDelegate {
+extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate {
+    func upDatePhoto(image: UIImage) {
+        userImage.image = image
+    }
+    
   
     
     

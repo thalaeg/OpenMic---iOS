@@ -55,6 +55,9 @@
                                             <rect key="frame" x="0.0" y="118" width="146" height="30"/>
                                             <color key="tintColor" red="0.72941176470588232" green="0.15294117647058825" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Change Profile Photo"/>
+                                            <connections>
+                                                <action selector="changeUserImage:" destination="BkF-lP-e94" eventType="touchUpInside" id="k5i-Hz-n1l"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -327,6 +330,7 @@
                         <outlet property="bioOutlet" destination="Byv-J5-E5r" id="Lrc-tM-Wh3"/>
                         <outlet property="fullNameOutlet" destination="ZbT-vb-9cS" id="Glm-Od-cMv"/>
                         <outlet property="locationOutlet" destination="GAH-H3-BCn" id="XSC-us-5zh"/>
+                        <outlet property="userImage" destination="GDA-jV-8b1" id="q7i-LE-b2T"/>
                         <outlet property="usernameOutlet" destination="l9i-b7-5dq" id="wHn-VU-Hhn"/>
                     </connections>
                 </tableViewController>
