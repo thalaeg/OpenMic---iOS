@@ -154,7 +154,7 @@ enum Endpoints: String {
     
     func patchUser(with params: [String : Any], currentUSer: CurrentUser, completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
         
-        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + "\(currentUSer.userName)/", method: .post, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
+        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + currentUSer.userName, method: .patch, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
             if let json = response.result.value {
                 completionHandler(json, nil)
             }
