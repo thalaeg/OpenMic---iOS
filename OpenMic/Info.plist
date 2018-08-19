@@ -66,5 +66,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>To add a profile picture from your library</string>
+    
+    <key>NSCameraUsageDescription</key>
+    <string>To add a profile picture from your library</string>
 </dict>
 </plist>
