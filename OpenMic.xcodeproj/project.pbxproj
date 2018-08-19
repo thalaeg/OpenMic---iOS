@@ -79,6 +79,7 @@
 		27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */; };
 		27D83E2420F550FB00C400AA /* FollowUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */; };
 		27DCE5C8211296790078971F /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DCE5C7211296790078971F /* ProfileEdit.storyboard */; };
+		27E35982212A37A500A57139 /* EditProfile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E35981212A37A500A57139 /* EditProfile.xcassets */; };
 		27EF93E0211A842E008B5E51 /* ProfileMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EF93DF211A842E008B5E51 /* ProfileMainTabBar.swift */; };
 		27F99B5620EBBCCF0093B500 /* CreateNewUserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */; };
 		27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */; };
@@ -161,6 +162,7 @@
 		27C6A6BF208E798C00269280 /* CheckUserStatusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUserStatusProtocol.swift; sourceTree = "<group>"; };
 		27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserProtocol.swift; sourceTree = "<group>"; };
 		27DCE5C7211296790078971F /* ProfileEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
+		27E35981212A37A500A57139 /* EditProfile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EditProfile.xcassets; sourceTree = "<group>"; };
 		27EF93DF211A842E008B5E51 /* ProfileMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainTabBar.swift; sourceTree = "<group>"; };
 		27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserApiProtocol.swift; sourceTree = "<group>"; };
 		27FA33B82088F97B008CC7D3 /* BaseViewAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseViewAssests.xcassets; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				274F71AF211BD1D5001839F3 /* EditProfile.storyboard */,
+				27E35981212A37A500A57139 /* EditProfile.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				27FA33B92088F97B008CC7D3 /* BaseViewAssests.xcassets in Resources */,
 				27A713B4208991130095E044 /* UserTypeAssets.xcassets in Resources */,
 				278E865320C878850018A945 /* GoogleService-Info.plist in Resources */,
+				27E35982212A37A500A57139 /* EditProfile.xcassets in Resources */,
 				27203DD420CAB9AC00A39D0A /* StageNameStoryboard.storyboard in Resources */,
 				271EEC53211936CE003C4E6E /* ProfileMain.xcassets in Resources */,
 				27692F2E20810E95000D7C8B /* Login.storyboard in Resources */,

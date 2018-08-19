@@ -33,7 +33,7 @@
             <objects>
                 <tableViewController id="BkF-lP-e94" customClass="EditProfileTableViewController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="f0N-Cz-Ee7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -244,63 +244,138 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="dSf-4z-Ls6" userLabel="Youtube">
-                                        <rect key="frame" x="0.0" y="476" width="375" height="71"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="dSf-4z-Ls6" userLabel="Youtube">
+                                        <rect key="frame" x="0.0" y="476" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSf-4z-Ls6" id="87I-yI-Gym">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-o8-T7e">
-                                                    <rect key="frame" x="16" y="11" width="343" height="49"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jO-3d-zRT">
-                                                            <rect key="frame" x="0.0" y="14.5" width="294" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1U-Na-E4c">
-                                                            <rect key="frame" x="294" y="9" width="51" height="31"/>
-                                                        </switch>
-                                                    </subviews>
-                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="4Dl-MC-Dsp">
+                                                    <rect key="frame" x="16" y="20" width="125" height="46.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="RYy-1b-76M"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T1U-Na-E4c">
+                                                    <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="e0R-o8-T7e" firstAttribute="leading" secondItem="87I-yI-Gym" secondAttribute="leadingMargin" id="2TO-9K-rvZ"/>
-                                                <constraint firstItem="e0R-o8-T7e" firstAttribute="top" secondItem="87I-yI-Gym" secondAttribute="topMargin" id="Uwn-5j-LpE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="e0R-o8-T7e" secondAttribute="trailing" id="s1c-Bi-Xzl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="e0R-o8-T7e" secondAttribute="bottom" id="xhE-9X-Mte"/>
+                                                <constraint firstItem="4Dl-MC-Dsp" firstAttribute="leading" secondItem="87I-yI-Gym" secondAttribute="leading" constant="16" id="2Lx-LI-D7t"/>
+                                                <constraint firstItem="T1U-Na-E4c" firstAttribute="centerY" secondItem="87I-yI-Gym" secondAttribute="centerY" id="IZa-2Y-Jix"/>
+                                                <constraint firstItem="T1U-Na-E4c" firstAttribute="trailing" secondItem="87I-yI-Gym" secondAttribute="trailingMargin" id="Rmn-wx-t0l"/>
+                                                <constraint firstItem="4Dl-MC-Dsp" firstAttribute="centerY" secondItem="87I-yI-Gym" secondAttribute="centerY" id="d35-5E-F3B"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Dl-MC-Dsp" secondAttribute="bottom" constant="20" symbolic="YES" id="l2M-y9-6zK"/>
+                                                <constraint firstItem="4Dl-MC-Dsp" firstAttribute="top" secondItem="87I-yI-Gym" secondAttribute="top" constant="20" symbolic="YES" id="ybd-aM-jwf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="Hss-wO-YKG" userLabel="Spotify">
-                                        <rect key="frame" x="0.0" y="547" width="375" height="71"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="FM1-4D-wFt" userLabel="Spotify">
+                                        <rect key="frame" x="0.0" y="563" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hss-wO-YKG" id="Xiu-Gi-o6c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FM1-4D-wFt" id="wgs-jQ-ZMi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evd-dT-PGE">
-                                                    <rect key="frame" x="16" y="11" width="343" height="49"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjm-tR-QOi">
-                                                            <rect key="frame" x="0.0" y="14.5" width="294" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afa-40-pGA">
-                                                            <rect key="frame" x="294" y="9" width="51" height="31"/>
-                                                        </switch>
-                                                    </subviews>
-                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="chL-dX-E8C">
+                                                    <rect key="frame" x="16" y="20" width="125" height="46.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="kyi-LN-86w"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-eV-DwF">
+                                                    <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="evd-dT-PGE" firstAttribute="leading" secondItem="Xiu-Gi-o6c" secondAttribute="leadingMargin" id="C1v-GA-stI"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="evd-dT-PGE" secondAttribute="trailing" id="MRf-EP-fSq"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="evd-dT-PGE" secondAttribute="bottom" id="a2N-u0-TKN"/>
-                                                <constraint firstItem="evd-dT-PGE" firstAttribute="top" secondItem="Xiu-Gi-o6c" secondAttribute="topMargin" id="zMu-jy-eyl"/>
+                                                <constraint firstItem="chL-dX-E8C" firstAttribute="centerY" secondItem="wgs-jQ-ZMi" secondAttribute="centerY" id="3qN-Yu-Zk6"/>
+                                                <constraint firstItem="0Pe-eV-DwF" firstAttribute="trailing" secondItem="wgs-jQ-ZMi" secondAttribute="trailingMargin" id="IM3-KH-TOo"/>
+                                                <constraint firstItem="chL-dX-E8C" firstAttribute="leading" secondItem="wgs-jQ-ZMi" secondAttribute="leading" constant="16" id="TQI-If-YFT"/>
+                                                <constraint firstAttribute="bottom" secondItem="chL-dX-E8C" secondAttribute="bottom" constant="20" symbolic="YES" id="ccP-up-eYT"/>
+                                                <constraint firstItem="chL-dX-E8C" firstAttribute="top" secondItem="wgs-jQ-ZMi" secondAttribute="top" constant="20" symbolic="YES" id="lmr-vj-VDR"/>
+                                                <constraint firstItem="0Pe-eV-DwF" firstAttribute="centerY" secondItem="wgs-jQ-ZMi" secondAttribute="centerY" id="mZI-3N-nR2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="eRO-h7-k8D" userLabel="Soundcloud">
+                                        <rect key="frame" x="0.0" y="650" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRO-h7-k8D" id="Gvq-qQ-0bB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="soundcloud" translatesAutoresizingMaskIntoConstraints="NO" id="AJY-4C-NJ7">
+                                                    <rect key="frame" x="16" y="20" width="125" height="46.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="huc-NE-vCH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-CE-8E5">
+                                                    <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AJY-4C-NJ7" secondAttribute="bottom" constant="20" symbolic="YES" id="7HF-X2-mIS"/>
+                                                <constraint firstItem="zAF-CE-8E5" firstAttribute="centerY" secondItem="Gvq-qQ-0bB" secondAttribute="centerY" id="BB1-72-ojk"/>
+                                                <constraint firstItem="AJY-4C-NJ7" firstAttribute="centerY" secondItem="Gvq-qQ-0bB" secondAttribute="centerY" id="KEF-4o-t6a"/>
+                                                <constraint firstItem="AJY-4C-NJ7" firstAttribute="top" secondItem="Gvq-qQ-0bB" secondAttribute="top" constant="20" symbolic="YES" id="SEO-96-2UB"/>
+                                                <constraint firstItem="AJY-4C-NJ7" firstAttribute="leading" secondItem="Gvq-qQ-0bB" secondAttribute="leading" constant="16" id="WyJ-er-mjy"/>
+                                                <constraint firstItem="zAF-CE-8E5" firstAttribute="trailing" secondItem="Gvq-qQ-0bB" secondAttribute="trailingMargin" id="oaY-aV-k4k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="ewR-It-WKA" userLabel="Amazon">
+                                        <rect key="frame" x="0.0" y="737" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ewR-It-WKA" id="3Jn-Ql-Hkq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="amazon" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-Az-dVn">
+                                                    <rect key="frame" x="16" y="20" width="125" height="46.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="h47-Ap-5J9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-ch-Fx7">
+                                                    <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dhZ-Az-dVn" firstAttribute="centerY" secondItem="3Jn-Ql-Hkq" secondAttribute="centerY" id="Nb3-j0-UJg"/>
+                                                <constraint firstItem="dhZ-Az-dVn" firstAttribute="leading" secondItem="3Jn-Ql-Hkq" secondAttribute="leading" constant="16" id="VVi-9V-IOe"/>
+                                                <constraint firstItem="ZXu-ch-Fx7" firstAttribute="centerY" secondItem="3Jn-Ql-Hkq" secondAttribute="centerY" id="dUS-co-p9h"/>
+                                                <constraint firstItem="ZXu-ch-Fx7" firstAttribute="trailing" secondItem="3Jn-Ql-Hkq" secondAttribute="trailingMargin" id="h8g-2a-ZiB"/>
+                                                <constraint firstItem="dhZ-Az-dVn" firstAttribute="top" secondItem="3Jn-Ql-Hkq" secondAttribute="top" constant="20" symbolic="YES" id="i40-Xt-qZd"/>
+                                                <constraint firstAttribute="bottom" secondItem="dhZ-Az-dVn" secondAttribute="bottom" constant="20" symbolic="YES" id="r0B-4r-RS3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="Ynz-3e-aeg" userLabel="Deezer">
+                                        <rect key="frame" x="0.0" y="824" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ynz-3e-aeg" id="lPJ-8E-IDM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="pop-ne-QXK">
+                                                    <rect key="frame" x="16" y="20" width="125" height="46.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="FXY-aU-NdD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-is-JQj">
+                                                    <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="pop-ne-QXK" secondAttribute="bottom" constant="20" symbolic="YES" id="4ua-QR-S3V"/>
+                                                <constraint firstItem="pop-ne-QXK" firstAttribute="top" secondItem="lPJ-8E-IDM" secondAttribute="top" constant="20" symbolic="YES" id="HmD-8T-CgL"/>
+                                                <constraint firstItem="6Gg-is-JQj" firstAttribute="centerY" secondItem="lPJ-8E-IDM" secondAttribute="centerY" id="Xr1-zY-Qt2"/>
+                                                <constraint firstItem="pop-ne-QXK" firstAttribute="centerY" secondItem="lPJ-8E-IDM" secondAttribute="centerY" id="bfx-3B-HtT"/>
+                                                <constraint firstItem="6Gg-is-JQj" firstAttribute="trailing" secondItem="lPJ-8E-IDM" secondAttribute="trailingMargin" id="gD1-dT-xhB"/>
+                                                <constraint firstItem="pop-ne-QXK" firstAttribute="leading" secondItem="lPJ-8E-IDM" secondAttribute="leading" constant="16" id="vKp-mF-nSj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -325,7 +400,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="bioOutlet" destination="Byv-J5-E5r" id="Lrc-tM-Wh3"/>
                         <outlet property="fullNameOutlet" destination="ZbT-vb-9cS" id="Glm-Od-cMv"/>
@@ -340,6 +415,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Deezer-logo" width="143" height="32"/>
+        <image name="Spotify" width="2362" height="709"/>
+        <image name="amazon" width="2000" height="604"/>
         <image name="kanyeWest-profile" width="880" height="587"/>
+        <image name="soundcloud" width="2000" height="1140"/>
+        <image name="youtube" width="794" height="178"/>
     </resources>
 </document>
