@@ -22,7 +22,42 @@ protocol SaveProfileUpdatesDelegate {
 
 
 extension SaveProfileUpdatesDelegate {
-
+    
+    
+    
+    
+    
+    
+    
+    
+    private func getupDateParams() -> [String : String] {
+        
+        var newParamDict = [String : String]()
+        if let userFullName = self.userFullName {
+            let firstAndLast = userFullName.getFIrstAndLast()
+            newParamDict.updateValue(firstAndLast.first, forKey: CurrentUser.userKeys.first_name.rawValue)
+            if let lastname = firstAndLast.last {
+                newParamDict.updateValue(lastname, forKey: CurrentUser.userKeys.last_name.rawValue)
+            }
+        }
+        
+        if let username = self.username {
+            newParamDict.updateValue(username, forKey: CurrentUser.userKeys.username.rawValue)
+        }
+        
+        if let userBio = self.userBio {
+            newParamDict.updateValue(userBio, forKey: CurrentUser.userKeys.biography.rawValue)
+        }
+        if let userLocation = self.userLocation {
+            newParamDict.updateValue(userLocation, forKey: CurrentUser.userKeys.location.rawValue)
+        }
+        
+        return newParamDict
+    
+    }
+    
+    
+    
     
     
 }

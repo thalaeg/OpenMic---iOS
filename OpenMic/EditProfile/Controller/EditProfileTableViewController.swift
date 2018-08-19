@@ -35,20 +35,23 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     
     
     @IBAction func fullNameTextAction(_ sender: UITextField) {
+        userFullName = sender.text
     }
     
     @IBAction func usernameChangedAction(_ sender: UITextField) {
-        
+        username = sender.text
     }
     
     
     
     @IBAction func locationChangedAction(_ sender: UITextField) {
+        userLocation = sender.text
     }
     
   
     
     func textViewDidChange(_ textView: UITextView) {
+        userBio = textView.text
     }
     
     
