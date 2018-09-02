@@ -23,9 +23,10 @@ protocol SaveProfileUpdatesDelegate {
 
 extension SaveProfileUpdatesDelegate {
     func updateUserParameters() {
-        guard let currentUSer = self.currentUser else {return}
-        let params = self.getupDateParams()
+        guard let currentUSer = self.currentUser,let userid = currentUser?.userID else {return}
+        var params = self.getupDateParams()
         if params.count > 0 {
+            params.updateValue(userid, forKey: CurrentUser.userKeys.firebaseId.rawValue)
             Endpoints.updateProfile.patchUser(with: params, currentUSer: currentUSer) { (response, error) in
                 print("response \(response), error \(error)")
             }

@@ -153,17 +153,25 @@ enum Endpoints: String {
     
     
     func patchUser(with params: [String : Any], currentUSer: CurrentUser, completionHandler: @escaping (_ jsonResponse: Any?, _ error: Error?) -> Void) {
-        
-        Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + currentUSer.userName, method: .patch, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
-            if let json = response.result.value {
-                completionHandler(json, nil)
+        //add firebase token
+        let currentUser = Auth.auth().currentUser
+        currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
+            if let _ = error {
+                
+                return}
+            
+            guard let token = idToken else {return}
+            //, headers: ["Authorization" : token]
+            Alamofire.request(Endpoints.baseURL.rawValue + self.rawValue + currentUSer.userName, method: .patch, parameters: params, encoding: URLEncoding.httpBody, headers: ["id-token" : token]).responseJSON { (response) in
+                if let json = response.result.value {
+                    completionHandler(json, nil)
+                }
+                if let error = response.error {
+                    completionHandler(nil, error)
+                }
             }
-            if let error = response.error {
-                completionHandler(nil, error)
-            }
+
         }
-      
-        
     }
     
 }

@@ -21,6 +21,7 @@ struct CurrentUser {
         case first_name
         case followed_artists
         case location
+        case firebaseId = "firebase_uid"
         
     }
     
@@ -33,10 +34,11 @@ struct CurrentUser {
     var lastName: String
     var bio: String?
     var location: String?
+    var userID: String?
     
     
     
-    init(userName: String, userBio: String, profilePic: String?, firstName: String, lastName: String, bio: String?, location: String?) {
+    init(userName: String, userBio: String, profilePic: String?, firstName: String, lastName: String, bio: String?, location: String?, userId: String? ) {
         self.userName = userName
         self.userBio = userBio
         if let profilePic = profilePic {
@@ -49,6 +51,9 @@ struct CurrentUser {
         }
         if let location = location {
             self.location = location
+        }
+        if let userID = userId {
+            self.userID = userID
         }
     
     }
@@ -69,6 +74,7 @@ struct CurrentUser {
         self.lastName = json[userKeys.last_name.rawValue].stringValue
         self.bio = json[userKeys.biography.rawValue].stringValue
         self.location = json[userKeys.location.rawValue].stringValue
+        self.userID = json[BasePaths.uid.rawValue].stringValue
         
         
     }
