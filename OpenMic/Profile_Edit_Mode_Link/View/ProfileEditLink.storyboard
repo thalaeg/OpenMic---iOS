@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="LtH-K5-h4S">
             <objects>
-                <viewController id="v0d-WV-rqi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="linkPlatform" id="v0d-WV-rqi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a8o-g9-sNp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,54 +46,67 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmE-HZ-1SL" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="51"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7FC-oX-091" userLabel="all views">
+                                <rect key="frame" x="0.0" y="69" width="375" height="135.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-0D-lxt" userLabel="Add link button">
-                                        <rect key="frame" x="15" y="17" width="355" height="16"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="czR-67-MXK" userLabel="image and link">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4cY-fj-mcy">
-                                                <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="2MJ-dJ-oA3">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="16" id="c2H-DA-aKi"/>
-                                                    <constraint firstAttribute="width" constant="17" id="q3n-j0-pmx"/>
+                                                    <constraint firstAttribute="height" constant="37" id="by9-rS-Pqi"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7l-Kr-WLS">
-                                                <rect key="frame" x="36" y="0.0" width="319" height="16"/>
-                                                <state key="normal" title="Add a link to this platform">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmE-HZ-1SL" customClass="ViewWithBottomLayer" customModule="OpenMic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="48" width="375" height="51"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-0D-lxt" userLabel="Add link button">
+                                                        <rect key="frame" x="15" y="17" width="355" height="16"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4cY-fj-mcy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="16" id="c2H-DA-aKi"/>
+                                                                    <constraint firstAttribute="width" constant="17" id="q3n-j0-pmx"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7l-Kr-WLS">
+                                                                <rect key="frame" x="36" y="0.0" width="319" height="16"/>
+                                                                <state key="normal" title="Add a link to this platform">
+                                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="51" id="7Zf-HU-W7m"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ckK-0D-lxt" secondAttribute="trailing" constant="5" id="Daf-Zu-4HK"/>
+                                                    <constraint firstItem="ckK-0D-lxt" firstAttribute="centerY" secondItem="MmE-HZ-1SL" secondAttribute="centerY" id="Von-Ps-7Ur"/>
+                                                    <constraint firstItem="ckK-0D-lxt" firstAttribute="leading" secondItem="MmE-HZ-1SL" secondAttribute="leading" constant="15" id="k7i-xn-LHa"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid link address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-hV-AEL">
+                                        <rect key="frame" x="0.0" y="115" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.72549019607843135" green="0.14901960784313725" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="7Zf-HU-W7m"/>
-                                    <constraint firstAttribute="trailing" secondItem="ckK-0D-lxt" secondAttribute="trailing" constant="5" id="Daf-Zu-4HK"/>
-                                    <constraint firstItem="ckK-0D-lxt" firstAttribute="centerY" secondItem="MmE-HZ-1SL" secondAttribute="centerY" id="Von-Ps-7Ur"/>
-                                    <constraint firstItem="ckK-0D-lxt" firstAttribute="leading" secondItem="MmE-HZ-1SL" secondAttribute="leading" constant="15" id="k7i-xn-LHa"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid link address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-hV-AEL">
-                                <rect key="frame" x="16" y="134" width="354" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.72549019607843135" green="0.14901960784313725" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7FC-oX-091" secondAttribute="trailing" id="DcZ-XX-SXf"/>
                             <constraint firstItem="BBG-HJ-fop" firstAttribute="trailing" secondItem="LCm-bu-Dby" secondAttribute="trailing" id="Wmf-Am-nop"/>
                             <constraint firstItem="BBG-HJ-fop" firstAttribute="leading" secondItem="LCm-bu-Dby" secondAttribute="leading" id="XS3-hc-hcu"/>
-                            <constraint firstItem="Sfs-hV-AEL" firstAttribute="leading" secondItem="LCm-bu-Dby" secondAttribute="leading" constant="16" id="YoO-B8-Tak"/>
-                            <constraint firstItem="LCm-bu-Dby" firstAttribute="trailing" secondItem="Sfs-hV-AEL" secondAttribute="trailing" constant="5" id="Z6i-xQ-rvG"/>
-                            <constraint firstItem="MmE-HZ-1SL" firstAttribute="top" secondItem="BBG-HJ-fop" secondAttribute="bottom" id="ZWB-ns-04B"/>
-                            <constraint firstItem="LCm-bu-Dby" firstAttribute="trailing" secondItem="MmE-HZ-1SL" secondAttribute="trailing" id="blW-0R-bvl"/>
+                            <constraint firstItem="7FC-oX-091" firstAttribute="top" secondItem="BBG-HJ-fop" secondAttribute="bottom" constant="5" id="XXl-Nu-4E8"/>
+                            <constraint firstItem="7FC-oX-091" firstAttribute="leading" secondItem="LCm-bu-Dby" secondAttribute="leading" id="Z4h-nd-kax"/>
                             <constraint firstItem="BBG-HJ-fop" firstAttribute="top" secondItem="LCm-bu-Dby" secondAttribute="top" id="mEi-Sp-Lcv"/>
-                            <constraint firstItem="MmE-HZ-1SL" firstAttribute="leading" secondItem="LCm-bu-Dby" secondAttribute="leading" id="mlR-84-89A"/>
-                            <constraint firstItem="Sfs-hV-AEL" firstAttribute="top" secondItem="MmE-HZ-1SL" secondAttribute="bottom" constant="19" id="ty1-2V-sMT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LCm-bu-Dby"/>
                     </view>
@@ -105,6 +118,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Spotify" width="2362" height="709"/>
         <image name="linkIcon" width="17" height="16"/>
     </resources>
 </document>
