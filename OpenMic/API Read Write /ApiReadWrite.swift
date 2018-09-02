@@ -156,9 +156,7 @@ enum Endpoints: String {
         //add firebase token
         let currentUser = Auth.auth().currentUser
         currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
-            if let _ = error {
-                
-                return}
+            if let _ = error {return}
             
             guard let token = idToken else {return}
             //, headers: ["Authorization" : token]

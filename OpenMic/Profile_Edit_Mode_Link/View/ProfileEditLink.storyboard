@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select Platform View Controller-->
         <scene sceneID="LtH-K5-h4S">
             <objects>
-                <viewController storyboardIdentifier="linkPlatform" id="v0d-WV-rqi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="linkPlatform" id="v0d-WV-rqi" customClass="SelectPlatformViewController" customModule="OpenMic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a8o-g9-sNp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,9 @@
                         <viewLayoutGuide key="safeArea" id="LCm-bu-Dby"/>
                     </view>
                     <navigationItem key="navigationItem" id="4BE-d5-8dR"/>
+                    <connections>
+                        <outlet property="platformImage" destination="2MJ-dJ-oA3" id="dU0-BP-YZ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAV-Ho-Ch4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

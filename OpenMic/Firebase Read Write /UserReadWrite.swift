@@ -75,6 +75,9 @@ struct CurrentUser {
         self.bio = json[userKeys.biography.rawValue].stringValue
         self.location = json[userKeys.location.rawValue].stringValue
         self.userID = json[BasePaths.uid.rawValue].stringValue
+        if let userIdFromAPI = json[userKeys.firebaseId.rawValue].string {
+            self.userID = userIdFromAPI
+        }
         
         
     }

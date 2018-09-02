@@ -15,6 +15,8 @@
 		2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074020DAD3CA0020E229 /* CustomNavigationController.swift */; };
 		2710074620DB0B310020E229 /* AddArtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710074520DB0B310020E229 /* AddArtist.storyboard */; };
 		2710074920DB2C4C0020E229 /* AddArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */; };
+		271449C0213B80820054B8E4 /* PlatformLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271449BF213B80820054B8E4 /* PlatformLinks.swift */; };
+		271449C2213C45560054B8E4 /* SelectPlatformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271449C1213C45560054B8E4 /* SelectPlatformViewController.swift */; };
 		2716656E212A256900C76B42 /* AddNewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2716656D212A256900C76B42 /* AddNewPhoto.swift */; };
 		271D3C57208A5E08008AA3E2 /* PickerSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C56208A5E08008AA3E2 /* PickerSelect.swift */; };
 		271D3C59208A679F008AA3E2 /* GenreRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C58208A679F008AA3E2 /* GenreRead.swift */; };
@@ -98,6 +100,8 @@
 		2710074020DAD3CA0020E229 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		2710074520DB0B310020E229 /* AddArtist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddArtist.storyboard; sourceTree = "<group>"; };
 		2710074820DB2C4B0020E229 /* AddArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistsViewController.swift; sourceTree = "<group>"; };
+		271449BF213B80820054B8E4 /* PlatformLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLinks.swift; sourceTree = "<group>"; };
+		271449C1213C45560054B8E4 /* SelectPlatformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlatformViewController.swift; sourceTree = "<group>"; };
 		2716656D212A256900C76B42 /* AddNewPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPhoto.swift; sourceTree = "<group>"; };
 		271D3C56208A5E08008AA3E2 /* PickerSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelect.swift; sourceTree = "<group>"; };
 		271D3C58208A679F008AA3E2 /* GenreRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRead.swift; sourceTree = "<group>"; };
@@ -537,6 +541,7 @@
 		27897C08213B73A600FE9B48 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				271449C1213C45560054B8E4 /* SelectPlatformViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -624,6 +629,7 @@
 				277318CD2087A0C200C30C05 /* ApiReadWrite.swift */,
 				27F99B5520EBBCCF0093B500 /* CreateNewUserApiProtocol.swift */,
 				27D83E2320F550FB00C400AA /* FollowUserProtocol.swift */,
+				271449BF213B80820054B8E4 /* PlatformLinks.swift */,
 			);
 			path = "API Read Write ";
 			sourceTree = "<group>";
@@ -843,6 +849,7 @@
 				27EF93E0211A842E008B5E51 /* ProfileMainTabBar.swift in Sources */,
 				27B2C5B6208697F90063AB75 /* AlertViews .swift in Sources */,
 				278C625D20BF46BF00823D9B /* LoginSelectViewController.swift in Sources */,
+				271449C0213B80820054B8E4 /* PlatformLinks.swift in Sources */,
 				2742AD8C20E566B400633CF1 /* AddArtistTableViewCell.swift in Sources */,
 				2710074120DAD3CA0020E229 /* CustomNavigationController.swift in Sources */,
 				27C6A6C0208E798C00269280 /* CheckUserStatusProtocol.swift in Sources */,
@@ -858,6 +865,7 @@
 				27C556432128B4E000439535 /* SaveProfileEditsDelegate.swift in Sources */,
 				27635A3F2117CE0600EE5C64 /* ProfileEditGradientView.swift in Sources */,
 				279D7CB42093AFDF00208CE8 /* FacebookRegisterandLogin.swift in Sources */,
+				271449C2213C45560054B8E4 /* SelectPlatformViewController.swift in Sources */,
 				27692F1820810A3C000D7C8B /* ViewController.swift in Sources */,
 				270D874A2116948700C221C2 /* ProfileEditCollectionReusableView.swift in Sources */,
 				27BAD98A211F6761004F589F /* EditProfileTableViewController.swift in Sources */,

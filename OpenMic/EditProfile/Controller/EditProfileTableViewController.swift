@@ -81,7 +81,7 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         if let usercheck = currentUser {
-            fullNameOutlet.text = "\(usercheck.firstName) + \(usercheck.lastName)"
+            fullNameOutlet.text = "\(usercheck.firstName) \(usercheck.lastName)"
             usernameOutlet.text = usercheck.userName
             self.saveProfileUpdatesDelegate = self
         }
