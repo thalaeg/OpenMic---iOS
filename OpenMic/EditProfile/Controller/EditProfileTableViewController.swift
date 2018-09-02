@@ -18,6 +18,10 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     private var imagePickerDelegate: ChooseImage?
     
     
+    @IBAction func choosePlatform(_ sender: UISwitch) {
+        
+        
+    }
     
     @IBOutlet weak var userImage: UIImageView!
     

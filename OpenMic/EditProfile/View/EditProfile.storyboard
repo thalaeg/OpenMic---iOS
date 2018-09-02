@@ -259,6 +259,9 @@
                                                 </imageView>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T1U-Na-E4c">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="4bG-P4-SXx"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -284,8 +287,11 @@
                                                         <constraint firstAttribute="width" constant="125" id="kyi-LN-86w"/>
                                                     </constraints>
                                                 </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-eV-DwF">
+                                                <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-eV-DwF">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="clo-Nk-OEp"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -311,8 +317,11 @@
                                                         <constraint firstAttribute="width" constant="125" id="huc-NE-vCH"/>
                                                     </constraints>
                                                 </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-CE-8E5">
+                                                <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-CE-8E5">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="GjG-na-FlV"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -338,8 +347,11 @@
                                                         <constraint firstAttribute="width" constant="125" id="h47-Ap-5J9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-ch-Fx7">
+                                                <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-ch-Fx7">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="Kzb-wj-PbT"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -365,8 +377,11 @@
                                                         <constraint firstAttribute="width" constant="125" id="FXY-aU-NdD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-is-JQj">
+                                                <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-is-JQj">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="viA-md-QHg"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -407,11 +422,20 @@
                         <outlet property="locationOutlet" destination="GAH-H3-BCn" id="XSC-us-5zh"/>
                         <outlet property="userImage" destination="GDA-jV-8b1" id="q7i-LE-b2T"/>
                         <outlet property="usernameOutlet" destination="l9i-b7-5dq" id="wHn-VU-Hhn"/>
+                        <segue destination="Wq6-wm-gGh" kind="presentation" identifier="goToLinkPlatform" id="OVu-cn-H4N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxb-yF-N0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="789.60000000000002" y="184.40779610194903"/>
+        </scene>
+        <!--linkPlatform-->
+        <scene sceneID="Mbo-qk-2gZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileEditLink" referencedIdentifier="linkPlatform" id="Wq6-wm-gGh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LK-ML-NdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="184"/>
         </scene>
     </scenes>
     <resources>
