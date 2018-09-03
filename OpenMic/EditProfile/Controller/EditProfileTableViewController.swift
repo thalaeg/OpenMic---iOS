@@ -17,7 +17,9 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
     private var imagePickerDelegate: ChooseImage?
     private let segueDestination = "goToLinkPlatform"
+    private var platformsSelected: [PlatFormType]?
     
+
     
     @IBAction func choosePlatform(_ sender: UISwitch) {
         let segueDestination = "goToLinkPlatform"
@@ -25,14 +27,19 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
             switch sender.tag {
             case 0:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.youtube)
+                platformsSelected?.append(PlatFormType.youtube)
             case 1:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.spotify)
+                platformsSelected?.append(PlatFormType.spotify)
             case 2:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.soundcloud)
+                platformsSelected?.append(PlatFormType.soundcloud)
             case 3:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.amazon)
+                platformsSelected?.append(PlatFormType.amazon)
             case 4:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.deezer)
+                platformsSelected?.append(PlatFormType.deezer)
             default:
                 return
             }
@@ -108,9 +115,6 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     // MARK: - Table view data source
 
@@ -122,7 +126,17 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 
 
 
-extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate {
+extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate, PlatformSelectedControlDelegate {
+    func didRemovePlatform(platform: PlatFormType) {
+        let tag = platform.getTag()
+        
+        
+    }
+    
+    func didAddplatrom(platform: PlatFormType) {
+        
+    }
+    
     func upDatePhoto(image: UIImage) {
         userImage.image = image
     }
@@ -133,6 +147,7 @@ extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhot
         if segue.identifier == segueDestination {
             guard let vc = segue.destination as? SelectPlatformViewController, let platform = sender as? PlatFormType else {return}
             vc.platform = platform
+            vc.platformSelectedControlDelegate = self
         }
     }
     
@@ -140,6 +155,13 @@ extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhot
     
     
     
+}
+
+
+protocol PlatformSelectedControlDelegate {
+    func didRemovePlatform(platform: PlatFormType)
+    
+    func didAddplatrom(platform: PlatFormType)
 }
 
 

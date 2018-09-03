@@ -11,9 +11,13 @@ import UIKit
 class SelectPlatformViewController: UIViewController {
     
     internal var platform: PlatFormType?
+    internal var platformSelectedControlDelegate: PlatformSelectedControlDelegate?
     
     
     @IBAction func cancelAction(_ sender: Any) {
+        if let platform = platform {
+            platformSelectedControlDelegate?.didAddplatrom(platform: platform)
+        }
         
         self.dismiss(animated: true, completion: nil)
     }

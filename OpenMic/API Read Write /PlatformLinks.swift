@@ -15,6 +15,21 @@ enum PlatFormType: String {
     case amazon
     case deezer = "DEEZER"
     
+    func getTag() -> Int {
+        switch self {
+        case .spotify:
+            return 1
+        case .youtube:
+            return 0
+        case .soundcloud:
+            return 2
+        case .amazon:
+            return 3
+        case .deezer:
+            return 4
+        }
+    }
+    
     func platFormImage () -> UIImage {
         switch self {
         case .spotify:
