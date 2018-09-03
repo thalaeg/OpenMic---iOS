@@ -43,6 +43,9 @@
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="saveAction:" destination="v0d-WV-rqi" eventType="touchUpInside" id="rp7-qu-xkY"/>
+                                                </connections>
                                             </button>
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>

@@ -17,7 +17,7 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
     private var imagePickerDelegate: ChooseImage?
     private let segueDestination = "goToLinkPlatform"
-    private var platformsSelected: [PlatFormType]?
+    private var platformsSelected = [PlatFormType]()
     
     @IBOutlet weak var youtubeOutlet: UISwitch!
     @IBOutlet weak var spotifyOutlet: UISwitch!
@@ -32,23 +32,26 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
             switch sender.tag {
             case 0:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.youtube)
-                platformsSelected?.append(PlatFormType.youtube)
+                platformsSelected.append(PlatFormType.youtube)
             case 1:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.spotify)
-                platformsSelected?.append(PlatFormType.spotify)
+                platformsSelected.append(PlatFormType.spotify)
             case 2:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.soundcloud)
-                platformsSelected?.append(PlatFormType.soundcloud)
+                platformsSelected.append(PlatFormType.soundcloud)
             case 3:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.amazon)
-                platformsSelected?.append(PlatFormType.amazon)
+                platformsSelected.append(PlatFormType.amazon)
             case 4:
                 performSegue(withIdentifier: segueDestination, sender: PlatFormType.deezer)
-                platformsSelected?.append(PlatFormType.deezer)
+                platformsSelected.append(PlatFormType.deezer)
             default:
                 return
             }
             
+        } else {
+            platform =
+            platformsSelected
         }
         
         
@@ -133,11 +136,10 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 
 extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate, PlatformSelectedControlDelegate {
     func didRemovePlatform(platform: PlatFormType) {
-        
+       platformsSelected = platformsSelected.filter{$0 != platform}
         switch platform.getTag(){
         case 0:
             youtubeOutlet.isOn = !youtubeOutlet.isOn
-          
         case 1:
             spotifyOutlet.isOn = !spotifyOutlet.isOn
         case 2:
@@ -156,6 +158,8 @@ extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhot
    
     
     func didAddplatrom(platform: PlatFormType) {
+        // implement offline saving here.
+       // platformsSelected.append(platform)
         
     }
     

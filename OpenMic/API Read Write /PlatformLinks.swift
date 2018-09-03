@@ -30,6 +30,24 @@ enum PlatFormType: String {
         }
     }
     
+    
+   static func getTagMatch(tag: Int) -> PlatFormType? {
+        switch tag {
+        case 1:
+            return .spotify
+        case 0:
+            return .youtube
+        case 2:
+            return .soundcloud
+        case 3:
+            return .amazon
+        case 4:
+            return .deezer
+        default:
+            return nil
+        }
+    }
+    
     func platFormImage () -> UIImage {
         switch self {
         case .spotify:

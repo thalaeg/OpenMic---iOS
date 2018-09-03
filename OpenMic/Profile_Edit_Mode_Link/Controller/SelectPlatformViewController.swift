@@ -24,6 +24,16 @@ class SelectPlatformViewController: UIViewController {
     
     
     
+    @IBAction func saveAction(_ sender: Any) {
+        
+        if let platform = platform {
+            platformSelectedControlDelegate?.didAddplatrom(platform: platform)
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
+    
+    
     @IBOutlet weak var platformImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
