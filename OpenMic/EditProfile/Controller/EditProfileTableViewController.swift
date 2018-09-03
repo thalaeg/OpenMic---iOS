@@ -50,8 +50,8 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
             }
             
         } else {
-            platform =
-            platformsSelected
+            guard let platform = PlatFormType.getTagMatch(tag: sender.tag) else {return}
+            platformsSelected = platformsSelected.filter{$0 != platform}
         }
         
         
