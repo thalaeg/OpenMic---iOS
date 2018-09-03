@@ -11,12 +11,15 @@ import UIKit
 class ProfileEditViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
+    private var selectePlatforms = [PlatFormType]()
     
     private var collectionViewManager: ProfileEditModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        PlatFormType.readCurrentUserSelectPlaformsFromFirebase { (platformType) in
+            self.selectePlatforms = platformType
+        }
         collectionViewManager = ProfileEditModel(collectionView: collectionView, viewController: self)
 
     }
@@ -33,6 +36,7 @@ extension ProfileEditViewController: PerformSegueProfileDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adjustProfile" {
             guard let nav =  segue.destination as? UINavigationController, let vc = nav.viewControllers.first as? EditProfileTableViewController, let userTopass = sender as? CurrentUser else {return}
+            vc.platformsSelected = selectePlatforms
             vc.currentUser = userTopass
             
         }

@@ -49,6 +49,27 @@ enum PlatFormType: String {
         }
     }
     
+    static func getStringMatch(inputString: String) -> PlatFormType? {
+        switch inputString {
+        case self.spotify.rawValue:
+            return self.spotify
+            
+        case self.youtube.rawValue:
+            return self.youtube
+            
+        case self.soundcloud.rawValue:
+            return self.soundcloud
+            
+        case self.amazon.rawValue:
+            return self.amazon
+            
+        case self.deezer.rawValue:
+            return self.deezer
+        default:
+            return nil
+        }
+    }
+    
     func platFormImage () -> UIImage {
         switch self {
         case .spotify:
@@ -82,6 +103,19 @@ enum PlatFormType: String {
         }
     }
     
+    static func readCurrentUserSelectPlaformsFromFirebase(completion: @escaping (_ selectedPlatforms: [PlatFormType]) -> Void ) {
+        guard let path =  BasePaths.savedPlatformLinks.getUIDBase() else {return}
+        path.observe(.value) { (snapShot) in
+            guard let platforms = snapShot.value as? [String] else {return}
+            let platformTypeArray = platforms.compactMap{getStringMatch(inputString: $0)}
+            completion(platformTypeArray)
+            
+            
+            
+        }
+        
+        
+    }
     
     // read selected platforms 
 }

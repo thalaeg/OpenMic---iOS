@@ -43,18 +43,19 @@ extension SaveProfileUpdatesDelegate {
     
     
     
-    func updateUserParameters() {
+    func updateUserParameters(completion: (_ withError: Bool) -> Void) {
         guard let currentUSer = self.currentUser,let userid = currentUser?.userID else {return}
         // update user selected platforms on fire base
         appendSavedPlatforms()
+        completion(false)
         
         var params = self.getupDateParams()
-        if params.count > 0 {
-            params.updateValue(userid, forKey: CurrentUser.userKeys.firebaseId.rawValue)
-            Endpoints.updateProfile.patchUser(with: params, currentUSer: currentUSer) { (response, error) in
-                print("response \(response), error \(error)")
-            }
-        }
+//        if params.count > 0 {
+//            params.updateValue(userid, forKey: CurrentUser.userKeys.firebaseId.rawValue)
+//            Endpoints.updateProfile.patchUser(with: params, currentUSer: currentUSer) { (response, error) in
+//                print("response \(response), error \(error)")
+//            }
+//        }
         
         
         

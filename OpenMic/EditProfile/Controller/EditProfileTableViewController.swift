@@ -86,7 +86,11 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     }
     
     @IBAction func saveProfileAcrtion(_ sender: Any) {
-        saveProfileUpdatesDelegate?.updateUserParameters()
+        saveProfileUpdatesDelegate?.updateUserParameters(completion: { (error) in
+            if !error {
+                self.dismiss(animated: true, completion: nil)
+            }
+        })
     }
     
     
@@ -114,8 +118,11 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        platformsSelected.forEach { (platform) in
+            getTagAndChangeSwitch(platform: platform)
+        }
         
-        //MARK: add selected states from firebase reads 
+        //MARK: add selected states from firebase reads
         if let usercheck = currentUser {
             fullNameOutlet.text = "\(usercheck.firstName) \(usercheck.lastName)"
             usernameOutlet.text = usercheck.userName
@@ -139,6 +146,12 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate, PlatformSelectedControlDelegate {
     func didRemovePlatform(platform: PlatFormType) {
        platformsSelected = platformsSelected.filter{$0 != platform}
+        getTagAndChangeSwitch(platform: platform)
+        
+        
+    }
+    
+    private func getTagAndChangeSwitch(platform: PlatFormType) {
         switch platform.getTag(){
         case 0:
             youtubeOutlet.isOn = !youtubeOutlet.isOn
@@ -153,8 +166,6 @@ extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhot
         default:
             return
         }
-        
-        
     }
     
    
