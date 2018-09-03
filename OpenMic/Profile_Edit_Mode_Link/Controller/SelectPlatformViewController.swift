@@ -11,10 +11,20 @@ import UIKit
 class SelectPlatformViewController: UIViewController {
     
     internal var platform: PlatFormType?
-
+    
+    
+    @IBAction func cancelAction(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     @IBOutlet weak var platformImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let platform = platform else {return}
+        platformImage.image = platform.platFormImage()
 
         // Do any additional setup after loading the view.
     }

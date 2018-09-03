@@ -30,6 +30,9 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="v0d-WV-rqi" eventType="touchUpInside" id="JIz-2c-wv5"/>
+                                                </connections>
                                             </button>
                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
