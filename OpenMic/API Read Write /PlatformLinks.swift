@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 enum PlatFormType: String {
     case spotify = "Spotify"
@@ -82,5 +83,10 @@ enum PlatFormType: String {
     }
     
     
+    // read selected platforms 
 }
+
+
+
+
 

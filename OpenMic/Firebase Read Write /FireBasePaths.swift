@@ -18,6 +18,7 @@ enum BasePaths: String {
     case uid
     case Genre
     case userDetails = "user_details"
+    case savedPlatformLinks = "saved_platform_links"
     
     func getNonUIDBase() -> DatabaseReference {
        return baseURL.child(self.rawValue)

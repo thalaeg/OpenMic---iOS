@@ -14,6 +14,7 @@ protocol SaveProfileUpdatesDelegate {
     var username: String? {get set}
     var userBio: String? {get set}
     var userLocation: String? {get set}
+    var platformsSelected: [PlatFormType] {get set}
     
     //MARK: to add user photo
     
@@ -22,8 +23,31 @@ protocol SaveProfileUpdatesDelegate {
 
 
 extension SaveProfileUpdatesDelegate {
+    
+    
+    func appendSavedPlatforms() {
+        guard let endpoint = BasePaths.savedPlatformLinks.getUIDBase() else {return}
+        let arrayInput = platformsSelected.map{$0.rawValue}
+        endpoint.setValue(arrayInput)
+        
+    }
+//
+//    func observePlatformsFromFirebase() {
+//        guard let endpoint = BasePaths.savedPlatformLinks.getUIDBase() else {return}
+//        endpoint.observe(.value) { (snapShot) in
+//            print("platfomrs = \(snapShot.value)")
+//        }
+    
+
+    
+    
+    
+    
     func updateUserParameters() {
         guard let currentUSer = self.currentUser,let userid = currentUser?.userID else {return}
+        // update user selected platforms on fire base
+        appendSavedPlatforms()
+        
         var params = self.getupDateParams()
         if params.count > 0 {
             params.updateValue(userid, forKey: CurrentUser.userKeys.firebaseId.rawValue)

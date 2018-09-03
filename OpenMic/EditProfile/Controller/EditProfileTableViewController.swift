@@ -17,7 +17,7 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
     private var imagePickerDelegate: ChooseImage?
     private let segueDestination = "goToLinkPlatform"
-    private var platformsSelected = [PlatFormType]()
+    internal var platformsSelected = [PlatFormType]()
     
     @IBOutlet weak var youtubeOutlet: UISwitch!
     @IBOutlet weak var spotifyOutlet: UISwitch!
@@ -114,6 +114,8 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: add selected states from firebase reads 
         if let usercheck = currentUser {
             fullNameOutlet.text = "\(usercheck.firstName) \(usercheck.lastName)"
             usernameOutlet.text = usercheck.userName
