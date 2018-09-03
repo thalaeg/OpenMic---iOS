@@ -16,7 +16,7 @@ class SelectPlatformViewController: UIViewController {
     
     @IBAction func cancelAction(_ sender: Any) {
         if let platform = platform {
-            platformSelectedControlDelegate?.didAddplatrom(platform: platform)
+            platformSelectedControlDelegate?.didRemovePlatform(platform: platform)
         }
         
         self.dismiss(animated: true, completion: nil)

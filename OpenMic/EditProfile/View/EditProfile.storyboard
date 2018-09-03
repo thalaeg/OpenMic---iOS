@@ -422,11 +422,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="amazonOutlet" destination="ZXu-ch-Fx7" id="rti-ob-2ly"/>
                         <outlet property="bioOutlet" destination="Byv-J5-E5r" id="Lrc-tM-Wh3"/>
+                        <outlet property="deezerOutlet" destination="6Gg-is-JQj" id="Gsr-cF-zW5"/>
                         <outlet property="fullNameOutlet" destination="ZbT-vb-9cS" id="Glm-Od-cMv"/>
                         <outlet property="locationOutlet" destination="GAH-H3-BCn" id="XSC-us-5zh"/>
+                        <outlet property="soundCloudOutlet" destination="zAF-CE-8E5" id="UHk-SO-uGF"/>
+                        <outlet property="spotifyOutlet" destination="0Pe-eV-DwF" id="ZYy-zY-CE1"/>
                         <outlet property="userImage" destination="GDA-jV-8b1" id="q7i-LE-b2T"/>
                         <outlet property="usernameOutlet" destination="l9i-b7-5dq" id="wHn-VU-Hhn"/>
+                        <outlet property="youtubeOutlet" destination="T1U-Na-E4c" id="xqR-3G-lPK"/>
                         <segue destination="Wq6-wm-gGh" kind="presentation" identifier="goToLinkPlatform" id="OVu-cn-H4N"/>
                     </connections>
                 </tableViewController>

@@ -19,7 +19,12 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     private let segueDestination = "goToLinkPlatform"
     private var platformsSelected: [PlatFormType]?
     
-
+    @IBOutlet weak var youtubeOutlet: UISwitch!
+    @IBOutlet weak var spotifyOutlet: UISwitch!
+    @IBOutlet weak var soundCloudOutlet: UISwitch!
+    @IBOutlet weak var amazonOutlet: UISwitch!
+    @IBOutlet weak var deezerOutlet: UISwitch!
+    
     
     @IBAction func choosePlatform(_ sender: UISwitch) {
         let segueDestination = "goToLinkPlatform"
@@ -128,10 +133,27 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 
 extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate, PlatformSelectedControlDelegate {
     func didRemovePlatform(platform: PlatFormType) {
-        let tag = platform.getTag()
+        
+        switch platform.getTag(){
+        case 0:
+            youtubeOutlet.isOn = !youtubeOutlet.isOn
+          
+        case 1:
+            spotifyOutlet.isOn = !spotifyOutlet.isOn
+        case 2:
+            soundCloudOutlet.isOn = !soundCloudOutlet.isOn
+        case 3:
+            amazonOutlet.isOn = !amazonOutlet.isOn
+        case 4:
+            deezerOutlet.isOn = !deezerOutlet.isOn
+        default:
+            return
+        }
         
         
     }
+    
+   
     
     func didAddplatrom(platform: PlatFormType) {
         
