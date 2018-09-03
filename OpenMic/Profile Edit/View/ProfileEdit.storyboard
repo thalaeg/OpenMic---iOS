@@ -126,13 +126,21 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-uK-FW1">
+                                                    <rect key="frame" x="0.0" y="252" width="359" height="104"/>
+                                                    <color key="backgroundColor" red="0.72549019609999998" green="0.14901960780000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" constant="20" id="2HB-pt-Fqp"/>
+                                                <constraint firstAttribute="bottom" secondItem="BdS-uK-FW1" secondAttribute="bottom" id="EMH-Wy-Eah"/>
                                                 <constraint firstAttribute="bottom" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="112" id="I7s-qz-gRk"/>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="top" secondItem="ceQ-zs-bL9" secondAttribute="top" constant="28" id="V36-gY-NDp"/>
+                                                <constraint firstItem="BdS-uK-FW1" firstAttribute="top" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="8" id="ZBM-A9-DaZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="XcA-iT-DK5" secondAttribute="trailing" constant="20" id="gal-sO-d4F"/>
+                                                <constraint firstAttribute="trailing" secondItem="BdS-uK-FW1" secondAttribute="trailing" id="ipo-9x-2mi"/>
+                                                <constraint firstItem="BdS-uK-FW1" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" id="x8X-Ha-rqb"/>
                                             </constraints>
                                         </view>
                                     </subviews>

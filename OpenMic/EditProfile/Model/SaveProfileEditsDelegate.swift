@@ -50,6 +50,7 @@ extension SaveProfileUpdatesDelegate {
         completion(false)
         
         var params = self.getupDateParams()
+        //MARK: to be added back in when api call is working
 //        if params.count > 0 {
 //            params.updateValue(userid, forKey: CurrentUser.userKeys.firebaseId.rawValue)
 //            Endpoints.updateProfile.patchUser(with: params, currentUSer: currentUSer) { (response, error) in
