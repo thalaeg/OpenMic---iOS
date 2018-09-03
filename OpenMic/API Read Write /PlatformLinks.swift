@@ -65,5 +65,22 @@ enum PlatFormType: String {
     }
     
     
+    
+    func mainPageImage () -> UIImage {
+        switch self {
+        case .spotify:
+            return #imageLiteral(resourceName: "SpotifyMain")
+        case .youtube:
+            return #imageLiteral(resourceName: "youtubeMain")
+        case .soundcloud:
+            return #imageLiteral(resourceName: "soundCloudMain")
+        case .amazon:
+            return #imageLiteral(resourceName: "amazonMain")
+        case .deezer:
+            return #imageLiteral(resourceName: "DeezerMain")
+        }
+    }
+    
+    
 }
 
