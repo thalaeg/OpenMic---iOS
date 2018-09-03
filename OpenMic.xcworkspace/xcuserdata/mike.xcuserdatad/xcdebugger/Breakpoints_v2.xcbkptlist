@@ -9,125 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OpenMic/API Read Write /ApiReadWrite.swift"
-            timestampString = "557599190.179821"
+            filePath = "OpenMic/API Read Write /FollowUserProtocol.swift"
+            timestampString = "557600285.497242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "patchUser(with:currentUSer:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OpenMic.Endpoints.patchUser(with: Swift.Dictionary&lt;Swift.String, Any&gt;, currentUSer: OpenMic.CurrentUser, completionHandler: (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "OpenMic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mike/OpenMic---iOS/OpenMic/API%20Read%20Write%20/ApiReadWrite.swift"
-                  timestampString = "557599190.281562"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "379">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OpenMic.Endpoints.patchUser(with: Swift.Dictionary&lt;Swift.String, Any&gt;, currentUSer: OpenMic.CurrentUser, completionHandler: (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "OpenMic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mike/OpenMic---iOS/OpenMic/API%20Read%20Write%20/ApiReadWrite.swift"
-                  timestampString = "557599190.283832"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "29">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OpenMic/API Read Write /ApiReadWrite.swift"
-            timestampString = "557599190.179875"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "patchUser(with:currentUSer:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OpenMic/API Read Write /ApiReadWrite.swift"
-            timestampString = "557599190.179917"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "patchUser(with:currentUSer:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OpenMic.Endpoints.patchUser(with: Swift.Dictionary&lt;Swift.String, Any&gt;, currentUSer: OpenMic.CurrentUser, completionHandler: (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "OpenMic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mike/OpenMic---iOS/OpenMic/API%20Read%20Write%20/ApiReadWrite.swift"
-                  timestampString = "557599190.307747"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "379">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OpenMic.Endpoints.patchUser(with: Swift.Dictionary&lt;Swift.String, Any&gt;, currentUSer: OpenMic.CurrentUser, completionHandler: (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "OpenMic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mike/OpenMic---iOS/OpenMic/API%20Read%20Write%20/ApiReadWrite.swift"
-                  timestampString = "557599190.309377"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "29">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OpenMic/EditProfile/Model/SaveProfileEditsDelegate.swift"
-            timestampString = "557598773.044385"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "updateUserParameters()"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "appendNewArtistToFollow(parameters:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

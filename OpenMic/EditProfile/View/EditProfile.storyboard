@@ -259,6 +259,7 @@
                                                 </imageView>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T1U-Na-E4c">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.72941176470000002" green="0.1529411765" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="4bG-P4-SXx"/>
                                                     </connections>
@@ -289,6 +290,7 @@
                                                 </imageView>
                                                 <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-eV-DwF">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.72941176470000002" green="0.1529411765" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="clo-Nk-OEp"/>
                                                     </connections>
@@ -319,6 +321,7 @@
                                                 </imageView>
                                                 <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-CE-8E5">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.72941176470000002" green="0.1529411765" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="GjG-na-FlV"/>
                                                     </connections>
@@ -349,6 +352,7 @@
                                                 </imageView>
                                                 <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-ch-Fx7">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.72941176470000002" green="0.1529411765" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="Kzb-wj-PbT"/>
                                                     </connections>
@@ -379,6 +383,7 @@
                                                 </imageView>
                                                 <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-is-JQj">
                                                     <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.72941176470000002" green="0.1529411765" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="choosePlatform:" destination="BkF-lP-e94" eventType="valueChanged" id="viA-md-QHg"/>
                                                     </connections>

@@ -16,9 +16,28 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
     internal var userLocation: String?
     private var saveProfileUpdatesDelegate: SaveProfileUpdatesDelegate?
     private var imagePickerDelegate: ChooseImage?
+    private let segueDestination = "goToLinkPlatform"
     
     
     @IBAction func choosePlatform(_ sender: UISwitch) {
+        let segueDestination = "goToLinkPlatform"
+        if sender.isOn {
+            switch sender.tag {
+            case 0:
+                performSegue(withIdentifier: segueDestination, sender: PlatFormType.youtube)
+            case 1:
+                performSegue(withIdentifier: segueDestination, sender: PlatFormType.spotify)
+            case 2:
+                performSegue(withIdentifier: segueDestination, sender: PlatFormType.soundcloud)
+            case 3:
+                performSegue(withIdentifier: segueDestination, sender: PlatFormType.amazon)
+            case 4:
+                performSegue(withIdentifier: segueDestination, sender: PlatFormType.deezer)
+            default:
+                return
+            }
+            
+        }
         
         
     }
@@ -106,6 +125,15 @@ class EditProfileTableViewController: UITableViewController, UITextViewDelegate 
 extension EditProfileTableViewController: SaveProfileUpdatesDelegate, UpDatePhotoDelegate {
     func upDatePhoto(image: UIImage) {
         userImage.image = image
+    }
+    
+    
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueDestination {
+            guard let vc = segue.destination as? SelectPlatformViewController, let platform = sender as? PlatFormType else {return}
+            vc.platform = platform
+        }
     }
     
   
