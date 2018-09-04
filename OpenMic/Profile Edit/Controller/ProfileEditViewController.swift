@@ -9,9 +9,13 @@
 import UIKit
 
 class ProfileEditViewController: UIViewController {
+    
+    
 
     @IBOutlet var collectionView: UICollectionView!
     private var selectePlatforms = [PlatFormType]()
+    
+    @IBOutlet weak var platformSelectScrollview: UIScrollView!
     
     private var collectionViewManager: ProfileEditModel?
     

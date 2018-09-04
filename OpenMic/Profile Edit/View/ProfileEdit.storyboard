@@ -126,21 +126,37 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-uK-FW1">
-                                                    <rect key="frame" x="0.0" y="252" width="359" height="104"/>
-                                                    <color key="backgroundColor" red="0.72549019609999998" green="0.14901960780000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-PQ-0Va" userLabel="Platform Select stack">
+                                                    <rect key="frame" x="10" y="311" width="339" height="37"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotifyMain" translatesAutoresizingMaskIntoConstraints="NO" id="WW0-NU-SpN">
+                                                            <rect key="frame" x="0.0" y="2.5" width="68" height="32"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubeMain" translatesAutoresizingMaskIntoConstraints="NO" id="esY-Em-VNb">
+                                                            <rect key="frame" x="68" y="7" width="67.5" height="23"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundCloudMain" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-8R-8dK">
+                                                            <rect key="frame" x="135.5" y="11.5" width="68" height="14"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amazonMain" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-WL-DWX">
+                                                            <rect key="frame" x="203.5" y="2" width="67.5" height="33"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeezerMain" translatesAutoresizingMaskIntoConstraints="NO" id="DwP-N2-50H">
+                                                            <rect key="frame" x="271" y="2.5" width="68" height="32"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" constant="20" id="2HB-pt-Fqp"/>
-                                                <constraint firstAttribute="bottom" secondItem="BdS-uK-FW1" secondAttribute="bottom" id="EMH-Wy-Eah"/>
                                                 <constraint firstAttribute="bottom" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="112" id="I7s-qz-gRk"/>
+                                                <constraint firstItem="CYH-PQ-0Va" firstAttribute="top" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="67" id="TtA-vu-xB0"/>
                                                 <constraint firstItem="XcA-iT-DK5" firstAttribute="top" secondItem="ceQ-zs-bL9" secondAttribute="top" constant="28" id="V36-gY-NDp"/>
-                                                <constraint firstItem="BdS-uK-FW1" firstAttribute="top" secondItem="XcA-iT-DK5" secondAttribute="bottom" constant="8" id="ZBM-A9-DaZ"/>
+                                                <constraint firstItem="CYH-PQ-0Va" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" constant="10" id="XNj-Y8-Gbi"/>
+                                                <constraint firstAttribute="bottom" secondItem="CYH-PQ-0Va" secondAttribute="bottom" constant="8" id="eYF-ca-kdi"/>
                                                 <constraint firstAttribute="trailing" secondItem="XcA-iT-DK5" secondAttribute="trailing" constant="20" id="gal-sO-d4F"/>
-                                                <constraint firstAttribute="trailing" secondItem="BdS-uK-FW1" secondAttribute="trailing" id="ipo-9x-2mi"/>
-                                                <constraint firstItem="BdS-uK-FW1" firstAttribute="leading" secondItem="ceQ-zs-bL9" secondAttribute="leading" id="x8X-Ha-rqb"/>
+                                                <constraint firstAttribute="trailing" secondItem="CYH-PQ-0Va" secondAttribute="trailing" constant="10" id="jWs-9S-dB3"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -158,13 +174,18 @@
                                         <constraint firstItem="ceQ-zs-bL9" firstAttribute="top" secondItem="g6P-2i-7Mm" secondAttribute="topMargin" id="zSC-0X-2Ys"/>
                                     </constraints>
                                     <connections>
+                                        <outlet property="amazonOutlet" destination="Ky9-WL-DWX" id="UPb-xT-w8Y"/>
                                         <outlet property="blurredBackGroundView" destination="ceQ-zs-bL9" id="PK6-x4-Z75"/>
+                                        <outlet property="deezerOutlet" destination="ceQ-zs-bL9" id="YH3-U0-bPe"/>
                                         <outlet property="editProfileButtonOutlet" destination="uA8-0m-3QP" id="hwf-rQ-KwD"/>
                                         <outlet property="profileNameFull" destination="y2i-Yn-Z85" id="IGf-hk-rrO"/>
                                         <outlet property="profilePhoto" destination="a6J-9X-XJh" id="T6L-HR-b5U"/>
                                         <outlet property="profilePhotoFront" destination="Cp6-ue-1xe" id="kmW-Ab-9WJ"/>
                                         <outlet property="profileUserName" destination="R0C-QN-ygF" id="xdW-k7-eql"/>
+                                        <outlet property="soundCloudImageView" destination="bAc-8R-8dK" id="y0W-eP-Eot"/>
+                                        <outlet property="spotifyOutlet" destination="WW0-NU-SpN" id="SQd-LV-e0x"/>
                                         <outlet property="upComingRecentSequeController" destination="nHs-Kw-B1p" id="grj-Rv-iLG"/>
+                                        <outlet property="youTubeImageView" destination="esY-Em-VNb" id="2lz-tL-hXS"/>
                                     </connections>
                                 </collectionReusableView>
                             </collectionView>
@@ -208,9 +229,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DeezerMain" width="32" height="32"/>
+        <image name="SpotifyMain" width="32" height="32"/>
+        <image name="amazonMain" width="32" height="33"/>
         <image name="kanyeWest-profile" width="880" height="587"/>
         <image name="settingsIcon" width="17" height="17"/>
+        <image name="soundCloudMain" width="32" height="14"/>
         <image name="tourIcon" width="17" height="17"/>
         <image name="upcomingFlyer" width="500" height="700"/>
+        <image name="youtubeMain" width="32" height="23"/>
     </resources>
 </document>

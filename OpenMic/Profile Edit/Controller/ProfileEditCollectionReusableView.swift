@@ -10,6 +10,13 @@ import UIKit
 
 class ProfileEditCollectionReusableView: UICollectionReusableView {
     
+    @IBOutlet weak var spotifyOutlet: UIImageView!
+    @IBOutlet weak var youTubeImageView: UIImageView!
+    @IBOutlet weak var soundCloudImageView: UIImageView!
+    
+    @IBOutlet weak var amazonOutlet: UIImageView!
+    @IBOutlet weak var deezerOutlet: ProfileEditGradientView!
+    
     var performSegueDelegagte: PerformSegueProfileDelegate?
     private var currentUSer: CurrentUser?
     
@@ -50,6 +57,10 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
         self.currentUSer = currentUser
         profileNameFull.text = ("\(currentUser.firstName)  \(currentUser.lastName)")
         profileUserName.text = currentUser.userName
+    }
+    
+    private func unhideSelectedPlatforms(platforms: PlatFormType) {
+        
     }
 
 
