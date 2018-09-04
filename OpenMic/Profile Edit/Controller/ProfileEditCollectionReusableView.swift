@@ -53,14 +53,31 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     
     
     
-    func setupProfileCell(currentUser: CurrentUser) {
+    func setupProfileCell(currentUser: CurrentUser, selectedPlatforms: [PlatFormType]) {
         self.currentUSer = currentUser
         profileNameFull.text = ("\(currentUser.firstName)  \(currentUser.lastName)")
         profileUserName.text = currentUser.userName
+        unhideSelectedPlatforms(platforms: selectedPlatforms)
     }
     
-    private func unhideSelectedPlatforms(platforms: PlatFormType) {
+    private func unhideSelectedPlatforms(platforms: [PlatFormType]) {
         
+        platforms.forEach { (platform) in
+            switch platform {
+            case .spotify:
+                spotifyOutlet.isHidden = false
+            case .youtube:
+                youTubeImageView.isHidden = false
+            case .soundcloud:
+                soundCloudImageView.isHidden = false
+            case .amazon:
+                amazonOutlet.isHidden = false
+                
+            case .deezer:
+                deezerOutlet.isHidden = false
+    
+            }
+        }
         
         
     }

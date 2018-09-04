@@ -129,20 +129,20 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-PQ-0Va" userLabel="Platform Select stack">
                                                     <rect key="frame" x="10" y="311" width="339" height="37"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotifyMain" translatesAutoresizingMaskIntoConstraints="NO" id="WW0-NU-SpN">
-                                                            <rect key="frame" x="0.0" y="2.5" width="68" height="32"/>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotifyMain" translatesAutoresizingMaskIntoConstraints="NO" id="WW0-NU-SpN">
+                                                            <rect key="frame" x="-18" y="-323.5" width="0.0" height="32"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubeMain" translatesAutoresizingMaskIntoConstraints="NO" id="esY-Em-VNb">
-                                                            <rect key="frame" x="68" y="7" width="67.5" height="23"/>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubeMain" translatesAutoresizingMaskIntoConstraints="NO" id="esY-Em-VNb">
+                                                            <rect key="frame" x="-18" y="-319" width="0.0" height="23"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundCloudMain" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-8R-8dK">
-                                                            <rect key="frame" x="135.5" y="11.5" width="68" height="14"/>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundCloudMain" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-8R-8dK">
+                                                            <rect key="frame" x="-18" y="-314.5" width="0.0" height="14"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amazonMain" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-WL-DWX">
-                                                            <rect key="frame" x="203.5" y="2" width="67.5" height="33"/>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amazonMain" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-WL-DWX">
+                                                            <rect key="frame" x="-18" y="-324" width="0.0" height="33"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeezerMain" translatesAutoresizingMaskIntoConstraints="NO" id="DwP-N2-50H">
-                                                            <rect key="frame" x="271" y="2.5" width="68" height="32"/>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeezerMain" translatesAutoresizingMaskIntoConstraints="NO" id="DwP-N2-50H">
+                                                            <rect key="frame" x="-18" y="-323.5" width="0.0" height="32"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>

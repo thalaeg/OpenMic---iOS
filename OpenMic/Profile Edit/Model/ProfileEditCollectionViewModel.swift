@@ -13,6 +13,7 @@ class ProfileEditModel: NSObject {
     private var collectionView: UICollectionView
     private var viewController: UIViewController
     private var currentUSerInfo: CurrentUser?
+    private var selectedPlatforms = [PlatFormType]()
     
     private var placeHolderImages = [#imageLiteral(resourceName: "upcomingFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer")]
     
@@ -71,14 +72,12 @@ extension ProfileEditModel: UICollectionViewDelegate, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "mainHeader", for: indexPath) as! ProfileEditCollectionReusableView
         if let currentUserProfileInfo = currentUSerInfo, let viewControllerConforming = viewController as? PerformSegueProfileDelegate  {
-            header.setupProfileCell(currentUser: currentUserProfileInfo)
+            header.setupProfileCell(currentUser: currentUserProfileInfo, selectedPlatforms: selectedPlatforms)
             header.performSegueDelegagte = viewControllerConforming
         }
         return header
     }
-    
-    
-    
+
 }
 
 
