@@ -15,7 +15,6 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     private var selectePlatforms = [PlatFormType]()
     
-    @IBOutlet weak var platformSelectScrollview: UIScrollView!
     
     private var collectionViewManager: ProfileEditModel?
     
@@ -23,6 +22,7 @@ class ProfileEditViewController: UIViewController {
         super.viewDidLoad()
        
         collectionViewManager = ProfileEditModel(collectionView: collectionView, viewController: self)
+        collectionViewManager?.dataSource = self
 
     }
 
@@ -30,7 +30,11 @@ class ProfileEditViewController: UIViewController {
 
 }
 
-extension ProfileEditViewController: PerformSegueProfileDelegate {
+extension ProfileEditViewController: PerformSegueProfileDelegate, ProfileEditModelDataSource {
+    func refreshPlatforms(platfrorms: [PlatFormType]) {
+        self.selectePlatforms = platfrorms
+    }
+    
     func performSegueWithUserInfo(curentUser: CurrentUser) {
         self.performSegue(withIdentifier: "adjustProfile", sender: curentUser)
     }

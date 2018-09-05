@@ -14,6 +14,7 @@ class ProfileEditModel: NSObject {
     private var viewController: UIViewController
     private var currentUSerInfo: CurrentUser?
     private var selectedPlatforms = [PlatFormType]()
+    internal var dataSource: ProfileEditModelDataSource?
     
     private var placeHolderImages = [#imageLiteral(resourceName: "upcomingFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"), #imageLiteral(resourceName: "recentFlyer"), #imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "attendedFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer"),#imageLiteral(resourceName: "recentFlyer")]
     
@@ -30,6 +31,7 @@ class ProfileEditModel: NSObject {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: 150)
         getProfileInformation()
+        listenForPlatformModelSelection()
     }
     
     
@@ -45,7 +47,8 @@ class ProfileEditModel: NSObject {
     private func listenForPlatformModelSelection() {
         PlatFormType.readCurrentUserSelectPlaformsFromFirebase { (platformType) in
             self.selectedPlatforms = platformType
-            
+            self.collectionView.reloadData()
+            self.dataSource?.refreshPlatforms(platfrorms: platformType)
         }
     }
     
@@ -88,5 +91,11 @@ extension ProfileEditModel: UICollectionViewDelegate, UICollectionViewDataSource
     }
 
 }
+
+protocol ProfileEditModelDataSource {
+    func refreshPlatforms(platfrorms: [PlatFormType])
+}
+
+
 
 
