@@ -42,7 +42,16 @@ class ProfileEditModel: NSObject {
         
     }
     
+    private func listenForPlatformModelSelection() {
+        PlatFormType.readCurrentUserSelectPlaformsFromFirebase { (platformType) in
+            self.selectedPlatforms = platformType
+            
+        }
+    }
+    
 }
+
+
 
 
 

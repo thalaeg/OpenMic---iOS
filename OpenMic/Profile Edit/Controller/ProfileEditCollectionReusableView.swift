@@ -61,6 +61,9 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
     }
     
     private func unhideSelectedPlatforms(platforms: [PlatFormType]) {
+         spotifyOutlet.isHidden = false
+        youTubeImageView.isHidden = false
+        soundCloudImageView.isHidden = false
         
         platforms.forEach { (platform) in
             switch platform {
@@ -72,7 +75,6 @@ class ProfileEditCollectionReusableView: UICollectionReusableView {
                 soundCloudImageView.isHidden = false
             case .amazon:
                 amazonOutlet.isHidden = false
-                
             case .deezer:
                 deezerOutlet.isHidden = false
     

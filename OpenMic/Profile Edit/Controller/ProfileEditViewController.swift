@@ -21,9 +21,7 @@ class ProfileEditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlatFormType.readCurrentUserSelectPlaformsFromFirebase { (platformType) in
-            self.selectePlatforms = platformType
-        }
+       
         collectionViewManager = ProfileEditModel(collectionView: collectionView, viewController: self)
 
     }
