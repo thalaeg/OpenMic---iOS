@@ -42,20 +42,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Profile edit
 //        let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
 //               let initialViewController = storyboard.instantiateViewController(withIdentifier: "editProfile")
-//
+
         //addartist
 //        let storyboard = UIStoryboard(name: "AddArtist", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "selectArtist")
         
         
         //profileMain
-
-                let storyboard = UIStoryboard(name: "ProfileMain", bundle: nil)
-                let initialViewController = storyboard.instantiateViewController(withIdentifier: "profileSelection")
+        
+//                let storyboard = UIStoryboard(name: "ProfileMain", bundle: nil)
+//                let initialViewController = storyboard.instantiateViewController(withIdentifier: "profileSelection")
         
         //regular login
-//        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "login")
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
