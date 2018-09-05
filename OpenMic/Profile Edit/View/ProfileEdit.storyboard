@@ -78,11 +78,11 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-zs-bL9" customClass="ProfileEditGradientView" customModule="OpenMic" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="359" height="356"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rkp-IW-hKC">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="rkp-IW-hKC">
                                                     <rect key="frame" x="20" y="28" width="319" height="328"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-iT-DK5" userLabel="All profile Attributes">
-                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="291"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="245"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanyeWest-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-ue-1xe">
                                                                     <rect key="frame" x="100.5" y="0.0" width="118" height="118"/>
@@ -92,22 +92,22 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-4O-kN1" userLabel="UserNameFields">
-                                                                    <rect key="frame" x="107" y="127" width="105" height="164"/>
+                                                                    <rect key="frame" x="107" y="127" width="105" height="118"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Chaz Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Yn-Z85">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="105" height="117"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="105" height="71"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Chazultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-QN-ygF">
-                                                                            <rect key="frame" x="15" y="121" width="75" height="17"/>
+                                                                            <rect key="frame" x="15" y="75" width="75" height="17"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-0m-3QP" customClass="RoundedButtonIbinspectableRedBorder" customModule="OpenMic" customModuleProvider="target">
-                                                                            <rect key="frame" x="9" y="142" width="87" height="22"/>
+                                                                            <rect key="frame" x="9" y="96" width="87" height="22"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="22" id="97Z-VL-o6b"/>
                                                                                 <constraint firstAttribute="width" constant="87" id="hj6-le-zvN"/>
